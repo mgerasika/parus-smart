@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FilterEditorController">
+            <connections>
+                <outlet property="editButton" destination="Bas-lT-cKt" id="NZl-0w-k7I"/>
+                <outlet property="kindButton" destination="PhM-3s-bZx" id="ppH-Dx-08E"/>
+                <outlet property="nameButton" destination="972-K2-VdS" id="a9S-x1-ZoG"/>
+                <outlet property="optionsButton" destination="uQn-3j-8HV" id="Fog-vp-vsg"/>
+                <outlet property="pageBox" destination="BKc-f6-Y84" id="4Hm-Cu-ce7"/>
+                <outlet property="pageButtonsView" destination="swq-x3-qJ8" id="xbB-fo-GwO"/>
+                <outlet property="scheduleButton" destination="Pb6-Ob-GTJ" id="Vh8-mw-uAU"/>
+                <outlet property="view" destination="339" id="342"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="339" userLabel="Filter Editor View">
+            <rect key="frame" x="1" y="0.0" width="519" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button toolTip="点击保存测试细节" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bas-lT-cKt">
+                    <rect key="frame" x="427" y="155" width="80" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="AcM-vL-EMq"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="编辑" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="vBK-qd-NOd">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleEdit:" target="-2" id="Bbp-KQ-8GS"/>
+                    </connections>
+                </button>
+                <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="QEB-4k-ghP">
+                    <rect key="frame" x="0.0" y="148" width="519" height="5"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="swq-x3-qJ8">
+                    <rect key="frame" x="91" y="150" width="337" height="44"/>
+                    <subviews>
+                        <button identifier="editor.filter.page.options" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uQn-3j-8HV">
+                            <rect key="frame" x="78" y="12" width="62" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="选项" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EDx-TZ-JIe">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoOptions:" target="-2" id="vwa-Ee-rIF"/>
+                            </connections>
+                        </button>
+                        <button identifier="editor.filter.page.kind" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PhM-3s-bZx">
+                            <rect key="frame" x="148" y="12" width="77" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="过滤" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SPa-H6-awE">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoKind:" target="-2" id="JLi-sY-FJR"/>
+                            </connections>
+                        </button>
+                        <button identifier="editor.filter.page.schedule" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pb6-Ob-GTJ">
+                            <rect key="frame" x="233" y="12" width="84" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="自动暂停" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hJU-NA-TSS">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoSchedule:" target="-2" id="VKs-1o-JLv"/>
+                            </connections>
+                        </button>
+                        <button identifier="editor.filter.page.name" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="972-K2-VdS">
+                            <rect key="frame" x="20" y="12" width="50" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="名称" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HDh-li-c97">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoName:" target="-2" id="V1L-fk-lfr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="uQn-3j-8HV" firstAttribute="baseline" secondItem="972-K2-VdS" secondAttribute="baseline" id="1pd-Jq-bcT"/>
+                        <constraint firstItem="uQn-3j-8HV" firstAttribute="baseline" secondItem="PhM-3s-bZx" secondAttribute="baseline" id="5i9-N4-dCp"/>
+                        <constraint firstItem="uQn-3j-8HV" firstAttribute="leading" secondItem="972-K2-VdS" secondAttribute="trailing" constant="8" id="795-vJ-zo3"/>
+                        <constraint firstItem="972-K2-VdS" firstAttribute="leading" secondItem="swq-x3-qJ8" secondAttribute="leading" constant="20" id="Qag-J4-Eb9"/>
+                        <constraint firstAttribute="trailing" secondItem="Pb6-Ob-GTJ" secondAttribute="trailing" constant="20" id="ZxV-x5-xwS"/>
+                        <constraint firstItem="Pb6-Ob-GTJ" firstAttribute="leading" secondItem="PhM-3s-bZx" secondAttribute="trailing" constant="8" id="bwQ-ep-bQp"/>
+                        <constraint firstItem="PhM-3s-bZx" firstAttribute="baseline" secondItem="Pb6-Ob-GTJ" secondAttribute="baseline" id="tdz-4R-xW7"/>
+                        <constraint firstItem="PhM-3s-bZx" firstAttribute="leading" secondItem="uQn-3j-8HV" secondAttribute="trailing" constant="8" id="xIs-tj-aS5"/>
+                    </constraints>
+                </customView>
+                <box autoresizesSubviews="NO" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="BKc-f6-Y84">
+                    <rect key="frame" x="-3" y="-4" width="525" height="156"/>
+                    <view key="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="525" height="156"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BKc-f6-Y84" secondAttribute="bottom" id="2w4-bA-SFm"/>
+                <constraint firstItem="QEB-4k-ghP" firstAttribute="leading" secondItem="339" secondAttribute="leading" id="A4B-5M-OZJ"/>
+                <constraint firstItem="BKc-f6-Y84" firstAttribute="leading" secondItem="339" secondAttribute="leading" id="CYM-dN-0iq"/>
+                <constraint firstAttribute="trailing" secondItem="BKc-f6-Y84" secondAttribute="trailing" id="OS3-ve-6zu"/>
+                <constraint firstItem="Pb6-Ob-GTJ" firstAttribute="baseline" secondItem="Bas-lT-cKt" secondAttribute="baseline" id="PgG-qI-nlW"/>
+                <constraint firstItem="swq-x3-qJ8" firstAttribute="top" secondItem="339" secondAttribute="top" id="SqE-M3-vm2"/>
+                <constraint firstAttribute="trailing" secondItem="Bas-lT-cKt" secondAttribute="trailing" constant="18" id="TjN-5V-tin"/>
+                <constraint firstItem="BKc-f6-Y84" firstAttribute="top" secondItem="swq-x3-qJ8" secondAttribute="bottom" id="Uyp-ai-zLa"/>
+                <constraint firstAttribute="trailing" secondItem="QEB-4k-ghP" secondAttribute="trailing" id="Z1v-XY-gef"/>
+                <constraint firstItem="Bas-lT-cKt" firstAttribute="top" secondItem="339" secondAttribute="top" constant="11" id="fAk-4X-Wyi"/>
+                <constraint firstItem="BKc-f6-Y84" firstAttribute="top" secondItem="339" secondAttribute="top" constant="44" id="pr7-tW-6oV"/>
+                <constraint firstAttribute="centerX" secondItem="swq-x3-qJ8" secondAttribute="centerX" id="tdX-5F-vsJ"/>
+                <constraint firstItem="QEB-4k-ghP" firstAttribute="top" secondItem="339" secondAttribute="top" constant="43" id="vKV-SS-1gG"/>
+            </constraints>
+            <point key="canvasLocation" x="526.5" y="1029"/>
+        </customView>
+    </objects>
+</document>

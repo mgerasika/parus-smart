@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FilterOptionsPageController">
+            <connections>
+                <outlet property="forChangedCheck" destination="18" id="iBG-Ld-nh0"/>
+                <outlet property="forFailureCheck" destination="25" id="xT1-DY-XiW"/>
+                <outlet property="forUnchangedCheck" destination="273" id="wZK-ux-fiI"/>
+                <outlet property="lookForChangesCheck" destination="104" id="ty2-lH-mJw"/>
+                <outlet property="timeoutField" destination="29" id="36f-KX-DGZ"/>
+                <outlet property="timeoutPopup" destination="169" id="03e-hR-1Re"/>
+                <outlet property="useTestControlsCheck" destination="28" id="7Fo-gv-s2j"/>
+                <outlet property="view" destination="339" id="342"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="339" userLabel="Filter Editor View">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="271">
+                    <rect key="frame" x="18" y="196" width="340" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="使用此过滤器时，该服务或以前的过滤器的状态为：:" id="272">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="此过滤器可以在检查当前是否使用" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                    <rect key="frame" x="19" y="114" width="75" height="18"/>
+                    <buttonCell key="cell" type="check" title="     失败" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="252">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="315"/>
+                        <outlet property="nextKeyView" destination="104" id="180"/>
+                    </connections>
+                </button>
+                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                    <rect key="frame" x="37" y="116" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="StatusBadNow" id="251"/>
+                </imageView>
+                <button toolTip="检测是否发生了变化，以输入文本自上次检查" translatesAutoresizingMaskIntoConstraints="NO" id="104">
+                    <rect key="frame" x="19" y="77" width="219" height="18"/>
+                    <buttonCell key="cell" type="check" title="     查看更改到输入文本" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="256">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="LcZ-sw-hHF"/>
+                        <outlet property="nextKeyView" destination="28" id="181"/>
+                    </connections>
+                </button>
+                <button toolTip="可以使用此过滤器检查当前改变" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                    <rect key="frame" x="19" y="137" width="87" height="18"/>
+                    <buttonCell key="cell" type="check" title="     变化" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="249">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="314"/>
+                        <outlet property="nextKeyView" destination="25" id="179"/>
+                    </connections>
+                </button>
+                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                    <rect key="frame" x="37" y="140" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="StatusChangedNow" id="250"/>
+                </imageView>
+                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="178">
+                    <rect key="frame" x="37" y="80" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="StatusChangedNow" id="258"/>
+                </imageView>
+                <button toolTip="可以被禁用，只将其配置在此窗口" translatesAutoresizingMaskIntoConstraints="NO" id="28">
+                    <rect key="frame" x="19" y="56" width="254" height="18"/>
+                    <buttonCell key="cell" type="check" title="可自定编辑测试窗口" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="253">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="317"/>
+                        <outlet property="nextKeyView" destination="29" id="182"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="30">
+                    <rect key="frame" x="19" y="20" width="160" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="如果没有完成超时在:" id="255">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="该过滤器可以使用时,检查目前不变" translatesAutoresizingMaskIntoConstraints="NO" id="273">
+                    <rect key="frame" x="19" y="159" width="100" height="18"/>
+                    <buttonCell key="cell" type="check" title="     不变" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="276">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="313"/>
+                        <outlet property="nextKeyView" destination="25" id="277"/>
+                    </connections>
+                </button>
+                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="274">
+                    <rect key="frame" x="37" y="162" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="StatusChangedYear" id="275"/>
+                </imageView>
+                <textField toolTip="要等多久才能放弃过滤和将其当做失败" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="29">
+                    <rect key="frame" x="185" y="18" width="44" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="LkZ-nS-f0j"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="254">
+                        <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="90">
+                            <attributedString key="attributedStringForZero">
+                                <fragment content="0"/>
+                            </attributedString>
+                            <decimal key="minimum" value="1"/>
+                            <decimal key="maximum" value="9999"/>
+                        </numberFormatter>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="319"/>
+                        <outlet property="nextKeyView" destination="169" id="183"/>
+                    </connections>
+                </textField>
+                <popUpButton toolTip="选择超时时间间隔单位" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="169">
+                    <rect key="frame" x="235" y="15" width="80" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="分钟" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="175" id="257">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="170">
+                            <items>
+                                <menuItem title="秒" id="176"/>
+                                <menuItem title="分钟" state="on" tag="1" id="175"/>
+                                <menuItem title="小时" tag="2" id="171"/>
+                                <menuItem title="天" tag="3" id="173"/>
+                                <menuItem title="周" tag="4" id="174"/>
+                                <menuItem title="月" tag="5" id="172"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="320"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstItem="25" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="11" id="00G-t1-h1Q"/>
+                <constraint firstItem="25" firstAttribute="bottom" secondItem="22" secondAttribute="bottom" constant="-1" id="21n-Ne-5Mm"/>
+                <constraint firstItem="19" firstAttribute="bottom" secondItem="18" secondAttribute="bottom" id="2lc-3m-n9z"/>
+                <constraint firstItem="178" firstAttribute="bottom" secondItem="104" secondAttribute="bottom" id="3yB-Qn-uv6"/>
+                <constraint firstItem="271" firstAttribute="leading" secondItem="339" secondAttribute="leading" constant="20" id="7Ia-1Y-cYG"/>
+                <constraint firstItem="274" firstAttribute="bottom" secondItem="273" secondAttribute="bottom" id="A5G-Dj-1Q6"/>
+                <constraint firstItem="169" firstAttribute="leading" secondItem="29" secondAttribute="trailing" constant="9" id="F1f-ly-rMZ"/>
+                <constraint firstItem="28" firstAttribute="top" secondItem="104" secondAttribute="bottom" constant="9" id="GDx-6r-y17"/>
+                <constraint firstItem="273" firstAttribute="top" secondItem="271" secondAttribute="bottom" constant="22" id="Hff-pd-Cza"/>
+                <constraint firstItem="29" firstAttribute="baseline" secondItem="169" secondAttribute="baseline" id="KIF-lr-JhC"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="Mid-Rx-RUG"/>
+                <constraint firstItem="271" firstAttribute="top" secondItem="339" secondAttribute="top" constant="20" id="N8M-RE-kZo"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="273" secondAttribute="bottom" constant="10" id="Pcf-su-5CY"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="19" secondAttribute="trailing" constant="-31" id="Uaz-S9-aES"/>
+                <constraint firstItem="30" firstAttribute="top" secondItem="28" secondAttribute="bottom" constant="25" id="Xra-mO-vih"/>
+                <constraint firstItem="104" firstAttribute="leading" secondItem="178" secondAttribute="trailing" constant="-31" id="ZH2-Y0-Q22"/>
+                <constraint firstItem="273" firstAttribute="leading" secondItem="18" secondAttribute="leading" id="cOY-Kh-AT3"/>
+                <constraint firstItem="25" firstAttribute="leading" secondItem="22" secondAttribute="trailing" constant="-31" id="dV4-7e-WMj"/>
+                <constraint firstItem="104" firstAttribute="top" secondItem="25" secondAttribute="bottom" constant="25" id="fCX-Ih-YNM"/>
+                <constraint firstItem="28" firstAttribute="leading" secondItem="30" secondAttribute="leading" constant="1" id="frC-rC-kLc"/>
+                <constraint firstItem="28" firstAttribute="leading" secondItem="104" secondAttribute="leading" id="g3M-Bm-T8T"/>
+                <constraint firstItem="29" firstAttribute="leading" secondItem="30" secondAttribute="trailing" constant="8" id="gUD-mR-fNA"/>
+                <constraint firstItem="104" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="m7h-Y5-XI3"/>
+                <constraint firstItem="273" firstAttribute="leading" secondItem="274" secondAttribute="trailing" constant="-31" id="mUU-wo-vHI"/>
+                <constraint firstItem="29" firstAttribute="baseline" secondItem="30" secondAttribute="baseline" id="uvh-cz-Ppg"/>
+                <constraint firstItem="273" firstAttribute="leading" secondItem="339" secondAttribute="leading" constant="22" id="yp0-Bu-qeg"/>
+            </constraints>
+            <point key="canvasLocation" x="328" y="648"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="StatusBadNow" width="16" height="16"/>
+        <image name="StatusChangedNow" width="16" height="16"/>
+        <image name="StatusChangedYear" width="16" height="16"/>
+    </resources>
+</document>

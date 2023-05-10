@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MonitorWindowController">
+            <connections>
+                <outlet property="actionButton" destination="8Qo-0w-6Ob" id="haf-VF-2Zb"/>
+                <outlet property="actionMenu" destination="gBh-7g-ixT" id="I0R-0p-xwl"/>
+                <outlet property="actionToolbarItem" destination="Adc-KY-0Xb" id="Xfa-48-vfd"/>
+                <outlet property="addButton" destination="WR3-Y5-0MY" id="DZe-ph-K77"/>
+                <outlet property="addMenu" destination="xQZ-UH-sac" id="xHh-sN-FuZ"/>
+                <outlet property="infoViewBox" destination="GHP-9T-sym" id="VxU-zC-bcZ"/>
+                <outlet property="monitorSplitView" destination="459" id="468"/>
+                <outlet property="primaryModeBox" destination="4gt-8T-PgH" id="Aoe-uc-QJo"/>
+                <outlet property="primarySplitView" destination="dfE-Is-EuH" id="MXN-Yw-HQ5"/>
+                <outlet property="primaryViewBox" destination="lma-MT-2av" id="LdM-QX-d1p"/>
+                <outlet property="searchField" destination="235" id="Y70-xS-4q6"/>
+                <outlet property="secondaryModeBox" destination="8sL-n3-RlA" id="GbW-n9-Hal"/>
+                <outlet property="secondaryViewBox" destination="I3Z-bl-M9D" id="Ria-0h-XSG"/>
+                <outlet property="shareButton" destination="vb6-93-hVN" id="lmh-ct-VYo"/>
+                <outlet property="window" destination="5" id="8"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window identifier="MonitorWindow" title="Simon-Monitor" allowsToolTipsWhenApplicationIsInactive="NO" visibleAtLaunch="NO" frameAutosaveName="Monitor" animationBehavior="default" id="5" userLabel="Monitor Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" unifiedTitleAndToolbar="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <rect key="contentRect" x="933" y="432" width="1179" height="611"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="762" height="500"/>
+            <view key="contentView" identifier="MonitorContent" autoresizesSubviews="NO" id="6" userLabel="Monitor Content View">
+                <rect key="frame" x="0.0" y="0.0" width="1179" height="611"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box identifier="PrimaryModeBox" autoresizesSubviews="NO" horizontalHuggingPriority="1000" verticalHuggingPriority="200" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="250" borderWidth="0.0" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="4gt-8T-PgH" userLabel="Primary Mode Box">
+                        <rect key="frame" x="0.0" y="301" width="64" height="310"/>
+                        <view key="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="310"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="A7C-sE-lOi"/>
+                        </constraints>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </box>
+                    <box identifier="SecondaryModeBox" autoresizesSubviews="NO" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" borderWidth="0.0" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="8sL-n3-RlA" userLabel="Secondary Mode Box">
+                        <rect key="frame" x="0.0" y="0.0" width="64" height="300"/>
+                        <view key="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="300"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="tEp-X7-Edx"/>
+                            <constraint firstAttribute="width" constant="64" id="wMk-da-SpT"/>
+                        </constraints>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </box>
+                    <splitView identifier="MonitorSplit" autosaveName="Monitor" dividerStyle="thin" translatesAutoresizingMaskIntoConstraints="NO" id="459" userLabel="Monitor Split View">
+                        <rect key="frame" x="64" y="0.0" width="1115" height="611"/>
+                        <subviews>
+                            <customView identifier="MonitorPrimaryPane" autoresizesSubviews="NO" id="460" userLabel="Monitor Primary Pane">
+                                <rect key="frame" x="0.0" y="0.0" width="1115" height="400"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <splitView identifier="PrimarySplit" autosaveName="PrimarySplit" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfE-Is-EuH" userLabel="Primary Split View">
+                                        <rect key="frame" x="0.0" y="0.0" width="1115" height="400"/>
+                                        <subviews>
+                                            <customView identifier="ListPane" autoresizesSubviews="NO" id="C6a-xu-5Ae" userLabel="Primary List Pane">
+                                                <rect key="frame" x="0.0" y="0.0" width="412" height="400"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <box identifier="PrimaryBox" autoresizesSubviews="NO" borderWidth="0.0" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="lma-MT-2av" userLabel="Primary Box">
+                                                        <rect key="frame" x="0.0" y="0.0" width="412" height="400"/>
+                                                        <view key="contentView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="412" height="400"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="Dmz-r6-Ga2"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="oA2-Qt-qJd"/>
+                                                        </constraints>
+                                                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </box>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="lma-MT-2av" secondAttribute="trailing" id="02b-5f-sLj"/>
+                                                    <constraint firstItem="lma-MT-2av" firstAttribute="leading" secondItem="C6a-xu-5Ae" secondAttribute="leading" id="FXP-d5-64B"/>
+                                                    <constraint firstItem="lma-MT-2av" firstAttribute="top" secondItem="C6a-xu-5Ae" secondAttribute="top" id="LVh-VA-ME7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lma-MT-2av" secondAttribute="bottom" id="u6A-2x-K9R"/>
+                                                </constraints>
+                                            </customView>
+                                            <customView identifier="PrimaryInfoPane" autoresizesSubviews="NO" id="mO8-Tk-Chk" userLabel="Primary Info Pane">
+                                                <rect key="frame" x="413" y="0.0" width="702" height="400"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <box identifier="InfoBox" autoresizesSubviews="NO" borderWidth="0.0" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="GHP-9T-sym" userLabel="Info Box">
+                                                        <rect key="frame" x="0.0" y="0.0" width="702" height="400"/>
+                                                        <view key="contentView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="702" height="400"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="Jtu-ky-VRk"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="700" id="o6L-6Z-yPO"/>
+                                                        </constraints>
+                                                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </box>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="GHP-9T-sym" secondAttribute="trailing" id="Abe-Xt-L7x"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GHP-9T-sym" secondAttribute="bottom" id="sPj-Uk-G8X"/>
+                                                    <constraint firstItem="GHP-9T-sym" firstAttribute="leading" secondItem="mO8-Tk-Chk" secondAttribute="leading" id="syw-15-oc2"/>
+                                                    <constraint firstItem="GHP-9T-sym" firstAttribute="top" secondItem="mO8-Tk-Chk" secondAttribute="top" id="t4K-FI-uX9"/>
+                                                </constraints>
+                                            </customView>
+                                        </subviews>
+                                        <holdingPriorities>
+                                            <real value="250"/>
+                                            <real value="400"/>
+                                        </holdingPriorities>
+                                        <connections>
+                                            <outlet property="delegate" destination="-2" id="tFE-wh-uCj"/>
+                                        </connections>
+                                    </splitView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dfE-Is-EuH" firstAttribute="top" secondItem="460" secondAttribute="top" id="B5b-g0-zy7"/>
+                                    <constraint firstAttribute="trailing" secondItem="dfE-Is-EuH" secondAttribute="trailing" id="bQv-U1-r2v"/>
+                                    <constraint firstItem="dfE-Is-EuH" firstAttribute="leading" secondItem="460" secondAttribute="leading" id="cwv-or-NDx"/>
+                                    <constraint firstAttribute="bottom" secondItem="dfE-Is-EuH" secondAttribute="bottom" id="kNM-4D-g4z"/>
+                                </constraints>
+                            </customView>
+                            <customView identifier="MonitorSecondaryPane" autoresizesSubviews="NO" id="461" userLabel="Monitor Secondary Pane">
+                                <rect key="frame" x="0.0" y="401" width="1115" height="210"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <box identifier="SecondaryBox" autoresizesSubviews="NO" borderWidth="0.0" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="I3Z-bl-M9D" userLabel="Secondary Box">
+                                        <rect key="frame" x="0.0" y="0.0" width="1115" height="210"/>
+                                        <view key="contentView">
+                                            <rect key="frame" x="0.0" y="0.0" width="1115" height="210"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="HEh-j6-nak"/>
+                                        </constraints>
+                                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </box>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="I3Z-bl-M9D" firstAttribute="top" secondItem="461" secondAttribute="top" id="4DE-vT-U2E"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="9yx-Kt-udH"/>
+                                    <constraint firstAttribute="bottom" secondItem="I3Z-bl-M9D" secondAttribute="bottom" id="FMt-N7-L4l"/>
+                                    <constraint firstItem="I3Z-bl-M9D" firstAttribute="leading" secondItem="461" secondAttribute="leading" id="IRc-HN-Ydh"/>
+                                    <constraint firstAttribute="trailing" secondItem="I3Z-bl-M9D" secondAttribute="trailing" id="KKr-rD-XYA"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="300"/>
+                        </holdingPriorities>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="465"/>
+                        </connections>
+                    </splitView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8sL-n3-RlA" secondAttribute="bottom" id="BtB-le-bSO"/>
+                    <constraint firstItem="8sL-n3-RlA" firstAttribute="top" secondItem="4gt-8T-PgH" secondAttribute="bottom" constant="1" id="CGP-hZ-d5x"/>
+                    <constraint firstItem="459" firstAttribute="leading" secondItem="4gt-8T-PgH" secondAttribute="trailing" id="SsS-Tm-6Nm"/>
+                    <constraint firstItem="4gt-8T-PgH" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="Vtx-Dn-7e3"/>
+                    <constraint firstItem="459" firstAttribute="top" secondItem="6" secondAttribute="top" id="Zfe-mV-CWI"/>
+                    <constraint firstAttribute="trailing" secondItem="459" secondAttribute="trailing" id="e0b-fF-aAh"/>
+                    <constraint firstAttribute="bottom" secondItem="459" secondAttribute="bottom" id="e2u-dx-VQW"/>
+                    <constraint firstItem="4gt-8T-PgH" firstAttribute="top" secondItem="6" secondAttribute="top" id="kcB-4R-GL0"/>
+                    <constraint firstItem="8sL-n3-RlA" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="ttD-gS-2SE"/>
+                </constraints>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="BD40ED5B-C0F0-4312-96FB-686AA252E811" explicitIdentifier="Monitor" showsBaselineSeparator="NO" displayMode="iconOnly" sizeMode="regular" id="YIS-7Q-ELA" customClass="DejalToolbar">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Z9q-05-uE0"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ZWH-1i-F8g"/>
+                    <toolbarItem implicitItemIdentifier="BDAAD17A-F028-49A6-94F7-8037EFDB0916" explicitItemIdentifier="search" label="Suchen" paletteLabel="Suchen" toolTip="Suchen" autovalidates="NO" id="bQm-x4-VLd">
+                        <size key="minSize" width="200" height="22"/>
+                        <size key="maxSize" width="250" height="22"/>
+                        <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" id="235">
+                            <rect key="frame" x="0.0" y="14" width="200" height="22"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" placeholderString="Such-Protokoll" bezelStyle="round" recentsAutosaveName="MonitorSearch" id="395">
+                                <font key="font" metaFont="cellTitle"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                            <connections>
+                                <action selector="search:" target="-1" id="QpY-EA-FtA"/>
+                                <outlet property="delegate" destination="-2" id="256"/>
+                            </connections>
+                        </searchField>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="0C14DB85-321B-496E-B20B-D9B9229139F5" explicitItemIdentifier="new" label="Neu" paletteLabel="Neu" toolTip="Neues Objekt hinzufügen" image="NSAddTemplate" autovalidates="NO" id="IG6-dc-jIJ">
+                        <size key="minSize" width="40" height="23"/>
+                        <size key="maxSize" width="40" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="WR3-Y5-0MY">
+                            <rect key="frame" x="0.0" y="14" width="40" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GfN-xt-PMh">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="addOptions:" target="-2" id="gVm-MA-dLS"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="BEC0A50A-56BC-4DFE-BEAB-48F5F0287117" explicitItemIdentifier="checkNow" label="Suchen" paletteLabel="Suchen" toolTip="Beginnt, die selektierten Objekte zu prüfen" image="NSRefreshTemplate" autovalidates="NO" id="O5P-cs-nzd">
+                        <size key="minSize" width="40" height="25"/>
+                        <size key="maxSize" width="40" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="iOe-LO-yrW">
+                            <rect key="frame" x="0.0" y="14" width="40" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSRefreshTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QVP-Z6-sBM">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <connections>
+                                    <action selector="performNow:" target="-1" id="Dfl-Hp-ZI4"/>
+                                </connections>
+                            </buttonCell>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="CFE64B5F-C95B-46E7-A236-5CD97C27629C" explicitItemIdentifier="visitSite" label="Zur Website" paletteLabel="Zur Website" toolTip="Im Webbrowser anzeigen" image="ToolbarVisitSiteTemplate" autovalidates="NO" id="l9M-SZ-tdN">
+                        <size key="minSize" width="40" height="25"/>
+                        <size key="maxSize" width="40" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="5Xl-LV-bL2">
+                            <rect key="frame" x="0.0" y="14" width="40" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ToolbarVisitSiteTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l1l-Mz-Mu2">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="visitSite:" target="-1" id="dVg-cI-g86"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="3018E90B-B195-459E-A6BC-10F56EC56D55" explicitItemIdentifier="share" label="Bereitstellen" paletteLabel="Bereitstellen" toolTip="Ausgewählte Objekte freigeben" image="NSShareTemplate" autovalidates="NO" id="KHJ-n7-TLC">
+                        <size key="minSize" width="40" height="25"/>
+                        <size key="maxSize" width="40" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="vb6-93-hVN">
+                            <rect key="frame" x="0.0" y="14" width="40" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rJw-TZ-7cF">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="share:" target="-1" id="6dt-yj-Y2F"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="B977F9CA-FBF8-4C37-95C7-C66359C172D2" explicitItemIdentifier="help" label="Hilfe" paletteLabel="Hilfe" toolTip="Zeigt das Handbuch" image="ToolbarHelpTemplate" autovalidates="NO" id="1hG-sG-jbw">
+                        <size key="minSize" width="34" height="25"/>
+                        <size key="maxSize" width="40" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="tkB-eA-Mm0">
+                            <rect key="frame" x="0.0" y="14" width="40" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ToolbarHelpTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="B0J-zT-OGX">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="help:" target="-1" id="c65-KR-bGo"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="A0E74ED1-A00E-4465-810C-312EC80E6EC6" explicitItemIdentifier="flag" label="Markieren" paletteLabel="Markieren" toolTip="Selektierte Objekte als gesehen oder ungesehen markieren" image="ToolbarFlagTemplate" autovalidates="NO" id="tHj-G5-ec2">
+                        <size key="minSize" width="40" height="25"/>
+                        <size key="maxSize" width="40" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="wkc-qK-DTP">
+                            <rect key="frame" x="0.0" y="14" width="40" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ToolbarFlagTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="W8C-t4-DWM">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="markFlagged:" target="-1" id="GHe-Df-nAj"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="37ACB442-DBD3-4796-B7E1-C072DD5B6639" explicitItemIdentifier="pauseResume" label="Anhalten/Fortsetzen" paletteLabel="Anhalten/Fortsetzen" toolTip="Selektierte Objekte anhalten oder fortsetzen" autovalidates="NO" id="MN3-ej-tE7">
+                        <size key="minSize" width="67" height="25"/>
+                        <size key="maxSize" width="71" height="25"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="MPw-im-jN1">
+                            <rect key="frame" x="8" y="14" width="71" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="separated" trackingMode="momentary" id="sdb-ZN-R23">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="ToolbarPauseTemplate" width="32">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment image="ToolbarResumeTemplate" width="32" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <action selector="pauseResume:" target="-1" id="QNz-W6-SSW"/>
+                            </connections>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="0D8EB597-B553-45C6-A385-797B2650E71D" explicitItemIdentifier="action" label="Aktion" paletteLabel="Aktion" toolTip="Aktionen" image="NSActionTemplate" autovalidates="NO" id="Adc-KY-0Xb">
+                        <size key="minSize" width="40" height="23"/>
+                        <size key="maxSize" width="40" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="8Qo-0w-6Ob">
+                            <rect key="frame" x="0.0" y="14" width="40" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSActionTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o8T-TD-YHX">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="actionOptions:" target="-2" id="fYQ-gY-bER"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="29E4C1A1-F975-4C77-A912-B4B514AFCAE9" explicitItemIdentifier="license" label="" paletteLabel="" tag="-1" visibilityPriority="99" id="dBd-xS-0yc">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="150" height="20"/>
+                        <size key="maxSize" width="150" height="96"/>
+                        <customView key="view" id="skG-00-qc6">
+                            <rect key="frame" x="0.0" y="14" width="150" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </customView>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="IG6-dc-jIJ"/>
+                    <toolbarItem reference="ZWH-1i-F8g"/>
+                    <toolbarItem reference="O5P-cs-nzd"/>
+                    <toolbarItem reference="l9M-SZ-tdN"/>
+                    <toolbarItem reference="MN3-ej-tE7"/>
+                    <toolbarItem reference="tHj-G5-ec2"/>
+                    <toolbarItem reference="ZWH-1i-F8g"/>
+                    <toolbarItem reference="bQm-x4-VLd"/>
+                    <toolbarItem reference="KHJ-n7-TLC"/>
+                    <toolbarItem reference="1hG-sG-jbw"/>
+                </defaultToolbarItems>
+                <connections>
+                    <outlet property="delegate" destination="-2" id="Xde-Ys-yWA"/>
+                </connections>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="7"/>
+            </connections>
+            <point key="canvasLocation" x="395.5" y="653.5"/>
+        </window>
+        <menu id="xQZ-UH-sac">
+            <items>
+                <menuItem title="Neuer Test" id="baI-Oh-dFI">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="new:" target="-1" id="aGE-lE-Cfz"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Test duplizieren" id="ERB-Jh-8Uf">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="duplicate:" target="-1" id="bJn-Yr-SJU"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="8Dq-U4-1Go"/>
+                <menuItem title="Neue Gruppe" id="GhY-nA-jcg">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="newGroup:" target="-1" id="T3O-tc-xOf"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Neue Gruppe aus Auswahl" id="6iC-D9-DAD">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="newGroupWithSelection:" target="-1" id="fjf-wO-Q51"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="161" y="147.5"/>
+        </menu>
+        <menu id="gBh-7g-ixT">
+            <items>
+                <menuItem title="Updates suchen …" id="WZP-CF-NdY">
+                    <connections>
+                        <action selector="actionCheckForUpdates:" target="-2" id="TZZ-VF-qJz"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="1jp-2H-XNU">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Einstellungen …" id="GXu-wv-Z3u">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="actionPreferences:" target="-2" id="E1o-cY-Xg0"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Simon einrichten …" id="QiS-oQ-jru">
+                    <connections>
+                        <action selector="actionSetupAssistant:" target="-2" id="yee-vo-ten"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Lizenzen …" id="AlQ-e4-7br">
+                    <connections>
+                        <action selector="actionLicenses:" target="-2" id="h5z-Yg-lQP"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Nxq-dn-46q">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Simon beenden" id="UWg-HA-NHb">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="actionQuit:" target="-2" id="XU8-da-MMh"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="473" y="132.5"/>
+        </menu>
+    </objects>
+    <resources>
+        <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
+        <image name="NSShareTemplate" width="11" height="16"/>
+        <image name="ToolbarFlagTemplate" width="18" height="18"/>
+        <image name="ToolbarHelpTemplate" width="18" height="18"/>
+        <image name="ToolbarPauseTemplate" width="18" height="14"/>
+        <image name="ToolbarResumeTemplate" width="18" height="14"/>
+        <image name="ToolbarVisitSiteTemplate" width="22" height="22"/>
+    </resources>
+</document>

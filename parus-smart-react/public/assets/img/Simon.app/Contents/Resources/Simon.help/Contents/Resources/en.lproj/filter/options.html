@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Filter Info - Options</title>
+<meta name="description" content="Configure additional attributes of the filter.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Filter Info<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Options</h1>
+
+<p>The <b>Options</b> page of the <a href="./index.html"><b>Filter Info</b></a> pane lets you specify how this filter should be categorized: when the current status of the test (i.e. the service and/or any previous filters) is a success or failure.</p>
+
+<p><b><img src="../../shared/status-changed-year.jpg" valign="top"> Unchanged</b>: Check this box if this filter is appropriate when the status is unchanged.  This will simply make it appear in the pop-up menu in the <a href="../test/filters/index.html"><b>Filters</b></a> page of the <b>Test Info</b> pane, so it can be chosen when the current status of the test is unchanged.</p>
+
+<p><b><img src="../../shared/status-changed-now.jpg" valign="top"> Changed</b>: Check this box if this filter is appropriate when the status is changed, similar to the above checkbox.  To make the filter available when successful (i.e. not a failure), check both boxes.</p>
+
+<p><b><img src="../../shared/status-bad-now.jpg" valign="top"> Failure</b>: Similar to the checkbox above, this indicates that this filter can be used for failures, e.g. when a site goes down.</p>
+
+<p><b><img src="../../shared/status-changed-now.jpg" valign="top"> Look for changes to the input text</b>: If this checkbox is selected, the filter will compare its output against the previous time it was used for this test, and result in a <b>Changed</b> status if they are different, or <b>Unchanged</b> if the same.  If this checkbox is off, it will always result in Unchanged (unless there's an error).</p>
+
+<p><b>Allow customization in the Edit Test window</b>: If this checkbox is on, controls appear in the <a href="../test/filters/index.html">Test Info Filters page</a> to configure the filter.  If off, no controls will be included, so the configuration entered in this window will always be used.  This is useful if making a very specific filter, e.g. to find the body of a web page, as opposed to a general-purpose one.</p>
+
+<p><b>Timeout if not finished within</b>: Specify the maximum amount of time that this filter can take to complete.  (Most filters complete instantly, but script-based ones could take longer.)</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./index.html">Filter Info pane</a></li>
+<li><a href="../test/filters/index.html">Test Info Filters page</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

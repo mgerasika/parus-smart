@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Einstellungen - Erweitert-Einstellungen</title>
+<meta name="description" content="Die Erweitert-Einstellungen enthalten speziellere Dinge, die Sie im Normalfall gar nicht verändern wollen.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Einstellungen<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Erweitert-Einstellungen</h1>
+
+<p>Das Einstellungen-Fenster wird über den Menüpunkt "Simon > Einstellungen" aufgerufen. Die Seite "Erweitert" enthält Optionen, die normalerweise nicht geändert werden müssen, aber für Profi-Anwender/innen hier verfügbar sind.</p>
+
+<dl>
+<dd>Daten-Speicherort:</dd>
+<dt>Hier wird der Pfad angezeigt, an dem Ihre Simon-Daten aufbewahrt werden. Normalerweise werden Sie den Standardpfad unverändert lassen, aber falls gewünscht, können Sie ihn hier ändern. Eine Änderung dieser Einstellung wird erst beim nächsten Start von Simon wirksam, so dass Sie erst die Einstellung ändern, dann Simon beenden und dann den Ordner im Finder verschieben sollten. Wenn Sie den Ordner verschieben, bevor Sie die Einstellung ändern, erzeugt Simon einen neuen Standard-Daten-Ordner am alten Ort, den Sie später einfach löschen können. Der Standard-Speicherort ist "~/Library/Application Support/Dejal/Simon", wobei "~" für Ihren Home-Ordner steht.</dt>
+
+<dd>Wählen:</dd>
+<dt>Klicken Sie diesen Button an, um den Speicherort für den Daten-Ordner zu ändern; siehe oben.</dt>
+
+<dd>Vorige Version beim Sichern als Backup behalten:</dd>
+<dt>Wenn diese Option abgehakt ist, wird zu jeder Daten-Datei beim Speichern eine Sicherheitskopie erstellt. Die Sicherheitskopie befindet sich am gleichen Ort, aber mit einer angehängten Tilde ("~") vor der Dateinamen-Erweiterung. Wenn mal etwas schiefgehen sollte, können Sie die aktuelle Daten-Datei durch die Sicherheitskopie ersetzen, indem Sie die aktuelle Datei im Finder löschen und in der Sicherheitskopie-Datei die Tilde entfernen. Diese Option ist standardmäßig eingeschaltet.</dt>
+
+<dd>Intervall zwischen Prüfungen:</dd>
+<dt>Dieser Schieberegler kontrolliert, wie lange zwischen einzelnen Prüfungen gewartet werden soll, wenn mehrere Tests gleichzeitig geprüft werden sollen. Das kann auf verschiedene Weisen erfolgen, z.B. wenn in der <a href="../monitor/tests.html">Testliste</a> keine Tests selektiert sind und Sie auf [Jetzt prüfen] klicken, oder wenn Sie einige Tests selektiert haben, oder wenn Sie den Befehl "Alle jetzt prüfen" im Status-Menü oder im Dock-Menü wählen. Eine kurze Verzögerung stellt sicher, dass die Zeit, die für eine bestimmte Prüfung benötigt wird, nicht von anderen Prüfungen beeinflusst wird, die zur gleichen Zeit stattfinden. Diese Einstellung wird sofort nach Änderungen wirksam. Der Standardwert ist 1 Sekunde.</dt>
+
+<dd>Intervall für automatische Sicherung:</dd>
+<dt>Dieser Schieberegler legt fest, wie oft Simon die Test-Daten sichern soll. Dadurch sind Ihre Daten gegen unerwartetes Beenden des Programms weitestgehend geschützt, z.B. bei Stromausfällen. Die Skala zeigt hier 10-Minuten-Intervalle, der Zeiger kann aber auch Zwischenwerte einnehmen. Zusätzlich bedeutet die ganz linke Position, dass die Daten überhaupt nicht zwischendurch automatisch gesichert werden sollen, sondern nur beim normalen Beenden von Simon. Alle Änderungen an dieser Einstellung werden erst beim nächsten Start von Simon wirksam. Der Standardwert ist 10 Minuten.</dt>
+
+<dd>Monitor-Testliste aktualisieren:</dd>
+<dt>Dieser Schieberegler kontrolliert, wie oft Simon die <a href="../monitor/tests.html">Testliste </a>aktualisieren soll, also die Zeiten bis zum nächsten Test herunterzählen usw. Normalerweise werden Sie wohl den Standardwert lassen, aber falls Ihr Computer nicht besonders schnell ist, oder wenn Sie Simon selten aktivieren können Sie diesen Wert verringern, um die von Simon benötigte Prozessorzeit zu verringern. Alternativ können Sie in der <a href="./general.html"><b>Allgemein-Einstellungen</b></a>-Seite einstellen, dass das Fenster automatisch ausgeblendet werden soll, wenn Simon nicht aktiv ist. Auch diese Einstellung wird erst beim nächsten Start von Simon wirksam. Der Standardwert ist 1 Sekunde.</dt>
+
+<dd>Vorschauseiten puffern für:</dd>
+<dt>Dieser Schieberegler legt fest, wie lange eine Seite zum schnelleren Laden im <a href="../preview/source.html"><b>Quelltext-Fenster</b></a> und <a href="../preview/web.html"><b>Vorschau-Fenster</b></a> zwischengespeichert wird. Wenn Sie viele Seiten in Simon betrachten und Ihr Rechner nicht viel Speicher (RAM) hat, können Sie diesen Wert verringern, um weniger Speicher zu belegen. Andersherum können Sie den Wert gern erhöhen, wenn Sie nur wenige Seiten ansehen oder viel Speicher haben. Diese Einstellung ist hauptsächlich für nicht geprüfte Seiten wichtig, da die geprüften Seiten während einer Prüfung geladen und gepuffert werden. Diese Einstellung wird sofort nach Änderungen wirksam. Der Standardwert ist 1 Stunde.</dt>
+
+<dd>Einstellungen zurücksetzen:</dd>
+<dt>Wenn Sie die Standardeinstellungen dieser Einstellungen-Seite wiederherstellen wollen, klicken Sie auf diesen Button. Die Standardeinstellungen sind die empfohlenen Werte, aber natürlich können Sie die Einstellungen ändern, wenn Sie möchten. Die Einstellungen der anderen Seiten werden nicht verändert.</dt>
+</dl>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="./general.html">Allgemein-Einstellungen</a></li>
+<li><a href="./logging.html">Protokoll-Einstellungen</a></li>
+<li><a href="./script.html">Skript-Einstellungen</a></li>
+<li><a href="./updates.html">Updates-Einstellungen</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

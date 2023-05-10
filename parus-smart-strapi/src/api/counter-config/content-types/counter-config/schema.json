@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "counter_configs",
+  "info": {
+    "singularName": "counter-config",
+    "pluralName": "counter-configs",
+    "displayName": "CounterConfig",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "hotWater",
+        "coldWater",
+        "electricity",
+        "heating"
+      ]
+    },
+    "tariffType": {
+      "type": "enumeration",
+      "enum": [
+        "standard",
+        "commercial"
+      ]
+    },
+    "flat": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::flat.flat",
+      "inversedBy": "counter_configs"
+    },
+    "accountNumberID": {
+      "type": "uid"
+    }
+  }
+}

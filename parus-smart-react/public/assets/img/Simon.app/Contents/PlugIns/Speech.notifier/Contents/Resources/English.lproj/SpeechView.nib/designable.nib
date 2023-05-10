@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SpeechNotifier">
+            <connections>
+                <outlet property="inflectionSlider" destination="57" id="98"/>
+                <outlet property="insertVariablePopup" destination="59" id="102"/>
+                <outlet property="pitchSlider" destination="64" id="99"/>
+                <outlet property="rateSlider" destination="62" id="100"/>
+                <outlet property="speakButton" destination="153" id="156"/>
+                <outlet property="standardSettingsButton" destination="69" id="101"/>
+                <outlet property="textView" destination="66" id="96"/>
+                <outlet property="view" destination="5" id="79"/>
+                <outlet property="voicePopup" destination="67" id="97"/>
+                <outlet property="volumeSlider" destination="71" id="103"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="5" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="544" height="192"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button toolTip="Speak the text using the current voice settings" verticalHuggingPriority="750" id="153">
+                    <rect key="frame" x="275" y="14" width="104" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Speak" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="174">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="speakButtonHit:" target="-2" id="155"/>
+                        <outlet property="nextKeyView" destination="69" id="157"/>
+                    </connections>
+                </button>
+                <slider toolTip="Volume of speech" verticalHuggingPriority="750" id="71">
+                    <rect key="frame" x="382" y="52" width="142" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" controlSize="small" continuous="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="below" sliderType="linear" id="173">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="volumeSliderHit:" target="-2" id="84"/>
+                        <outlet property="nextKeyView" destination="153" id="158"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="70">
+                    <rect key="frame" x="277" y="126" width="100" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Rate:" id="172">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="Reset the speech sliders to the defaults for this voice" verticalHuggingPriority="750" id="69">
+                    <rect key="frame" x="377" y="14" width="152" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Standard Settings" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="171">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="standardSettingsButtonHit:" target="-2" id="85"/>
+                        <outlet property="nextKeyView" destination="59" id="94"/>
+                    </connections>
+                </button>
+                <popUpButton toolTip="Voice to speak with" verticalHuggingPriority="750" id="67">
+                    <rect key="frame" x="379" y="151" width="148" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="No voices found" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="54" id="170">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="56">
+                            <items>
+                                <menuItem title="No voices found" state="on" id="54"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="voicePopupHit:" target="-2" id="80"/>
+                        <outlet property="nextKeyView" destination="62" id="89"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" id="65">
+                    <rect key="frame" x="277" y="78" width="100" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Inflection:" id="169">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider toolTip="Pitch of speech" verticalHuggingPriority="750" id="64">
+                    <rect key="frame" x="382" y="100" width="142" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" controlSize="small" continuous="YES" alignment="left" minValue="20" maxValue="80" doubleValue="40" tickMarkPosition="below" sliderType="linear" id="168">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="pitchSliderHit:" target="-2" id="82"/>
+                        <outlet property="nextKeyView" destination="57" id="91"/>
+                    </connections>
+                </slider>
+                <slider toolTip="Speed of speech" verticalHuggingPriority="750" id="62">
+                    <rect key="frame" x="382" y="124" width="142" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" controlSize="small" continuous="YES" alignment="left" minValue="50" maxValue="400" doubleValue="163.15789473684211" tickMarkPosition="below" sliderType="linear" id="167">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="rateSliderHit:" target="-2" id="81"/>
+                        <outlet property="nextKeyView" destination="64" id="90"/>
+                    </connections>
+                </slider>
+                <popUpButton toolTip="Insert dynamic content via this menu" verticalHuggingPriority="750" id="59">
+                    <rect key="frame" x="17" y="151" width="258" height="22"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Insert variable" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" borderStyle="borderAndBezel" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="53" id="166">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="61">
+                            <items>
+                                <menuItem title="Insert variable" hidden="YES" id="53"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="insertVariablePopupHit:" target="-2" id="86"/>
+                        <outlet property="nextKeyView" destination="66" id="95"/>
+                    </connections>
+                </popUpButton>
+                <slider toolTip="Pitch modulation of speech" verticalHuggingPriority="750" id="57">
+                    <rect key="frame" x="382" y="76" width="142" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" controlSize="small" continuous="YES" alignment="left" maxValue="200" doubleValue="45" tickMarkPosition="below" sliderType="linear" id="165">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="inflectionSliderHit:" target="-2" id="83"/>
+                        <outlet property="nextKeyView" destination="71" id="92"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="52">
+                    <rect key="frame" x="277" y="54" width="100" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Volume:" id="164">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="51">
+                    <rect key="frame" x="277" y="157" width="100" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Voice:" id="163">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" findBarPosition="aboveHorizontalRuler" id="50">
+                    <rect key="frame" x="20" y="20" width="252" height="127"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <clipView key="contentView" id="7pg-dp-XVd">
+                        <rect key="frame" x="1" y="1" width="250" height="125"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView importsGraphics="NO" richText="NO" usesRuler="YES" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="66">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="125"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="250" height="125"/>
+                                <size key="maxSize" width="382" height="10000000"/>
+                                <attributedString key="textStorage">
+                                    <fragment content="Simon says, {TestName} has changed.">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="250" height="125"/>
+                                <size key="maxSize" width="382" height="10000000"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-2" id="87"/>
+                                    <outlet property="nextKeyView" destination="67" id="88"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" controlSize="small" horizontal="YES" id="176">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" controlSize="small" horizontal="NO" id="175">
+                        <rect key="frame" x="237" y="1" width="14" height="125"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <textField verticalHuggingPriority="750" id="48">
+                    <rect key="frame" x="277" y="102" width="100" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Pitch:" id="162">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="nextKeyView" destination="66" id="149"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

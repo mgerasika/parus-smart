@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PasswordUnlockWindowController">
+            <connections>
+                <outlet property="appIconImage" destination="6f3-3n-yWH" id="aTE-yo-ibY"/>
+                <outlet property="cancelButton" destination="JSL-wM-Q7Z" id="KiS-kF-6rf"/>
+                <outlet property="messageIcon" destination="17s-P7-cwT" id="0Jt-18-kjQ"/>
+                <outlet property="messageLabel" destination="Lq8-be-4oh" id="kkY-Zd-oEQ"/>
+                <outlet property="passwordField" destination="frf-6T-Ey1" id="nlu-TR-NL9"/>
+                <outlet property="promptLabel" destination="vMb-Tm-SkH" id="SL9-z0-6gU"/>
+                <outlet property="quitButton" destination="KSg-5T-bAi" id="zC2-1U-K8s"/>
+                <outlet property="unlockButton" destination="M2s-Zt-0ls" id="FlJ-7C-wln"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Unlock Simon" allowsToolTipsWhenApplicationIsInactive="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="password" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="196" y="240" width="424" height="152"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="424" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M2s-Zt-0ls">
+                        <rect key="frame" x="327" y="13" width="83" height="32"/>
+                        <buttonCell key="cell" type="push" title="Unlock" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" sound="Pop" inset="2" id="GEQ-lD-HJ8">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="unlock:" target="-2" id="A6n-dh-M2C"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KSg-5T-bAi">
+                        <rect key="frame" x="14" y="13" width="83" height="32"/>
+                        <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VcU-yS-0ve">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">q</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="quit:" target="-2" id="AQ1-Gu-TBK"/>
+                        </connections>
+                    </button>
+                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="6f3-3n-yWH">
+                        <rect key="frame" x="20" y="67" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="MIJ-3a-zVz"/>
+                            <constraint firstAttribute="width" constant="64" id="asJ-ce-waF"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="NSApplicationIcon" id="1RK-ew-ok9"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vMb-Tm-SkH">
+                        <rect key="frame" x="98" y="115" width="295" height="17"/>
+                        <textFieldCell key="cell" alignment="left" title="Please enter the password to access Simon." id="x96-it-LOi">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="frf-6T-Ey1" customClass="NSSecureTextField">
+                        <rect key="frame" x="100" y="85" width="303" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="Vns-E8-sV6">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="baM-3f-Vpg"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lq8-be-4oh">
+                        <rect key="frame" x="122" y="60" width="284" height="17"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="&lt;DO NOT LOCALIZE&gt;" id="owx-Ha-PIM">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="17s-P7-cwT">
+                        <rect key="frame" x="100" y="61" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="0rR-mh-NTh"/>
+                            <constraint firstAttribute="width" constant="16" id="SXT-Ug-VzX"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSInfo" id="eVF-wU-Fr5"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JSL-wM-Q7Z">
+                        <rect key="frame" x="244" y="13" width="83" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4IP-ti-4Ob">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancel:" target="-2" id="JeY-gF-Fi0"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lq8-be-4oh" firstAttribute="leading" secondItem="17s-P7-cwT" secondAttribute="trailing" constant="8" id="0vx-7t-dOz"/>
+                    <constraint firstItem="JSL-wM-Q7Z" firstAttribute="top" secondItem="Lq8-be-4oh" secondAttribute="bottom" constant="19" id="4FD-Wd-8hl"/>
+                    <constraint firstAttribute="trailing" secondItem="frf-6T-Ey1" secondAttribute="trailing" constant="21" id="6HW-eU-soZ"/>
+                    <constraint firstAttribute="trailing" secondItem="M2s-Zt-0ls" secondAttribute="trailing" constant="20" id="6Tg-DG-Pdr"/>
+                    <constraint firstItem="vMb-Tm-SkH" firstAttribute="leading" secondItem="6f3-3n-yWH" secondAttribute="trailing" constant="16" id="Cpl-YO-Kjv"/>
+                    <constraint firstItem="17s-P7-cwT" firstAttribute="top" secondItem="Lq8-be-4oh" secondAttribute="top" id="DNa-fp-77D"/>
+                    <constraint firstItem="17s-P7-cwT" firstAttribute="leading" secondItem="frf-6T-Ey1" secondAttribute="leading" id="DeV-fm-Ly0"/>
+                    <constraint firstItem="JSL-wM-Q7Z" firstAttribute="width" secondItem="M2s-Zt-0ls" secondAttribute="width" id="FBx-UW-cJ2"/>
+                    <constraint firstItem="KSg-5T-bAi" firstAttribute="baseline" secondItem="JSL-wM-Q7Z" secondAttribute="baseline" id="I8R-Wd-8b2"/>
+                    <constraint firstItem="vMb-Tm-SkH" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="Mlc-0P-WYR"/>
+                    <constraint firstItem="KSg-5T-bAi" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="NFp-4y-uHE"/>
+                    <constraint firstItem="KSg-5T-bAi" firstAttribute="width" secondItem="JSL-wM-Q7Z" secondAttribute="width" id="Q1v-8z-MsG"/>
+                    <constraint firstItem="JSL-wM-Q7Z" firstAttribute="baseline" secondItem="M2s-Zt-0ls" secondAttribute="baseline" id="Uyi-P7-luC"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vMb-Tm-SkH" secondAttribute="trailing" constant="20" symbolic="YES" id="ajJ-r3-ifQ"/>
+                    <constraint firstItem="17s-P7-cwT" firstAttribute="top" secondItem="frf-6T-Ey1" secondAttribute="bottom" constant="8" id="gfC-zU-bi6"/>
+                    <constraint firstItem="frf-6T-Ey1" firstAttribute="top" secondItem="vMb-Tm-SkH" secondAttribute="bottom" constant="8" id="iDp-3Y-PrA"/>
+                    <constraint firstItem="vMb-Tm-SkH" firstAttribute="leading" secondItem="frf-6T-Ey1" secondAttribute="leading" id="k96-xS-9Ct"/>
+                    <constraint firstItem="M2s-Zt-0ls" firstAttribute="leading" secondItem="JSL-wM-Q7Z" secondAttribute="trailing" constant="12" id="qq3-fP-IFw"/>
+                    <constraint firstItem="6f3-3n-yWH" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="qsO-N1-Uwk"/>
+                    <constraint firstAttribute="bottom" secondItem="M2s-Zt-0ls" secondAttribute="bottom" constant="20" id="rQ0-RR-f9u"/>
+                    <constraint firstItem="6f3-3n-yWH" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="21" id="udH-On-XyB"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Lq8-be-4oh" secondAttribute="trailing" constant="20" symbolic="YES" id="ypv-Fh-bJR"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="512" y="597"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+        <image name="NSInfo" width="32" height="32"/>
+        <sound name="Pop"/>
+    </resources>
+</document>

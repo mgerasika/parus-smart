@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Preferences - Advanced</title>
+<meta name="description" content="Advanced preferences include some things that normally don't need changing.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Preferences<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Advanced</h1>
+
+<p>The Preferences window is displayed via the <b>Simon<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Preferences...</b> menu item.  The Advanced page includes options that normally don't need changing, but are available for power users.</p>
+
+<p><b>Data folder location</b>: This displays the path where your Simon data will be kept.  Normally you'd leave it at the default, but you can change it if you wish.  Any change to this setting will take effect after Simon is next started, so you should change the preference, quit Simon, then move the folder in the Finder.  If you move the folder before changing the preference, Simon will create a default data folder in the old location, so you can simply delete that afterwards.  The default location is "~/Library/Application Support/Dejal/Simon", where "~" represents your home folder.</p>
+
+<p><b>Set</b>: Click this button to change the data folder location; see above.</p>
+
+<p><b>Keep the previous version as a backup when saving</b>: If checked, a backup copy of each data file is kept when saving the files.  The backup is in the same location, but with a tilde ("~") suffix before the extension.  If something goes wrong, you can replace your current file with the backup by deleting the current file and renaming the backup to remove the tilde.  This defaults to on.</p>
+
+<p><b>Interval between checks</b>: This slider controls the delay between each check when checking multiple tests at once.  You can do this in several ways, including having no tests selected in the <a href="../monitor/tests.html">tests table</a> and clicking <b>Check Now</b>, or having several tests selected, or the <b>Check All Now</b> commands in the status or Dock menus.  A short delay ensures the time to check each test isn't affected by the other checks being done at the same time.  This setting takes effect immediately.  The default is one second.</p>
+
+<p><b>Auto-save frequency</b>: This slider sets how often Simon saves the test data.  This protects the data against an unexpected quit, e.g. due to power failure.  The markers are in ten minute increments, but values in-between can also be chosen.  In addition, the left-most setting indicates that the data should not be saved periodically.  The data will always be saved when you quit Simon normally.  Any change in this setting will take effect after Simon is next started.  The default is 10 minutes.</p>
+
+<p><b>Monitor Tests list refresh</b>: This slider controls how often Simon updates the <a href="../monitor/tests.html">tests table</a>, to display the countdown to the next test, etc.  Normally you would leave this at the default, but if your machine isn't particularly fast, or you will rarely have Simon active, you could change this value to decrease the processor time used by Simon.  Alternatively, you could enable the preference on the <a href="./general.html"><b>General</b></a> page to automatically hide the window when Simon isn't active.  This setting will also take effect after Simon is next started.  The default is 1 second.</p>
+
+<p><b>Restore Defaults</b>: Click this button to change the preferences on this page back to the factory-set values.  The default values usually represent the recommended configuration, though of course preferences are there to be changed if desired.  Preferences on other pages are not affected.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./general.html">General</a></li>
+<li><a href="./logging.html">Logging</a></li>
+<li><a href="./script.html">Script</a></li>
+<li><a href="./updates.html">Updates</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

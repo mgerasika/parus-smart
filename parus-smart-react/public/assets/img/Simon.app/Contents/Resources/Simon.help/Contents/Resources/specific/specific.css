@@ -1,0 +1,63 @@
+/* Help styles for web viewing: */
+
+
+body
+{
+}
+
+
+/* Page division IDs: */
+
+#header
+{
+	display: none;
+}
+
+#content
+{
+	padding-top: 2em;
+}
+
+
+/* Header styles: */
+
+#navbar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #f2f2f2;
+	border-bottom: 1px solid #bbb;
+	font-size: smaller;
+	
+	text-align: left;
+	padding: 0.3em 0.5em 0.3em 1em;
+}
+
+#navbar a
+{
+}
+
+#navbar #home
+{
+	padding: 0.3em 1.8em 0.3em 0.75em;
+}
+
+#navbar #website
+{
+	padding: 0.3em 1.8em 0.3em 0.75em;
+}
+
+#navbar #index
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-left: 1px solid #bbb;
+	
+	padding: 0.3em 1.8em 0.3em 0.75em;
+	text-align: right;
+}
+
+

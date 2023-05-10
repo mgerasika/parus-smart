@@ -1,0 +1,116 @@
+/* Quit confirmation title */
+"Are you sure you want to quit Simon?" = "Are you sure you want to quit Simon?";
+
+/* License stage */
+"Basic" = "Basic";
+
+/* License kind */
+"Basic License" = "Basic License";
+
+/* License kind */
+"Basic to Standard" = "Basic to Standard";
+
+/* License stage */
+"Bronze" = "Bronze";
+
+/* License kind */
+"Bronze License" = "Bronze License";
+
+/* License kind */
+"Bronze to Silver" = "Bronze to Silver";
+
+/* License description */
+"Enabling unlimited tests" = "Enabling unlimited tests";
+
+/* License description */
+"Enabling up to 100 tests" = "Enabling up to 100 tests";
+
+/* License description */
+"Enabling up to 15 tests" = "Enabling up to 15 tests";
+
+/* License description */
+"Enabling up to 40 tests" = "Enabling up to 40 tests";
+
+/* License stage */
+"Enterprise" = "Enterprise";
+
+/* License kind */
+"Enterprise License" = "Enterprise License";
+
+/* License stage */
+"Gold" = "Gold";
+
+/* License kind */
+"Gold License" = "Gold License";
+
+/* License kind */
+"Gold to Platinum" = "Gold to Platinum";
+
+/* Quit confirmation explanation */
+"If you quit Simon, the tests will not be checked until you start it again." = "If you quit Simon, the tests will not be checked until you start it again.";
+
+/* License stage */
+"Platinum" = "Platinum";
+
+/* License kind */
+"Platinum License" = "Platinum License";
+
+/* License kind */
+"Review License" = "Review License";
+
+/* License stage */
+"Silver" = "Silver";
+
+/* License kind */
+"Silver License" = "Silver License";
+
+/* License kind */
+"Silver to Gold" = "Silver to Gold";
+
+/* License kind */
+"Simon 2 Upgrade" = "Simon 2 Upgrade";
+
+/* License kind */
+"Simon 3 Bronze Upgrade" = "Simon 3 Bronze Upgrade";
+
+/* License kind */
+"Simon 3 Gold Upgrade" = "Simon 3 Gold Upgrade";
+
+/* License kind */
+"Simon 3 Platinum Upgrade" = "Simon 3 Platinum Upgrade";
+
+/* License kind */
+"Simon 3 Silver Upgrade" = "Simon 3银版升级";
+
+/* License kind */
+"Simon 3 Upgrade" = "Simon 3 升级";
+
+/* License stage */
+"Standard" = "标准";
+
+/* License kind */
+"Standard License" = "标准版许可证";
+
+/* License kind */
+"Standard to Enterprise" = "标准企业版";
+
+/* License description */
+"Upgrade to unlimited tests" = "升级到无限制版";
+
+/* License description */
+"Upgrade to up to 100 tests" = "升级到100测试版";
+
+/* License description */
+"Upgrade to up to 40 tests" = "升级到40测试版";
+
+/* License description */
+"Upgrade with unlimited tests" = "升级无限版";
+
+/* License description */
+"Upgrade with up to 100 tests" = "升级到100测试版";
+
+/* License description */
+"Upgrade with up to 15 tests" = "升级到15测试版";
+
+/* License description */
+"Upgrade with up to 40 tests" = "升级到40测试版";

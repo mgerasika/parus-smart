@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Bericht-Infobereich - Vorlagen - Berichtvorlage-Parameter</title>
+<meta name="description" content="Berichtvorlageparameter-Variablen für Bericht-Vorlagen.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Bericht-Vorlagen<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Berichtvorlage-Parameter</h1>
+
+<p>Hier finden Sie Informationen über Parameter für Bericht-Variablen. Lesen Sie auch das Kapitel <a href="./index.html"><b>Bericht-Vorlagen</b></a> für weitere Informationen über Simons Bericht-Vorlagen.</p>
+
+<p>Variablen sind Tags in der Datei, die durch andere Inhalte ersetzt werden, wenn der Bericht benutzt wird. Variablen sind von geschweiften Klammern umschlossen und haben einen Variablen-Namen, optional gefolgt von einer beliebigen Anzahl Parameter, z.B. {status format="lowercase"}. Nur zwischen Parametern dürfen Leerzeichen stehen und die Parameter-Werte müssen in Anführungszeichen stehen. Der Variablen-Name, die Parameter-Namen und die Parameter-Werte werden nicht nach Groß-/Kleinschreibung unterschieden, daher können Sie gerne auch GroßBuchStaben nutzen, um die Namen lesbarer zu machen, falls Sie möchten.</p>
+
+<p>Die meisten Variablen unterstützen die folgenden Parameter, sofern sie zutreffen; wenn Sie sie nicht explizit nutzen, werden vorgesehene Standardwerte benutzt (obwohl einige Variablen dies überschreiben, z.B. ist der Standardwert von {LastDifference} encode="html"):</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Parameter:</b></td><td><b>Werte:</b></td><td><b>Standard:</b></td><td nowrap><b>Ausgaben:</b></td></tr>
+<tr><td valign="top">Encode</td><td valign="top">"html", "text"</td><td valign="top">"text"</td><td valign="top">Wenn "html", werden die Zeichen "<" und ">" encodiert (als "<" und ">"), damit sie nicht als HTML-Tag-Begrenzer angesehen werden.</td></tr>
+<tr><td valign="top">Format</td><td valign="top">"uppercase", "wordcase", oder "lowercase"</td><td valign="top">nichts</td><td valign="top">Ändert die Groß-/Kleinschreibung der Ausgabe.</td></tr>
+<tr><td valign="top">Length</td><td valign="top">Eine Zahl</td><td valign="top">nichts</td><td valign="top">Die maximale Länge des Ausgabe-Texts.</td></tr>
+<tr><td valign="top">Link</td><td valign="top">"yes", "no"</td><td valign="top">"no"</td><td valign="top">Wenn "Yes", wird ein Link zur entsprechenden Detailseite eingefügt (nur gültig auf der Zusammenfassung-Seite).</td></tr>
+<tr><td valign="top">Relative</td><td valign="top">"self", "parent"</td><td valign="top">"self"</td><td valign="top">Steuert, ob ein Link oder Pfad relativ zur Seite, in der er generiert wird, sein soll, oder relativ zum übergeordneten Verzeichnis.</td></tr>
+<tr><td valign="top">Type</td><td valign="top">"text", "icon", "absolute", "relative"</td><td valign="top">"text", "absolute"</td><td valign="top">Die Test-Variablen Unseen und Status können als Text oder Icon ausgegeben werden. Daten können als absolute oder relative Datum-/Zeitangaben ausgegeben werden.</td></tr>
+<tr><td valign="top">URL</td><td valign="top">Ein gültiger URL</td><td valign="top">nichts</td><td valign="top">Wenn ein URL-Parameter auch als link="Yes" definiert wurde, benutzt der Link stattdessen diesen URL.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="./index.html">Bericht-Vorlagen</a></li>
+<li><a href="../options.html">Bericht-Optionen</a></li>
+<li><a href="../index.html">Bericht-Infobereich</a></li>
+<li><a href="../../reports/index.html">Berichte-Liste</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Report Info - Templates - Parameters</title>
+<meta name="description" content="Parameters for report template variables.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Report Templates<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Parameters</h1>
+
+<p>This page has information about parameters for report variables.  See the <a href="./index.html"><b>Report Templates</b></a> page for more information about Simon's report templates.</p>
+
+<p>Variables are tags in the file that are replaced by another value when the report is used.  Variables are enclosed in curly braces, and have a variable name optionally followed by any number of parameters, e.g. <b>{status format="lowercase"}</b>.  There must be no spaces other than between parameters, and the parameter values must be quoted.  The variable name, parameter names, and parameter values are all not case sensitive, so you can use mixed-case to make them clearer, if you wish.</p>
+
+<p>Most variables support the following parameters, where relevant; if omitted, the indicated default is used (though some variables override this, e.g. <b>{LastDifference}</b> defaults to <b>encode="html"</b>):</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Parameter:</b></td><td><b>Values:</b></td><td><b>Default:</b></td><td nowrap><b>Outputs:</b></td></tr>
+<tr><td valign="top">Encode</td><td valign="top">"html", "text"</td><td valign="top">"text"</td><td valign="top">If "html", "&lt;" and "&gt;" characters are encoded to avoid treating as HTML tag delimiters.</td></tr>
+<tr><td valign="top">Format</td><td valign="top">"uppercase", "wordcase", or "lowercase"</td><td valign="top">none</td><td valign="top">Changes the capitalization of the output.</td></tr>
+<tr><td valign="top">Length</td><td valign="top">A number</td><td valign="top">none</td><td valign="top">The maximum length of the output text.</td></tr>
+<tr><td valign="top">Link</td><td valign="top">"yes", "no"</td><td valign="top">"no"</td><td valign="top">If "yes", includes a hyperlink to the related Detail page (only relevant on the Summary page).</td></tr>
+<tr><td valign="top">Relative</td><td valign="top">"self", "parent"</td><td valign="top">"self"</td><td valign="top">Whether to express a link or path relative to the page being generated, or its parent directory.</td></tr>
+<tr><td valign="top">Type</td><td valign="top">"text", "icon", "absolute", "relative"</td><td valign="top">"text", "absolute"</td><td valign="top">The test <b>Unseen</b> and <b>Status</b> variables can be displayed as text or icons.  Dates can be displayed as absolute dates or relative times.</td></tr>
+<tr><td valign="top">URL</td><td valign="top">A valid URL</td><td valign="top">none</td><td valign="top">If a URL parameter is specified as well as <b>link="yes"</b>, the link uses this URL instead.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./index.html">Report Templates</a></li>
+<li><a href="../options.html">Report Options</a></li>
+<li><a href="../index.html">Report Info pane</a></li>
+<li><a href="../../reports/index.html">Reports list</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

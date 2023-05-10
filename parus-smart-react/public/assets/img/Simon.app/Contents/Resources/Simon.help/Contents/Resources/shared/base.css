@@ -1,0 +1,274 @@
+/* Help styles common to both the help book and web: */
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	font-size: 62.5%;
+}
+
+body
+{
+	font-family: "Lucida Grande", sans-serif;
+	font-size: small;
+	padding-top: 12px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+h2
+{
+	font-size: small;
+	margin: 2.5em 0 1em 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+p, ul, ol
+{
+	margin: 1.2em 0;
+	line-height: 1.2em;
+}
+	
+code, pre
+{
+	font-size: medium;
+}
+
+pre
+{
+	margin-left: 1em;
+	border-left: 1px solid #bbb;
+	padding-left: 1em;
+}
+
+img
+{
+	border-width: 0;
+}
+
+.hide
+{
+	display: none;
+}
+
+.clearer
+{
+	clear: both;
+}
+
+
+/* Page division IDs: */
+
+#header
+{
+	clear: both;
+	text-align: left;
+}
+
+#content
+{
+	background-color: white;
+	clear: both;
+}
+
+#footer
+{
+	clear: both;
+}
+
+		
+/* Content icon and heading: */
+
+h1
+{
+	font-size: medium;
+	margin: 0 0 0.5em 0;
+	padding-left: 42px;
+	min-height: 32px;
+	background: url(../shared/icon-32.png) no-repeat bottom left;
+	-webkit-background-size: 32px 32px;
+	line-height: 32px;
+}
+
+
+/* Lists: */
+
+li
+{
+	margin-bottom: 1em;
+}
+
+ol, ul
+{
+	background: #e6edff;
+	border: 1px solid #bbb;
+	padding: 0.5em 1em;
+	margin: 1em 0;
+}
+	
+ul.info
+{
+	background: #eee;
+}
+
+ul.direct
+{
+	background: #e4fde1;
+	border: 1px dashed #bbb;
+	list-style-image: url(../shared/direct.png);
+}
+
+ul.plain
+{
+	border: none;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+	
+ul ul, ol ul
+{
+	border: none;
+	margin: 0.5em 0 1em 0;
+	padding: 0;
+	background: transparent;
+}
+
+li
+{
+	margin: 0.5em 0;
+	padding: 0;
+	margin-left: 1.5em;
+}
+
+
+/* Tables: */
+
+table, tr, td
+{
+	padding: 4px;
+	border-width: 1px;
+}
+
+td
+{
+	background-color: #eeeeff;
+}
+
+
+/* Content styles: */
+
+div.topics
+{
+	width: 49%;
+	float: left;
+	margin-bottom: 1.5em;
+}
+
+div.related
+{
+	clear: both;
+}
+
+div.topics h2
+{
+	display: none;
+}
+	
+div.topics ul, div.related ul, div.sidebar-box ul, ul.topics
+{
+	list-style: none;
+	margin: 0.5em 1em;
+	padding-left: 1em; text-indent: -1em; /* Hanging indents */
+	background: transparent;
+	border: 0;
+	padding: 0;
+}
+
+div.topics li, div.related li, div.sidebar-box li
+{
+	display: block;
+	margin: 0.5em 0 0 0;
+	padding: 0;
+}
+
+div.sidebar-box
+{
+	border: 1px solid #A9A9A9;
+	margin-bottom: 1em;
+	width: 49%;
+	float: right;
+}
+
+div.full-box
+{
+	border: 1px solid #A9A9A9;
+	margin: 0 1% 1em 0;
+}
+
+div.sidebar-box, div.sidebar-box h2, div.full-box, div.full-box h2
+{
+	-webkit-border-radius: 5px;
+}
+
+div.sidebar-box h2, div.full-box h2
+{
+	-webkit-border-bottom-left-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+}
+
+div.sidebar-box h2, div.full-box h2
+{
+	padding: 0.3em 0.7em;
+	background: #e6edff;
+	font-weight: bold;
+	font-size: small;
+	margin: 0;
+}
+	
+div.sidebar-box ul
+{
+	margin: 0.3em 0.8em;
+}
+	
+div.sidebar-box li
+{
+	margin: 0.5em 1em;
+}
+
+div.full-box p
+{
+	padding: 0.3em 0.7em;
+}
+
+.table-date
+{
+	white-space: nowrap;
+}
+
+.pic-center
+{
+	text-align: center;
+}
+
+.divider
+{
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #999;
+}
+

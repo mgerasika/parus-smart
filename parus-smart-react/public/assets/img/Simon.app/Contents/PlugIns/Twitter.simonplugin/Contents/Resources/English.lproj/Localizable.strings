@@ -1,0 +1,72 @@
+/* Twitter unknown error notification error string */
+"An unknown error has occurred (code %d)." = "An unknown error has occurred (code %d).";
+
+/* Twitter notifier view error button credentials check failed tooltip */
+"Credentials failed to validate.  Click for details." = "Credentials failed to validate.  Click for details.";
+
+/* Twitter notifier credentials validation error sheet title */
+"Credentials Validation Failed" = "Credentials Validation Failed";
+
+/* Twitter notifier view error button followers fetch failed tooltip */
+"Failed to fetch followers.  Click for details." = "Failed to fetch followers.  Click for details.";
+
+/* Twitter notifier followers fetch error sheet title */
+"Followers Could Not Be Fetched" = "Followers Could Not Be Fetched";
+
+/* Twitter get messages smart change header string */
+"Get Twitter direct messages for" = "Get Twitter direct messages for";
+
+/* Twitter get followers smart change header string */
+"Get Twitter followers of" = "Get Twitter followers of";
+
+/* Twitter get friends smart change header string */
+"Get Twitter friends of" = "Get Twitter friends of";
+
+/* Twitter get public timeline smart change header string */
+"Get Twitter public timeline." = "Get Twitter public timeline.";
+
+/* Twitter get replies smart change header string */
+"Get Twitter replies to" = "Get Twitter replies to";
+
+/* Twitter get user updates smart change header string */
+"Get Twitter updates for" = "Get Twitter updates for";
+
+/* Loading followers message */
+"Loading..." = "Loading...";
+
+/* No internet connection error string */
+"No internet connection." = "No internet connection.";
+
+/* OK button title */
+"OK" = "OK";
+
+/* Twitter Service Preview window title before loading */
+"Preview" = "Preview";
+
+/* Twitter Service Preview window title for Edit Service */
+"Preview of %@" = "Preview of %@";
+
+/* Twitter Service Preview window title while loading */
+"Preview of %@ (%@)" = "Preview of %1$@ (%2$@)";
+
+/* Twitter authorization failed notification error string */
+"The transaction resulted in a \"Authorization Failed\" error.  Please check the notifier credentials." = "The transaction resulted in a \"Authorization Failed\" error.  Please check the notifier credentials.";
+
+/* Twitter bad request notification error string */
+"The transaction resulted in a \"Bad request\" error.  Most likely the 70 requests per hour rate limit has been exceeded." = "The transaction resulted in a \"Bad request\" error.  Most likely the 70 requests per hour rate limit has been exceeded.";
+
+/* Twitter forbidden notification error string */
+"The transaction resulted in a \"Forbidden\" error.  Please check the notifier settings." = "The transaction resulted in a \"Forbidden\" error.  Please check the notifier settings.";
+
+/* Twitter not found notification error string */
+"The transaction resulted in a \"Page Not Found\" error.  Please check the notifier settings." = "The transaction resulted in a \"Page Not Found\" error.  Please check the notifier settings.";
+
+/* Twitter internal error notification error string */
+"The transaction resulted in an \"Internal Server Error.\" error.  This is an error with the Twitter service's servers." = "The transaction resulted in an \"Internal Server Error.\" error.  This is an error with the Twitter service's servers.";
+
+/* Twitter maintenance notification error string */
+"Twitter servers apear to be down for maintenance." = "Twitter servers apear to be down for maintenance.";
+
+/* Twitter overloaded notification error string */
+"Twitter servers are currently overloaded with traffic." = "Twitter servers are currently overloaded with traffic.";
+

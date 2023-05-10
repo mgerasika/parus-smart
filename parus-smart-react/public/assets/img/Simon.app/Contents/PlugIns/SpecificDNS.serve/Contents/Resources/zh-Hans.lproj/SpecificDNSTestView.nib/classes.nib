@@ -1,0 +1,31 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {modeChanged = id; recursionChanged = id; serviceHit = id; }; 
+            CLASS = SpecificDNSService; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                serviceDNSField = NSTextField; 
+                serviceIPField = NSTextField; 
+                serviceModeMatrix = NSMatrix; 
+                serviceRecursionButton = NSButton; 
+                serviceURLField = NSTextField; 
+                serviceView = NSView; 
+                testDNSField = NSTextField; 
+                testIPField = NSTextField; 
+                testModeMatrix = NSMatrix; 
+                testRecursionButton = NSButton; 
+                testURLField = NSTextField; 
+                testView = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

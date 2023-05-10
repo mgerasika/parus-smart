@@ -1,0 +1,107 @@
+/* Email param */
+"?subject=%@...." = "?subject=%@....";
+
+/* Check for Updates... */
+"Check for Updates..." = "Check for Updates...";
+
+/* Custom product edition */
+"Custom" = "Custom";
+
+/* Brief name of company
+   Normal name of company */
+"Dejal" = "Dejal";
+
+/* Short code for the language (localization) */
+"en" = "en";
+
+/* English name for the language
+   Localized name for the language */
+"English" = "English";
+
+/* Express product edition; make sure this matches the suffix in the app filename */
+"Express" = "Express";
+
+/* Forums */
+"Forums" = "Forums";
+
+/* Free product edition; make sure this matches the suffix in the app filename */
+"Free" = "Free";
+
+/* Help */
+"Help" = "Help";
+
+/* Hide Toolbar */
+"Hide Toolbar" = "Hide Toolbar";
+
+/* Update status title for error */
+"Last Attempt:" = "Last Attempt:";
+
+/* Update status title for success */
+"Last Check:" = "Last Check:";
+
+/* Lite product edition */
+"Lite" = "Lite";
+
+/* Email address for the company */
+"mailto:info@dejal.com" = "mailto:info@dejal.com";
+
+/* Update next scheduled */
+"Next scheduled: %@" = "Next scheduled: %@";
+
+/* Preferences... */
+"Preferences..." = "Preferences...";
+
+/* Help book */
+"prefs/advanced.html" = "prefs/advanced.html";
+
+/* Help book */
+"prefs/general.html" = "prefs/general.html";
+
+/* Help book */
+"prefs/updates.html" = "prefs/updates.html";
+
+/* Pro product edition; make sure this matches the suffix in the app filename */
+"Pro" = "Pro";
+
+/* Quit button title */
+"Quit" = "Quit";
+
+/* Help book */
+"setup/assistant/index.html" = "setup/assistant/index.html";
+
+/* Help book */
+"setup/crash.html" = "setup/crash.html";
+
+/* Help book */
+"setup/license/agree.html" = "setup/license/agree.html";
+
+/* Help book */
+"setup/license/editor.html" = "setup/license/editor.html";
+
+/* Help book */
+"setup/license/options.html" = "setup/license/options.html";
+
+/* Help book */
+"setup/license/thanks.html" = "setup/license/thanks.html";
+
+/* Show Toolbar */
+"Show Toolbar" = "Show Toolbar";
+
+/* Standard product edition */
+"Standard" = "Standard";
+
+/* Update status title for checking */
+"Status:" = "Status:";
+
+/* Explanation of corrupt app */
+"The integrity of this application appears to be damaged.  %@\n\nPlease quit and try again, and replace the application with a fresh copy if necessary." = "The integrity of this application appears to be damaged.  %@\n\nPlease quit and try again, and replace the application with a fresh copy if necessary.";
+
+/* Corrupt app heading */
+"This application is damaged." = "This application is damaged.";
+
+/* Website button title */
+"Website" = "Website";
+
+/* Update never run status */
+"Welcome!  Please check for an update." = "Welcome!  Please check for an update.";
+

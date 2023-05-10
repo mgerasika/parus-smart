@@ -1,0 +1,14 @@
+/* Unknown error help message */
+"An unkown error has occurred.  Error info:" = "Une erreur inconnue est survenue. Information erreur :";
+
+/* Calendar fetch error sheet title */
+"Google Calendars Could Not Be Fetched" = "Les calendriers Google n’ont pas pu être récupérés";
+
+/* Bad credentials help message */
+"Invalid credentials.  Please check your username and password are entered correctly." = "Accréditation invalide. Veuillez vérifier vos nom d’utilisateur et mot de passe ont été correctement saisis.";
+
+/* No internet connection help message */
+"No internet connection." = "Pas de connexion internet.";
+
+/* OK button title */
+"OK" = "OK";

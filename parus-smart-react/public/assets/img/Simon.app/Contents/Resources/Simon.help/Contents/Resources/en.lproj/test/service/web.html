@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Test Info - Service - Web (HTTP)</title>
+<meta name="description" content="The Web (HTTP) service loads a web page.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Test Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Service<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Web (HTTP)</h1>
+
+<p>The <b>Web (HTTP)</b> service is displayed when you choose <b>Web (HTTP)</b> in the <b>Service</b> pop-up menu in the <a href="../index.html"><b>Test Info</b></a> pane.</p>
+
+<p>This service will check a page on a website.  You can check the root level of a site, or a directory or page within it.  If monitoring your own site, you may wish to monitor a special page or file, to avoid skewing your site stats.</p>
+
+<p><b>URL</b>: Enter the URL of the page or file to check in this field.  You can use IP numbers or a domain name.  You can skip the "http://" or "ftp://" protocol; it'll be added automatically.  You can also just type the central part of the domain for a standard dot.com domain name like "www.dejal.com": just type "dejal" and it'll fill in the rest automatically when the settings are saved.  You can disable this auto-completion via the <a href="../../service/plugin/web.html"><b>Service Info</b></a> pane, if desired.</p>
+
+<p><b>Method</b>: Optionally choose the method to fetch the page in this pop-up menu.  The options include the two common methods, <b>Get</b> and <b>Post</b>, along with some more esoteric options, including <b>Head</b>, <b>Options</b>, <b>Put</b> and <b>Trace</b>.  The default is <b>Get</b>, which is the normal way of browsing pages.  <b>Post</b> is like submitting a form (using the parameters as the form data).  <b>Head</b> is the same as <b>Get</b>, except only the header is retrieved.  <b>Options</b> results in the HTTP methods that the server supports.  <b>Put</b> is a variation of <b>Post</b>.  <b>Trace</b> echoes the request, to provide more header information.  Normally you'd only use <b>Get</b> or <b>Post</b>.</p>
+
+<p><b>Parameters</b>: This table can include parameters to pass with the request.  For a <b>Get</b> request, parameters are passed as part of the URL, while a <b>Post</b> operation submits the form data via parameters.  Click the <img src="../../../shared/button-square-plus.png" alt="+" valign="top"> button to add a line to the table, or the <img src="../../../shared/button-square-minus.png" alt="-" valign="top"> button to remove the selected line.</p>
+
+<p><b>Cookies</b>: This table contains cookies to include in the request.  The easiest way to add them is to enter the <b>URL</b> then click the <b>Preview</b> button at the bottom of the window to view the page, and fill in the form on the page.  But you can also add or edit the cookies here.  Click the <img src="../../../shared/button-square-plus.png" alt="+" valign="top"> button to add a line to the table, or the <img src="../../../shared/button-square-minus.png" alt="-" valign="top"> button to remove the selected line.</p>
+
+<p>The checkbox column in the Cookies table enables you to control how cookies are used:</p>
+
+<ul>
+<li>Unchecked cookies do not update their values.</li>
+<li>Checked cookies automatically update their values.</li>
+<li>Cookies with blank values are not sent.</li>
+<li>New cookies are recorded automatically.</li>
+</ul>
+
+<p>You can prevent a cookie from being recorded by listing it with an unchecked box, e.g. to send the same value every time.  Session cookies are recorded as unchecked with blank values (so are not sent or updated).</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../../service/plugin/web.html">Service Info pane for Web service</a></li>
+<li><a href="./index.html">Service page</a></li>
+<li><a href="../index.html">Test Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

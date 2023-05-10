@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Filter - Art - Skript</title>
+<meta name="description" content="Das Skript-Dienst-Modul macht es möglich, eigene Filter via AppleScript oder andere Shell-Skriptsprachen zu nutzen.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Filter-Infobereich<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Filter-Art<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Skript-Filtermodul</h1>
+
+<p>Das Skript-Filtermodul wird gezeigt, wenn Sie im Filter-Art-Pop-up-Menü im <a href="../index.html"><b>Filter-Infobereich</b><a> "Skript" wählen.</p>
+
+<p>Nutzen Sie dieses Modul, um eigene Filter zu erzeugen, die AppleScript oder andere Skriptsprachen (shell, Perl, PHP, Python usw.) verwenden.</p>
+
+<dl>
+<dd>Beschreibung:</dd>
+<dt>In diesem Textfeld unter dem Filter-Art-Popup-Menü können Sie eine kurze Beschreibung des Filters eingeben. Der Text wird im <a href="../../test/filters/index.html"><b>Test-Infobereich</b></a> angezeigt.</dt>
+
+<dd>Eigene Variablen:</dd>
+<dt>In dieser Tabelle können Sie neue eigene Variablen für das Menü "Variable einsetzen" hinzufügen. Diese Variablen erscheinen ebenfalls als Felder im <a href="../../test/filters/index.html"><b>Test-Infobereich</b></a>. Klicken Sie den <img src="../../../shared/button-square-plus.png" alt="+" valign="top">-Button an, um der Tabelle eine neue Zeile hinzuzufügen, oder den <img src="../../../shared/button-square-minus.png" alt="-" valign="top">-Button, um die selektierte Zeile zu entfernen. Sie werden diese Variablen typischerweise benutzen, um nach bestimmten Servern zu fragen oder um andere Benutzer-Informationen hinzuzufügen, die ein Skript benötigt.</dt>
+
+<dd>Eigene Fehlerbeschreibung:</dd>
+<dt>Diese Tabelle dient zwei Aufgaben. Zunächst können Sie hier den Wert der Ergebnis-Spalte für die Erfolg-Zeile ändern, um festzulegen, welchen Wert das Skript als Erfolg ansehen soll – normalerweise ist das die Null, aber falls nötig, können Sie es hier ändern. Außerdem können Sie den Rückgabewerten bedeutungsvollere Fehler-Beschreibungen geben; diese erscheinen in der <a href="../../monitor/failures.html"><b>Fehlschläge</b></a>-Tabelle. Klicken Sie den <img src="../../../shared/button-square-plus.png" alt="+" valign="top">-Button an, um der Tabelle eine neue Zeile hinzuzufügen, oder den <img src="../../../shared/button-square-minus.png" alt="-" valign="top">-Button, um die selektierte Zeile zu entfernen.</dt>
+
+<dd>Immer dieses Ergebnis für Status nehmen:</dd>
+<dt>Wenn diese Option eingeschaltet ist, wird das Ergebnis des Skripts für den Filter-Status verwendet, egal, wie der Status des Dienstes und aller vorigen Filter ist. Wenn die Option aus ist, wird das Ergebnis genutzt, wenn es "interessanter" als der alte Status ist – d.h., Fehlschlag wird genommen, wenn der vorige Status ein Erfolg war, Änderung wird genommen, wenn noch kein Fehlschlag vorliegt und vorher keine Änderung da war. Unverändert wird nur genutzt, wenn der Status zu vorher unverändert ist. Das ist das normale Verhalten aller Filter, aber es kann eben nützlich sein, vorige Filter-Ergebnisse zu überschreiben.</dt>
+
+<dd>Variable einsetzen:</dd>
+<dt>Variablen sind Marker im Text, die durch andere Werte ersetzt werden, wenn der Filter benutzt wird. Wählen Sie ein Eingabefeld oder platzieren Sie den Eingabecursor in einem Feld. Anschließend wählen Sie in diesem Menü eine Variable, um sie in dem Feld einzufügen. Um zu erfahren, welche verschiedenen Variablen hier verfügbar sind, sehen Sie bitte im Kapitel <a href="../variables.html">Filter-Variablen</a> nach.</dt>
+
+<dd>Skripttyp:</dd>
+<dt>Wählen Sie aus dieser Box den Skripttyp. Sie können den Namen eingeben oder das Menü durch einen Klick auf das Symbol rechts öffnen, um die verfügbaren Optionen zu sehen. Das Menü zeigt den Namen des Werkzeugs und seinen Pfad. Sie können hier auch ein Werkzeug festlegen, das nicht aufgelistet ist, indem Sie seinen Pfad eingeben, aber wenn Sie dieses Werkzeug öfter benutzen wollen, sollten Sie es vielleicht erstmal (in den <a href="../../prefs/script.html"><b>Skript-Einstellungen</b></a>) in die Standardliste eintragen.</dt>
+
+<dd>Skript-Editor:</dd>
+<dt>Schreiben Sie hier Ihr Skript. Sie können <a href="../variables.html">Variablen</a> einfügen, die zwischen geschweiften Klammern stehen müssen. Nutzen Sie das oben beschriebene Menü "Variable einsetzen"; Profis können die Variablen direkt eingeben. Sie können die Schriftart, Schriftgröße und Farben dieses Textbereichs in den <a href="../../prefs/script.html"><b>Skript-Einstellungen</b></a> ändern.</dt>
+
+<dd><img src="../../../shared/script-run.png" alt="Run" valign="top">:</dd>
+<dt>Klicken Sie diesen Button, um Ihr Skript zu testen. Simon zeigt dann ein <a href="../../preview/other.html"><b>Vorschau-Fenster</b></a>, das den Quelltext oben und die Ausgabe unten zeigt, zusammen mit dem Ergebnis. Beachten Sie, dass für die Variablen Standardwerte genutzt werden; fügen Sie einen Text für diesen Dienst hinzu, um reale Variablen-Werte zu benutzen.</dt>
+
+<dd><img src="../../../shared/script-build.png" alt="Build" valign="top">:</dd>
+<dt>Dieser Button ist nur verfügbar, wenn der gewählte Skripttyp AppleScript ist. Dieser Button erzeugt das Skript und zeigt alle AppleScript-Fehler. Falls das Skript fehlerfrei ist, wird es automatisch in den für AppleScripts üblichen Farben eingefärbt.</dt>
+
+<dd>Zum Skript-Archiv:</dd>
+<dt>Klicken Sie diesen Button an, um die <a href="http://www.dejal.com/goto/?prod=simon&amp;page=extras"><b>Simon-Extras-Seite</b> <img src="../../../shared/ext-link.png" alt="[Weblink]" /></a> in Ihrem Browser zu öffnen. Dort sehen Sie ein Archiv neuer und von Benutzern bereitgestellter Skripte und noch vieles mehr.</dt>
+
+<dd>Skript öffnen:</dd>
+<dt>Klicken Sie diesen Buton an, um ein neues Skript von der Festplatte zu laden, wodurch das aktuelle Skript im Skript-Editor ersetzt wird. Geladen werden können normale .scpt-, .sh-Dateien usw., oder Skript-Dateien, die von Simon gesichert wurden.</dt>
+
+<dd>Skript sichern unter:</dd>
+<dt>Klicken Sie hier, um das aktuelle Skript mit allen Anweisungen, eigenen Variablen usw. in eine normale Skript-Datei zu sichern. Machen Sie dies auch, wenn Sie Ihre <a href="http://www.dejal.com/goto/?prod=simon&amp;page=extras">Skripte mit anderen Simon-Benutzern teilen <img src="../../../shared/ext-link.png" alt="[Weblink]" /></a> wollen!</dt>
+</dl>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="../variables.html">Filter-Variablen</a></li>
+<li><a href="../../test/filters/script.html">Skript-basierte Filter</a></li>
+<li><a href="../../monitor/failures.html">Monitor Fehlschläge-Protokoll</a></li>
+<li><a href="./index.html">Filter-Art</a></li>
+<li><a href="../index.html">Filter-Infobereich</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

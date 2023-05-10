@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Notifier Info - Options</title>
+<meta name="description" content="Configure additional attributes of the notifier.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Notifier Info<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Options</h1>
+
+<p>The <b>Options</b> page of the <a href="./index.html"><b>Notifier Info</b></a> pane lets you specify how this notifier should be categorized: for changes, for failures, for recoveries, or some combination, as described below:</p>
+
+<p><b><img src="../../shared/status-changed-now.jpg" valign="top"> Change</b>: Check this box if this notifier is appropriate for changes.  This will simply make it appear in the <b>Change</b> pop-up menu in the <a href="../test/notifiers.html"><b>Notifiers</b></a> page of the <b>Test Info</b> pane, so it can be chosen as a change notifier for any tests.  </p>
+
+<p><b>- after [] consecutive changes</b>: Enter how often to report changes.  If the entered value is 1, this notifier will be use every time tests that use it notice a change.  If 2 is entered, the notifier will be used every second time.  And so on.  If you have a test checking frequently, and the site tends to change often, you may only want to hear about it occasionally.</p>
+
+<p><b><img src="../../shared/status-bad-now.jpg" valign="top"> Failure</b>: Similar to the <b>Change</b> checkbox above, this indicates that this notifier can be used for failures, e.g. when a site goes down.</p>
+
+<p><b>- after [] consecutive errors</b>: Enter how often to report errors.  Similar to the field for changes, this field controls how often to report a failure.  Using a larger number will give the site a chance to recover before reporting the error -- useful for an email notifier.</p>
+
+<p><b>Only notify once for each failure</b>: If this box is checked, the failure is only reported once.  It won't notify again until the site is back up.</p>
+
+<p><b><img src="../../shared/status-bad-hour.jpg" valign="top"> Recovery</b>: Similar to the <b>Change</b> checkbox above, this indicates that this notifier can be used for recoveries, e.g. when a site comes back up after a failure.</p>
+
+<p><b>- after [] recoveries</b>: Enter how often to report recoveries.  Normally you'd probably want to leave this at 1, so every recovery is reported, but you can set it to a higher value if you only occasionally want to know when a site comes back up.</p>
+
+<p><b>Only notify if failure notified</b>: If this box is checked, the recovery is not reported if there hasn't been a failure notification of the same kind.  This allows a brief outage to be ignored by the failure and recovery notifiers, if desired.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./index.html">Notifier Info pane</a></li>
+<li><a href="../test/notifiers.html">Test Info Notifiers page</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

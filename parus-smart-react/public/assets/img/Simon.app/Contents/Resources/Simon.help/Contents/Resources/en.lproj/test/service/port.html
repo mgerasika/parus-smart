@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Test Info - Service - Port</title>
+<meta name="description" content="The Port-based services communicate with a server on a specific port.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Test Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Service<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Port-based services: IMAP, POP, SMTP, SSH, etc.</h1>
+
+<p>A section similar to this is used for the <b>Incoming Mail (IMAP)</b>, <b>Incoming Mail (POP)</b>, <b>Outgoing Mail (SMTP)</b>, and <b>SSH</b> services.  They are all based on the <a href="../../service/plugin/port/index.html"><b>Port service plug-in</b></a>.  This is displayed when you choose one of those services in the <b>Service</b> pop-up menu in the <a href="../index.html"><b>Test Info</b></a> pane.</p>
+
+<p>These services all establish a connection to the requested server, then attempt to have a conversation with it, based on an established script of text to expect and appropriate responses.  If Simon successfully makes it through the script, the check is considered a success.  If, however, Simon can't connect, it doesn't receive anything, it doesn't receive the correct text, or it receives a recognized error situation, the check is deemed a failure (with the reason outlined in the <a href="../../monitor/failures.html">logged error message</a>).</p>
+
+<p><b>Domain or IP Address</b>: Enter the domain name or IP address of the server to connect to.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../../service/plugin/port/index.html">Service Info pane for Port service</a></li>
+<li><a href="./index.html">Service page</a></li>
+<li><a href="../index.html">Test Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

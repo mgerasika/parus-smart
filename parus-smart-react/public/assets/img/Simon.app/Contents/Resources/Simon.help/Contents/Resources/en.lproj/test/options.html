@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Test Info - Options</title>
+<meta name="description" content="Configure additional attributes of the test.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Test Info<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Options</h1>
+
+<p>The <b>Options</b> page of the <a href="./index.html"><b>Test Info</b></a> pane contains the frequencies of checking this test, and other options, as described below:</p>
+
+<p><b>After success, check again in</b>: Choose the appropriate units from the pop-up menu (from <b>Seconds</b>, <b>Minutes</b>, <b>Hours</b>, <b>Days</b>, <b>Weeks</b>, or <b>Months</b>), and type the corresponding value in the field.  Simon will automatically check the test again after this interval, if the previous check was successful.  Due to overlap prevention, the minimum effective interval is about 20 seconds.  The default is 15 minutes.</p>
+
+<p><b>After failure, check again in</b>: This works the same as the above setting, but specifies how often to check after an error occurs.  You may wish to check more often after an error, so you know how soon it recovers.  The default is 5 minutes.</p>
+
+<p><b>Timeout if not finished within</b>: Here you can change the maximum interval that a check is allowed to run.  If it doesn't complete within this time, it will be considered a failure.  The default is 3 minutes.</p>
+
+<p><b>Skip this test when checking all</b>: If you choose the <b>File<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Check Now</b> menu command or the corresponding toolbar button with no tests selected, all tests are checked at once.  If this checkbox is selected, this specific test is excluded from being checked when this occurs.  This is useful if you have a slow connection and many tests, and this site is slow to respond.</p>
+
+<p><b>Can check when offline</b>: When this is unchecked, Simon determines whether you have an internet connection before starting each check, and places the test in an "offline" state (with a lightning bolt status icon) if not.  Select this box to bypass this, if you want a local internet connection outage to be treated as a failure, or this test doesn't need a net connection.</p>
+
+
+<div class="related">
+<h2>Related Topic</h2>
+<ul>
+<li><a href="./index.html">Test Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

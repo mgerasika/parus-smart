@@ -1,0 +1,8 @@
+/* Assistant Cancel button title */
+"Cancel" = "取消";
+
+/* Assistant button title when there are more interns */
+"Continue" = "继续";
+
+/* Assistant button title when this is the last intern */
+"Finish" = "完成";

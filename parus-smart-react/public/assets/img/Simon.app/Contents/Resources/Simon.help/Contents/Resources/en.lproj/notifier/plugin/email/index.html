@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Notifier - Kind - Email</title>
+<meta name="description" content="The Email plug-in sends an email message.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Notifier Info<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Notifier Kind<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Email plug-in</h1>
+
+<p>The <b>Email</b> plug-in is displayed when you choose <b>Email</b> in the <b>Notifier Kind</b> pop-up menu in the <a href="../../index.html">Notifier Info</a> pane.</p>
+
+<p><b>Insert variable</b>: Variables are markers in the text that are replaced by another value when the notifier is used.  Use this menu to choose from the available variables.  When one is chosen, it is inserted at the insertion point, or replaces the selected text.  Refer to the <a href="../../variables.html">Variables</a> page for descriptions of the available variables.</p>
+
+<p><b>Text field</b>: Enter the text for the body of the email when this notifier is used.  You can insert <a href="../../variables.html">variables</a> like those shown between braces.  See the <b>Insert variable</b> item above, or expert users can type them directly.</p>
+
+<p><b>To</b>: Enter the recipient of the email here.  You must provide at least one recipient in either the <b>To</b> or <b>Cc</b> fields, or no message will be sent.  You can just use an email address, e.g. "info@dejal.com" (without the quotes), or a name and address in the standard format, e.g. "Dejal &lt;info@dejal.com&gt;" (without the quotes).  This field supports auto-completion and has a drop-down menu that lists matching entries from your Address Book.</p>
+
+<p><b>Cc</b>: This field is the same as the <b>To</b> field, but for the "carbon-copy" header.</p>
+
+<p><b>From</b>: For the <b>Apple Mail</b> transport, this is a pop-up menu, which lists the mail accounts from Apple's Mail app.  For other transports, it is a field; enter your email address.  This value is required.</p>
+
+<p><b>Reply-To</b>: Use this field if you want to have any replies go to a different address than your <b>From</b> one.  This field is not available for the <b>Apple Mail</b> transport.</p>
+
+<p><b>Subject</b>: Enter a subject for the email message.  You can include <a href="../../variables.html">variables</a> in this field: if this field is the active field (i.e. it has a selection or insertion point), a variable chosen in the <b>Insert variable</b> pop-up menu will be inserted or replaced in this field.</p>
+
+<p><b>X-Header</b>: You can optionally add an extra header to the email message.  Type the header name in the left field; do not use any spaces.  Enter the associated value in the right field; this field also supports inserting <a href="../../variables.html">variables</a>.  These fields are not available for the <b>Apple Mail</b> transport.</p>
+
+<p><b>Transport</b>: Leave this at <b>Apple Mail</b> to use Apple's Mail app to send the email.  It will be launched in the background if not already running, and the sent emails will be in your <b>Sent</b> mailbox.  Or choose a SMTP server or Sendmail tool to use to send messages with this notifier.  If you haven't created any yet, choose <b>Add Server...</b> to add one via the <a href="./trans.html"><b>Email Transport Options</b></a> panel.  The <b>Apple Mail</b> transport is recommended, unless you need more control.</p>
+
+<p><b>Options</b>: This button will display the <a href="./trans.html"><b>Email Transport Options</b></a> panel to allow editing the chosen transport method.</p>
+
+
+<div class="topics">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./trans.html">Email Transport Options</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../../variables.html">Notifier Variables</a></li>
+<li><a href="../index.html">Notifier Kind</a></li>
+<li><a href="../../index.html">Notifier Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

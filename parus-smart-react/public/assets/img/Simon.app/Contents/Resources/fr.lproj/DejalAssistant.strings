@@ -1,0 +1,8 @@
+/* Assistant Cancel button title */
+"Cancel" = "Annuler";
+
+/* Assistant button title when there are more interns */
+"Continue" = "Continuer";
+
+/* Assistant button title when this is the last intern */
+"Finish" = "Terminé";

@@ -1,0 +1,9 @@
+/* Localized versions of Info.plist keys */
+
+{
+    CFBundleName = "Save Locally"; 
+    LocalWebButtonName = "Choose"; 
+    LocalWebMessage = "Choose where to save the report folder:"; 
+    LocalWebNameFieldLabel = "Save To:"; 
+    LocalWebUntitled = "untitled";
+}

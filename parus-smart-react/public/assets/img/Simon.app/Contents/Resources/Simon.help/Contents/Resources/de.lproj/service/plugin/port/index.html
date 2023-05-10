@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Dienst - Art - Port</title>
+<meta name="description" content="Das Port-Modul kommuniziert mit einem Server über einen festgelegten Port.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Dienst (Neu/Bearbeiten)<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Dienst-Art<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Port-Dienst-Modul</h1>
+
+<p>Das Port-Dienst-Modul wird gezeigt, wenn Sie im Dienst-Art-Pop-up-Menü im <a href="../../index.html"><b>Dienst-Infobereich</b></a> den Menüpunkt "Port" wählen.</p>
+
+<p>Dieses Modul wird von den Standard-Diensten <a href="../../../test/service/port.html"><b>E-Mail-Eingang</b>, <b>E-Mail-Ausgang</b> &amp; <b>SSH</b></a> benutzt. Es stellt eine Verbindung zu einem Server her und führt eine kurze, skriptgesteuerte Unterhaltung durch, um zu sehen, ob alles normal funktioniert.</p>
+
+<dl>
+<dd>Port:</dd>
+<dt>Geben Sie die zu prüfende Port-Nummer ein. Wenn Sie die Port-Nummer nicht wissen, können Sie sie online finden; schauen Sie z.B. in <a href="http://www.iana.org/assignments/port-numbers">IANAs offizielle Liste <img src="../../../../shared/ext-link.png" alt="[Weblink]" /></a>. Einige bekannte Ports sind 22 für SSH, 25 für SMTP, 110 für POP, 143 für IMAP, 194 für IRC usw.</dt>
+
+<dd><a href="./capture.html">Sitzung erfassen</a>:</dd>
+<dt>Klicken Sie diesen Button, nachdem Sie die Port-Nummer eingegeben haben, um ein Fenster zu öffnen, in dem Sie auf diesem Port eine Verbindung zu einem Server herstellen können. Das Fenster hilft Ihnen, das Sitzung-Skript zu erstellen.</dt>
+
+<dd>Variable einsetzen:</dd>
+<dt>Variablen sind Marker im Text, die durch andere Werte ersetzt werden, wenn der Dienst benutzt wird. Wählen Sie ein Eingabefeld oder platzieren Sie den Eingabecursor in einem Feld. Anschließend wählen Sie in diesem Menü eine Variable, um sie in dem Feld einzufügen. Um zu erfahren, welche verschiedenen Variablen hier verfügbar sind, sehen Sie bitte im Kapitel <a href="../../variables.html">Dienst-Variablen</a> nach. Zusätzlich können Sie (aus historischen Gründen) die Variablen Username und Passwort noch benutzen, sollten stattdessen aber lieber TestUsername und TestPasswort verwenden.</dt>
+
+<dd>Wenn empfangen:</dd>
+<dt>Geben Sie hier Text ein, nach dem nach dem Verbinden gesucht werden soll. Dieser Text muss nach dem Zustandekommen der Verbindung vom Server gesendet werden; wenn nicht, wird die Prüfung als Fehlschlag gewertet. Wenn der Text empfangen wurde, sendet Simon anschließend den Text aus dem nachfolgenden Feld "dann senden". Dieses Feld sollte einen Befehl für den Server enthalten, der gesendet werden soll, wenn das Skript erfolgreich bis hier durchgelaufen ist. Nach dem Senden fährt Simon mit dem nächsten Schritt im Skript (also der nächsten Zeile) fort.</dt>
+
+<dd>oder empfangen:</dd>
+<dt>Geben Sie hier Text ein, der anzeigt, dass ein Fehler aufgetreten ist. Das Feld kann auch leer bleiben. Wenn der Fehlertext empfangen wurde, sendet Simon anschließend den Text aus dem nachfolgenden Feld "dann senden". Dies sollte ebenfalls ein Befehl für den Server sein und sollte typischerweise ein Befehl sein, der die Sitzung beendet. Nach dem Senden meldet Simon einen Fehlschlag und hält das Skript an.</dt>
+</dl>
+
+<p><img src="../../../../shared/button-round-minus.png" alt="-" valign="top"> Klicken Sie diesen Button an, um die entsprechende Zeile zu entfernen.</p>
+
+<p><img src="../../../../shared/button-round-plus.png" alt="+" valign="top"> Klicken Sie diesen Button an, um eine neue Zeile hinzuzufügen, so dass Sie mehrere Schritte im Sitzung-Skript benutzen können.</p>
+
+
+
+<div class="topics">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="./capture.html">Sitzung erfassen</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="../../variables.html">Dienst-Variablen</a></li>
+<li><a href="../../../test/service/port.html">Port-basierte Dienste</a></li>
+<li><a href="../index.html">Dienst-Art</a></li>
+<li><a href="../../index.html">Dienst-Infobereich</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

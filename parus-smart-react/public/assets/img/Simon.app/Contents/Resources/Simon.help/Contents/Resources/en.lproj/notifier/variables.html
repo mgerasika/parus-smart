@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Notifier - Variables</title>
+<meta name="description" content="Variables for use with notifiers.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Notifier Info<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Notifier Kind<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Variables</h1>
+
+<p>This is the list of variables added for notifiers.  Variables are markers in the text that are replaced by another value when the notifier is used.  The variable name should not contain any spaces, and should be enclosed by braces, e.g. <b>{TestChangeText}</b>.  They are used by the <a href="./plugin/script.html">Script</a>, <a href="./plugin/email/index.html">Email</a> and <a href="./plugin/speech.html">Speech</a> notifier plug-ins, and will be available for relevant future plug-ins too.</p>
+
+<p>Notifiers inherit the variables from the <a href="../service/variables.html">service</a> and any <a href="../filter/variables.html">filters</a>, and add some extra specific to the current notifier.  Unlike filters, which accumulate variables in sequential order, notifiers don't know about each other.</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Outputs:</b></td></tr>
+<tr><td valign="top">NotificationDate</td><td valign="top">Date that the notification is issued.</td></tr>
+<tr><td valign="top">NotificationTime</td><td valign="top">Time of day that the notification is issued.</td></tr>
+<tr><td valign="top">NotifierAfterThisManyChanges</td><td valign="top">The number from the <b>after [] consecutive changes</b> field.</td></tr>
+<tr><td valign="top">NotifierAfterThisManyErrors</td><td valign="top">The number from the <b>after [] consecutive errors</b> field.</td></tr>
+<tr><td valign="top">NotifierAfterThisManyRecoveries</td><td valign="top">The number from the <b>after [] recoveries</b> field.</td></tr>
+<tr><td valign="top">NotifierForChange</td><td valign="top">Whether or not the notifier is used for changes.</td></tr>
+<tr><td valign="top">NotifierForFailure</td><td valign="top">Whether or not the notifier is used for failures.</td></tr>
+<tr><td valign="top">NotifierForRecovery</td><td valign="top">Whether or not the notifier is used for recoveries.</td></tr>
+<tr><td valign="top">NotifierKind</td><td valign="top">The kind of the notifier (e.g. <b>Email</b> or <b>Speech</b>).</td></tr>
+<tr><td valign="top">NotifierName</td><td valign="top">The name you gave this notifier.</td></tr>
+<tr><td valign="top">NotifierOnlyOncePerFailure</td><td valign="top">Whether or not this notifier will only be used once per failure.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../service/variables.html">Service Variables</a></li>
+<li><a href="../filter/variables.html">Filter Variables</a></li>
+<li><a href="./plugin/script.html">Script notifier plug-in</a></li>
+<li><a href="./plugin/email/index.html">Email notifier plug-in</a></li>
+<li><a href="./plugin/speech.html">Speech notifier plug-in</a></li>
+<li><a href="./plugin/index.html">Notifier Kind</a></li>
+<li><a href="./index.html">Notifier Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

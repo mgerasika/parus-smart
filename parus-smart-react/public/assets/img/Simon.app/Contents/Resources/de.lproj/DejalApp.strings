@@ -1,0 +1,108 @@
+/* Email param */
+"?subject=%@...." = "?subject=%@…";
+
+/* Check for Updates... */
+"Check for Updates..." = "Updates suchen …";
+
+/* Custom product edition */
+"Custom" = "Benutzerdefiniert";
+
+/* Brief name of company
+   Normal name of company */
+
+"Dejal" = "Dejal";
+
+/* Short code for the language (localization) */
+"en" = "de";
+
+/* English name for the language
+   Localized name for the language */
+
+"English" = "Englisch";
+
+/* Express product edition; make sure this matches the suffix in the app filename */
+"Express" = "Express";
+
+/* Forums */
+"Forums" = "Dejal-Foren";
+
+/* Free product edition; make sure this matches the suffix in the app filename */
+"Free" = "Frei";
+
+/* Help */
+"Help" = "Hilfe";
+
+/* Hide Toolbar */
+"Hide Toolbar" = "Symbolleiste ausblenden";
+
+/* Update status title for error */
+"Last Attempt:" = "Letzter Versuch:";
+
+/* Update status title for success */
+"Last Check:" = "Letzte Prüfung:";
+
+/* Lite product edition */
+"Lite" = "Lite";
+
+/* Email address for the company */
+"mailto:info@dejal.com" = "mailto:blogassist@dsd.net";
+
+/* Update next scheduled */
+"Next scheduled: %@" = "Nächster Termin: %@";
+
+/* Preferences... */
+"Preferences..." = "Einstellungen …";
+
+/* Help book */
+"prefs/advanced.html" = "prefs/advanced.html";
+
+/* Help book */
+"prefs/general.html" = "prefs/general.html";
+
+/* Help book */
+"prefs/updates.html" = "prefs/updates.html";
+
+/* Pro product edition; make sure this matches the suffix in the app filename */
+"Pro" = "PRO";
+
+/* Quit button title */
+"Quit" = "Beenden";
+
+/* Help book */
+"setup/assistant/index.html" = "setup/assistant/index.html";
+
+/* Help book */
+"setup/crash.html" = "setup/crash.html";
+
+/* Help book */
+"setup/license/agree.html" = "setup/license/agree.html";
+
+/* Help book */
+"setup/license/editor.html" = "setup/license/editor.html";
+
+/* Help book */
+"setup/license/options.html" = "setup/license/options.html";
+
+/* Help book */
+"setup/license/thanks.html" = "setup/license/thanks.html";
+
+/* Show Toolbar */
+"Show Toolbar" = "Symbolleiste einblenden";
+
+/* Standard product edition */
+"Standard" = "Standard";
+
+/* Update status title for checking */
+"Status:" = "Status:";
+
+/* Explanation of corrupt app */
+"The integrity of this application appears to be damaged.  %@\n\nPlease quit and try again, and replace the application with a fresh copy if necessary." = "Die Programm-Daten scheinen beschädigt zu sein.  %@\n\nBitte beenden Sie das Programm und starten es neu. Falls nötig, ersetzen Sie das Programm gegebenenfalls durch eine neue Kopie.";
+
+/* Corrupt app heading */
+"This application is damaged." = "Dieses Programm ist beschädigt.";
+
+/* Website button title */
+"Website" = "Website";
+
+/* Update never run status */
+"Welcome!  Please check for an update." = "Willkommen! Bitte suchen Sie nach einem Update.";

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>AppleScript: /usr/bin/osascript</string>
+	<string>Bash: /bin/bash</string>
+	<string>Csh: /bin/csh</string>
+	<string>Ksh: /bin/ksh</string>
+	<string>Sh: /bin/sh</string>
+	<string>Tcsh: /bin/tcsh</string>
+	<string>Zsh: /bin/zsh</string>
+	<string>Perl: /usr/bin/perl</string>
+	<string>Python: /usr/bin/python</string>
+	<string>Python GUI: /usr/bin/pythonw</string>
+</array>
+</plist>

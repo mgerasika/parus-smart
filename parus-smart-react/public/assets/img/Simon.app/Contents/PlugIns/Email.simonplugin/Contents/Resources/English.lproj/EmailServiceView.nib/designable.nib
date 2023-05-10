@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1060" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="EmailPlugin">
+            <connections>
+                <outlet property="serviceModeRadios" destination="n0W-eq-AKH" id="9wm-Ey-0yz"/>
+                <outlet property="serviceView" destination="5" id="Caj-0J-90E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="5" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="653" height="101"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" id="n0W-eq-AKH">
+                    <rect key="frame" x="20" y="19" width="613" height="62"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    <size key="cellSize" width="613" height="18"/>
+                    <size key="intercellSpacing" width="4" height="4"/>
+                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" controlSize="small" inset="2" id="Efy-2b-97o">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <cells>
+                        <column>
+                            <buttonCell type="radio" title="      Email Send: send email via SMTP" imagePosition="left" alignment="left" controlSize="small" state="on" toolTip="Choose this to simply output the found text or above not-found text, and optionally detect when it changes." inset="2" id="UMJ-nb-L1b">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                            <buttonCell type="radio" title="      Email Receive: fetch messages in an email mailbox via IMAP" imagePosition="left" alignment="left" controlSize="small" toolTip="Choose this to look for text that must not occur in the input text.  If found, it's a failure, otherwise a success." tag="1" inset="2" id="mt7-la-Fxg">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                            <buttonCell type="radio" title="      Email Cycle: send a special message and confirm that it is received" imagePosition="left" alignment="left" controlSize="small" toolTip="Choose this to look for text that must occur in the input text.  If not found, it's a failure, otherwise a success." tag="2" inset="2" id="5ds-ke-CFD">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                        </column>
+                    </cells>
+                    <connections>
+                        <action selector="serviceMode:" target="-2" id="o2C-aS-Ww5"/>
+                    </connections>
+                </matrix>
+                <imageView id="3qp-FC-iXD">
+                    <rect key="frame" x="41" y="42" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="EmailReceiveTemplate" id="4zv-A1-YoU"/>
+                </imageView>
+                <imageView id="76t-PM-6ew">
+                    <rect key="frame" x="41" y="65" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="EmailSendTemplate" id="a1w-pu-ssY"/>
+                </imageView>
+                <imageView id="HDm-oM-gFE">
+                    <rect key="frame" x="41" y="20" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="EmailCycleTemplate" id="gK9-Iz-4w3"/>
+                </imageView>
+            </subviews>
+        </customView>
+    </objects>
+    <resources>
+        <image name="EmailCycleTemplate" width="56" height="44"/>
+        <image name="EmailReceiveTemplate" width="56" height="38"/>
+        <image name="EmailSendTemplate" width="56" height="56"/>
+    </resources>
+</document>

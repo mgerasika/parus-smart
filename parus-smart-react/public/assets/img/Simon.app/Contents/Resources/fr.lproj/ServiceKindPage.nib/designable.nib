@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ServiceKindPageController">
+            <connections>
+                <outlet property="kindPopup" destination="35" id="62"/>
+                <outlet property="pluginBox" destination="101" id="103"/>
+                <outlet property="view" destination="210" id="213"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="210" userLabel="Service Editor View">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="185">
+                    <rect key="frame" x="18" y="107" width="109" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Type de service :" id="186">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box title="Module externe" boxType="oldStyle" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="101">
+                    <rect key="frame" x="0.0" y="0.0" width="566" height="90"/>
+                    <view key="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="566" height="90"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <popUpButton toolTip="Sélectionnez le type de module externe de service à utiliser" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="131" y="101" width="334" height="26"/>
+                    <popUpButtonCell key="cell" type="push" title="Aucun module externe de service n'a été trouvé" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="34" id="180">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="36">
+                            <items>
+                                <menuItem title="Aucun module externe de service n'a été trouvé" state="on" id="34"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="kindPopupHit:" target="-2" id="72"/>
+                    </connections>
+                </popUpButton>
+            </subviews>
+            <constraints>
+                <constraint firstItem="101" firstAttribute="top" secondItem="210" secondAttribute="top" constant="55" id="3r3-PA-mTs"/>
+                <constraint firstItem="185" firstAttribute="baseline" secondItem="35" secondAttribute="baseline" id="KhN-r5-FLe"/>
+                <constraint firstItem="185" firstAttribute="leading" secondItem="210" secondAttribute="leading" constant="20" id="NRg-5W-eqr"/>
+                <constraint firstAttribute="bottom" secondItem="101" secondAttribute="bottom" id="deA-3d-u1b"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="185" secondAttribute="trailing" constant="8" id="ncB-MG-WWq"/>
+                <constraint firstItem="185" firstAttribute="top" secondItem="210" secondAttribute="top" constant="21" id="oYf-zE-FEv"/>
+                <constraint firstAttribute="trailing" secondItem="101" secondAttribute="trailing" id="vmV-to-eBf"/>
+                <constraint firstItem="101" firstAttribute="leading" secondItem="210" secondAttribute="leading" id="xqK-Zc-l2b"/>
+            </constraints>
+            <point key="canvasLocation" x="328" y="588.5"/>
+        </customView>
+    </objects>
+</document>

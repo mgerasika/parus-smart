@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ContextPlugin">
+            <connections>
+                <outlet property="afterCharactersCheck" destination="Ufp-6y-ojl" id="zZF-MG-18p"/>
+                <outlet property="afterCharactersField" destination="GGJ-Zp-z8u" id="DFk-aM-cIr"/>
+                <outlet property="afterDelimiterCheck" destination="KKP-C2-39E" id="x1n-6f-0eb"/>
+                <outlet property="afterDelimiterCombo" destination="F1H-rr-S2q" id="Zzg-qq-ZwO"/>
+                <outlet property="beforeCharactersCheck" destination="dqN-D0-O9X" id="CdL-pd-3g7"/>
+                <outlet property="beforeCharactersField" destination="Lbm-R0-4Db" id="TVQ-9I-HK5"/>
+                <outlet property="beforeDelimiterCheck" destination="oo9-Pl-LY0" id="1z4-Mp-Qet"/>
+                <outlet property="beforeDelimiterCombo" destination="dza-fm-Ya9" id="I69-uk-AFz"/>
+                <outlet property="filterView" destination="c22-O7-iKe" id="ELT-MT-8C6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="dqN-D0-O9X">
+                    <rect key="frame" x="167" y="44" width="52" height="18"/>
+                    <buttonCell key="cell" type="check" title="向上移到" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="9fE-m9-HeD">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="currentSettings.ContextBeforeUseCharacters" id="I7z-u1-fjB"/>
+                        <outlet property="nextKeyView" destination="Lbm-R0-4Db" id="q1U-Qi-buJ"/>
+                    </connections>
+                </button>
+                <comboBox toolTip="包括文本匹配范围分隔符" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dza-fm-Ya9">
+                    <rect key="frame" x="453" y="42" width="83" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="K4P-Ju-xIw"/>
+                    </constraints>
+                    <comboBoxCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="LF" drawsBackground="YES" numberOfVisibleItems="5" id="BHA-lG-G4W">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <objectValues>
+                            <string>LF</string>
+                            <string>CR</string>
+                            <string>标签</string>
+                            <string>空格键</string>
+                            <string>&lt;</string>
+                            <string>&gt;</string>
+                            <string>,</string>
+                            <string>|</string>
+                        </objectValues>
+                    </comboBoxCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="currentSettings.ContextBeforeDelimiter" id="DYi-EK-Yku"/>
+                        <binding destination="-2" name="enabled" keyPath="currentSettings.ContextBeforeUseDelimiter" id="UE8-wj-U5S"/>
+                        <outlet property="nextKeyView" destination="Ufp-6y-ojl" id="Cpt-xL-29k"/>
+                    </connections>
+                </comboBox>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zV0-yZ-b1F">
+                    <rect key="frame" x="19" y="46" width="145" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="当前匹配范围:" id="7z9-8N-lhk">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField toolTip="包括更多字符匹配范围文本" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lbm-R0-4Db">
+                    <rect key="frame" x="225" y="44" width="47" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="ghr-d0-LP4"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="50" drawsBackground="YES" id="4xa-iB-LzI">
+                        <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" id="4gG-71-OsI">
+                            <real key="minimum" value="0.0"/>
+                        </numberFormatter>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="currentSettings.ContextBeforeCharacters" id="sec-pV-AKL"/>
+                        <binding destination="-2" name="enabled" keyPath="currentSettings.ContextBeforeUseCharacters" id="RIt-7N-JHs"/>
+                        <outlet property="nextKeyView" destination="oo9-Pl-LY0" id="aUk-ll-avq"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZTX-NS-81b">
+                    <rect key="frame" x="278" y="46" width="60" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="字符" id="JcZ-2v-c4D">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="oo9-Pl-LY0">
+                    <rect key="frame" x="344" y="44" width="99" height="18"/>
+                    <buttonCell key="cell" type="check" title="直到分隔符:" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="bPA-zk-yfF">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="currentSettings.ContextBeforeUseDelimiter" id="TJW-UU-luw"/>
+                        <outlet property="nextKeyView" destination="dza-fm-Ya9" id="TbJ-jd-edF"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="Ufp-6y-ojl">
+                    <rect key="frame" x="167" y="20" width="52" height="18"/>
+                    <buttonCell key="cell" type="check" title="向上移到" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="c6k-Ol-hYq">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="currentSettings.ContextAfterUseCharacters" id="Kax-4x-ZiS"/>
+                        <outlet property="nextKeyView" destination="GGJ-Zp-z8u" id="08t-UT-SFP"/>
+                    </connections>
+                </button>
+                <comboBox toolTip="包括文本匹配范围前后分隔符" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="F1H-rr-S2q">
+                    <rect key="frame" x="453" y="18" width="83" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="poB-6u-Cal"/>
+                    </constraints>
+                    <comboBoxCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="LF" drawsBackground="YES" numberOfVisibleItems="5" id="Zkb-jI-cYH">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <objectValues>
+                            <string>LF</string>
+                            <string>CR</string>
+                            <string>标签</string>
+                            <string>空格键</string>
+                            <string>&lt;</string>
+                            <string>&gt;</string>
+                            <string>,</string>
+                            <string>|</string>
+                        </objectValues>
+                    </comboBoxCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="currentSettings.ContextAfterDelimiter" id="qVn-PA-e86"/>
+                        <binding destination="-2" name="enabled" keyPath="currentSettings.ContextAfterUseDelimiter" id="YHi-d7-c4f"/>
+                        <outlet property="nextKeyView" destination="c22-O7-iKe" id="4sP-zn-Kex"/>
+                    </connections>
+                </comboBox>
+                <textField toolTip="包括更多字符匹配范围文本" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GGJ-Zp-z8u">
+                    <rect key="frame" x="225" y="20" width="47" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="bjS-qd-Te4"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="50" drawsBackground="YES" id="a33-dK-gdx">
+                        <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" id="Oms-N6-vFI">
+                            <real key="minimum" value="0.0"/>
+                        </numberFormatter>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="currentSettings.ContextAfterCharacters" id="Dlg-bh-yt4"/>
+                        <binding destination="-2" name="enabled" keyPath="currentSettings.ContextAfterUseCharacters" id="wQb-Ha-fdp"/>
+                        <outlet property="nextKeyView" destination="KKP-C2-39E" id="G8d-OK-GVA"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ogV-rD-9Vb">
+                    <rect key="frame" x="278" y="22" width="60" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="字符" id="Etk-JH-3jj">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="KKP-C2-39E">
+                    <rect key="frame" x="344" y="20" width="99" height="18"/>
+                    <buttonCell key="cell" type="check" title="直到分隔符:" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="aNZ-zf-xsy">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="currentSettings.ContextAfterUseDelimiter" id="JSj-0K-8cJ"/>
+                        <outlet property="nextKeyView" destination="F1H-rr-S2q" id="7cK-7C-ypQ"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G8S-ps-Cai">
+                    <rect key="frame" x="28" y="22" width="136" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="向后匹配范围:" id="dB2-Kw-ODX">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oo9-Pl-LY0" firstAttribute="leading" secondItem="ZTX-NS-81b" secondAttribute="trailing" constant="11" id="2ck-vF-GD8"/>
+                <constraint firstItem="GGJ-Zp-z8u" firstAttribute="leading" secondItem="Ufp-6y-ojl" secondAttribute="trailing" constant="8" id="3L9-2J-3jz"/>
+                <constraint firstItem="dza-fm-Ya9" firstAttribute="leading" secondItem="oo9-Pl-LY0" secondAttribute="trailing" constant="12" id="3vN-Jb-eAq"/>
+                <constraint firstItem="GGJ-Zp-z8u" firstAttribute="baseline" secondItem="ogV-rD-9Vb" secondAttribute="baseline" id="59L-NX-kMB"/>
+                <constraint firstItem="ZTX-NS-81b" firstAttribute="leading" secondItem="Lbm-R0-4Db" secondAttribute="trailing" constant="8" id="9pL-8P-RE0"/>
+                <constraint firstItem="zV0-yZ-b1F" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="21" id="A4n-C3-46W"/>
+                <constraint firstItem="Ufp-6y-ojl" firstAttribute="leading" secondItem="G8S-ps-Cai" secondAttribute="trailing" constant="8" id="Age-0x-5GH"/>
+                <constraint firstItem="zV0-yZ-b1F" firstAttribute="trailing" secondItem="G8S-ps-Cai" secondAttribute="trailing" id="BXG-Uv-gP4"/>
+                <constraint firstItem="KKP-C2-39E" firstAttribute="baseline" secondItem="ogV-rD-9Vb" secondAttribute="baseline" id="Dz1-6X-UgZ"/>
+                <constraint firstItem="zV0-yZ-b1F" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="23" id="EEP-Sg-Owg"/>
+                <constraint firstItem="dqN-D0-O9X" firstAttribute="leading" secondItem="zV0-yZ-b1F" secondAttribute="trailing" constant="8" id="J0l-Ji-nrR"/>
+                <constraint firstItem="dza-fm-Ya9" firstAttribute="baseline" secondItem="oo9-Pl-LY0" secondAttribute="baseline" id="J8y-4C-xzp"/>
+                <constraint firstItem="zV0-yZ-b1F" firstAttribute="baseline" secondItem="dqN-D0-O9X" secondAttribute="baseline" id="MFA-Gv-VHN"/>
+                <constraint firstItem="ogV-rD-9Vb" firstAttribute="leading" secondItem="GGJ-Zp-z8u" secondAttribute="trailing" constant="8" id="P94-0m-Y8F"/>
+                <constraint firstAttribute="bottom" secondItem="G8S-ps-Cai" secondAttribute="bottom" constant="22" id="RSF-1B-2zy"/>
+                <constraint firstItem="Lbm-R0-4Db" firstAttribute="baseline" secondItem="dqN-D0-O9X" secondAttribute="baseline" id="RSu-Xr-bOM"/>
+                <constraint firstItem="KKP-C2-39E" firstAttribute="leading" secondItem="ogV-rD-9Vb" secondAttribute="trailing" constant="11" id="VqG-nI-9NM"/>
+                <constraint firstAttribute="trailing" secondItem="dza-fm-Ya9" secondAttribute="trailing" constant="20" id="WhT-Ed-5uZ"/>
+                <constraint firstItem="Lbm-R0-4Db" firstAttribute="leading" secondItem="dqN-D0-O9X" secondAttribute="trailing" constant="8" id="YBF-sP-zZa"/>
+                <constraint firstItem="Ufp-6y-ojl" firstAttribute="baseline" secondItem="GGJ-Zp-z8u" secondAttribute="baseline" id="ZNu-zN-mf0"/>
+                <constraint firstItem="F1H-rr-S2q" firstAttribute="leading" secondItem="KKP-C2-39E" secondAttribute="trailing" constant="12" id="dDF-Hm-GhT"/>
+                <constraint firstItem="G8S-ps-Cai" firstAttribute="baseline" secondItem="Ufp-6y-ojl" secondAttribute="baseline" id="eFV-1s-Jre"/>
+                <constraint firstItem="KKP-C2-39E" firstAttribute="baseline" secondItem="F1H-rr-S2q" secondAttribute="baseline" id="h64-VC-0xC"/>
+                <constraint firstItem="Lbm-R0-4Db" firstAttribute="baseline" secondItem="ZTX-NS-81b" secondAttribute="baseline" id="oE0-Mb-Xbd"/>
+                <constraint firstItem="ZTX-NS-81b" firstAttribute="baseline" secondItem="oo9-Pl-LY0" secondAttribute="baseline" id="zzw-ET-WzQ"/>
+            </constraints>
+            <connections>
+                <outlet property="nextKeyView" destination="dqN-D0-O9X" id="GdD-ga-BIp"/>
+            </connections>
+            <point key="canvasLocation" x="531.5" y="648.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="GOG-Lz-OQX"/>
+    </objects>
+</document>

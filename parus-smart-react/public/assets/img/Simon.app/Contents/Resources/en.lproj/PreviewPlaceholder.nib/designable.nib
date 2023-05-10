@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreviewPlaceholderController">
+            <connections>
+                <outlet property="label" destination="mzv-kH-5xp" id="lG3-JK-UDL"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="bcc-db-mcg">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mzv-kH-5xp">
+                            <rect key="frame" x="151" y="85" width="199" height="30"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="&lt;do not localize&gt;" id="fOZ-xM-UX7">
+                                <font key="font" metaFont="system" size="25"/>
+                                <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="mzv-kH-5xp" secondAttribute="centerX" id="OhK-77-17J"/>
+                        <constraint firstAttribute="centerY" secondItem="mzv-kH-5xp" secondAttribute="centerY" id="gqH-g2-i15"/>
+                    </constraints>
+                </visualEffectView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bcc-db-mcg" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ATS-XZ-frV"/>
+                <constraint firstAttribute="bottom" secondItem="bcc-db-mcg" secondAttribute="bottom" id="HHF-ng-8e1"/>
+                <constraint firstItem="bcc-db-mcg" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="RZ4-bV-blQ"/>
+                <constraint firstAttribute="trailing" secondItem="bcc-db-mcg" secondAttribute="trailing" id="qaY-qf-vRe"/>
+            </constraints>
+            <point key="canvasLocation" x="432" y="627"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1060" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="EmailPlugin">
+            <connections>
+                <outlet property="cycleSecondsField" destination="RGz-o8-bks" id="CMm-eB-VM2"/>
+                <outlet property="fromField" destination="243" id="252"/>
+                <outlet property="fromPopup" destination="286" id="295"/>
+                <outlet property="receiveAccountButton" destination="uRE-tH-vU7" id="8HJ-9u-BxW"/>
+                <outlet property="receiveAccountPopup" destination="38K-cf-0bB" id="QPp-Bc-fLN"/>
+                <outlet property="receiveMailboxPopup" destination="tof-2N-yIn" id="Fgy-sx-DZH"/>
+                <outlet property="toCombo" destination="161" id="200"/>
+                <outlet property="transportButton" destination="180" id="192"/>
+                <outlet property="transportPopup" destination="236" id="253"/>
+                <outlet property="view" destination="5" id="79"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="5" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="744" height="182"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <box autoresizesSubviews="NO" title="      Envoi" borderType="line" id="Soc-28-Buh">
+                    <rect key="frame" x="17" y="55" width="351" height="123"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView">
+                        <rect key="frame" x="1" y="1" width="349" height="107"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <comboBox toolTip="Saisissez des adresses électroniques séparées par des virgules" verticalHuggingPriority="750" id="161">
+                                <rect key="frame" x="80" y="69" width="254" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <comboBoxCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="5" id="268">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </comboBoxCell>
+                                <connections>
+                                    <action selector="toComboHit:" target="-2" id="183"/>
+                                    <outlet property="dataSource" destination="-2" id="201"/>
+                                    <outlet property="delegate" destination="-2" id="202"/>
+                                    <outlet property="nextKeyView" destination="286" id="NB5-8h-AmU"/>
+                                </connections>
+                            </comboBox>
+                            <textField verticalHuggingPriority="750" id="244">
+                                <rect key="frame" x="2" y="48" width="72" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="De :" id="283">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField toolTip="Saisissez votre adresse électronique (requis)" verticalHuggingPriority="750" id="243">
+                                <rect key="frame" x="80" y="46" width="251" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="282">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="fieldHit:" target="-2" id="251"/>
+                                    <outlet property="nextKeyView" destination="286" id="297"/>
+                                </connections>
+                            </textField>
+                            <popUpButton hidden="YES" toolTip="Sélectionnez le compte Mail Apple à partir duquel envoyer le message." verticalHuggingPriority="750" id="286">
+                                <rect key="frame" x="77" y="43" width="257" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Chargement des comptes Mail…" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="290" id="287">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <menu key="menu" title="OtherViews" id="288">
+                                        <items>
+                                            <menuItem title="Chargement des comptes Mail…" state="on" enabled="NO" id="290"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="fromPopupHit:" target="-2" id="294"/>
+                                    <outlet property="nextKeyView" destination="236" id="zqc-B8-iyI"/>
+                                </connections>
+                            </popUpButton>
+                            <textField verticalHuggingPriority="750" id="52">
+                                <rect key="frame" x="2" y="74" width="72" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="À :" id="266">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="241">
+                                <rect key="frame" x="2" y="24" width="72" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Serveur :" id="281">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton toolTip="Sélectionnez la méthode de transport du courrier électronqiue à utiliser, ou ajoutez en une" verticalHuggingPriority="750" id="236">
+                                <rect key="frame" x="77" y="19" width="178" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Mail d'Apple" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="263" id="280">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <menu key="menu" title="OtherViews" id="238">
+                                        <items>
+                                            <menuItem title="Mail d'Apple" state="on" id="263"/>
+                                            <menuItem isSeparatorItem="YES" id="264">
+                                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                            </menuItem>
+                                            <menuItem title="Ajouter un serveur..." tag="-1" id="240"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="transportPopupHit:" target="-2" id="250"/>
+                                    <outlet property="nextKeyView" destination="180" id="258"/>
+                                </connections>
+                            </popUpButton>
+                            <button toolTip="Configure le serveur SMTP, ou l’outil de courrier électronique" verticalHuggingPriority="750" id="180">
+                                <rect key="frame" x="255" y="16" width="81" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Options..." bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" inset="2" id="277">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="transportButtonHit:" target="-2" id="182"/>
+                                    <outlet property="nextKeyView" destination="38K-cf-0bB" id="R7d-PR-dyh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+                <box autoresizesSubviews="NO" title="      Réception" borderType="line" id="qOl-uN-xpm">
+                    <rect key="frame" x="382" y="55" width="345" height="123"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView">
+                        <rect key="frame" x="1" y="1" width="343" height="107"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" id="UAM-6G-gFq">
+                                <rect key="frame" x="-4" y="74" width="72" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Compte :" id="gkz-Ex-0T1">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton toolTip="Sélectionnez le compte de courriel à utiliser, ou ajoutez-en un" verticalHuggingPriority="750" id="38K-cf-0bB">
+                                <rect key="frame" x="71" y="69" width="178" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Ajouter un serveur..." bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="-1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="fdM-zL-Us7" id="U4I-Lq-RdW">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <menu key="menu" title="OtherViews" id="t6U-iI-4d3">
+                                        <items>
+                                            <menuItem title="Ajouter un serveur..." state="on" tag="-1" id="fdM-zL-Us7"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="accountPopupHit:" target="-2" id="O4Y-Id-Zrq"/>
+                                    <outlet property="nextKeyView" destination="uRE-tH-vU7" id="z7H-hY-Nri"/>
+                                </connections>
+                            </popUpButton>
+                            <button toolTip="Configure les informations du serveur IMAP" verticalHuggingPriority="750" id="uRE-tH-vU7">
+                                <rect key="frame" x="249" y="66" width="81" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Options..." bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" inset="2" id="YRZ-f8-9AT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="accountButtonHit:" target="-2" id="H4s-ma-BDh"/>
+                                    <outlet property="nextKeyView" destination="tof-2N-yIn" id="Zhm-iz-FiQ"/>
+                                </connections>
+                            </button>
+                            <popUpButton toolTip="Sélectionnez le compte sur lequel récupérer les messages" verticalHuggingPriority="750" id="tof-2N-yIn">
+                                <rect key="frame" x="71" y="43" width="257" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Chargement des boîtes aux lettres…" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="Xqn-26-FhB" id="cni-N8-Pzw">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <menu key="menu" title="OtherViews" id="G1P-QF-Qni">
+                                        <items>
+                                            <menuItem title="Chargement des boîtes aux lettres…" state="on" enabled="NO" id="Xqn-26-FhB"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="mailboxPopupHit:" target="-2" id="pKi-S3-zA7"/>
+                                    <outlet property="nextKeyView" destination="RGz-o8-bks" id="dZH-53-JqI"/>
+                                </connections>
+                            </popUpButton>
+                            <textField verticalHuggingPriority="750" id="8A3-if-GZl">
+                                <rect key="frame" x="-4" y="47" width="72" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="BAL :" id="xTs-Px-hdR">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+                <imageView id="NkB-L1-RPx">
+                    <rect key="frame" x="27" y="164" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="EmailSendTemplate" id="oqD-Kl-NS6"/>
+                </imageView>
+                <imageView id="bgC-mv-28Y">
+                    <rect key="frame" x="392" y="164" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="EmailReceiveTemplate" id="p3d-wT-M7O"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" id="RGz-o8-bks">
+                    <rect key="frame" x="98" y="20" width="29" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="10" drawsBackground="YES" id="oHF-mZ-FuS">
+                        <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="vMb-Ie-haj">
+                            <real key="minimum" value="1"/>
+                        </numberFormatter>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="fieldHit:" target="-2" id="Rd8-og-axr"/>
+                        <outlet property="nextKeyView" destination="5" id="dNI-ZT-uRu"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="lfo-ey-D76">
+                    <rect key="frame" x="8" y="22" width="84" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Attendre :" id="6DL-je-3QY">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="myi-5g-tgj">
+                    <rect key="frame" x="130" y="22" width="178" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="secondes entre deux vérification de réception" id="njw-aU-y5c">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="nextKeyView" destination="161" id="TX0-NR-wGg"/>
+            </connections>
+        </customView>
+    </objects>
+    <resources>
+        <image name="EmailReceiveTemplate" width="56" height="38"/>
+        <image name="EmailSendTemplate" width="56" height="56"/>
+    </resources>
+</document>

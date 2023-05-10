@@ -1,0 +1,105 @@
+/* Email param */
+"?subject=%@...." = "?subject=%@....";
+
+/* Check for Updates... */
+"Check for Updates..." = "检查更新…";
+
+/* Custom product edition */
+"Custom" = "自定";
+
+/* Brief name of company
+   Normal name of company */
+
+"Dejal" = "Dejal";
+
+/* Short code for the language (localization) */
+"en" = "en";
+
+/* English name for the language
+   Localized name for the language */
+
+"English" = "English";
+
+/* Express product edition; make sure this matches the suffix in the app filename */
+"Express" = "评论";
+
+/* Forums */
+"Forums" = "论坛";
+
+/* Free product edition; make sure this matches the suffix in the app filename */
+"Free" = "免费";
+
+/* Help */
+"Help" = "帮助";
+
+/* Hide Toolbar */
+"Hide Toolbar" = "隐藏工具栏";
+
+/* Update status title for error */
+"Last Attempt:" = "最后测试:";
+
+/* Update status title for success */
+"Last Check:" = "最后检查:";
+
+/* Lite product edition */
+"Lite" = "精简版";
+
+/* Email address for the company */
+"mailto:info@dejal.com" = "mailto:info@dejal.com";
+
+/* Update next scheduled */
+"Next scheduled: %@" = "下一步计划: %@";
+
+/* Preferences... */
+"Preferences..." = "偏好设置…";
+
+/* Help book */
+"prefs/advanced.html" = "prefs/advanced.html";
+
+/* Help book */
+"prefs/general.html" = "prefs/general.html";
+
+/* Help book */
+"prefs/updates.html" = "prefs/updates.html";
+
+/* Pro product edition; make sure this matches the suffix in the app filename */
+"Pro" = "Pro";
+
+/* Quit button title */
+"Quit" = "退出";
+
+/* Help book */
+"setup/assistant/index.html" = "setup/assistant/index.html";
+
+/* Help book */
+"setup/license/agree.html" = "setup/license/agree.html";
+
+/* Help book */
+"setup/license/editor.html" = "setup/license/editor.html";
+
+/* Help book */
+"setup/license/options.html" = "setup/license/options.html";
+
+/* Help book */
+"setup/license/thanks.html" = "setup/license/thanks.html";
+
+/* Show Toolbar */
+"Show Toolbar" = "显示工具栏";
+
+/* Standard product edition */
+"Standard" = "标准";
+
+/* Update status title for checking */
+"Status:" = "状态：";
+
+/* Explanation of corrupt app */
+"The integrity of this application appears to be damaged.  %@\n\nPlease quit and try again, and replace the application with a fresh copy if necessary." = "这个应用程序的完整性受损  %@\n\n请到官网重新下载并且替换旧程序";
+
+/* Corrupt app heading */
+"This application is damaged." = "这个应用程序是损坏的";
+
+/* Website button title */
+"Website" = "网站";
+
+/* Update never run status */
+"Welcome!  Please check for an update." = "欢迎使用!请检查更新";

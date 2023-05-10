@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Test Info - Filters</title>
+<meta name="description" content="Add filters to detect changes, narrow down the output text, or change the status.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Test Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Filters</h1>
+
+<p>The <b>Filters</b> page of the <a href="../index.html"><b>Test Info</b></a> pane includes the ability to analyze the text output from the <a href="../service/index.html">service</a>.</p>
+
+<p>A filter is a particular configuration of a filter plug-in.  A filter plug-in does the actual work of analyzing the text.  There can be multiple filters based on the same filter plug-in, e.g. the <b>Find Keyword</b>, <b>Find Regular Expression</b>, <b>HTML Body</b>, and <b>List Hyperlinks</b> filters are all variations of the <a href="../../filter/plugin/find.html"><b>Find Filter Plug-in</b></a>, each looking for different text and other properties.</p>
+
+<p>You can detect if the text changed from the previous time it was checked, and perform all sorts of operations on the output text and status, e.g. to narrow the text down to an interesting portion or to avoid dynamic content (like banner ads).  You can result in a failure if some required text isn't found, or if some unwanted text is found.  You can also cancel out a failure or otherwise change the status, if desired.  And lots more.</p>
+
+<p><b>New Filter</b>: Click this button to display the <a href="../../filter/index.html"><b>Filter Info</b></a> pane, allowing a new filter to be added.</p>
+
+<p>From the pop-up menu on the left of each line, choose <b>Any</b> to use this filter with any current test status, <b>Success</b> to use it when not a failure, or <b>Unchanged</b>, <b>Changed</b> or <b>Failure</b> to only use it with that specific status.  If the status of the service or previous filter matches the selected one, this filter is used, otherwise it's skipped.  Choose <b>None</b> to temporarily disable this line (its filter will be remembered), or click the <img src="../../../shared/button-round-minus.png" alt="-" valign="top" /> button to remove the line.</p>
+
+<p>The next pop-up menu lists all of the available filters for the specified status.  You can click the <b>New Filter</b> button to add a new one, if required.</p>
+
+<ul><li>Tip: hover over this pop-up menu, or its menu items, to see the comments about that filter in a tooltip, if there are any for that filter (the default ones all have descriptive comments).</li></ul>
+
+<p><b>Input</b>: This pop-up menu specifies what text to pass to the filter as its input.  The filter typically performs its magic on this text, though some filters could ignore it or use different text, by using <a href="../../filter/variables.html">Filter Variables</a>.  The menu lists the various outputs of the service, plus (if there are any previous filters listed) the outputs of those filters.</p>
+
+<p><img src="../../../shared/button-round-minus.png" alt="-" valign="top" /> Click this button to remove the associated line.</p>
+
+<p><img src="../../../shared/button-round-plus.png" alt="+" valign="top" /> Click this button to add a new line, allowing another filter to be specified.</p>
+
+<p>You can add your own filters, or modify these, via the <a href="../../filters/index.html"><b>Filters</b></a> list.</p>
+
+<p>The default filters fall into the following categories (based on the plug-ins that implement them).  Click each to read more about them:</p>
+
+<p>By default, Simon includes the <b>Change</b> filter, so any difference in the input will result in a change.  You can change it to a <b>Block</b> filter or some other kind to limit the range of text examined, or disable it if you don't want to detect changes.</p>
+
+<div class="topics">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./block.html">Block</a></li>
+<li><a href="./find.html">Find</a></li>
+<li><a href="./format.html">Format</a></li>
+<li><a href="./history.html">History</a></li>
+<li><a href="./number.html">Number</a></li>
+<li><a href="./override.html">Override</a></li>
+<li><a href="./script.html">Script</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../../filter/variables.html">Filter Variables</a></li>
+<li><a href="../../filter/index.html">Filter Info pane</a></li>
+<li><a href="../index.html">Test Info pane</a></li>
+<li><a href="../service/index.html">Service page</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

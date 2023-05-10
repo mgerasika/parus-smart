@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Dienst - Variablen</title>
+<meta name="description" content="Variablen, die mit Diensten genutzt werden können.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Dienst (Neu/Bearbeiten)<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Dienst-Art<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Dienst-Variablen</h1>
+
+<p>Dies ist die Liste der Dienst-Variablen. Variablen sind Marker im Text, die durch andere Werte ersetzt werden, wenn der Dienst benutzt wird. Variablen sollten keine Leerzeichen enthalten und mit geschweiften Klammern eingeklammert werden, wie z.B. hier <b>{TestChangeText}</b>. Sie werden vom <a href="./plugin/script.html">Skript-Dienst-Modul</a> benutzt und stehen auch zukünftigen Modulen zur Verfügung.</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Ausgaben:</b></td></tr>
+<tr><td valign="top">AppDataPath</td><td valign="top">Kompletter Pfad zu Simons Daten-Ordner (nützlich für Skripte).</td></tr>
+<tr><td valign="top">AppLanguage</td><td valign="top">Die momentan von Simon benutzte Sprache, basierend auf den verfügbaren Lokalisierungen.</td></tr>
+<tr><td valign="top">AppName</td><td valign="top">Name des Programms, also "Simon".</td></tr>
+<tr><td valign="top">AppRelease</td><td valign="top">Versionsnummer der benutzten Simon-Version.</td></tr>
+<tr><td valign="top">AppURL</td><td valign="top">URL der Simon-Produktseite.</td></tr>
+<tr><td valign="top">AppVersion</td><td valign="top">Versionsnummer der benutzten Simon-Ausgabe.</td></tr>
+<tr><td valign="top">CheckDate</td><td valign="top">Datum, an dem der Test geprüft wurde, im Format YYYY-MM-DD.</td></tr>
+<tr><td valign="top">CheckDateShort</td><td valign="top">Datum, an dem der Test geprüft wurde, im Format YYYYMMDD.</td></tr>
+<tr><td valign="top">CheckTime</td><td valign="top">Zeitpunkt, an dem der Test geprüft wurde, im Format HH:MM:SS.</td></tr>
+<tr><td valign="top">CheckTimeShort</td><td valign="top">Zeitpunkt, an dem der Test geprüft wurde, im Format HHMMSS.</td></tr>
+<tr><td valign="top">ServiceName</td><td valign="top">Name des Dienstes für den Test.</td></tr>
+<tr><td valign="top">ServiceType</td><td valign="top">Name des Dienst-Moduls.</td></tr>
+<tr><td valign="top">TestChangeCount</td><td valign="top">Häufigkeit der Änderungen zu diesem Test; beginnt mit 1 für eine Änderung und wird um 1 erhöht für jede direkt folgende Änderung. Wird zurückgesetzt, wenn eine Änderung nach einem Fehlschlag oder einem Test ohne Änderung eintritt.</td></tr>
+<tr><td valign="top">TestChangeDifferenceWithHTML</td><td valign="top">Unterschied zwischen dem vorigen Zeitpunkt, zu dem Simon die Seite gesehen hat, und dem jetzigen Zeitpunkt. Die Erkennung erfolgt durch die Filter-Funktion; HTML-Tags werden eingebunden.</td></tr>
+<tr><td valign="top">TestChangeDifferenceWithoutHTML</td><td valign="top">Unterschied zwischen dem vorigen Zeitpunkt, zu dem Simon die Seite gesehen hat, und dem jetzigen Zeitpunkt. Die Erkennung erfolgt durch die Filter-Funktion; HTML-Tags werden entfernt.</td></tr>
+<tr><td valign="top">TestChangeText</td><td valign="top">Der Ausgabetext des Dienstes und aller Filter; hiermit können Änderungen entdeckt werden.</td></tr>
+<tr><td valign="top">TestComments</td><td valign="top">Beschreibung des Tests von der Zusammenfassung-Seite des Fensters "Test bearbeiten".</td></tr>
+<tr><td valign="top">TestFailureCount</td><td valign="top">Häufigkeit der Fehler in einem Test; beginnt mit 1 für einen neuen Fehler und wird um 1 erhöht für jeden direkt folgenden Fehler. Wird zurückgesetzt, wenn der nächste Fehler nach einem Erfolg auftritt.</td></tr>
+<tr><td valign="top">TestLastChangeDate</td><td valign="top">Datum der zuletzt eingetretenen Änderung in einem Test – heute, wenn die Änderung gerade erst eingetreten ist.</td></tr>
+<tr><td valign="top">TestLastChangeTime</td><td valign="top">Zeit der zuletzt eingetretenen Änderung in einem Test – jetzt, wenn die Änderung gerade erst eingetreten ist.</td></tr>
+<tr><td valign="top">TestLastCheckDate</td><td valign="top">Datum, an dem der Test zuletzt geprüft wurde.</td></tr>
+<tr><td valign="top">TestLastCheckTime</td><td valign="top">Zeitpunkt des Tages, an dem der Test zuletzt geprüft wurde.</td></tr>
+<tr><td valign="top">TestLastError</td><td valign="top">Die letzte Fehlermeldung, die erhalten wurde.</td></tr>
+<tr><td valign="top">TestLastEventDate</td><td valign="top">Datum, an dem das letzte Ereignis (Änderung, Fehlschlag oder Reparatur) eingetreten ist.</td></tr>
+<tr><td valign="top">TestLastEventTime</td><td valign="top">Zeitpunkt des Tages, an dem das letzte Ereignis (Änderung, Fehlschlag oder Reparatur) eingetreten ist.</td></tr>
+<tr><td valign="top">TestLastFailureDate</td><td valign="top">Datum, an dem der Test zuletzt fehlgeschlagen ist.</td></tr>
+<tr><td valign="top">TestLastFailureTime</td><td valign="top">Zeitpunkt des Tages, an dem der Test zuletzt fehlgeschlagen ist.</td></tr>
+<tr><td valign="top">TestLastRecoveryDate</td><td valign="top">Datum, an dem der Test nach einem Fehlschlag zuletzt repariert wurde.</td></tr>
+<tr><td valign="top">TestLastRecoveryTime</td><td valign="top">Zeitpunkt des Tages, an dem der Test nach einem Fehlschlag zuletzt repariert wurde.</td></tr>
+<tr><td valign="top">TestLocation</td><td valign="top">URL oder anderer Ort des Tests, der diesen Dienst benutzt.</td></tr>
+<tr><td valign="top">TestName</td><td valign="top">Name des Tests, der diesen Dienst benutzt.</td></tr>
+<tr><td valign="top">TestNextCheckDate</td><td valign="top">Datum, an dem der Test das nächste Mal geprüft wird.</td></tr>
+<tr><td valign="top">TestNextCheckTime</td><td valign="top">Zeitpunkt des Tages, an dem der Test das nächste Mal geprüft wird.</td></tr>
+<tr><td valign="top">TestPassword</td><td valign="top">Das Passwort, dass am unteren Rand der "Dienst"-Seite im Test-Infobereich eingegeben wurde.</td></tr>
+<tr><td valign="top">TestPlugin</td><td valign="top">Name des Dienst-Moduls.</td></tr>
+<tr><td valign="top">TestRecoveryCount</td><td valign="top">Häufigkeit der Erfolge eines Tests nach einem Fehlschlag; beginnt mit 1 für die erste Reparatur und wird um 1 erhöht für jeden direkt folgenden Erfolg. Wird zurückgesetzt, wenn die nächste Reparatur nach einem Fehlschlag eintritt.</td></tr>
+<tr><td valign="top">TestService</td><td valign="top">Name des Dienstes, der von dem Test genutzt wird.</td></tr>
+<tr><td valign="top">TestStatusExact</td><td valign="top"> 	Status des Tests, einschließlich eines Hinweises, wie lange der Test sich schon diesen Status hat.</td></tr>
+<tr><td valign="top">TestStatusPhrase</td><td valign="top">Status des Tests als Textphrase, z.B. fehlgeschlagen, kürzlich behoben usw.</td></tr>
+<tr><td valign="top">TestStatusType</td><td valign="top">Status des Tests, z.B. Fehlschlag, Behebung, Änderung, Unverändert usw.</td></tr>
+<tr><td valign="top">TestURL</td><td valign="top">URL oder anderer Ort für den Test, der diesen Dienst benutzt (die Variable {TestLocation} sollte bevorzugt werden).</td></tr>
+<tr><td valign="top">TestUsername</td><td valign="top">Benutzername, der am unteren Rand der "Dienst"-Seite im Test-Infobereich eingegeben wurde.</td></tr>
+<tr><td valign="top">UserComputer</td><td valign="top">Name des Computers, auf dem Simon läuft, wie in den Systemeinstellungen eingegeben.</td></tr>
+<tr><td valign="top">UserName</td><td valign="top">Name der Person, die gerade auf dem Computer eingeloggt ist, auf dem Simon läuft.</td></tr>
+<tr><td valign="top">VariablesCSV</td><td valign="top">Komma-separierte Liste aller anderen Variablen-Namen. Kann sehr nützlich sein, wenn Sie in eigenen Skripten nach Fehlern suchen.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="./plugin/script.html">Skript-Dienst-Modul</a></li>
+<li><a href="./plugin/index.html">Dienst-Art</a></li>
+<li><a href="./index.html">Dienst-Infobereich</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

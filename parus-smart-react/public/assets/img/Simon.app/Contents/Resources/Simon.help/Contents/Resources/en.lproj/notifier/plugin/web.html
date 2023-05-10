@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Notifier - Kind - Web</title>
+<meta name="description" content="The Web plug-in contacts a web server.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Notifier Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Notifier Kind<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Web plug-in</h1>
+
+<p>The <b>Web</b> notifier is displayed when you choose <b>Web</b> in the <b>Notifier Kind</b> pop-up menu in the <a href="../index.html"><b>Notifier Info</b></a> pane.</p>
+
+<p>This notifier will get or post to a page on a website.  This can be useful, for example, to execute a PHP script on your server to add to a log or perform some other action.  The default <b>Web</b> notifier posts to the <a href="http://www.dejal.com/simon/wall/">Simon Wall <img src="../../../shared/ext-link.png" alt="[web link]" /></a> page, as a simple demo.</p>
+
+<p><b>URL</b>: Enter the URL of the page or file to check in this field.  You can use IP numbers or a domain name.  You can skip the "http://" or "ftp://" protocol; it'll be added automatically.  You can also just type the central part of the domain for a standard dot.com domain name like "www.dejal.com": just type "dejal" and it'll fill in the rest automatically when the settings are saved.</p>
+
+<p><b>Method</b>: Optionally choose the method to fetch the page in this pop-up menu.  The options include the two common methods, <b>Get</b> and <b>Post</b>, along with some more esoteric options, including <b>Head</b>, <b>Options</b>, <b>Put</b> and <b>Trace</b>.  The default is <b>Get</b>, which is the normal way of browsing pages.  <b>Post</b> is like submitting a form (using the parameters as the form data).  <b>Head</b> is the same as <b>Get</b>, except only the header is retrieved.  <b>Options</b> results in the HTTP methods that the server supports.  <b>Put</b> is a variation of <b>Post</b>.  <b>Trace</b> echoes the request, to provide more header information.  Normally you'd only use <b>Get</b> or <b>Post</b>.</p>
+
+<p><b>Username</b>: If the URL you are accessing is protected, type the required username in this field.  The default is blank.</p>
+
+<p><b>Password</b>: Similarly, enter the required password here.  The password is not shown.  The default is blank.</p>
+
+<p><b>Parameters</b>: This table can include parameters to pass with the request.  For a <b>Get</b> request, parameters are passed as part of the URL, while a <b>Post</b> operation submits the form data via parameters.  Click the <img src="../../../shared/button-square-plus.png" alt="+" valign="top"> button to add a line to the table, or the <img src="../../../shared/button-square-minus.png" alt="-" valign="top"> button to remove the selected line.</p>
+
+<p><b>Cookies</b>: This table contains cookies to include in the request.  The easist way to add them is to enter the <b>URL</b> then click the <b>Preview</b> button at the bottom of the window to view the page, and fill in the form on the page.  But you can also add or edit the cookies here.  Click the <img src="../../../shared/button-square-plus.png" alt="+" valign="top"> button to add a line to the table, or the <img src="../../../shared/button-square-minus.png" alt="-" valign="top"> button to remove the selected line.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./index.html">Notifier Kind</a></li>
+<li><a href="../index.html">Notifier Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

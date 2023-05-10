@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Service - Variables</title>
+<meta name="description" content="Variables for use with services.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Service Info<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Service Kind<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Variables</h1>
+
+<p>This is the list of variables.  Variables are markers in the text that are replaced by another value when the service is used.  The variable name should not contain any spaces, and should be enclosed by braces, e.g. <b>{TestChangeText}</b>.  They are used by the <a href="./plugin/script.html">Script</a> service plug-in, and will be available for relevant future plug-ins too.</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Outputs:</b></td></tr>
+<tr><td valign="top">AppDataPath</td><td valign="top">Full path to Simon's data folder (useful for scripts).</td></tr>
+<tr><td valign="top">AppLanguage</td><td valign="top">Language currently used by Simon, based on the the available localizations.</td></tr>
+<tr><td valign="top">AppName</td><td valign="top">Name of the application, i.e. "Simon".</td></tr>
+<tr><td valign="top">AppRelease</td><td valign="top">Release number of the Simon version being used.</td></tr>
+<tr><td valign="top">AppURL</td><td valign="top">URL of the Simon product page.</td></tr>
+<tr><td valign="top">AppVersion</td><td valign="top">Version number of the Simon release being used.</td></tr>
+<tr><td valign="top">CheckDate</td><td valign="top">Date that the test was checked, in the form YYYY-MM-DD.</td></tr>
+<tr><td valign="top">CheckDateShort</td><td valign="top">Date that the test was checked, in the form YYYYMMDD.</td></tr>
+<tr><td valign="top">CheckTime</td><td valign="top">Time that the test was checked, in the form HH:MM:SS.</td></tr>
+<tr><td valign="top">CheckTimeShort</td><td valign="top">Time that the test was checked, in the form HHMMSS.</td></tr>
+<tr><td valign="top">ServiceName</td><td valign="top">Name of the service for the test.</td></tr>
+<tr><td valign="top">ServiceKind</td><td valign="top">Name of the service plug-in.</td></tr>
+<tr><td valign="top">TestChangeCount</td><td valign="top">Number of times the test has changed; starts at 1 for a change, and increments for each subsequent consecutive change.  Resets when a change occurs after a failure or no change.</td></tr>
+<tr><td valign="top">TestChangeDifferenceWithHTML</td><td valign="top">The difference between the previous time Simon saw the page and this time, via the filter feature; HTML tags are included.</td></tr>
+<tr><td valign="top">TestChangeDifferenceWithoutHTML</td><td valign="top">The difference between the previous time Simon saw the page and this time, via the filter feature; HTML tags are stripped out.</td></tr>
+<tr><td valign="top">TestChangeText</td><td valign="top">The output text from the service and any filters, used to detect changes.</td></tr>
+<tr><td valign="top">TestComments</td><td valign="top">Description of the test from the <b>Summary</b> page of the <b>Test Info</b> pane.</td></tr>
+<tr><td valign="top">TestFailureCount</td><td valign="top">Number of times the test has had errors; starts at 1 for a new failure, and increments for each subsequent consecutive error.  Resets when the the next failure occurs after being in success.</td></tr>
+<tr><td valign="top">TestLastChangeDate</td><td valign="top">Date that the test most recently changed - today if a change just occurred.</td></tr>
+<tr><td valign="top">TestLastChangeTime</td><td valign="top">Time of day that the test most recently changed - now if a change just occurred.</td></tr>
+<tr><td valign="top">TestLastCheckDate</td><td valign="top">Date when the test was last checked.</td></tr>
+<tr><td valign="top">TestLastCheckTime</td><td valign="top">Time of day when the test was last checked.</td></tr>
+<tr><td valign="top">TestLastError</td><td valign="top">The previous error message that occurred.</td></tr>
+<tr><td valign="top">TestLastEventDate</td><td valign="top">Date when a change, failure, or recovery last occurred.</td></tr>
+<tr><td valign="top">TestLastEventTime</td><td valign="top">Time of day when a change, failure, or recovery last occurred.</td></tr>
+<tr><td valign="top">TestLastFailureDate</td><td valign="top">Date that the test most recently failed.</td></tr>
+<tr><td valign="top">TestLastFailureTime</td><td valign="top">Time of day that the test most recently failed.</td></tr>
+<tr><td valign="top">TestLastRecoveryDate</td><td valign="top">Date that the test last recovered from a failure.</td></tr>
+<tr><td valign="top">TestLastRecoveryTime</td><td valign="top">Time that the test last recovered from a failure.</td></tr>
+<tr><td valign="top">TestLocation</td><td valign="top">URL or other location for the test that is using this service.</td></tr>
+<tr><td valign="top">TestName</td><td valign="top">Name of the test that is using this service.</td></tr>
+<tr><td valign="top">TestNextCheckDate</td><td valign="top">Date when the test is next scheduled to be checked.</td></tr>
+<tr><td valign="top">TestNextCheckTime</td><td valign="top">Time of day when the test is next scheduled to be checked.</td></tr>
+<tr><td valign="top">TestPassword</td><td valign="top">Password entered at the bottom of the <b>Service</b> page of the <b>Edit Test</b> window.</td></tr>
+<tr><td valign="top">TestPlugin</td><td valign="top">Name of the service plug-in.</td></tr>
+<tr><td valign="top">TestRecoveryCount</td><td valign="top">Number of times a check succeeded after a failure; starts at 1 when first recovering, and increments for each subsequent successful check.  Resets when the next recovery after a failure occurs.</td></tr>
+<tr><td valign="top">TestService</td><td valign="top">Name of the service for the test.</td></tr>
+<tr><td valign="top">TestStatusExact</td><td valign="top">Status of the test, including an indication of how long it has been in that state.</td></tr>
+<tr><td valign="top">TestStatusPhrase</td><td valign="top">Status of the test as a phrase, e.g. <b>failed</b>, <b>recently recovered</b>, etc.</td></tr>
+<tr><td valign="top">TestStatusType</td><td valign="top">Status of the test, e.g. <b>Failure</b>, <b>Recovery</b>, <b>Change</b>, <b>Unchanged</b>, etc.</td></tr>
+<tr><td valign="top">TestURL</td><td valign="top">URL or other location for the test that is using this service (the {TestLocation} variable is preferred).</td></tr>
+<tr><td valign="top">TestUsername</td><td valign="top">Username entered at the bottom of the <b>Service</b> page of the <b>Edit Test</b> window.</td></tr>
+<tr><td valign="top">UserComputer</td><td valign="top">Name of the computer running Simon, as entered in the System Preferences.</td></tr>
+<tr><td valign="top">UserFullName</td><td valign="top">Name of the person logged in on the computer running Simon.</td></tr>
+<tr><td valign="top">VariablesCSV</td><td valign="top">A comma-separated list of all other variable names.  Potentially useful when debugging your scripts.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./plugin/script.html">Script service plug-in</a></li>
+<li><a href="./plugin/index.html">Service Kind</a></li>
+<li><a href="./index.html">Service Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

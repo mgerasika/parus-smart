@@ -1,0 +1,1 @@
+{Template type="detail" version="1" description="Tab-delimited last change text."}Change Date{Tab}Difference Text[Change count="999"]{Date type="absolute"}{Tab}{Difference encode="text" length="200"}{LineFeed}[/Change]

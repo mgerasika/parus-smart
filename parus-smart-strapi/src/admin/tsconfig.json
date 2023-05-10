@@ -1,0 +1,12 @@
+{
+  "extends": "@strapi/typescript-utils/tsconfigs/admin",
+  "include": ["../plugins/**/admin/src/**/*", "./"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules/", "build/", "dist/", "**/*.test.ts"]
+}

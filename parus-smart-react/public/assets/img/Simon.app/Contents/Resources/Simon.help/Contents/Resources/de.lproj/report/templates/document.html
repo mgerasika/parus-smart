@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Bericht-Infobereich - Vorlagen - Dokument</title>
+<meta name="description" content="Dokument-Variablen für Bericht-Vorlagen.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Bericht-Vorlagen<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Vorlagen-Dokumentvariablen</h1>
+
+<p>Hier finden Sie Informationen über den "Dokument"-Bereich und die Variablen, die in diesem Bereich gültig sind. Lesen Sie auch das Kapitel <a href="./index.html"><b>Bericht-Vorlagen</b></a> für weitere Informationen über Simons Bericht-Vorlagen.</p>
+
+<p>Der "Dokument"-Bereich ist kein ausdrücklicher Bereich wie die anderen (siehe unten). Er enthält Variablen, die zu jeder Zeit benutzt werden können – sowohl innerhalb als auch außerhalb von Bereichen. Man könnte sie als globale Variablen bezeichnen.</p>
+
+<p>Variablen sind Tags in der Datei, die durch andere Inhalte ersetzt werden, wenn der Bericht benutzt wird. Variablen sind von geschweiften Klammern umschlossen und haben einen Variablen-Namen, optional gefolgt von einer beliebigen Anzahl Parameter, z.B. {title format="wordcase"}. Im Kapitel <a href="./params.html">Berichtvorlage-Parameter</a> finden Sie Informationen über die verfügbaren Parameter.</p>
+
+<p>Die global verfügbaren Variablen sind:</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Ausgaben:</b></td></tr>
+<tr><td valign="top">BasePath</td><td valign="top"> 	Relativer Ausgabepfad; ist "./" für die Zusammenfassung-Seite und "../" für die Detailseiten (wenn sie sich in Unterordnern befinden).</td></tr>
+<tr><td valign="top">CR</td><td valign="top">Ein Wagenrücklauf-Zeichen (vergleiche Return).</td></tr>
+<tr><td valign="top">CRLF</td><td valign="top">Die Wagenrücklauf- und Zeilenumbruch-Zeichen (vergleiche ReturnLinefeed).</td></tr>
+<tr><td valign="top">DetailsExtension</td><td valign="top">Endung des Dateinamens, der für die Detailseiten-Dateien genutzt wird (z.B. "html").</td></tr>
+<tr><td valign="top">DetailsInDirectories</td><td valign="top">"Yes", wenn die Detailseiten in Unterordnern sind, oder "No", wenn sie im gleichen Verzeichnis wie die Zusammenfassung-Seite sind.</td></tr>
+<tr><td valign="top">HasDetails</td><td valign="top">"Yes", wenn die Detailseiten generiert werden, ansonsten "No".</td></tr>
+<tr><td valign="top">HasSummary</td><td valign="top">"Yes", wenn eine Zusammenfassung generiert wird, ansonsten "No".</td></tr>
+<tr><td valign="top">ImagesPath</td><td valign="top">Relativer Ausgabepfad zum images-Ordner (falls vorhanden).</td></tr>
+<tr><td valign="top">IsDetail</td><td valign="top">"Yes", wenn die aktuelle Seite eine Detailseite ist, bzw. "No", wenn es die Zusammenfassung-Seite ist.</td></tr>
+<tr><td valign="top">LF</td><td valign="top">Ein Zeilenumbruch-Zeichen (vergleiche Linefeed).</td></tr>
+<tr><td valign="top">Linefeed</td><td valign="top">Ein Zeilenumbruch-Zeichen (vergleiche LF).</td></tr>
+<tr><td valign="top">LineNumber</td><td valign="top">Die Zeilennummer der aktuellen Zeile (Start bei 1) für wiederholende Blöcke.</td></tr>
+<tr><td valign="top">LineOddEven</td><td valign="top">"Odd" oder "Even", abhängig von der Zeilennummer (nützlich z.B. für unterschiedliche Zeilenfarben via CSS).</td></tr>
+<tr><td valign="top">OutputLocation</td><td valign="top">Der URL, an den der Bericht gesichert oder hochgeladen wird.</td></tr>
+<tr><td valign="top">OutputName</td><td valign="top">Der Ordner, in den der Bericht ausgegeben wird.</td></tr>
+<tr><td valign="top">PageKind</td><td valign="top">"Summary" auf der Zusammenfassung-Seite, "Detail" auf Detailseiten.</td></tr>
+<tr><td valign="top">Refresh</td><td valign="top">Intervall in Sekunden zwischen Berichten; nützlich, um die Meta-Informationen zum Seitenaufbau in der Webseite zu steuern.</td></tr>
+<tr><td valign="top">ReportDate</td><td valign="top">Datum, an dem der Bericht generiert wurde.</td></tr>
+<tr><td valign="top">ReportTime</td><td valign="top">Zeitpunkt, an dem der Bericht generiert wurde.</td></tr>
+<tr><td valign="top">ResourcesPath</td><td valign="top">Relativer Ausgabepfad zum resources-Ordner (falls vorhanden).</td></tr>
+<tr><td valign="top">Return</td><td valign="top">Ein Wagenrücklauf-Zeichen (vergleiche CR).</td></tr>
+<tr><td valign="top">ReturnLinefeed</td><td valign="top">Die Wagenrücklauf- und Zeilenumbruch-Zeichen (vergleiche CRLF).</td></tr>
+<tr><td valign="top">SummaryPath</td><td valign="top">Genau wie BasePath, außer dass hier der Index-Dateiname mit angegeben wird, wenn der Bericht das file://-Protokoll nutzt.</td></tr>
+<tr><td valign="top">Tab</td><td valign="top">Ein Tab-Zeichen.</td></tr>
+<tr><td valign="top">Template</td><td valign="top">Diese Variable gibt nichts aus; sie wird nur für Informationszwecke genutzt.</td></tr>
+<tr><td valign="top">TemplateName</td><td valign="top">Name der benutzten Vorlage.</td></tr>
+<tr><td valign="top">TemplatePath</td><td valign="top">Dateipfad des Vorlagen-Ordners (innerhalb des Daten-Ordners von Simon).</td></tr>
+<tr><td valign="top">Title</td><td valign="top">Auf der Zusammenfassung-Seite: der Berichtname; auf Detailseiten: der Testname.</td></tr>
+<tr><td valign="top">Version</td><td valign="top">Simon-Version, die den Bericht erzeugt hat.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="./index.html">Bericht-Vorlagen</a></li>
+<li><a href="../options.html">Optionen</a></li>
+<li><a href="../index.html">Bericht-Infobereich</a></li>
+<li><a href="../../reports/index.html">Berichte-Liste</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

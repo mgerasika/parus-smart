@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Melder - Variablen</title>
+<meta name="description" content="Variablen, die mit Meldern genutzt werden können.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Melder-Infobereich<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Melder-Art<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Melder-Variablen</h1>
+
+<p>Dies ist die Liste der Melder-Variablen. Variablen sind Marker im Text, die durch andere Werte ersetzt werden, wenn der Dienst benutzt wird. Variablen sollten keine Leerzeichen enthalten und mit geschweiften Klammern eingeklammert werden, wie z.B. hier <b>{TestChangeText}</b>. Sie werden vom <a href="./plugin/script.html">Skript</a>-, <a href="./plugin/email/index.html">E-Mail</a>- und <a href="./plugin/speech.html">Sprachausgabe</a>-Melder-Modul benutzt und stehen auch zukünftigen Modulen zur Verfügung.</p>
+
+<p>Melder-Variablen werden vom <a href="../service/variables.html">Dienst</a> und allen <a href="../filter/variables.html">Filter</a> vererbt und erweitern den aktuellen Melder um einige Extras. Anders als Filter, die Variablen in der vorgefundenen Reihenfolge zusammenfassen, wissen Melder nichts voneinander.</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Ausgaben:</b></td></tr>
+<tr><td valign="top">NotificationDate</td><td valign="top">Datum, an dem die Meldung gemacht wurde.</td></tr>
+<tr><td valign="top">NotificationTime</td><td valign="top">Zeitpunkt des Tages, an dem die Meldung gemacht wurde.</td></tr>
+<tr><td valign="top">NotifierAfterThisManyChanges</td><td valign="top">Der Wert des Feldes "nach [ ] einander folgenden Änderungen".</td></tr>
+<tr><td valign="top">NotifierAfterThisManyErrors</td><td valign="top">Der Wert des Feldes "nach [ ] einander folgenden Fehlschlägen".</td></tr>
+<tr><td valign="top">NotifierAfterThisManyRecoveries</td><td valign="top">Der Wert des Feldes "nach [ ] Rettungen".</td></tr>
+<tr><td valign="top">NotifierForChange</td><td valign="top">Gibt an, ob dieser Melder für Änderungen genutzt wird oder nicht.</td></tr>
+<tr><td valign="top">NotifierForFailure</td><td valign="top">Gibt an, ob dieser Melder für Fehlschläge genutzt wird oder nicht.</td></tr>
+<tr><td valign="top">NotifierForRecovery</td><td valign="top">Gibt an, ob dieser Melder für Rettungen genutzt wird oder nicht.</td></tr>
+<tr><td valign="top">NotifierKind</td><td valign="top">Die Melder-Art (z.B. E-Mail oder Sprache).</td></tr>
+<tr><td valign="top">NotifierName</td><td valign="top">Der Name, den Sie dem Melder gegeben haben.</td></tr>
+<tr><td valign="top">NotifierOnlyOncePerFailure</td><td valign="top">Gibt an, ob dieser Melder nach Fehlern nur einmal genutzt wird oder nicht.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="../service/variables.html">Dienst-Variablen</a></li>
+<li><a href="../filter/variables.html">Filter-Variablen</a></li>
+<li><a href="./plugin/script.html">Skript-Melder-Modul</a></li>
+<li><a href="./plugin/email/index.html">E-Mail-Melder-Modul</a></li>
+<li><a href="./plugin/speech.html">Sprachausgabe-Melder-Modul</a></li>
+<li><a href="./plugin/index.html">Melder-Art</a></li>
+<li><a href="./index.html">Melder-Infobereich</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

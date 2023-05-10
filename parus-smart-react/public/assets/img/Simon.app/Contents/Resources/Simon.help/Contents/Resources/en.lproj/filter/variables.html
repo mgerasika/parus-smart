@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Filter - Variables</title>
+<meta name="description" content="Variables for use with filters.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Filter Info<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Filter Kind<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Variables</h1>
+
+<p>This is the list of variables added for filters.  Variables are markers in the text that are replaced by another value when the filter is used.  The variable name should not contain any spaces, and should be enclosed by braces, e.g. <b>{TestName}</b>.  They are used by the <a href="./plugin/script.html">Script</a> and other filter plug-ins, and will be available for relevant future plug-ins too.</p>
+
+<p>Filters inherit the variables from the <a href="../service/variables.html">service</a>, and add several extra with the results of the service (with a <b>Service</b> prefix) and any previous filters (with a <b>Filter</b> prefix).  Of particular interest is the <b>{FilterInputText}</b> variable, which is set to whatever is chosen for the <b>Input</b> when adding the filters in the <a href="../test/filters/index.html"><b>Filters</b> page of the <b>Test Info</b> pane</a>.</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Outputs:</b></td></tr>
+<tr><td valign="top">FilterCount</td><td valign="top">Number of filters for this test.</td></tr>
+<tr><td valign="top">FilterDate</td><td valign="top">Date that the current filter was started, in the form YYYY-MM-DD.</td></tr>
+<tr><td valign="top">FilterError</td><td valign="top">Error message from the previous filter (or service if no previous filter).</td></tr>
+<tr><td valign="top">FilterForChanged</td><td valign="top">Indicates if the current filter is used when the current status is Changed: <b>yes</b> or <b>no</b>.</td></tr>
+<tr><td valign="top">FilterForFailure</td><td valign="top">Indicates if the current filter is used when the current status is Failure: <b>yes</b> or <b>no</b>.</td></tr>
+<tr><td valign="top">FilterForSuccess</td><td valign="top">Indicates if the current filter is used when the current status is success (i.e. Unchanged or Changed): <b>yes</b> or <b>no</b>.</td></tr>
+<tr><td valign="top">FilterForUnchanged</td><td valign="top">Indicates if the current filter is used when the current status is Unchanged: <b>yes</b> or <b>no</b>.</td></tr>
+<tr><td valign="top">FilterIndex</td><td valign="top">1-based sequence number of the current filter.</td></tr>
+<tr><td valign="top">FilterInputText</td><td valign="top">Text from the variable selected for the <b>Input</b> in the test's filter configuration.</td></tr>
+<tr><td valign="top">FilterInputVariable</td><td valign="top">Name of the variable selected for the <b>Input</b> in the test's filter configuration.</td></tr>
+<tr><td valign="top">FilterKind</td><td valign="top">Name of the plug-in used for the current filter.</td></tr>
+<tr><td valign="top">FilterLookForChanges</td><td valign="top">Indicates if the current filter will detect changes: <b>yes</b> or <b>no</b>.</td></tr>
+<tr><td valign="top">FilterName</td><td valign="top">Name of the current filter.</td></tr>
+<tr><td valign="top">FilterOutputText</td><td valign="top">Output text from the previous filter (or equivalent to the input text if no previous filter).</td></tr>
+<tr><td valign="top">FilterPreviousText</td><td valign="top">Output text from the last time this filter was used with this test.  This is used with the change detection feature.</td></tr>
+<tr><td valign="top">FilterStatusNumber</td><td valign="top">Status of the previous filter (or service if no previous filter), in numeric form.  0 = Unchanged, 1 = Changed, 2 = Failure.</td></tr>
+<tr><td valign="top">FilterStatusType</td><td valign="top">Status of the previous filter (or service if no previous filter): <b>Unchanged</b>, <b>Changed</b> or <b>Failure</b>.</td></tr>
+<tr><td valign="top">FilterTime</td><td valign="top">Time that the current filter was started, in the form HH:MM:SS.</td></tr>
+<tr><td valign="top">FilterUseTestControls</td><td valign="top">Indicates if the current filter includes controls in the test editor: <b>yes</b> or <b>no</b>.</td></tr>
+<tr><td valign="top">ServiceContentLength</td><td valign="top">Size in bytes of the service output.</td></tr>
+<tr><td valign="top">ServiceContentType</td><td valign="top">Content type of the service output, e.g. "text/html" or "text/plain".</td></tr>
+<tr><td valign="top">ServiceError</td><td valign="top">Error from the service, if a failure, or blank if successful.</td></tr>
+<tr><td valign="top">ServiceHeaderText</td><td valign="top">Header text output by the service.  Often blank, except where meaningful, e.g. HTTP headers.</td></tr>
+<tr><td valign="top">ServiceRequestText</td><td valign="top">Summary of the service's request, e.g. the URL, script, or other value.</td></tr>
+<tr><td valign="top">ServiceResponseText</td><td valign="top">Text output by the service, e.g. HTML source or a script output.</td></tr>
+<tr><td valign="top">ServiceResultCode</td><td valign="top">Code result from the service, e.g. "OK" or "404".</td></tr>
+<tr><td valign="top">ServiceStatusNumber</td><td valign="top">Status of the service, in numeric form.  0 = Unchanged, 1 = Changed, 2 = Failure.</td></tr>
+<tr><td valign="top">ServiceStatusType</td><td valign="top">Status of the service: <b>Success</b> or <b>Failure</b>.</td></tr>
+<tr><td valign="top">ServiceTitle</td><td valign="top">Display title for the service, e.g. as used in the Preview window.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../service/variables.html">Service Variables</a></li>
+<li><a href="./plugin/script.html">Script filter plug-in</a></li>
+<li><a href="./plugin/index.html">Filter Kind</a></li>
+<li><a href="./index.html">Filter Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

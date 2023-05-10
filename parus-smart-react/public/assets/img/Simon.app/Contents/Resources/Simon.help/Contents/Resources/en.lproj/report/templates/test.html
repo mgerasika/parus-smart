@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Report Info - Templates - Test</title>
+<meta name="description" content="Variables for the report template test block.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Report Templates<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Test</h1>
+
+<p>This page has information about the <b>Test</b> block, and variables valid within this scope.  See the <a href="./index.html"><b>Report Templates</b></a> page for more information about Simon's report templates.</p>
+
+<p>The <b>Test</b> block includes variables about a test - i.e. values displayed in Simon's <b>Monitor</b> window in the <a href="../../monitor/tests.html">tests</a> table and <a href="../../monitor/stats.html">statistics</a> page.</p>
+
+<p>Variables are tags in the file that are replaced by another value when the report is used.  Variables are enclosed in curly braces, and have a variable name optionally followed by any number of parameters, e.g. <b>{status type="icon"}</b>.  See the <a href="./params.html">parameters</a> page for information on the available parameters.</p>
+
+<p>The variables that are available in this scope include:</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Outputs:</b></td></tr>
+<tr><td valign="top">AverageDuration</td><td valign="top">The average length of time for a check to complete.</td></tr>
+<tr><td valign="top">AverageFailTime</td><td valign="top">The average length of time of failures for this test.</td></tr>
+<tr><td valign="top">Changed</td><td valign="top">"Changed" for a new change, otherwise blank.</td></tr>
+<tr><td valign="top">Checks</td><td valign="top">The total number of checks for this test.</td></tr>
+<tr><td valign="top">Failed</td><td valign="top">"Failed" for a current failure, otherwise blank.</td></tr>
+<tr><td valign="top">Failures</td><td valign="top">The total number of unsuccessful checks for this test.</td></tr>
+<tr><td valign="top">LastChange</td><td valign="top">The date and time of the most recent time the site changed.</td></tr>
+<tr><td valign="top">LastChangeTextWithHTML</td><td valign="top">The full text from the most recent check (between any Start and End blocks), with HTML tags included.</td></tr>
+<tr><td valign="top">LastChangeTextWithoutHTML</td><td valign="top">The text from the most recent check (between any Start and End blocks), with HTML tags stripped out.</td></tr>
+<tr><td valign="top">LastCheck</td><td valign="top">The date and time of the most recent check.</td></tr>
+<tr><td valign="top">LastDifference</td><td valign="top">The text that was different between the most recent two checks (old name, new templates should use <b>LastDifferenceWithHTML</b> instead.).</td></tr>
+<tr><td valign="top">LastDifferenceWithHTML</td><td valign="top">The text that was different between the most recent two checks, with HTML tags included.</td></tr>
+<tr><td valign="top">LastDifferenceWithoutHTML</td><td valign="top">The text that was different between the most recent two checks, with HTML tags stripped out.</td></tr>
+<tr><td valign="top">LastDowntime</td><td valign="top">The duration of the most recent failure.</td></tr>
+<tr><td valign="top">LastDuration</td><td valign="top">The length of time that the most recent check took to complete.</td></tr>
+<tr><td valign="top">LastError</td><td valign="top">The error message of the most recent failure.</td></tr>
+<tr><td valign="top">LastEvent</td><td valign="top">The date and time of the most recent change, failure, or recovery.</td></tr>
+<tr><td valign="top">LastFailure</td><td valign="top">The date and time of the most recent failure.</td></tr>
+<tr><td valign="top">LastRecovery</td><td valign="top">The date and time of the most recent recovery from a failure.</td></tr>
+<tr><td valign="top">Location</td><td valign="top">URL, domain, or other location that this test checks.</td></tr>
+<tr><td valign="top">MaxDuration</td><td valign="top">The longest length of time for a check to complete.</td></tr>
+<tr><td valign="top">MaxFailTime</td><td valign="top">The longest interval the test has failed.</td></tr>
+<tr><td valign="top">MinDuration</td><td valign="top">The shortest length of time for a check to complete.</td></tr>
+<tr><td valign="top">MinFailTime</td><td valign="top">The shortest interval the test has failed.</td></tr>
+<tr><td valign="top">Name</td><td valign="top">Name of the test.</td></tr>
+<tr><td valign="top">NextCheck</td><td valign="top">The date and time that Simon will next check this test.</td></tr>
+<tr><td valign="top">Recoveries</td><td valign="top">The total number of times the test has recovered from a failure.</td></tr>
+<tr><td valign="top">Service</td><td valign="top">Type of Service used for the test.</td></tr>
+<tr><td valign="top">ShortName</td><td valign="top">Name of the test, converted to lowercase and with non-letter characters removed.</td></tr>
+<tr><td valign="top">Status</td><td valign="top">An indication of the current status of the test.  Also supports icon output.</td></tr>
+<tr><td valign="top">Successes</td><td valign="top">The total number of successful checks for this test.</td></tr>
+<tr><td valign="top">Unviewed</td><td valign="top">"Yes" if this test is marked as unviewed, otherwise "No".  Also supports icon output.</td></tr>
+<tr><td valign="top">UpTime</td><td valign="top">Percentage of successes to failures.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./index.html">Report Templates</a></li>
+<li><a href="../options.html">Report Options</a></li>
+<li><a href="../index.html">Report Info pane</a></li>
+<li><a href="../../reports/index.html">Reports list</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

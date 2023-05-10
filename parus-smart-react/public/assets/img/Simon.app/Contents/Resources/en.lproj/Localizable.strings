@@ -1,0 +1,1116 @@
+/* Back */
+"Back" = "Back";
+
+/* Dock Check Tests */
+"Check All Now" = "Check All Now";
+
+/* Check Now */
+"Check Now" = "Check Now";
+
+/* Copy to Test */
+"Copy to Test" = "Copy to Test";
+
+/* Delete Filter... */
+"Delete Filter..." = "Delete Filter...";
+
+/* Delete Notifier... */
+"Delete Notifier..." = "Delete Notifier...";
+
+/* Delete Report... */
+"Delete Report..." = "Delete Report...";
+
+/* Delete Service... */
+"Delete Service..." = "Delete Service...";
+
+/* Delete Test... */
+"Delete Test..." = "Delete Test...";
+
+/* Duplicate Filter */
+"Duplicate Filter" = "Duplicate Filter";
+
+/* Duplicate Notifier */
+"Duplicate Notifier" = "Duplicate Notifier";
+
+/* Duplicate Report */
+"Duplicate Report" = "Duplicate Report";
+
+/* Duplicate Service */
+"Duplicate Service" = "Duplicate Service";
+
+/* Duplicate Test */
+"Duplicate Test" = "Duplicate Test";
+
+/* Edit Filter */
+"Edit Filter" = "Edit Filter";
+
+/* Edit Notifier */
+"Edit Notifier" = "Edit Notifier";
+
+/* Edit Report */
+"Edit Report" = "Edit Report";
+
+/* Edit Service */
+"Edit Service" = "Edit Service";
+
+/* Edit Test */
+"Edit Test" = "Edit Test";
+
+/* Filters */
+"Filters" = "Filters";
+
+/* Forward */
+"Forward" = "Forward";
+
+/* Hide Chart */
+"Hide Chart" = "Hide Chart";
+
+/* Hide Logs */
+"Hide Logs" = "Hide Logs";
+
+/* Mark as Flagged */
+"Mark as Unviewed" = "Mark as Unviewed";
+
+/* Mark as Unflagged */
+"Mark as Viewed" = "Mark as Viewed";
+
+/* New Filter */
+"New Filter" = "New Filter";
+
+/* New Notifier */
+"New Notifier" = "New Notifier";
+
+/* New Report */
+"New Report" = "New Report";
+
+/* New Service */
+"New Service" = "New Service";
+
+/* New Test */
+"New Test" = "New Test";
+
+/* Notifiers */
+"Notifiers" = "Notifiers";
+
+/* Notify Now */
+"Notify Now" = "Notify Now";
+
+/* Dock Pause Tests */
+"Pause All Tests" = "Pause All Tests";
+
+/* Pause Filter... */
+"Pause Filter..." = "Pause Filter...";
+
+/* Pause Notifier... */
+"Pause Notifier..." = "Pause Notifier...";
+
+/* Pause Report... */
+"Pause Report..." = "Pause Report...";
+
+/* Pause Service... */
+"Pause Service..." = "Pause Service...";
+
+/* Pause Test... */
+"Pause Test..." = "Pause Test...";
+
+/* Preview */
+"Preview" = "Preview";
+
+/* Preview Report */
+"Preview Report" = "Preview Report";
+
+/* Reload Cached */
+"Reload Cached" = "Reload Cached";
+
+/* Report Now */
+"Report Now" = "Report Now";
+
+/* Reports */
+"Reports" = "Reports";
+
+/* Reset Reports Cache... */
+"Reset Reports Cache..." = "Reset Reports Cache...";
+
+/* Reset Stats... */
+"Reset Stats..." = "Reset Stats...";
+
+/* Dock Resume Tests */
+"Resume All Tests" = "Resume All Tests";
+
+/* Resume Filter */
+"Resume Filter" = "Resume Filter";
+
+/* Resume Notifier */
+"Resume Notifier" = "Resume Notifier";
+
+/* Resume Report */
+"Resume Report" = "Resume Report";
+
+/* Resume Service */
+"Resume Service" = "Resume Service";
+
+/* Resume Test */
+"Resume Test" = "Resume Test";
+
+/* Services */
+"Services" = "Services";
+
+/* Show Chart */
+"Show Chart" = "Show Chart";
+
+/* Show Logs */
+"Show Logs" = "Show Logs";
+
+/* Stop Check */
+"Stop Check" = "Stop Check";
+
+/* Stop Notify */
+"Stop Notify" = "Stop Notify";
+
+/* Stop Report */
+"Stop Report" = "Stop Report";
+
+/* Untitled */
+"Untitled" = "Untitled";
+
+/* View Report */
+"View Report" = "View Report";
+
+/* Visit Site */
+"Visit Site" = "Visit Site";
+
+/* short label for Mark Flagged
+   short label for Mark Unflagged */
+"  Viewed  " = "  Viewed  ";
+
+/* can't delete suffix when multiple tests for Delete Service */
+" and %d more." = " and %d more.";
+
+/* Share date & time */
+" on %@ at %@" = " on %1$@ at %2$@";
+
+/* Preview Test item */
+"#%lu: %@ Error" = "#%1$lu: %2$@ Error";
+
+/* Preview Test item */
+"#%lu: %@ Output" = "#%1$lu: %2$@ Output";
+
+/* Test Editor summary page up time */
+"%.2f%%" = "%.2f%%";
+
+/* Last Date: value & suffix */
+"%@ %@" = "%1$@ %2$@";
+
+/* Tests List last check & duration */
+"%@ (%@)" = "%1$@ (%2$@)";
+
+/* Editor summary page name
+   Editor summary page name placeholder */
+"%@ and %d more" = "%1$@ and %2$d more";
+
+/* Copy of name */
+"%@ copy" = "%@ copy";
+
+/* Preview Test item */
+"%@ Headers" = "%@ Headers";
+
+/* Report HTML title for error page */
+"%@ Report Error" = "%@ Report Error";
+
+/* Preview Test item */
+"%@ Response" = "%@ Response";
+
+/* Test failure & recovery */
+"%@ to %@" = "%1$@ to %2$@";
+
+/* Share string */
+"%@%@ %@%@" = "%1$@%2$@ %3$@%4$@";
+
+/* Editor summary page name
+   Editor summary page name placeholder */
+"%@, %@" = "%1$@, %2$@";
+
+/* Test Editor summary page service */
+"%@: %@" = "%1$@: %2$@";
+
+/* Filter Editor summary page options
+   Test Editor summary page options */
+"%@; %@" = "%1$@; %2$@";
+
+/* Setup Assistant too many URLs informative text */
+"%d URLs have been selected for import, but a maximum of %d can be imported at one time.\n\nPlease deselect some and try again.  You can import the remainder later if desired." = "%1$d URLs have been selected for import, but a maximum of %2$d can be imported at one time.\n\nPlease deselect some and try again.  You can import the remainder later if desired.";
+
+/* Next Check Date: internet hotspot login required */
+"(hotspot) %@" = "(hotspot) %@";
+
+/* Next Check Date: internet offline */
+"(offline) %@" = "(offline) %@";
+
+/* Last Changed Date: disabled */
+"--" = "--";
+
+/* confirmation info for Reset Stats 1 group */
+"A group is selected, so this applies to all tests within this group." = "A group is selected, so this applies to all tests within this group.";
+
+/* General prefs password */
+"A password is not required to access Simon" = "A password is not required to access Simon";
+
+/* General prefs password */
+"A password is not required to access the app" = "A password is not required to access the app";
+
+/* General prefs password */
+"A password is required to access Simon" = "A password is required to access Simon";
+
+/* General prefs password */
+"A password is required to access the app" = "A password is required to access the app";
+
+/* User-visible name of the view */
+"Activity" = "Activity";
+
+/* tooltip for Add Test */
+"Add a new site to test" = "Add a new site to test";
+
+/* Reports List date ago
+   Tests List check ago
+   Tests List recovery ago */
+"ago" = "ago";
+
+/* tooltip for Resume Testing */
+"Allow checks on the tests" = "Allow checks on the tests";
+
+/* Test missing error; shouldn't ever occur */
+"An unknown error occurred" = "An unknown error occurred";
+
+/* Descriptive status for variables */
+"an unknown status" = "an unknown status";
+
+/* confirmation for Delete 1 Filter */
+"Are you sure you want to delete the selected filter?" = "Are you sure you want to delete the selected filter?";
+
+/* confirmation for Delete 1 item */
+"Are you sure you want to delete the selected item?" = "Are you sure you want to delete the selected item?";
+
+/* confirmation for Delete 1 Notifier */
+"Are you sure you want to delete the selected notifier?" = "Are you sure you want to delete the selected notifier?";
+
+/* confirmation for Delete 1 Report */
+"Are you sure you want to delete the selected report?" = "Are you sure you want to delete the selected report?";
+
+/* confirmation for Delete 1 Service */
+"Are you sure you want to delete the selected service?" = "Are you sure you want to delete the selected service?";
+
+/* confirmation for Delete 1 Test */
+"Are you sure you want to delete the selected test?" = "Are you sure you want to delete the selected test?";
+
+/* confirmation message for Reset Stats > 1 */
+"Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for all of the selected tests?" = "Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for all of the selected tests?";
+
+/* confirmation message for Reset Stats 0 */
+"Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for ALL tests?" = "Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for ALL tests?";
+
+/* confirmation message for Reset Stats 1 group */
+"Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for the selected group?" = "Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for the selected group?";
+
+/* confirmation message for Reset Stats 1 test */
+"Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for the selected test?" = "Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for the selected test?";
+
+/* confirmation for Delete > 1 Filter */
+"Are you sure you wish to delete all of the selected filters?" = "Are you sure you wish to delete all of the selected filters?";
+
+/* confirmation for Delete > 1 item */
+"Are you sure you wish to delete all of the selected items?" = "Are you sure you wish to delete all of the selected items?";
+
+/* confirmation for Delete > 1 Notifier */
+"Are you sure you wish to delete all of the selected notifiers?" = "Are you sure you wish to delete all of the selected notifiers?";
+
+/* confirmation for Delete > 1 Report */
+"Are you sure you wish to delete all of the selected reports?" = "Are you sure you wish to delete all of the selected reports?";
+
+/* confirmation for Delete > 1 Service */
+"Are you sure you wish to delete all of the selected services?" = "Are you sure you wish to delete all of the selected services?";
+
+/* confirmation for Delete > 1 Test */
+"Are you sure you wish to delete all of the selected tests?" = "Are you sure you wish to delete all of the selected tests?";
+
+/* Status: autopaused */
+"auto-paused" = "auto-paused";
+
+/* Report status: auto-paused */
+"Auto-Paused" = "Auto-Paused";
+
+/* Next Check Date: automatically paused column time */
+"auto-paused %@" = "auto-paused %@";
+
+/* Status: available for use */
+"available" = "available";
+
+/* long label for Back
+   short label for Back */
+"Back" = "Back";
+
+/* Descriptive status for variables */
+"been paused" = "been paused";
+
+/* Preview info */
+"Cached: %@; content type: %@; result code: %@" = "Cached: %1$@; content type: %2$@; result code: %3$@";
+
+/* Test Editor summary page options */
+"can check when offline" = "can check when offline";
+
+/* Cancel button title */
+"Cancel" = "Cancel";
+
+/* Notifier Editor summary page options */
+"Change" = "Change";
+
+/* Descriptive status for variables */
+"changed" = "changed";
+
+/* Filter Editor summary page options
+   Report status: changed recently */
+"Changed" = "Changed";
+
+/* User-visible name of the view */
+"Changes" = "Changes";
+
+/* long label for Check Now
+   short label for Check Now */
+"Check Now" = "Check Now";
+
+/* tooltip for Check Now */
+"Check the site now" = "Check the site now";
+
+/* User-visible name of the view */
+"Checks" = "Checks";
+
+/* Test Editor summary page check counts */
+"checks: %d, successes: %d, failures: %d, recoveries: %d" = "checks: %1$d, successes: %2$d, failures: %3$d, recoveries: %4$d";
+
+/* Setup Assistant next action when not importing */
+"Choose a browser or file, or click Finish to close the assistant." = "Choose a browser or file, or click Finish to close the assistant.";
+
+/* confirmation for Pause > 1 */
+"Choose the amount of time to pause these %@:" = "Choose the amount of time to pause these %@:";
+
+/* Setup Assistant next action when importing */
+"Click Continue to choose which URLs to import as Tests." = "Click Continue to choose which URLs to import as Tests.";
+
+/* short day singular */
+"day" = "day";
+
+/* short day plural */
+"days" = "days";
+
+/* StatusMenu tooltip */
+"Dejal Simon" = "Dejal Simon";
+
+/* Delete button title */
+"Delete" = "Delete";
+
+/* Delete Service sheet info */
+"Delete or change that test if you want to delete this service." = "Delete or change that test if you want to delete this service.";
+
+/* Delete Services sheet info */
+"Delete or change those tests if you want to delete this service." = "Delete or change those tests if you want to delete this service.";
+
+/* Report detail page */
+"Detail" = "Detail";
+
+/* Status: disabled */
+"disabled" = "disabled";
+
+/* Auto Pause next date with expired trial license
+   Notifiers disabled due to expired trial license */
+"disabled due to trial expiry" = "disabled due to trial expiry";
+
+/* message for Reset Reports Cache */
+"Do you wish to reset the reports cache for all reports?" = "Do you wish to reset the reports cache for all reports?";
+
+/* Info Done button title */
+"Done" = "Done";
+
+/* Next Check Date: due prefix */
+"due in %@" = "due in %@";
+
+/* Info Edit button title */
+"Edit" = "Edit";
+
+/* Next Check Date: currently editing the test
+   Status: currently editing
+   Status: currently editing the filter
+   Status: currently editing the notifier
+   Status: currently editing the report
+   Status: currently editing the service */
+"editing" = "editing";
+
+/* Change text end not found error message */
+"End change text was not found in the file" = "End change text was not found in the file";
+
+/* Filter input popup variable suffix */
+"Error" = "Error";
+
+/* Filter input popup variable */
+"Error Message" = "Error Message";
+
+/* Preview load error */
+"Error: %@" = "Error: %@";
+
+/* Reports List frequency */
+"every %@" = "every %@";
+
+/* Test Editor summary page reports */
+"excluded from" = "excluded from";
+
+/* Test Editor summary page reports */
+"excluded from all" = "excluded from all";
+
+/* Descriptive status for share sheet
+   Descriptive status for variables */
+"failed" = "failed";
+
+/* Report status: bad now */
+"Failed" = "Failed";
+
+/* Filter Editor summary page options
+   Notifier Editor summary page options */
+"Failure" = "Failure";
+
+/* User-visible name of the view */
+"Failures" = "Failures";
+
+/* Singular label */
+"filter" = "filter";
+
+/* Filter input popup heading prefix
+   Filter input popup variable prefix */
+"Filter #%d " = "Filter #%d ";
+
+/* Filter error message wrapper */
+"Filter #%d (%@): %@" = "Filter #%1$d (%2$@): %3$@";
+
+/* Filter input popup variable */
+"Filter Error" = "Filter Error";
+
+/* Report status: filtering */
+"Filtering Now" = "Filtering Now";
+
+/* Preview Test group
+   User-visible name of the view */
+"Filters" = "Filters";
+
+/* Plural label */
+"filters" = "filters";
+
+/* short label for Forums */
+"Forums" = "Forums";
+
+/* long label for Forward
+   short label for Forward */
+"Forward" = "Forward";
+
+/* Descriptive status for share sheet
+   Descriptive status for variables */
+"found hotspot login" = "found hotspot login";
+
+/* tooltip for Back */
+"Go back" = "Go back";
+
+/* tooltip for Forward */
+"Go forward" = "Go forward";
+
+/* Descriptive status for variables */
+"gone offline" = "gone offline";
+
+/* Preview placeholder for group selection */
+"Group Selection" = "Group Selection";
+
+/* Descriptive status for share sheet */
+"has an unknown status" = "has an unknown status";
+
+/* Filter input popup variable */
+"Header Text" = "Header Text";
+
+/* short label for Help */
+"Help" = "Help";
+
+/* Password info */
+"Hint: %@" = "Hint: %@";
+
+/* short hour singular */
+"hr" = "hr";
+
+/* short hour plural */
+"hrs" = "hrs";
+
+/* Setup Assistant open sheet button title */
+"Import" = "Import";
+
+/* Test Editor summary page options */
+"included for check all" = "included for check all";
+
+/* Test Editor summary page reports */
+"included on" = "included on";
+
+/* Test Editor summary page reports */
+"included on all" = "included on all";
+
+/* Report Editor summary page options */
+"includes detail" = "includes detail";
+
+/* Report Editor summary page options */
+"includes summary" = "includes summary";
+
+/* Next Check Date: paused indefinitely */
+"indefinitely" = "indefinitely";
+
+/* User-visible name of the view */
+"Info" = "Info";
+
+/* Install button title */
+"Install" = "Install";
+
+/* No comment provided by engineer. */
+"It will be copied to the Plugins folder within the Simon data folder, but it won't be available until the next time Simon is launched." = "It will be copied to the Plugins folder within the Simon data folder, but it won't be available until the next time Simon is launched.";
+
+/* Descriptive status for share sheet */
+"just changed" = "just changed";
+
+/* Descriptive status for share sheet */
+"just recovered" = "just recovered";
+
+/* Descriptive status for share sheet */
+"last changed" = "last changed";
+
+/* Reports List dates */
+"Last report: %@; next report: %@" = "Last report: %1$@; next report: %2$@";
+
+/* Later button title */
+"Later" = "Later";
+
+/* Licenses... button title */
+"Licenses..." = "Licenses...";
+
+/* Preview Report info */
+"Loading" = "Loading";
+
+/* Preview status while loading the transcript */
+"Loading..." = "Loading...";
+
+/* Logging preference page title */
+"Logging" = "Logging";
+
+/* long label for Mark Flagged */
+"Mark as Viewed" = "Mark as Viewed";
+
+/* short minute singular */
+"min" = "min";
+
+/* Test Editor summary page time between failures */
+"min: %@, max: %@, average: %@" = "min: %1$@, max: %2$@, average: %3$@";
+
+/* Test Editor summary page check duration */
+"min: %@, max: %@, average: %@, last: %@" = "min: %1$@, max: %2$@, average: %3$@, last: %4$@";
+
+/* short minute plural */
+"mins" = "mins";
+
+/* User-visible name of the view */
+"Mode" = "Mode";
+
+/* short month singular */
+"mth" = "mth";
+
+/* short month plural */
+"mths" = "mths";
+
+/* Preview placeholder for multiple selection */
+"Multiple Selection" = "Multiple Selection";
+
+/* confirmation info for Reset Stats > 1 */
+"Multiple tests are selected, so this applies to these tests; select one to only reset that, or select none to reset all." = "Multiple tests are selected, so this applies to these tests; select one to only reset that, or select none to reset all.";
+
+/* Editor summary page multiple values
+   Item multiple values placeholder */
+"multiple values" = "multiple values";
+
+/* Last Changed Date: not available
+   Optional interval with no value
+   Tests List not applicable */
+"n/a" = "n/a";
+
+/* Auto Pause next date when no Auto Pause set
+   Date that has never occurred
+   Last Date: never
+   Tests List never failed */
+"never" = "never";
+
+/* short label for Add Test */
+"New" = "New";
+
+/* Report status: changed now */
+"New Change" = "New Change";
+
+/* long label for Add Test */
+"New Test" = "New Test";
+
+/* Auto Pause next date prompt */
+"Next auto pause due: " = "Next auto pause due: ";
+
+/* Report unviewed flag: no */
+"No" = "No";
+
+/* Filter Editor summary page options */
+"no change detection | detects changes" = "no change detection | detects changes";
+
+/* Tests List no error */
+"no error" = "no error";
+
+/* Filter Editor no filter plugins found */
+"No filter plug-ins found" = "No filter plug-ins found";
+
+/* Preview placeholder for no test location */
+"No Location (reload when ready)" = "No Location (reload when ready)";
+
+/* Notifier Editor no notifier plugins found */
+"No notifier plug-ins found" = "No notifier plug-ins found";
+
+/* Preview placeholder for not supported selection */
+"No Preview Available" = "No Preview Available";
+
+/* Report Editor no report plugins found */
+"No report plug-ins found" = "No report plug-ins found";
+
+/* Preview placeholder for no selection */
+"No Selection" = "No Selection";
+
+/* Service Editor no service plugins found */
+"No service plug-ins found" = "No service plug-ins found";
+
+/* Test Editor no services found */
+"No services found" = "No services found";
+
+/* Share menu with no services available */
+"No Sharing Options" = "No Sharing Options";
+
+/* Report Editor no report templates found */
+"No templates found" = "No templates found";
+
+/* Filter Editor summary page options */
+"no test configuration | allows test configuration" = "no test configuration | allows test configuration";
+
+/* confirmation info for Reset Stats 0 */
+"No tests are selected, so this applies to all tests; select some to only reset those." = "No tests are selected, so this applies to all tests; select some to only reset those.";
+
+/* No last error
+   No last result
+   Password info
+   Tests List no diff */
+"None" = "None";
+
+/* Filter Editor summary page options
+   Last Downtime: never failed
+   No value when combining item property strings
+   Notifier Editor summary page options
+   Preview unknown result
+   Report Editor summary page options
+   Test Editor summary page with no names */
+"none" = "none";
+
+/* Test Editor: No filters for the chosen kind
+   Test Editor: No notifiers for the chosen kind
+   Test Editor: No reports available */
+"None Available" = "None Available";
+
+/* Test Editor summary page service */
+"none yet" = "none yet";
+
+/* Descriptive status for variables */
+"not changed" = "not changed";
+
+/* Test Editor summary page options */
+"not checked when offline" = "not checked when offline";
+
+/* Next Check Date: not due */
+"not due" = "not due";
+
+/* Recovered Date: not yet recovered */
+"not yet" = "not yet";
+
+/* Report failures: not yet recovered */
+"Not Yet" = "Not Yet";
+
+/* Singular label */
+"notifier" = "notifier";
+
+/* Plural label */
+"notifiers" = "notifiers";
+
+/* User-visible name of the view */
+"Notifiers" = "Notifiers";
+
+/* Next Check Date: checking now */
+"now%@: %@ elapsed" = "now%1$@: %2$@ elapsed";
+
+/* Report status: offline */
+"Offline" = "Offline";
+
+/* OK button title */
+"OK" = "OK";
+
+/* Password info */
+"Old password hint: %@" = "Old password hint: %@";
+
+/* Test Editor summary page frequency */
+"on success: %@; on failure: %@" = "on success: %1$@; on failure: %2$@";
+
+/* confirmation info for Reset Stats 1 test */
+"One test is selected, so this applies to only this test; select none or multiple to reset those too." = "One test is selected, so this applies to only this test; select none or multiple to reset those too.";
+
+/* tooltip for Visit Site */
+"Open the site in your browser" = "Open the site in your browser";
+
+/* Filter input popup variable
+   Filter input popup variable suffix */
+"Output Text" = "Output Text";
+
+/* short label for Pause Testing */
+"Pause" = "Pause";
+
+/* Pause sheet title */
+"Pause %@" = "Pause %@";
+
+/* Pause sheet title via Status menu */
+"Pause Test" = "Pause Test";
+
+/* long label for Pause Testing */
+"Pause Testing" = "Pause Testing";
+
+/* Status: paused */
+"paused" = "paused";
+
+/* Report status: paused */
+"Paused" = "Paused";
+
+/* Next Check Date: paused column time */
+"paused %@" = "paused %@";
+
+/* Preview placeholder for paused selection */
+"Paused Selection" = "Paused Selection";
+
+/* Setup Assistant open sheet message */
+"Please choose a file containing URLs:" = "Please choose a file containing URLs:";
+
+/* confirmation for Pause 1 */
+"Please indicate the amount of time to pause the selected %@:" = "Please indicate the amount of time to pause the selected %@:";
+
+/* confirmation for Pause 1 via Status menu */
+"Please indicate the amount of time to pause the selected Test:" = "Please indicate the amount of time to pause the selected Test:";
+
+/* Preview mode
+   User-visible name of the view */
+"Preview" = "Preview";
+
+/* Filter input popup heading */
+"Previous Filter Variables:" = "Previous Filter Variables:";
+
+/* Next Check Date: ready to start check */
+"queued %@" = "queued %@";
+
+/* Next Check Date: in queue awaiting start */
+"queued manually" = "queued manually";
+
+/* Quit button title */
+"Quit" = "Quit";
+
+/* Descriptive status for share sheet
+   Descriptive status for variables */
+"recently recovered" = "recently recovered";
+
+/* Descriptive status for variables */
+"recovered" = "recovered";
+
+/* Report status: bad recently */
+"Recovered" = "Recovered";
+
+/* Notifier Editor summary page options */
+"Recovery" = "Recovery";
+
+/* Singular label */
+"report" = "report";
+
+/* short label for Report Now */
+"Report Now" = "Report Now";
+
+/* User-visible name of the view */
+"Reports" = "Reports";
+
+/* Plural label */
+"reports" = "reports";
+
+/* Filter input popup variable */
+"Request Text" = "Request Text";
+
+/* Reset button title */
+"Reset" = "Reset";
+
+/* Last Date: reset column time */
+"reset %@" = "reset %@";
+
+/* Filter input popup variable */
+"Response Text" = "Response Text";
+
+/* Filter input popup variable */
+"Result Code" = "Result Code";
+
+/* short label for Resume Testing */
+"Resume" = "Resume";
+
+/* long label for Resume Testing */
+"Resume Testing" = "Resume Testing";
+
+/* Save menu command */
+"Save %@ Log…" = "Save %@ Log…";
+
+/* Script preference page title */
+"Script" = "Script";
+
+/* Search Log placeholder text */
+"Search %@" = "Search %@";
+
+/* short second singular */
+"sec" = "sec";
+
+/* short second plural */
+"secs" = "secs";
+
+/* Singular label */
+"service" = "service";
+
+/* Preview Test group */
+"Service" = "Service";
+
+/* Filter input popup heading */
+"Service Variables:" = "Service Variables:";
+
+/* Plural label */
+"services" = "services";
+
+/* User-visible name of the view */
+"Services" = "Services";
+
+/* Default filename for Save panel */
+"Simon %@.txt" = "Simon %@.txt";
+
+/* No comment provided by engineer. */
+"Simon plug-ins must be installed before use.  Do you wish to install the %@ plug-in now?" = "Simon plug-ins must be installed before use.  Do you wish to install the %@ plug-in now?";
+
+/* No comment provided by engineer. */
+"Simon plug-ins must be installed before use.  Do you wish to install them now?" = "Simon plug-ins must be installed before use.  Do you wish to install them now?";
+
+/* Setup Assistant heading */
+"Simon Setup Assistant" = "Simon Setup Assistant";
+
+/* Test Editor summary page options */
+"skipped for check all" = "skipped for check all";
+
+/* Report Editor summary page options */
+"skips paused tests" = "skips paused tests";
+
+/* Too old data version explanation */
+"Sorry, Simon can no longer read the very old data format that you have.  Please either delete the data files (located in your Preferences folder), or use an older version of Simon to upgrade.  Please contact Dejal for assistance." = "Sorry, Simon can no longer read the very old data format that you have.  Please either delete the data files (located in your Preferences folder), or use an older version of Simon to upgrade.  Please contact Dejal for assistance.";
+
+/* Filters trial expired message */
+"Sorry, the Filters have been disabled, as your evaluation trial has expired.  Your tests will not be filtered until you purchase Simon.  Please Buy Now." = "Sorry, the Filters have been disabled, as your evaluation trial has expired.  Your tests will not be filtered until you purchase Simon.  Please Buy Now.";
+
+/* Notifiers trial expired message */
+"Sorry, the Notifiers have been disabled, as your evaluation trial has expired.  You will not receive any further notifications until you purchase Simon.  Please Buy Now." = "Sorry, the Notifiers have been disabled, as your evaluation trial has expired.  You will not receive any further notifications until you purchase Simon.  Please Buy Now.";
+
+/* Preview message */
+"Sorry, the Preview function is not supported by the %@ service." = "Sorry, the Preview function is not supported by the %@ service.";
+
+/* Visit Site message */
+"Sorry, the Visit Site function is not supported by the %@ service." = "Sorry, the Visit Site function is not supported by the %@ service.";
+
+/* Too new data version explanation */
+"Sorry, you had previously used a newer version of Simon, and this older version can not read the data format.  Please upgrade to the latest release.  Contact Dejal if you would like assistance." = "Sorry, you had previously used a newer version of Simon, and this older version can not read the data format.  Please upgrade to the latest release.  Contact Dejal if you would like assistance.";
+
+/* List sort by button prefix */
+"Sort by %@" = "Sort by %@";
+
+/* Source mode */
+"Source" = "Source";
+
+/* Change text start not found error message */
+"Start change text was not found in the file" = "Start change text was not found in the file";
+
+/* Descriptive status for share sheet
+   Descriptive status for variables */
+"started checking" = "started checking";
+
+/* short label for Stop Report */
+"Stop Report" = "Stop Report";
+
+/* Preview status when finished successfully */
+"Success" = "Success";
+
+/* Preview status when filter detects a change */
+"Success; input text changed from previous check" = "Success; input text changed from previous check";
+
+/* Preview status when filter detects no change */
+"Success; input text unchanged from previous check" = "Success; input text unchanged from previous check";
+
+/* Preview status when filter wants to auto-detects the change */
+"Success; Simon will automatically detect the change state" = "Success; Simon will automatically detect the change state";
+
+/* Report summary page */
+"Summary" = "Summary";
+
+/* tooltip for Pause Testing */
+"Suspend checks on the tests" = "Suspend checks on the tests";
+
+/* Singular label */
+"test" = "test";
+
+/* Report status: testing */
+"Testing Now" = "Testing Now";
+
+/* User-visible name of the view */
+"Tests" = "Tests";
+
+/* Plural label */
+"tests" = "tests";
+
+/* can't delete error for Delete Service */
+"The %@ service can not be deleted, as it is used by the %@ test%@" = "The %1$@ service can not be deleted, as it is used by the %2$@ test%3$@";
+
+/* Password info */
+"The old password is incorrect; please try again." = "The old password is incorrect; please try again.";
+
+/* Password info */
+"The old password is incorrect; sorry, no hint available." = "The old password is incorrect; sorry, no hint available.";
+
+/* Password info */
+"The old password is incorrect; too many attempts." = "The old password is incorrect; too many attempts.";
+
+/* Password info */
+"The password is incorrect; please try again." = "The password is incorrect; please try again.";
+
+/* Password info */
+"The password is incorrect; sorry, no hint available." = "The password is incorrect; sorry, no hint available.";
+
+/* Password info */
+"The password is incorrect; too many attempts." = "The password is incorrect; too many attempts.";
+
+/* Password info */
+"The password will not be shown." = "The password will not be shown.";
+
+/* Password info */
+"The passwords do not match." = "The passwords do not match.";
+
+/* Too many tests title */
+"There are too many tests." = "There are too many tests.";
+
+/* Setup Assistant too many URLs message text. */
+"There are too many URLs selected for import." = "There are too many URLs selected for import.";
+
+/* No comment provided by engineer. */
+"They will be copied to the Plugins folder within the Simon data folder, but they won't be available until the next time Simon is launched." = "They will be copied to the Plugins folder within the Simon data folder, but they won't be available until the next time Simon is launched.";
+
+/* Visit Site info */
+"This function is available for services like Web that can be displayed in a web browser." = "This function is available for services like Web that can be displayed in a web browser.";
+
+/* Preview info */
+"This function is available for services like Web that have source text or a transcript." = "This function is available for services like Web that have source text or a transcript.";
+
+/* Delete sheet info */
+"This operation can not be undone." = "This operation can not be undone.";
+
+/* Report HTML Simon version for error page */
+"This page generated by <a href=\"http://www.dejal.com/simon/\">Dejal Simon</a> version %@." = "This page generated by <a href=\"http://www.dejal.com/simon/\">Dejal Simon</a> version %@.";
+
+/* Test timeout error */
+"Timeout: check failed to complete in time limit" = "Timeout: check failed to complete in time limit";
+
+/* tooltip for Mark Flagged */
+"Toggle the Viewed column icon" = "Toggle the Viewed column icon";
+
+/* Transcript mode */
+"Transcript" = "Transcript";
+
+/* Change text content error message */
+"Unable to check content" = "Unable to check content";
+
+/* Report HTML message for error page */
+"Unable to find the template file for this report page.  It should be in the \"%@\" folder on your Simon computer, and should be named \"index\" with any extension." = "Unable to find the template file for this report page.  It should be in the \"%@\" folder on your Simon computer, and should be named \"index\" with any extension.";
+
+/* Too new or old data version heading */
+"Unable to use data from Simon %@" = "Unable to use data from Simon %@";
+
+/* Filter Editor summary page options */
+"Unchanged" = "Unchanged";
+
+/* Preview unknown type */
+"unknown" = "unknown";
+
+/* Report status: unknown */
+"Unknown" = "Unknown";
+
+/* Preview unknown date */
+"unsuccessful" = "unsuccessful";
+
+/* short label for Mark Flagged */
+"Unviewed" = "Unviewed";
+
+/* info for Reset Reports Cache */
+"Useful if report files have been deleted manually.  Some reports may take longer to output next time." = "Useful if report files have been deleted manually.  Some reports may take longer to output next time.";
+
+/* Filter input popup heading suffix */
+"Variables:" = "Variables:";
+
+/* long label for Help */
+"View Help Book" = "View Help Book";
+
+/* tooltip for Help */
+"View the Help Book" = "View the Help Book";
+
+/* long label for Forums */
+"Visit Forums" = "Visit Forums";
+
+/* long label for Visit Site
+   short label for Visit Site */
+"Visit Site" = "Visit Site";
+
+/* tooltip for Forums */
+"Visit the Dejal Forums" = "Visit the Dejal Forums";
+
+/* Next Check Date: test is currently waiting for something
+   Status: currently waiting for something
+   Status: filter is currently waiting for something
+   Status: notifier is currently waiting for something
+   Status: report is currently waiting for something
+   Status: service is currently waiting for something */
+"waiting" = "waiting";
+
+/* Descriptive status for share sheet */
+"was paused" = "was paused";
+
+/* Descriptive status for share sheet */
+"went offline" = "went offline";
+
+/* short week singular */
+"wk" = "wk";
+
+/* short week plural */
+"wks" = "wks";
+
+/* Status: currently outputting the report */
+"working: %d%%" = "working: %d%%";
+
+/* Report unviewed flag: yes */
+"Yes" = "Yes";
+
+/* Too many tests explanation */
+"You have %d active tests, but %@ is a streamlined edition for people who only need up to %d tests.\n\nPlease delete or pause %d %@ to bring the total number of active tests within this limit." = "You have %1$d active tests, but %2$@ is a streamlined edition for people who only need up to %3$d tests.\n\nPlease delete or pause %4$d %5$@ to bring the total number of active tests within this limit.";
+
+/* Too many tests explanation */
+"You have %d active tests, but your current license only allows a maximum of %d.\n\nPlease click Licenses... to purchase a license allowing more tests, or click Later then delete or pause %d %@ to bring the total number of active tests within this limit." = "You have %1$d active tests, but your current license only allows a maximum of %2$d.\n\nPlease click Licenses... to purchase a license allowing more tests, or click Later then delete or pause %3$d %4$@ to bring the total number of active tests within this limit.";
+

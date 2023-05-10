@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Monitor - Tests</title>
+<meta name="description" content="The Tests table in the Monitor window lists information about the tests.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Monitor<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Tests</h1>
+
+<p>The <b>Tests</b> list at the top of the <a href="../monitor/index.html"><b>Monitor</b></a> window lists the tests that you have <a href="../test/index.html">added</a>.  Each of these tests will be checked at the frequency you specify.  The list can be sorted and the sort order toggled via the <a href="../menu/view.html">View</a> menu, or the drop-down menu button above the list.</p>
+
+<p>Here are the details of what is displayed:</p>
+
+<p><b>Unviewed</b>: The left-most icon in the table is the Unviewed icon.  A yellow indicator appears here next to tests when a new change, failure or recovery is detected.  This indicator can be used to show that you haven't seen this new event on the test yet.  When you next select this test, the indicator is automatically removed, like the unread messages marker in an email application.  You can manually toggle the indicator on and off via the <b>Edit</b><img src="../../shared/menu-arrow.jpg" alt=" &gt; " /><b>Mark as Unviewed</b> command, or the corresponding toolbar button.</p>
+
+<p><b>Status</b>: Next is the Status.  Lines display an icon indicating whether the test succeeded (e.g. the site was up) or failed (was down) when last checked, indicated by an upwards- or downwards-pointing triangle.  The downward triangle is always bright red (<img src="../../shared/status-bad-now.jpg" />).  But for successful tests, the color of the triangle indicates additional information.  If the triangle is a shade of green (<img src="../../shared/status-changed-now.jpg" />), the site has changed recently - specifically more recently than it had an error.  If it is a shade of orange (<img src="../../shared/status-bad-hour.jpg" />), the test recently failed, but has since recovered - again specifically more recently than any change.  The shade hints at how recent the change or error occurred, with it starting off bright green or orange, and eventually fading to gray as time passes.  While a test is being checked, the status displays a spinning progress indicator, or if you don't have an internet connection at the time of the check, it shows a flashing lightning bolt until the connection is restored.</p>
+
+<p><b>Up Time</b>: This is below the icons, and gives a percentage of successes vs. failures.  This is the standard way of indicating how reliable a test is; 100.00% being best, and 0.00% being worst.  It is expressed to two decimal places.</p>
+
+<p><b>Name</b>: The most prominent value is the descriptive name you have chosen for this test.</p>
+
+<p><b>Service</b>: The name of the <a href="../test/service/index.html">service</a> used by each test is displayed below the name.</p>
+
+<p><b>Location</b>: Next to the service is the URL, domain, or other location for this test, if applicable.</p>
+
+<p><b>Next Check</b>: To the right at the top is the time interval until the test is next checked, expressed relative to now, or as an absolute date if you prefer.  The interval counts down until zero seconds, when the check is performed and the Next Check starts counting down to the subsequent check.  It starts counting down from the due time of the previous check, so that the duration of the check doesn't offset the check time.  You can reset the check time by using the <a href="../menu/file/monitor.html"><b>Check Now</b></a> function when only one test is selected.</p>
+
+<p><b>Last Check</b>: Below the Next Check is the date and time of the most recent check.  It can also be displayed as a relative time or absolute date.</p>
+
+<p><b>Last Check Duration</b>: To the right of the Last Check is the length of time that the most recent check took to complete.</p>
+
+<p>The following items only appear if the <b>Show Last Change &amp; Failure</b> option is checked in the <a href="../menu/view.html">View</a> menu or the drop-down menu button above the list:</p>
+
+<p><b>Last Change Difference</b>: This displays the text from the most recent filter, if any.</p>
+
+<p><b>Last Change</b>: This displays the time that has elapsed since the site last changed.  See the <a href="../test/filters/index.html"><b>Filters</b></a> feature for information on how the change is detected.  The time is expressed relative to now, in seconds, minutes, hours, days, weeks, months, or years.  It is updated every second, or at the frequency specified in the <a href="../prefs/advanced.html">preferences</a>.  If you prefer, you can display this time as an absolute date instead of a relative time.</p>
+
+<p><b>Last Error</b>: This shows the error message from the most recent failure, if any.</p>
+
+<p><b>Last Failure</b>: This is similar to the <b>Last Change</b> one, except that it shows how long ago the previous failure occurred when checking this test, if any.</p>
+
+<p><b>Last Recovery</b>: This displays the date and time of the most recent recovery from a failure.  It can also be displayed as a relative time or absolute date.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../monitor/index.html">Monitor window</a></li>
+<li><a href="../test/index.html">Test Info pane</a></li>
+<li><a href="../prefs/index.html">Preferences</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

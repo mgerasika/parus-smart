@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ReportSummaryPageController">
+            <connections>
+                <outlet property="commentsButton" destination="283" id="kA5-DT-50f"/>
+                <outlet property="commentsLabel" destination="282" id="9Fk-o9-0xI"/>
+                <outlet property="kindButton" destination="261" id="TIZ-Bu-gRY"/>
+                <outlet property="kindLabel" destination="262" id="YdK-2g-cJ6"/>
+                <outlet property="nameButton" destination="284" id="P0n-NC-Bj6"/>
+                <outlet property="nameLabel" destination="281" id="lL7-EP-uum"/>
+                <outlet property="optionsButton" destination="230" id="uNg-r4-fHf"/>
+                <outlet property="optionsLabel" destination="231" id="VdF-8K-q03"/>
+                <outlet property="refreshButton" destination="232" id="mUA-ay-CEb"/>
+                <outlet property="refreshLabel" destination="233" id="TUd-tc-kCe"/>
+                <outlet property="scheduleButton" destination="234" id="8kh-3x-yRi"/>
+                <outlet property="scheduleLabel" destination="235" id="7FH-DL-qu6"/>
+                <outlet property="templateButton" destination="256" id="yVf-2m-ac6"/>
+                <outlet property="templateLabel" destination="257" id="ObM-gG-tON"/>
+                <outlet property="view" destination="277" id="280"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="277" userLabel="Report Editor View">
+            <rect key="frame" x="0.0" y="0.0" width="583" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="281">
+                    <rect key="frame" x="141" y="167" width="424" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="&lt;do not localize&gt;" id="288">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="230">
+                    <rect key="frame" x="85" y="118" width="59" height="17"/>
+                    <buttonCell key="cell" type="recessed" title="Optionen:" bezelStyle="recessed" alignment="right" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="241">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="gotoOptions:" target="-2" id="dEb-Z8-WAc"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="231">
+                    <rect key="frame" x="141" y="120" width="424" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="&lt;do not localize&gt;" id="240">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="232">
+                    <rect key="frame" x="86" y="141" width="58" height="17"/>
+                    <buttonCell key="cell" type="recessed" title="Aktualisieren:" bezelStyle="recessed" alignment="right" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="239">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="gotoRefresh:" target="-2" id="qxm-8l-Z4H"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="233">
+                    <rect key="frame" x="141" y="142" width="424" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="&lt;do not localize&gt;" id="238">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="234">
+                    <rect key="frame" x="66" y="49" width="78" height="17"/>
+                    <buttonCell key="cell" type="recessed" title="Auto-Pause:" bezelStyle="recessed" alignment="right" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="237">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="gotoSchedule:" target="-2" id="8rd-uC-9Hu"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="235">
+                    <rect key="frame" x="141" y="51" width="424" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="&lt;do not localize&gt;" id="236">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="256">
+                    <rect key="frame" x="78" y="95" width="66" height="17"/>
+                    <buttonCell key="cell" type="recessed" title="Vorlage:" bezelStyle="recessed" alignment="right" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="259">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="gotoTemplate:" target="-2" id="2SR-el-5eN"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="257">
+                    <rect key="frame" x="141" y="97" width="424" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="&lt;do not localize&gt;" id="258">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="261">
+                    <rect key="frame" x="63" y="72" width="81" height="17"/>
+                    <buttonCell key="cell" type="recessed" title="Bericht-Art:" bezelStyle="recessed" alignment="right" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="264">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="gotoKind:" target="-2" id="F3N-eY-Emm"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="262">
+                    <rect key="frame" x="141" y="74" width="424" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="&lt;do not localize&gt;" id="263">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="282">
+                    <rect key="frame" x="141" y="0.0" width="424" height="42"/>
+                    <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="&lt;do not localize&gt;" id="287">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="283">
+                    <rect key="frame" x="69" y="26" width="75" height="17"/>
+                    <buttonCell key="cell" type="recessed" title="Kommentare:" bezelStyle="recessed" alignment="right" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="286">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="gotoComments:" target="-2" id="VtU-T3-zhe"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="284">
+                    <rect key="frame" x="95" y="165" width="49" height="17"/>
+                    <buttonCell key="cell" type="recessed" title="Name:" bezelStyle="recessed" alignment="right" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="285">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="gotoName:" target="-2" id="bL7-vH-hXB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="284" firstAttribute="top" secondItem="277" secondAttribute="top" constant="20" id="0xC-tf-N13"/>
+                <constraint firstItem="233" firstAttribute="leading" secondItem="282" secondAttribute="leading" id="5BD-4L-S3D"/>
+                <constraint firstItem="233" firstAttribute="width" secondItem="235" secondAttribute="width" id="7iC-gi-qss"/>
+                <constraint firstItem="257" firstAttribute="leading" secondItem="256" secondAttribute="trailing" constant="-1" id="8zQ-2p-IcS"/>
+                <constraint firstItem="233" firstAttribute="leading" secondItem="231" secondAttribute="leading" id="9R5-zh-pY7"/>
+                <constraint firstItem="232" firstAttribute="trailing" secondItem="284" secondAttribute="trailing" id="CuI-We-i4N"/>
+                <constraint firstItem="281" firstAttribute="leading" secondItem="277" secondAttribute="leading" constant="143" id="FnG-HV-03L"/>
+                <constraint firstItem="233" firstAttribute="leading" secondItem="262" secondAttribute="leading" id="Iov-gD-Gie"/>
+                <constraint firstItem="231" firstAttribute="leading" secondItem="230" secondAttribute="trailing" constant="-1" id="Jf9-Np-3tm"/>
+                <constraint firstItem="262" firstAttribute="leading" secondItem="261" secondAttribute="trailing" constant="-1" id="KNb-SV-5Zl"/>
+                <constraint firstItem="257" firstAttribute="top" secondItem="231" secondAttribute="bottom" constant="9" id="MQG-sR-qO8"/>
+                <constraint firstItem="230" firstAttribute="baseline" secondItem="231" secondAttribute="baseline" id="Nea-Ia-5M6"/>
+                <constraint firstItem="233" firstAttribute="baseline" secondItem="232" secondAttribute="baseline" constant="1" id="OLj-9g-eZZ"/>
+                <constraint firstItem="233" firstAttribute="width" secondItem="281" secondAttribute="width" id="P81-uQ-oqC"/>
+                <constraint firstItem="256" firstAttribute="baseline" secondItem="257" secondAttribute="baseline" id="PH2-b9-IKS"/>
+                <constraint firstItem="233" firstAttribute="top" secondItem="281" secondAttribute="bottom" constant="11" id="Pp0-ih-PRd"/>
+                <constraint firstItem="282" firstAttribute="leading" secondItem="283" secondAttribute="trailing" constant="-1" id="SFV-aO-NCX"/>
+                <constraint firstItem="232" firstAttribute="trailing" secondItem="261" secondAttribute="trailing" id="SWV-CT-ScG"/>
+                <constraint firstItem="235" firstAttribute="top" secondItem="262" secondAttribute="bottom" constant="9" id="ShH-Gi-A6h"/>
+                <constraint firstItem="232" firstAttribute="trailing" secondItem="283" secondAttribute="trailing" id="TRa-AJ-xZs"/>
+                <constraint firstItem="232" firstAttribute="trailing" secondItem="256" secondAttribute="trailing" id="UQ7-W0-JbE"/>
+                <constraint firstItem="261" firstAttribute="baseline" secondItem="262" secondAttribute="baseline" id="VPS-L0-4HJ"/>
+                <constraint firstItem="232" firstAttribute="trailing" secondItem="234" secondAttribute="trailing" id="Vi2-Gx-C7c"/>
+                <constraint firstItem="233" firstAttribute="width" secondItem="231" secondAttribute="width" id="ZEj-Ir-LdR"/>
+                <constraint firstItem="233" firstAttribute="width" secondItem="262" secondAttribute="width" id="az3-wc-7es"/>
+                <constraint firstItem="233" firstAttribute="leading" secondItem="281" secondAttribute="leading" id="e5B-Jj-Fy7"/>
+                <constraint firstItem="235" firstAttribute="leading" secondItem="234" secondAttribute="trailing" constant="-1" id="eQi-rF-pmw"/>
+                <constraint firstItem="233" firstAttribute="width" secondItem="282" secondAttribute="width" id="fIq-FU-GlQ"/>
+                <constraint firstItem="283" firstAttribute="top" secondItem="282" secondAttribute="top" constant="-1" id="hnh-vJ-iVh"/>
+                <constraint firstItem="231" firstAttribute="top" secondItem="233" secondAttribute="bottom" constant="8" id="hzP-5E-Z7E"/>
+                <constraint firstItem="235" firstAttribute="baseline" secondItem="234" secondAttribute="baseline" id="j89-A4-j2O"/>
+                <constraint firstItem="281" firstAttribute="baseline" secondItem="284" secondAttribute="baseline" id="jwb-Gp-sdl"/>
+                <constraint firstItem="233" firstAttribute="leading" secondItem="235" secondAttribute="leading" id="k1Y-eP-Opl"/>
+                <constraint firstAttribute="trailing" secondItem="281" secondAttribute="trailing" constant="20" id="k8c-7L-uVO"/>
+                <constraint firstAttribute="bottom" secondItem="282" secondAttribute="bottom" id="mvP-Vg-gBK"/>
+                <constraint firstItem="281" firstAttribute="top" secondItem="277" secondAttribute="top" constant="21" id="nW3-Cq-I1j"/>
+                <constraint firstItem="233" firstAttribute="leading" secondItem="257" secondAttribute="leading" id="pqf-OL-6jV"/>
+                <constraint firstItem="282" firstAttribute="top" secondItem="235" secondAttribute="bottom" constant="9" id="rWh-vb-oq8"/>
+                <constraint firstItem="232" firstAttribute="trailing" secondItem="230" secondAttribute="trailing" id="vOR-6c-o8b"/>
+                <constraint firstItem="262" firstAttribute="top" secondItem="257" secondAttribute="bottom" constant="9" id="wll-IL-e4c"/>
+                <constraint firstItem="233" firstAttribute="width" secondItem="257" secondAttribute="width" id="zv6-AV-tDg"/>
+            </constraints>
+            <point key="canvasLocation" x="351.5" y="674"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>{title format="wordcase"} Detail Report</title>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="Joe Savelberg, Euregio.Net Inc." />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta http-equiv="refresh" content="{refresh}" />
+<style type="text/css" media="screen">@import "./resources/iui.css";</style>
+<script type="application/x-javascript" src="./resources/iui.js"></script>
+<!--
+<script type="application/x-javascript" src="http://10.0.1.2:1840/ibug.js"></script>
+-->
+<meta name="HandheldFriendly" content="true">
+
+</head>
+
+<body>
+
+{template type="detail" version="1" description="A PDA & phone-friendly report template."}
+
+{!-- This template is designed to be small and simple, to aid viewing on a mobile device like a PDA or phone that supports web browsing. --}
+
+
+{!-- See the Simon User Guide for more information about the template files, including an explanation of the special markers in this file: <http://www.dejal.com/simon/guide/report-templates.html>. --}
+
+    <form id="settings" title="{name format="wordcase" link="yes"}" class="panel" selected="true">
+
+
+[test]
+
+	<h2>{name}</h2>
+
+        <fieldset>
+            <div class="row">
+                <label>Status</label>
+                <div style="padding-right: 15px; margin: 0 0 0 14px; line-height: 42px;">{status}</div>
+            </div>
+            <div class="row">
+                <label>Up Time</label>
+                <div style="padding-right: 15px; margin: 0 0 0 14px; line-height: 42px;">{uptime}</div>
+            </div>
+            <div class="row">
+                <label>Successes</label>
+                <div style="padding-right: 15px; margin: 0 0 0 14px; line-height: 42px;">{successes}</div>
+            </div>
+            <div class="row">
+                <label>Failures</label>
+                <div style="padding-right: 15px; margin: 0 0 0 14px; line-height: 42px;">{failures}</div>
+            </div>
+            <div class="row">
+                <label>Recoveries</label>
+                <div style="padding-right: 15px; margin: 0 0 0 14px; line-height: 42px;">{recoveries}</div>
+            </div>
+        </fieldset>
+        
+[/test]
+
+	<h2>Recent Changes</h2>
+
+[change count="3"]
+
+        <fieldset>
+            <div class="row">
+                <label>Change Date</label>
+                <div style="padding-right: 15px; margin: 0 0 0 14px; line-height: 42px;">{date type="absolute"}</div>
+            </div>
+            <div class="row">
+                <div style="text-align: left; font-size: 12px; margin: 10px 15px 10px 14px;">{difference length="50"}</div>
+            </div>
+        </fieldset>
+
+
+[/change]
+
+	<h2>Recent Failures</h2>
+
+[failure count="3"]
+
+        <fieldset>
+            <div class="row">
+                <label>Fail Date</label>
+                <div style="padding-right: 15px; margin: 0 0 0 14px; line-height: 42px;">{failed type="absolute"}</div>
+            </div>
+            <div class="row">
+                <label>Downtime</label>
+                <div style="padding-right: 15px; margin: 0 0 0 14px; line-height: 42px;">{downtime}</div>
+            </div>
+            <div class="row">
+                <div style="text-align: left; font-size: 12px; margin: 10px 15px 10px 14px;">{error}</div>
+            </div>
+        </fieldset>
+
+
+[/failure]
+
+
+<p><a href="#" onClick="history.go(-1);">Back to Summary</a></p>
+
+<p>Created on {reportdate} at {reporttime}.</p>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Bericht-Infobereich - Vorlagen</title>
+<meta name="description" content="Bericht-Vorlagen werden zur Formatierung der Bericht genutzt.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Bericht-Vorlagen</h1>
+
+<p>Der Bericht-Vorlagen-Ordner enthält HTML-Dateien (und andere Formate), die Sie zur Darstellung des Inhalt von Simon-Berichten verändern können. Dieser Ordner liegt im Datenordner von Simon: "~/Library/Application Support/Dejal/Simon/". Sie können ihn rasch im Finder anzeigen lassen, wenn Sie im <a href="../index.html"><b>Bericht-Infobereich</b></a> in der Seite <a href="../options.html"><b>"Bericht-Optionen"</b></a> auf den Button [Im Finder zeigen] klicken.</p>
+
+<p>Sie brauchen die Vorlagen nicht zu bearbeiten (geschweige denn anzusehen), um Simon zu benutzen. Simon bietet schon eine Anzahl nützlicher Vorlagen, die automatisch im Bericht-Vorlagen-Ordner installiert werden, wenn Sie Simon ab Version 2.1 das erste Mal starten. Die Simon-Website bietet weitere aktualisierte oder von Anwendern zur Verfügung gestellte Vorlagen: Besuchen Sie die Seite <a href="http://www.dsd.net/prod/mac/simon.phpextras/"><b>Simon-Extras</b> <img src="../../../shared/ext-link.png" alt="[Weblink]" /></a>. Natürlich können Sie vorbereiteten Vorlagen trotzdem nach Ihren Wünschen bearbeiten oder sogar neue erzeugen, wenn Sie möchten. Wenn Sie eine Vorlage neu erzeugen oder bearbeiten und meinen, auch andere Anwender könnten davon profitieren, nutzen Sie die <a href="http://www.dsd.net/prod/mac/simon.phpextras/"><b>Simon-Extras</b> <img src="../../../shared/ext-link.png" alt="[Weblink]" /></a>-Webseite, um sie zu verbreiten; dort steht auch, wie das geht.</p>
+
+<p>Der Bericht-Vorlagen-Ordner enthält Unterordner für jede Vorlage. Innerhalb jedes dieser Ordner gibt es einige oder alle der nachfolgend beschriebenen Objekte:</p>
+
+<ul>
+<li>Eine Datei namens index oder summary, ohne jede Dateiendung. Diese Datei enthält den HTML-Inhalt für die Zusammenfassung-Seite und listet alle im Bericht enthaltenen Tests auf.</li>
+<li>Eine Datei oder ein Ordner namens detail. Falls es eine Datei ist, kann sie irgendeine Endung haben; falls es ein Ordner ist, muss darin eine Datei namens index enthalten sein, wiederum ohne jede Dateiendung. In jedem Fall enthält diese Datei den HTML-Inhalt für die Detailseiten. Die Datei bzw. der Ordner namens detail wird für jede Detailseite kopiert, wobei eine Kurzform des entsprechenden Test-Namens zur Unterscheidung verwendet wird.</li>
+<li>Ein Ordner namens images. Er ist optional; falls vorhanden, wird er samt seinem Inhalt unverändert ausgegeben. Hier ist der richtige Ort, um Ihre Grafiken für Berichte abzulegen.</li>
+<li>Ein Ordner namens resources. Er ist ebenfalls optional und wird ebenso unverändert ausgegeben, falls vorhanden. Hier können Sie andere Dateien ablegen, z.B. CSS-Dateien (Cascading Style Sheets), zusätzliche PHP-Skripte, Formular-Seiten usw.</li>
+<li>Alle anderen Dateien werden ignoriert, daher können Sie problemlos z.B. LIESMICH-Dateien usw. im Vorlagen-Ordner ablegen.</li>
+</ul>
+
+<p>Die meisten Vorlagen benutzen HTML-Formatierung, aber das ist kein Muss. Sie können jedes textbasierte Format nutzen. Die eingebauten Vorlagen z.B. nutzen XML für einen RSS-Feed, oder tab-limitierten Text.</p>
+
+<p>Zusätzlich enthalten die Vorlagen-Dateien spezielle, Simon-spezifische Tags, die mit den Tests, Prüfungen, Änderungen, Fehlschlägen und Meldungen von Simon sowie weiteren Werten ersetzt werden. Diese Tags nutzen weitgehend die normalen HTML-Konventionen, aber mit genauen Begrenzern. Es gibt zwei Arten von Simon-Tags:</p>
+
+<dl>
+
+<dd>Block-Tags:</dd>
+<dt>
+<ul>
+<li>Sind umschlossen von eckigen Klammern, z.B. [test].</li>
+<li>Haben Schluss-Tags, z.B. [/test], genau wie HTML.</li>
+<li>Gelten als Bereich für enthaltene Variablen.</li>
+<li>Erzeugen HTML-Code, der für jede Zeile wiederholt werden sollte, z.B. für jeden Test auf einer Zusammenfassung-Seite oder jede Prüfung auf einer Detailseite.</li>
+<li>Können Parameter haben; momentan wird nur der count-Parameter unterstützt, der die Anzahl benutzter Zeilen begrenzt.</li>
+</ul>
+</dt>
+
+<dd>Variablen-Tags:</dd>
+<dt>
+<ul>
+<li>Sind umschlossen von geschweiften Klammern, ohne separaten Schluss-Tag, z.B. {name}.</li>
+<li>Haben einen Variablen-Namen und können optional Parameter enthalten, z.B. {date type="absolute"}.</li>
+<li>Parameter-Werte müssen von "Gänsefüßchen" umschlossen sein.</li>
+<li>Zwischen Parametername, Gleich-Zeichen, Anführungszeichen und Wert dürfen keine Leerzeichen stehen.</li>
+<li>Mehrfache Parameter können genutzt werden. Falls nicht, werden Standardwerte genutzt.</li>
+</ul>
+</dt>
+
+</dl>
+
+
+<p>Block- und Variablen-Tags und ihre Parameter werden nicht nach Groß-/Kleinschreibung unterschieden, daher können Sie gerne auch GroßBuchStaben nutzen, um die Namen lesbarer zu machen, falls Sie möchten.</p>
+
+<p>Die "Zusammenfassung"-Seite hat zwei Block-Bereiche – das Dokument selbst und den Test-Block. Klicken Sie auf die Variablen-Namen für jede Block-Art, um mehr Informationen zu erhalten:</p>
+
+<ul>
+<li><a href="./document.html"><b>Dokument</b></a>: Das HTML-Dokument unterstützt verschiedene Variablen, die beliebig im Dokument benutzt werden können.</li>
+<li><a href="./test.html"><b>Test</b></a>: Enthält die Vorlage für einen einzelnen Test; sie wird für jeden in der Zusammenfassung enthaltenen Test wiederholt.</li>
+</ul>
+
+<p>Die "Detail"-Seiten unterstützen verschiedene Block-Arten:</p>
+
+<ul>
+<li><a href="./document.html"><b>Dokument</b></a>: Genau wie die Zusammenfassung-Seite unterstützen auch die Detailseiten Variablen auf Dokumentebene.</li>
+<li><a href="./test.html"><b>Test</b></a>: In diesem Fall enthält dieser Block Informationen über den einzelnen Test in der Detailseite.</li>
+<li><a href="./check.html"><b>Prüfung</b></a>: enthält die Vorlage für eine einzelne Prüfung; wird für jede Prüfung wiederholt.</li>
+<li><a href="./change.html"><b>Änderung</b></a>: enthält die Vorlage für eine einzelne Änderung; wird für jede Änderung wiederholt.</li>
+<li><a href="./failure.html"><b>Fehlschlag</b></a>: enthält die Vorlage für einen einzelnen Fehlschlag; wird für jeden Fehlschlag wiederholt.</li>
+<li><a href="./activity.html"><b>Aktivität</b></a>: enthält die Vorlage für eine einzelne Aktivität; wird für jede Aktivität wiederholt.</li>
+</ul>
+
+<p>Im Kapite <a href="./params.html">Berichtvorlage-Parameter</a> finden Sie Informationen über die verfügbaren Parameter.</p>
+
+<p>Die nachfolgenden Seiten geben weitere Informationen über die verfügbaren Vorlagen-Beispiele.</p>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="../options.html">Bericht-Optionen</a></li>
+<li><a href="../index.html">Bericht-Infobereich</a></li>
+<li><a href="../../reports/index.html">Berichte-Liste</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

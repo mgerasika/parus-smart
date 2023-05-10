@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Monitor - Tests</title>
+<meta name="description" content="Die Tests-Tabelle im Simon-Monitor-Fenster listet alle wichtigen Informationen über die Tests auf.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Monitor<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Tests</h1>
+
+<p>Diese Tabelle oben im <a href="../monitor/index.html"><b>Simon-Monitor-Fenster</b></a> listet alle Tests auf, die Sie  <a href="../test/index.html">angelegt</a> haben. Jeder dieser Tests wird so oft ausgeführt, wie Sie festlegen. Die Liste kann durch Klicks auf die Tabellen-Spalten sortiert werden. Durch mehrfaches Klicken auf einen Spalten-Titel können Sie die Sortierung umkehren. Die Positionen und Breiten der Spalten können durch Ziehen der Spalten-Titel mit der Maus geändert werden, und diese Änderungen werden gespeichert.</p
+
+<p>Sie können auch Spalten hinzufügen oder entfernen und festlegen, ob alle Datum/Zeit-Spalten als absolute Daten oder relative Zeiten dargestellt werden sollen. Rufen Sie dazu (im Ansicht-Menü) das Formular <a href="../monitor/options.html"><b>Ansicht-Optionen</b></a> auf.</p>
+
+<p>Nachfolgend werden alle verfügbaren Spalten beschrieben, von denen aber nicht alle standardmäßig sichtbar geschaltet sind:</p>
+
+<dl>
+<dd>Ungesehen:</dd>
+<dt>Ganz links in der Tabelle ist normalerweise die Ungesehen-Spalte. Ein gelber Marker erscheint in dieser Spalte bei Tests, in denen eine neue Änderung, ein Fehlschlag oder eine Wiederherstellung entdeckt wurde (sofern die Filter-Funktion für den Test eingeschaltet ist). Dieser Marker kann genutzt werden, um zu zeigen, dass Sie die Änderungen im Test noch nicht gesehen haben. Sobald Sie den Test selektieren, verschwindet der Marker automatisch, wie eine Markierung für ungelesene Nachrichten in einem E-Mail-Programm. Sie können den Marker über den Menüpunkt "Bearbeiten > Als Unbetrachtet markieren" oder mit dem entsprechenden Button der Symbolleiste umschalten. Diese Spalte wird standardmäßig immer angezeigt.</dt>
+
+<dd>Status:</dd>
+<dt>Die nächste Tabellen-Spalte ist die Status-Spalte. Sie zeigt für jeden Test, ob der Test erfolgreich war (z.B. ob eine Webseite erreichbar war) oder fehlgeschlagen ist (z.B. wenn eine Webseite nicht erreicht werden konnte), indem ein aufwärts oder abwärts zeigendes Dreieck angezeigt wird. Das abwärts zeigende Dreieck ist immer grellrot (<img src="../../shared/status-bad-now.jpg" />).  Bei erfolgreichen Tests zeigt die Farbe des Dreiecks weitere Informationen. Wenn das Dreieck grün ist (<img src="../../shared/status-changed-now.jpg" />), hat sich die Webseite kürzlich geändert – genauer gesagt ist die Änderung nicht so lange her wie z.B. der letzte Fehler. Wenn das Dreieck orange ist (<img src="../../shared/status-bad-hour.jpg" />), schlug der Test kürzlich fehl, aber war danach wieder erfolgreich – wobei auch hier immer der jüngste Status angezeigt wird. Die Farbschattierung zeigt, wie lange die Änderung oder der Fehlschlag zurückliegen, indem die Dreiecke zunächst in grellem Grün oder Orange gefärbt sind, im Laufe der Zeit aber immer weiter verblassen, bis hin zu Grau. Wenn ein Test ausgeführt wird, zeigt die Statusspalte den sich drehenden Fortschritt-Indikator. Wenn der Rechner während der Prüfung keinen Internet-Zugang hat, wird stattdessen ein blinkender Blitz gezeigt, so lange bis die Verbindung wiederhergestellt ist. Diese Spalte wird standardmäßig immer angezeigt.</dt>
+
+<dd>Verfügbarkeit:</dd>
+<dt>Diese Spalte zeigt das Prozentuale Verhältnis von Erfolgen und Fehlschlägen. Dies ist der übliche Weg, um darzustellen, wie zuverlässig ein Test ist: 100,00&nbsp;% ist am besten, 0,00&nbsp;% am schlechtesten. Die Prozentwerte werden auf zwei Stellen hinter dem Komma genau angezeigt. Diese Spalte wird standardmäßig immer angezeigt.</dt>
+
+<dd>Dienst:</dd>
+<dt>Der Name des <a href="../test/service/index.html">Dienstes</a>, den dieser Test nutzt, wird hier gezeigt. Diese Spalte wird standardmäßig immer angezeigt.</dt>
+
+<dd>Name:</dd>
+<dt>Diese Spalte zeigt den beschreibenden Namen, den Sie diesem Test gegeben haben. Diese Spalte wird standardmäßig immer angezeigt und kann nicht entfernt werden.</dt>
+
+<dd>Ort:</dd>
+<dt>Diese Spalte zeigt den URL, die Domäne oder andere Orte für diesen Test, sofern zutreffend. Diese Spalte wird standardmäßig nicht angezeigt.</dt>
+
+<dd>Nicht erreichbar:</dd>
+<dt>Diese Spalte zeigt, wann der letzte Fehlschlag aufgetreten ist, ansonsten "niemals". Diese Spalte wird standardmäßig nicht angezeigt.</dt>
+
+<dd>Letzter Fehler:</dd>
+<dt>Diese Spalte zeigt die Fehlermeldung, die beim letzten Fehlschlag empfangen wurde, ansonsten "keiner". Diese Spalte wird standardmäßig nicht angezeigt.</dt>
+
+<dd>Letztes Ereignis:</dd>
+<dt>Diese Spalte zeigt, wann die letzte Änderung, der letzte Fehlschlag oder die letzte Rettung stattfand. Die Zeit wird relativ zu jetzt in Sekunden, Minuten, Stunden, Tagen, Wochen, Monaten oder Jahren dargestellt. Sie wird jede Sekunde aktualisiert. Sie können die Häufigkeit aber in den <a href="../prefs/advanced.html">Einstellungen</a> auf bis zu 10 Sekunden verlängern. Wenn Sie möchten, können Sie sich die Zeit auch als absolutes Datum anstelle der relativen Zeit anzeigen lassen. Die Einstellung dafür können Sie im Formular <a href="../monitor/options.html"><b>Ansicht-Optionen</b></a> vornehmen. Diese Spalte wird standardmäßig nicht angezeigt.</dt>
+
+<dd>Letzte Prüfung:</dd>
+<dt>Diese Spalte zeigt, wann die letzte Prüfung durchgeführt wurde. Auch diese Zeitangabe kann als relative Zeit oder absolutes Datum angezeigt werden. Diese Spalte wird standardmäßig nicht angezeigt.</dt>
+
+<dd>Letzte Änderung:</dd>
+<dt>Diese Spalte zeigt, wieviel Zeit seit der letzten Änderung vergangen ist. Im Handbuch-Abschnitt <a href="../test/filters/index.html"><b>Filter</b></a> können Sie nachlesen, was eigentlich als Änderung gewertet wird. Die Zeit wird relativ zu jetzt in Sekunden, Minuten, Stunden, Tagen, Wochen, Monaten oder Jahren dargestellt. Sie wird jede Sekunde aktualisiert. Sie können die Häufigkeit aber in den <a href="../prefs/advanced.html">Einstellungen</a> auf bis zu 10 Sekunden verlängern. Wenn Sie möchten, können Sie sich die Zeit auch als absolutes Datum anstelle der relativen Zeit anzeigen lassen. Die Einstellung dafür können Sie im Formular "Ansicht-Optionen" vornehmen. Diese Spalte wird standardmäßig immer angezeigt.</dt>
+
+<dd>Letzter Fehlschlag:</dd>
+<dt>Diese Spalte ist ähnlich der eben beschriebenen, zeigt aber stattdessen an, wie lange der letzte Fehlschlag beim Ausführen des Tests zurückliegt, oder sie zeigt "keiner". Diese Spalte wird standardmäßig immer angezeigt.</dt>
+
+<dd>Letzte Rettung:</dd>
+<dt>Diese Spalte zeigt, wann nach einem Fehlschlag die letzte Rettung des Tests stattgefunden hat. Auch diese Zeitangabe kann als relative Zeit oder absolutes Datum angezeigt werden. Diese Spalte wird standardmäßig nicht angezeigt.</dt>
+
+<dd>Nächste Prüfung:</dd>
+<dt>Diese Spalte zeigt, wann der Test das nächste Mal ausgeführt wird, ebenfalls relativ zu jetzt oder als absolutes Datum, ganz nach Ihrem Geschmack. Das Intervall wird bis auf null Sekunden heruntergezählt, dann wird die Prüfung das nächste Mal durchgeführt und anschließend zeigt diese Spalte die Zeit für die darauf folgende Prüfung an. Dabei wird immer vom Zeitpunkt an gezählt, an dem eine Prüfung beginnt, so dass die Dauer einer Prüfung den Termin der nächsten Prüfung nicht beeinflusst. Sie können die Zeit für die nächste Prüfung eines, mehrerer oder aller Tests zurücksetzen, indem Sie den Menüpunkt "Ablage > <a href="../menu/file/monitor.html">Jetzt prüfen</a>" wählen. Diese Spalte wird standardmäßig immer angezeigt.</dt>
+
+<dd>Dauer letzter Prüfung:</dd>
+<dt>Diese Spalte zeigt, wie lange die Durchführung der letzten Prüfung gedauert hat. Diese Spalte wird standardmäßig nicht angezeigt.</dt>
+
+<dd>Unterschied in letzter Änderung:</dd>
+<dt>Diese Spalte zeigt den Text an, den der letzte Filter gefunden hat, oder gar nichts. Diese Spalte wird standardmäßig nicht angezeigt.</dt>
+</dl>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="../monitor/index.html">Monitor-Fenster</a></li>
+<li><a href="../monitor/options.html">Ansicht-Optionen</a></li>
+<li><a href="../test/index.html">Test-Infobereich</a></li>
+<li><a href="../prefs/index.html">Einstellungen</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

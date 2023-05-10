@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Filter - Kind - Block</title>
+<meta name="description" content="The Block plug-in outputs text between start and end text.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Filter Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Filter Kind<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Block plug-in</h1>
+
+<p>The <b>Block</b> plug-in is displayed when you choose <b>Block</b> in the <b>Filter Kind</b> pop-up menu in the <a href="../index.html"><b>Filter Info</b></a> pane.</p>
+
+<p>This plug-in is used by the default <a href="../../test/filters/block.html">Block and Change filters</a>.</p>
+
+<p>This plug-in looks for two bits of text: one marking the start of the block you're interested in, and another marking the end.  If the start text is left blank, the start of the input text is used, and similarly if the end text is left blank, the end of the input text is used.</p>
+
+<p>If the start and/or end text appears more than once in the input text, you can disclose additional options.  Drag to the left the small dot to the right of the fields to reveal these extra options.</p>
+
+<p>These extra options enable you to choose whether to search from the start or the end of the input text, and search for a specific occurrence of the text, e.g. start from the 3rd occurrence from the end of the text.  By default, the filter will find the first occurrence from the start of the input.</p>
+
+<p>Note that the end text is constrained by the start text &mdash; it won't find a match for the end text before the start text.</p>
+
+<p>This filter outputs the text between the start and end markers, without including them.  This text can detect changes via the checkbox in the <a href="../options.html">Options page</a>.  If either marker can not be found, it results in a failure.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../../test/filters/block.html">Block-based filters</a></li>
+<li><a href="./index.html">Filter Kind</a></li>
+<li><a href="../index.html">Filter Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

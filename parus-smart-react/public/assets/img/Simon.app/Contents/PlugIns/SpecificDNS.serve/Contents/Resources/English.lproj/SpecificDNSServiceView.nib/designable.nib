@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" promptedForUpgradeToXcode5="NO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SpecificDNSService">
+            <connections>
+                <outlet property="serviceDNSField" destination="30" id="46"/>
+                <outlet property="serviceIPField" destination="32" id="45"/>
+                <outlet property="serviceModeMatrix" destination="34" id="44"/>
+                <outlet property="serviceRecursionButton" destination="50" id="51"/>
+                <outlet property="serviceURLField" destination="20" id="27"/>
+                <outlet property="serviceView" destination="5" id="6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customView id="5" userLabel="ServiceView">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="137"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button toolTip="Only allow the specified DNS to respond" id="50">
+                    <rect key="frame" x="99" y="18" width="156" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Disable recursive queries" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="70">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="recursionChanged:" target="-2" id="52"/>
+                        <outlet property="nextKeyView" destination="20" id="57"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" id="37">
+                    <rect key="frame" x="14" y="59" width="83" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="IP Checking:" id="69">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <matrix toolTip="Test is successful on any IP resolved, or require a specific value" verticalHuggingPriority="750" allowsEmptySelection="NO" autosizesCells="NO" id="34">
+                    <rect key="frame" x="100" y="38" width="125" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    <size key="cellSize" width="125" height="17"/>
+                    <size key="intercellSpacing" width="4" height="2"/>
+                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" controlSize="small" inset="2" id="71">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <cells>
+                        <column>
+                            <buttonCell type="radio" title="Accept any result" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" state="on" inset="2" id="35">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                            <buttonCell type="radio" title="Result must match:" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" tag="1" inset="2" id="36">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                        </column>
+                    </cells>
+                    <connections>
+                        <action selector="modeChanged:" target="-2" id="47"/>
+                        <outlet property="nextKeyView" destination="50" id="56"/>
+                    </connections>
+                </matrix>
+                <textField toolTip="The expected value for a required IP test" verticalHuggingPriority="750" id="32">
+                    <rect key="frame" x="232" y="37" width="149" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" placeholderString="e.g. 111.222.333.444" drawsBackground="YES" id="68">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="49"/>
+                        <outlet property="nextKeyView" destination="34" id="55"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="31">
+                    <rect key="frame" x="14" y="87" width="122" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Name server address:" id="67">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="30" id="40"/>
+                    </connections>
+                </textField>
+                <textField toolTip="Address of the DNS server to use for the test" verticalHuggingPriority="750" id="30">
+                    <rect key="frame" x="141" y="84" width="332" height="19"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" placeholderString="e.g. DNS.example.com" drawsBackground="YES" id="66">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="48"/>
+                        <outlet property="nextKeyView" destination="32" id="54"/>
+                    </connections>
+                </textField>
+                <textField toolTip="The domain name to resolve" verticalHuggingPriority="750" id="20">
+                    <rect key="frame" x="141" y="111" width="332" height="19"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" placeholderString="e.g. mail.example.com" drawsBackground="YES" id="65">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="serviceHit:" target="-2" id="25"/>
+                        <outlet property="delegate" destination="-2" id="28"/>
+                        <outlet property="nextKeyView" destination="30" id="53"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="19">
+                    <rect key="frame" x="43" y="113" width="93" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Name to lookup:" id="64">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="nextKeyView" destination="20" id="29"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,1 @@
+{Template type="summary" version="1" description="Tab-delimited last change text."}Name{Tab}Last Change{Tab}Last Difference[Test]{Name}{Tab}{LastChange type="absolute"}{Tab}{LastDifference encode="text" length="100"}{LineFeed}[/Test]

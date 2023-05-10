@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="209" id="223"/>
+                <outlet property="dockMenu" destination="273" id="276"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="Hauptmenü" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="Simon" id="56">
+                    <menu key="submenu" title="Simon" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="Über Simon" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Updates suchen …" id="195">
+                                <connections>
+                                    <action selector="checkForUpdates:" target="209" id="220"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="196">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Einstellungen …" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="showPreferences:" target="209" id="221"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Simon einrichten …" id="432">
+                                <connections>
+                                    <action selector="showSetupAssistant:" target="209" id="433"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Lizenzen …" id="310">
+                                <connections>
+                                    <action selector="showLicenseEditor:" target="209" id="311"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Dienste" id="131">
+                                <menu key="submenu" title="Dienste" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Simon ausblenden" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-2" id="152"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Andere ausblenden" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-2" id="146"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Alle einblenden" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-2" id="153"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Simon beenden" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="139"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Ablage" id="232">
+                    <menu key="submenu" title="Ablage" id="233">
+                        <items>
+                            <menuItem title="Neuer Test …" keyEquivalent="n" id="234">
+                                <connections>
+                                    <action selector="new:" target="-1" id="242"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Test duplizieren …" keyEquivalent="d" id="417">
+                                <connections>
+                                    <action selector="duplicate:" target="-1" id="419"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Neue Gruppe" keyEquivalent="N" id="t3t-pz-gzH">
+                                <connections>
+                                    <action selector="newGroup:" target="-1" id="tQj-g8-tzc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Neue Gruppe aus Auswahl" id="rSc-rH-Gip">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="newGroupWithSelection:" target="-1" id="TYd-zs-fYC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="467">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Öffnen …" keyEquivalent="o" id="lSK-bf-VPY">
+                                <connections>
+                                    <action selector="open:" target="-1" id="6DR-po-CxW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Sichern" keyEquivalent="s" id="468">
+                                <connections>
+                                    <action selector="save:" target="-1" id="469"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="240">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Jetzt prüfen" keyEquivalent="k" id="238">
+                                <connections>
+                                    <action selector="performNow:" target="-1" id="244"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Seite neu laden vom Puffer" keyEquivalent="r" id="281">
+                                <connections>
+                                    <action selector="reloadCached:" target="-1" id="288"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="287">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Zur Website" keyEquivalent="9" id="237">
+                                <connections>
+                                    <action selector="visitSite:" target="-1" id="245"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Bereitstellen" id="ICL-Gk-tGR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Bereitstellen" id="CSI-v0-p5t">
+                                    <items>
+                                        <menuItem title="Keine Freigabe-Optionen" enabled="NO" id="bms-kQ-KvE">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="241">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Statistiken löschen …" id="236">
+                                <connections>
+                                    <action selector="reset:" target="-1" id="246"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="470">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Test anhalten …" keyEquivalent="p" id="235">
+                                <connections>
+                                    <action selector="pause:" target="-1" id="308"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Test fortsetzen" keyEquivalent="P" id="464">
+                                <connections>
+                                    <action selector="resume:" target="-1" id="466"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Bearbeiten" id="163">
+                    <menu key="submenu" title="Bearbeiten" id="169">
+                        <items>
+                            <menuItem title="Rückgängig" keyEquivalent="z" id="158">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="180"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Wiederholen" keyEquivalent="Z" id="173">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="178"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="156">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Ausschneiden" keyEquivalent="x" id="160">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="175"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Kopieren" keyEquivalent="c" id="157">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="181"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Einfügen" keyEquivalent="v" id="171">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="176"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Löschen" id="164">
+                                <connections>
+                                    <action selector="clear:" target="-1" id="183"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Test löschen …" id="dgg-Ez-oQU">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
+                                <connections>
+                                    <action selector="deletion:" target="-1" id="dj3-SQ-maB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Alles auswählen" keyEquivalent="a" id="172">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="179"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Nichts auswählen" keyEquivalent="A" id="312">
+                                <connections>
+                                    <action selector="selectNone:" target="-1" id="313"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="282">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Als Ungesehen markieren" keyEquivalent="g" id="323">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="markFlagged:" target="-1" id="324"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="451"/>
+                            <menuItem title="Domäne/IP ändern" keyEquivalent="l" id="452">
+                                <connections>
+                                    <action selector="toggleEdit:" target="-1" id="smI-De-oPJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Domäne/IP ändern" id="cg5-Yf-KXk">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="convertDomainIP:" target="3GS-6A-Ith" id="NWc-bG-9vd"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="286">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Zurück" keyEquivalent="" id="285">
+                                <connections>
+                                    <action selector="historyBack:" target="-1" id="292"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Vorwärts" keyEquivalent="" id="284">
+                                <connections>
+                                    <action selector="historyForward:" target="-1" id="293"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="337">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Suchen " id="326">
+                                <menu key="submenu" title="Suchen " id="331">
+                                    <items>
+                                        <menuItem title="Suchen …" tag="1" keyEquivalent="f" id="330">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="333"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Weitersuchen (vorwärts)" tag="2" keyEquivalent="g" id="325">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="332"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Weitersuchen (rückwärts)" tag="3" keyEquivalent="G" id="327">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="336"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Auswahl für Suche verwenden" tag="7" keyEquivalent="e" id="328">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="335"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Gehe zu Auswahl" keyEquivalent="j" id="329">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="centerSelectionInVisibleArea:" target="-1" id="334"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Ansicht" id="392">
+                    <menu key="submenu" title="Ansicht" id="394">
+                        <items>
+                            <menuItem title="Sortieren nach" id="S3J-hf-f3v">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Sortieren nach" id="6gA-I7-Zok">
+                                    <items>
+                                        <menuItem title="Name" tag="5" id="Kbf-IW-epP">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="viewSortBy:" target="-1" id="APP-ek-uyz"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="7N7-YZ-AUx"/>
+                                        <menuItem title="Aufsteigend" id="gK4-9R-SsK">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="viewSortOrder:" target="-1" id="nR2-wP-kj2"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Absteigend" tag="1" id="tvH-W3-vzO">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="viewSortOrder:" target="-1" id="f90-BY-hRa"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="ndV-Cb-8IT"/>
+                            <menuItem title="Absolute Daten" id="9C0-Gi-MJd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="viewDateFormat:" target="-1" id="BLX-58-oSZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Relative Zeiten" tag="1" id="kyr-oM-qt7">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="viewDateFormat:" target="-1" id="bAH-R7-f2H"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="1rq-Or-Z3N"/>
+                            <menuItem title="Zeige letzte Änderung &amp; Fehlschläge" id="8xc-bv-AF7">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="viewShowExtras:" target="-1" id="hpX-Vz-zhN"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="XB0-xd-cta">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Tests" tag="110" keyEquivalent="1" id="Dti-Ej-8Kt">
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="YCc-n8-8ZE"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tests in neuem Fenster" tag="110" alternate="YES" keyEquivalent="1" id="8Zc-NM-YQF">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="SSI-Dw-KJP"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Dienste" tag="120" keyEquivalent="2" id="WdU-mC-vEK">
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="1fO-VM-Dyu"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Dienste in neuem Fenster" tag="120" alternate="YES" keyEquivalent="2" id="zAJ-rw-GjS">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="vju-Ni-vXj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Filter" tag="130" keyEquivalent="3" id="Bnc-90-eFL">
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="VAu-t6-HOj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Filter in neuem Fenster" tag="130" alternate="YES" keyEquivalent="3" id="J2I-rc-YPk">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="tp9-U4-6ck"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Melder" tag="140" keyEquivalent="4" id="Wav-IV-f6R">
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="sRP-5x-Fgm"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Melder in neuem Fenster" tag="140" alternate="YES" keyEquivalent="4" id="9Pf-vF-IZB">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="ZOb-p0-QSU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Berichte" tag="150" keyEquivalent="5" id="WrM-yO-Exy">
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="t4v-3a-917"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Berichte in neuem Fenster" tag="150" alternate="YES" keyEquivalent="5" id="hnY-qT-fAj">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="RpN-dC-bWy"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="ldc-RE-gfa">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Statistiken" keyEquivalent="i" id="393">
+                                <connections>
+                                    <action selector="viewInfoInMonitor:" target="3GS-6A-Ith" id="5LO-7K-U6c"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Info in neuem Fenster" alternate="YES" keyEquivalent="i" id="5XC-op-vgN">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInfoInAncillary:" target="3GS-6A-Ith" id="Jyx-0Y-Vdf"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="404">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Vorschau" tag="500" keyEquivalent="1" id="daP-LE-FuM">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="Kmq-qn-INI"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Vorschau in neuem Fenster" tag="500" alternate="YES" keyEquivalent="1" id="QVT-lb-vPi">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="nlW-vF-4ls"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Aktivität" tag="710" keyEquivalent="2" id="396">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="yXJ-lb-8d9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Aktivität in neuem Fenster" tag="710" alternate="YES" keyEquivalent="2" id="yA8-du-DeY">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="vzI-Cw-NAR"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Prüfungen" tag="720" keyEquivalent="3" id="399">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="kll-B2-by5"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Prüfungen in neuem Fenster" tag="720" alternate="YES" keyEquivalent="3" id="y2j-ol-GM4">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="nU4-KB-Hod"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Änderungen" tag="730" keyEquivalent="4" id="398">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="AZn-nR-vfd"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Änderungen in neuem Fenster" tag="730" alternate="YES" keyEquivalent="4" id="9rI-32-rxL">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="PM7-xj-EVX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Fehlschläge" tag="740" keyEquivalent="5" id="397">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInMonitor:" target="3GS-6A-Ith" id="Lic-x9-BZB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Fehlschläge in neuem Fenster" tag="740" alternate="YES" keyEquivalent="5" id="9Gi-9y-BQB">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="viewInAncillary:" target="3GS-6A-Ith" id="zbg-ge-S4Y"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="pk3-Wz-E9t">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bildschirmfüllend ein" keyEquivalent="f" id="516">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleFullScreen:" target="-1" id="517"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Fenster" id="19">
+                    <menu key="submenu" title="Fenster" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Im Dock ablegen" keyEquivalent="m" id="23">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="37"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoomen" id="443">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="444"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Schließen" keyEquivalent="w" id="270">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="271"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Alle nach vorne bringen" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="224">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Symbolleiste ausblenden" id="226">
+                                <connections>
+                                    <action selector="showHideToolbar:" target="-1" id="230"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Symbolleiste anpassen …" id="225">
+                                <connections>
+                                    <action selector="customizeToolbar:" target="-1" id="231"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="303">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Simon-Monitor zeigen" keyEquivalent="0" id="305">
+                                <connections>
+                                    <action selector="windowMonitor:" target="3GS-6A-Ith" id="UCY-02-qpm"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Hilfe" id="103">
+                    <menu key="submenu" title="Hilfe" id="106">
+                        <items>
+                            <menuItem title="Simon-Hilfe" id="481">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="helpBook:" target="209" id="509"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="506"/>
+                            <menuItem title="Hilfe im Help Viewer lesen" state="on" tag="100" id="507">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="helpUseHelpViewer:" target="209" id="512"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hilfe im Browser lesen" tag="101" id="199">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="helpUseBrowser:" target="209" id="513"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="483"/>
+                            <menuItem title="Simon-Website" id="111">
+                                <connections>
+                                    <action selector="helpAppSite:" target="209" id="210"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Simon-Änderungen" id="198">
+                                <connections>
+                                    <action selector="helpReleaseNotes:" target="209" id="211"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Simon-Extras" id="430">
+                                <connections>
+                                    <action selector="helpExtras:" target="209" id="431"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Häufig gestellte Fragen zu Simon (FAQ)" id="204">
+                                <connections>
+                                    <action selector="helpSupport:" target="209" id="216"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Simon-Supportforum" id="446">
+                                <connections>
+                                    <action selector="helpForums:" target="209" id="448"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="484">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="MacUpdate-Rezension schreiben" id="485">
+                                <connections>
+                                    <action selector="helpMacUpdate:" target="209" id="487"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="iusethis-Rezension schreiben" id="486">
+                                <connections>
+                                    <action selector="helpIusethis:" target="209" id="488"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Über Simon twittern" id="493">
+                                <connections>
+                                    <action selector="helpPostOnTwitter:" target="209" id="501"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Simon auf Facebook teilen" id="495">
+                                <connections>
+                                    <action selector="helpPostOnFacebook:" target="209" id="502"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="492">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Dejal bei Twitter: @dejal" id="490">
+                                <connections>
+                                    <action selector="helpDejalTwitter:" target="209" id="503"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Simon bei Twitter: @DejalSimon" id="497">
+                                <connections>
+                                    <action selector="helpProductTwitter:" target="209" id="504"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Dejal bei Facebook" id="499">
+                                <connections>
+                                    <action selector="helpDejalFacebook:" target="209" id="505"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="207">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Website von Dejal Systems" id="202">
+                                <connections>
+                                    <action selector="helpDejalSite:" target="209" id="213"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Dejal-Blog" id="445">
+                                <connections>
+                                    <action selector="helpBlog:" target="209" id="447"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Dejal-Newsletter" id="455">
+                                <connections>
+                                    <action selector="helpNewsletter:" target="209" id="457"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Dejal-Shop" id="206">
+                                <connections>
+                                    <action selector="helpOrders:" target="209" id="215"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="209" userLabel="AppDelegate" customClass="AppDelegate">
+            <connections>
+                <outlet property="dispatcher" destination="3GS-6A-Ith" id="2Fg-RX-OIL"/>
+            </connections>
+        </customObject>
+        <customObject id="3GS-6A-Ith" customClass="AppDispatcher">
+            <connections>
+                <outlet property="dockMenu" destination="273" id="tjg-Pd-H6p"/>
+                <outlet property="shareMenu" destination="CSI-v0-p5t" id="AcX-EQ-2vH"/>
+                <outlet property="statusActionsTemplate" destination="wYd-oG-OMm" id="xUL-jh-IVP"/>
+                <outlet property="statusGroupTemplate" destination="369" id="kXT-xn-CgC"/>
+                <outlet property="statusMenu" destination="350" id="aw3-27-orw"/>
+            </connections>
+        </customObject>
+        <menu title="Menü" id="273" userLabel="DockMenu">
+            <items>
+                <menuItem title="Simon-Monitor zeigen" id="317">
+                    <connections>
+                        <action selector="windowMonitor:" target="3GS-6A-Ith" id="GbI-cR-64G"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="315">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Alle jetzt prüfen" id="314">
+                    <connections>
+                        <action selector="dockCheckAllNow:" target="3GS-6A-Ith" id="7oT-gz-hGh"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Alle als Gesehen markieren" id="338">
+                    <connections>
+                        <action selector="dockMarkAllUnflagged:" target="3GS-6A-Ith" id="xSN-6K-do3"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <menu title="Menü" id="350" userLabel="StatusMenu">
+            <items>
+                <menuItem title="Simon-Monitor zeigen" id="349">
+                    <connections>
+                        <action selector="windowMonitor:" target="3GS-6A-Ith" id="CWM-yE-Sc4"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="351">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Alle jetzt prüfen" id="347">
+                    <connections>
+                        <action selector="dockCheckAllNow:" target="3GS-6A-Ith" id="vCZ-7I-Ps5"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Alle als Gesehen markieren" id="346">
+                    <connections>
+                        <action selector="dockMarkAllUnflagged:" target="3GS-6A-Ith" id="h1A-No-zPY"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="353">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+            </items>
+        </menu>
+        <menu title="Menü" id="369" userLabel="StatusGroup">
+            <items>
+                <menuItem title="Test wählen" tag="6" id="372">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="F5A-Ts-lOS"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Test bearbeiten …" tag="5" id="366">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="BJv-Yn-Y5X"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="363">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Jetzt prüfen" tag="4" id="368">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="RYh-YQ-u1m"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="367">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Pause ein/aus" tag="8" id="365">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="vV9-7R-Kcg"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Gesehen ein/aus" tag="9" id="364">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="kGo-8b-Ufc"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="bJg-7B-Lcl">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="650.5" y="667.5"/>
+        </menu>
+        <menu title="Aktionen" id="wYd-oG-OMm" userLabel="StatusActions">
+            <items>
+                <menuItem title="Test wählen" tag="6" id="nHg-Zk-yjC">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="IVg-oC-1HG"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Zeige Test-Info" tag="5" id="ww1-LW-BD9">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="JK1-TW-WCK"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="YxF-92-X6L">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Suchen" tag="4" id="Meo-lX-taM">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="1ei-nM-sfi"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Vorschau" tag="1" id="Ndh-ng-8Wj">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="RQx-HT-CEk"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Zur Website" tag="3" id="Ko0-NV-skg">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="hK6-Mi-zUV"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="mqR-4m-x1Y">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Pause ein/aus" tag="8" id="0VU-1n-Pdu">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="dz9-36-Lkp"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Gesehen ein/aus" tag="9" id="nuP-AS-13o">
+                    <connections>
+                        <action selector="statusAction:" target="3GS-6A-Ith" id="0GF-8o-DSM"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="850.5" y="667.5"/>
+        </menu>
+    </objects>
+</document>

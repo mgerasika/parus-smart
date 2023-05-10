@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ReportOptionsPageController">
+            <connections>
+                <outlet property="generateDetailCheck" destination="25" id="59"/>
+                <outlet property="generateSummaryCheck" destination="18" id="57"/>
+                <outlet property="refreshField" destination="21" id="58"/>
+                <outlet property="refreshPopup" destination="161" id="181"/>
+                <outlet property="revealButton" destination="174" id="179"/>
+                <outlet property="skipPausedCheck" destination="32" id="65"/>
+                <outlet property="templatePopup" destination="168" id="180"/>
+                <outlet property="view" destination="277" id="280"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="277" userLabel="Report Editor View">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="171"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button toolTip="Inclus une page pour chaque test avec plus d’informations" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                    <rect key="frame" x="18" y="82" width="174" height="18"/>
+                    <buttonCell key="cell" type="check" title="Générer des pages détaillées" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="210">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="168" id="185"/>
+                    </connections>
+                </button>
+                <textField toolTip="Sortir ce rapport à cette fréquence" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="21">
+                    <rect key="frame" x="198" y="135" width="39" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="ctq-RK-KAu"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="1234" drawsBackground="YES" id="209">
+                        <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="88">
+                            <attributedString key="attributedStringForZero">
+                                <fragment content="0"/>
+                            </attributedString>
+                            <decimal key="minimum" value="1"/>
+                            <decimal key="maximum" value="9999"/>
+                        </numberFormatter>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="161" id="182"/>
+                    </connections>
+                </textField>
+                <popUpButton toolTip="Sélectionnez les unités pour la fréquence de réactualisation" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="161">
+                    <rect key="frame" x="242" y="132" width="75" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="Minutes" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="164" id="212">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="162">
+                            <items>
+                                <menuItem title="Minutes" state="on" tag="1" id="164"/>
+                                <menuItem title="Heures" tag="2" id="165"/>
+                                <menuItem title="Jours" tag="3" id="163"/>
+                                <menuItem title="Semaines" tag="4" id="167"/>
+                                <menuItem title="Mois" tag="5" id="166"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="18" id="183"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton toolTip="Sélectionnez un modèle HTML pour le rapport" horizontalHuggingPriority="200" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="168">
+                    <rect key="frame" x="124" y="46" width="186" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="Aucun modèle n'a été trouvé" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="171" id="213">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="169">
+                            <items>
+                                <menuItem title="Aucun modèle n'a été trouvé" state="on" id="171"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="GUj-dw-m5o"/>
+                        <outlet property="nextKeyView" destination="174" id="186"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="173">
+                    <rect key="frame" x="18" y="51" width="104" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Utiliser le modèle :" id="214">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="Omet les tests qui sont actuellement en pause lors de la génération du rapport" translatesAutoresizingMaskIntoConstraints="NO" id="32">
+                    <rect key="frame" x="18" y="17" width="158" height="18"/>
+                    <buttonCell key="cell" type="check" title="Ignorer les tests en pause" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="211">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                </button>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                    <rect key="frame" x="18" y="137" width="187" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Actualiser le rapport toutes les :" id="208">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="Inclus une page comme la page de tests de la fenêtre de surveillance" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                    <rect key="frame" x="18" y="100" width="190" height="18"/>
+                    <buttonCell key="cell" type="check" title="Générer une page de sommaire" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="207">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="25" id="184"/>
+                    </connections>
+                </button>
+                <button toolTip="Cliquez pour afficher le dossier des modèles de rapport dans le Finder" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="174">
+                    <rect key="frame" x="326" y="43" width="146" height="28"/>
+                    <buttonCell key="cell" type="push" title="Afficher dans le Finder" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="215">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="revealButtonHit:" target="-2" id="178"/>
+                        <outlet property="nextKeyView" destination="32" id="187"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="25" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="6" id="429-54-4m7"/>
+                <constraint firstItem="173" firstAttribute="leading" secondItem="32" secondAttribute="leading" constant="-1" id="7mv-f2-fO6"/>
+                <constraint firstItem="173" firstAttribute="top" secondItem="25" secondAttribute="bottom" constant="20" id="90n-i0-LsY"/>
+                <constraint firstItem="174" firstAttribute="leading" secondItem="168" secondAttribute="trailing" constant="20" id="K4i-mC-Nkq"/>
+                <constraint firstItem="20" firstAttribute="leading" secondItem="18" secondAttribute="leading" constant="-1" id="LyK-wl-Raw"/>
+                <constraint firstItem="173" firstAttribute="leading" secondItem="25" secondAttribute="leading" constant="-1" id="Wdq-jA-8hW"/>
+                <constraint firstItem="20" firstAttribute="leading" secondItem="277" secondAttribute="leading" constant="20" id="YbE-Zd-XV4"/>
+                <constraint firstItem="21" firstAttribute="leading" secondItem="20" secondAttribute="trailing" constant="8" id="Z7G-pp-GCl"/>
+                <constraint firstItem="168" firstAttribute="leading" secondItem="173" secondAttribute="trailing" constant="8" id="Zbn-QV-Niw"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="aNn-He-kQi"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="20" secondAttribute="bottom" constant="22" id="fzM-fv-Yae"/>
+                <constraint firstItem="21" firstAttribute="baseline" secondItem="20" secondAttribute="baseline" id="hcX-B7-nLG"/>
+                <constraint firstItem="161" firstAttribute="baseline" secondItem="21" secondAttribute="baseline" id="iDb-0m-D8L"/>
+                <constraint firstItem="32" firstAttribute="top" secondItem="173" secondAttribute="bottom" constant="19" id="mBu-ry-IqE"/>
+                <constraint firstItem="161" firstAttribute="leading" secondItem="21" secondAttribute="trailing" constant="8" id="s5f-uG-l1S"/>
+                <constraint firstItem="174" firstAttribute="baseline" secondItem="168" secondAttribute="baseline" id="v2E-Or-V5F"/>
+                <constraint firstItem="20" firstAttribute="top" secondItem="277" secondAttribute="top" constant="20" id="vVm-Xc-ec4"/>
+                <constraint firstItem="173" firstAttribute="baseline" secondItem="168" secondAttribute="baseline" id="w65-gp-NFx"/>
+            </constraints>
+            <point key="canvasLocation" x="310" y="703.5"/>
+        </customView>
+    </objects>
+</document>

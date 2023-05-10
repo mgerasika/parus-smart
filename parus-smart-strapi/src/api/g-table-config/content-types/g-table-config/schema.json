@@ -1,0 +1,54 @@
+{
+    "kind": "collectionType",
+    "collectionName": "g_table_configs",
+    "info": {
+        "singularName": "g-table-config",
+        "pluralName": "g-table-configs",
+        "displayName": "GTableConfig",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "spreadSheetID": {
+            "type": "string",
+            "required": true
+        },
+        "range": {
+            "type": "string",
+            "required": true,
+            "default": "A1:K1"
+        },
+        "currentValueColumn": {
+            "type": "string",
+            "required": true,
+            "default": "K"
+        },
+        "counterType": {
+            "type": "enumeration",
+            "enum": ["hotWater", "coldWater", "electricity", "heating"]
+        },
+        "tariffType": {
+            "type": "enumeration",
+            "enum": ["standard", "commercial"]
+        },
+        "houseName": {
+            "type": "string"
+        },
+        "originalName": {
+            "type": "string"
+        },
+        "year": {
+            "type": "string"
+        },
+        "tabName": {
+            "type": "string"
+        }
+    }
+}

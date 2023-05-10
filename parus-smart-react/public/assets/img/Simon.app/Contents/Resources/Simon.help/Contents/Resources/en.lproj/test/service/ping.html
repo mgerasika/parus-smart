@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Test Info - Service - Ping</title>
+<meta name="description" content="The Ping service sends packets to a server and analyzes the response time.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Test Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Service<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Ping</h1>
+
+<p>This is the service that goes <b>Ping</b>!  (Sorry, <a href="http://en.wikiquote.org/wiki/Monty_Python's_the_Meaning_of_Life">Monty Python <img src="../../../shared/ext-link.png" alt="[web link]" /></a> reference.)  This is displayed when you choose <b>Ping</b> in the <b>Service</b> pop-up menu in the <a href="../index.html"><b>Test Info</b></a> pane.</p>
+
+<p>This service will use the standard "ping" feature to send network packets to a remote server and track the response time and reliability.</p>
+
+<p><b>Domain or IP address</b>: Enter a domain name or IP address to ping, e.g. "www.apple.com".</p>
+
+<p><b>Send</b>: Enter the number of packets to send.  Sending multiple packets improves the reliability of the check, as it is more likely to detect network unreliability.  Each packet is sent one second apart, so this is the total time to perform the check.  The default is 10 packets.</p>
+
+<p><b>Size</b>: Enter the number of bytes to send in each packet.  The default value of 56 bytes is good for most purposes, but sometimes you might want to increase it to test how well the server responds to a larger amount, e.g. to test high-capacity fiber networks.</p>
+
+<p><img src="../../../shared/status-bad-now.jpg" valign="top"> <b>Failure If: Average more than</b>: A failure is reported if the average round-trip time for any of the packets is more than this time, expressed in milliseconds.</p>
+
+<p><img src="../../../shared/status-bad-now.jpg" valign="top"> <b>Failure If: Packet loss over</b>: A failure is reported if more than this percentage of packets is lost in transit, i.e. is sent but not received back.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../../service/plugin/ping.html">Service Info pane for Ping service</a></li>
+<li><a href="./index.html">Service page</a></li>
+<li><a href="../index.html">Test Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

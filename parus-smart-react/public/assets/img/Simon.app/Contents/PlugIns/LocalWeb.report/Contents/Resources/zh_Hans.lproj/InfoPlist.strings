@@ -1,0 +1,8 @@
+/* Localized versions of Info.plist keys */
+
+
+CFBundleName = "保存在本地";
+LocalWebButtonName = "选择";
+LocalWebMessage = "选择保存报告文件夹位置:";
+LocalWebNameFieldLabel = "存储到：";
+LocalWebUntitled = "未命名";

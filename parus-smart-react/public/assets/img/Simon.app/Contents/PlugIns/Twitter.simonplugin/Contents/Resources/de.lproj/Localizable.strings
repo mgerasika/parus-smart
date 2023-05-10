@@ -1,0 +1,71 @@
+﻿/* Twitter unknown error notification error string */
+"An unknown error has occurred (code %d)." = "Ein unbekannter Fehler ist aufgetreten (Code %d).";
+
+/* Twitter notifier view error button credentials check failed tooltip */
+"Credentials failed to validate.  Click for details." = "Die Berechtigung konnte nicht erfolgreich getestet werden. Klicken Sie für weitere Details.";
+
+/* Twitter notifier credentials validation error sheet title */
+"Credentials Validation Failed" = "Berechtigungs-Prüfung fehlgeschlagen";
+
+/* Twitter notifier view error button followers fetch failed tooltip */
+"Failed to fetch followers.  Click for details." = "Anhänger konnten nicht abgerufen werden. Klicken Sie für weitere Details.";
+
+/* Twitter notifier followers fetch error sheet title */
+"Followers Could Not Be Fetched" = "Anhänger konnten nicht abgerufen werden.";
+
+/* Twitter get messages smart change header string */
+"Get Twitter direct messages for" = "Twitter-Direktnachrichten erhalten für";
+
+/* Twitter get followers smart change header string */
+"Get Twitter followers of" = "Twitter-Anhänger finden von";
+
+/* Twitter get friends smart change header string */
+"Get Twitter friends of" = "Twitter-Freunde erhalten für";
+
+/* Twitter get public timeline smart change header string */
+"Get Twitter public timeline." = "Öffentliche Twitter-Zeitlinie erhalten.";
+
+/* Twitter get replies smart change header string */
+"Get Twitter replies to" = "Twitter-Antworten erhalten an";
+
+/* Twitter get user updates smart change header string */
+"Get Twitter updates for" = "Twitter-Updates erhalten für";
+
+/* Loading followers message */
+"Loading..." = "Lade …";
+
+/* No internet connection error string */
+"No internet connection." = "Keine Internet-Verbindung.";
+
+/* OK button title */
+"OK" = "OK";
+
+/* Twitter Service Preview window title before loading */
+"Preview" = "Vorschau";
+
+/* Twitter Service Preview window title for Edit Service */
+"Preview of %@" = "Vorschau von „%@“";
+
+/* Twitter Service Preview window title while loading */
+"Preview of %@ (%@)" = "Vorschau von „%1$@ (%2$@)“";
+
+/* Twitter authorization failed notification error string */
+"The transaction resulted in a \"Authorization Failed\" error.  Please check the notifier credentials." = "Die Transaktion führte zu einem Fehler „Autorisierung fehlgeschlagen“. Bitte prüfen Sie die Melder-Berechtigung.";
+
+/* Twitter bad request notification error string */
+"The transaction resulted in a \"Bad request\" error.  Most likely the 70 requests per hour rate limit has been exceeded." = "Die Transaktion führte zu einem Fehler „Falsche Anfrage“. Höchstwahrscheinlich wurde die Grenze von 70 Anfragen pro Stunde überschritten.";
+
+/* Twitter forbidden notification error string */
+"The transaction resulted in a \"Forbidden\" error.  Please check the notifier settings." = "Die Transaktion führte zu einem Fehler „Verboten“. Bitte prüfen Sie die Melder-Einstellungen.";
+
+/* Twitter not found notification error string */
+"The transaction resulted in a \"Page Not Found\" error.  Please check the notifier settings." = "Die Transaktion führte zu einem Fehler „Seite nicht gefunden“. Bitte prüfen Sie die Melder-Einstellungen.";
+
+/* Twitter internal error notification error string */
+"The transaction resulted in an \"Internal Server Error.\" error.  This is an error with the Twitter service's servers." = "Die Transaktion führte zu einem „Internen Server-Fehler“. Dieser Fehler wurde auf Twitters Dienst-Servern ausgelöst.";
+
+/* Twitter maintenance notification error string */
+"Twitter servers apear to be down for maintenance." = "Die Twitter-Server scheinen gerade für Wartungsarbeiten abgeschaltet zu sein.";
+
+/* Twitter overloaded notification error string */
+"Twitter servers are currently overloaded with traffic." = "Die Twitter-Server sind momentan überlastet.";

@@ -1,0 +1,20 @@
+//
+// Variables
+//
+
+// Import variables from src/scss/variables
+
+@import './variables/colors';
+@import './variables/options';
+@import './variables/typography';
+@import './variables/buttons';
+@import './variables/overlay';
+@import './variables/forms';
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1520px
+);

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Status menu</title>
+<meta name="description" content="The optional Simon status menu shows the current overall status and info on each test.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="./index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="./all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Status menu</h1>
+
+<p>If the <a href="./prefs/general.html">General Preferences</a> option to display the status in the menu bar is enabled, Simon includes a menu like the above in the right-hand-side of the menu bar.</p>
+
+<p>The menu title icon displays the most important status for all non-paused tests.  If any sites are down, the red downwards-pointing triangle is shown.  If any site has recent changes, the green upward triangle is shown.  Otherwise, the orange triangle is shown, for sites that had errors recently.  As with the tests table, the shade of the triangle indicates how recent it is, if time-sensitive status icons are used.  If any of the tests are marked as unviewed, a yellow circle is displayed above the status triangle, with the number of unviewed tests displayed in the circle (this can be disabled in the <a href="./prefs/general.html">General Preferences</a> if desired).  This acts as a useful visual cue to important events.</p>
+
+<p>Clicking the icon will display a menu that includes some useful commands that you can perform without having to first switch to Simon, if you are in another application:</p>
+
+<p><b>Show Simon Monitor</b>: This displays the <a href="./monitor/index.html"><b>Monitor</b></a> window.  Simon will be activated if it was not the current application.</p>
+
+<p><b>Check All Now</b>: This command will cause Simon to immediately check all tests that are not paused.  Simon will not be activated.</p>
+
+<p><b>Mark All Viewed</b>: This command will mark all tests as having been viewed, i.e. remove the yellow indicator for all tests.  Simon will not be activated.</p>
+
+<p>It then lists all of your tests along with their statuses, in the same order as in the <a href="./monitor/index.html"><b>Monitor</b></a> window.  If you pause over a test in the menu, it displays a help tag like shown above, listing the up-time, service, and interesting intervals for that test.</p>
+
+<p>Choosing the menu item will perform the action selected in the <a href="./prefs/general.html">General Preferences</a>.  However, if that preference is set to <b>Display a Submenu</b>, a submenu of additional options will be displayed instead, allowing you to control individual tests of Simon without even activating the application.</p>
+
+<p>The submenu includes commands to <b>Select Test</b>, <a href="./test/index.html"><b>View Test Info</b></a>, <a href="./menu/file/monitor.html"><b>Check Now</b></a>, <a href="./preview/web.html"><b>Preview</b></a>, <a href="./menu/file/monitor.html"><b>Visit Site</b></a>, <a href="./menu/file/monitor.html"><b>Toggle Pause</b></a>, and <a href="./menu/edit.html"><b>Toggle Viewed</b></a>, described elsewhere.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./prefs/general.html">General Preferences</a></li>
+<li><a href="./monitor/index.html">Monitor window</a></li>
+<li><a href="./services/index.html">Services list</a></li>
+<li><a href="./filters/index.html">Filters list</a></li>
+<li><a href="./notifiers/index.html">Notifiers list</a></li>
+<li><a href="./reports/index.html">Reports list</a></li>
+<li><a href="./monitor/pause.html">Monitor Pause</a></li>
+<li><a href="./test/index.html">Test Info pane</a></li>
+<li><a href="./menu/file/monitor.html">File menu</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

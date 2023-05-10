@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Filter - Variablen</title>
+<meta name="description" content="Variablen, die mit Filtern genutzt werden können.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Filter-Infobereich<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Filter-Art<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Filter-Variablen</h1>
+
+<p>Dies ist die Liste der für Filter-Variablen. Variablen sind Marker im Text, die durch andere Werte ersetzt werden, wenn der Filter benutzt wird. Variablen sollten keine Leerzeichen enthalten und mit geschweiften Klammern eingeklammert werden, wie z.B. hier: <b>{TestName}</b>. Sie werden vom <a href="./plugin/script.html">Skript-Filtermodul</a> und anderen Modulen benutzt und stehen auch zukünftigen Modulen zur Verfügung.</p>
+
+<p>Filter erben Variablen von den <a href="../service/variables.html">Diensten</a> und fügen einige weitere Variablen mit de Dienst-Ergebnissen hinzu (mit einem <b>Service</b>-Präfix) sowie einige frühere Filter (mit einem <b>Filter</b>-Präfix). Besonders interessant ist die Variable <b>{FilterInputText}</b> die immer das enthält, was für die Eingabe benutzt wurde, wenn die Filter in der <a href="../test/filters/index.html"><b>Filter-Seite</b></a> im Test-Infobereich hinzugefügt werden.</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Ausgaben:</b></td></tr>
+<tr><td valign="top">FilterCount</td><td valign="top">Anzahl der Filter für diesen Test.</td></tr>
+<tr><td valign="top">FilterDate</td><td valign="top">Datum, an dem der aktuelle Filer gestartet wurde, im Format JJJJ-MM-TT.</td></tr>
+<tr><td valign="top">FilterError</td><td valign="top">Fehlermeldung vom vorigen Filter (oder Dienst, falls kein anderer Filter benutzt wurde).</td></tr>
+<tr><td valign="top">FilterForChanged</td><td valign="top">Zeigt an, ob der aktuelle Filter benutzt wird, wenn der aktuelle Status geändert (<tt>yes</tt> oder <tt>no</tt>) ist.</td></tr>
+<tr><td valign="top">FilterForFailure</td><td valign="top">Zeigt an, ob der aktuelle Filter benutzt wird, wenn der Status ein Fehlschlag ist: <tt>yes</tt> oder <tt>no</tt>.</td></tr>
+<tr><td valign="top">FilterForSuccess</td><td valign="top">Zeigt an, ob der aktuelle Filter benutzt wird, wenn der Status ein Fehlschlag ist (d.h. Unverändert oder Geändert): <tt>yes</tt> oder <tt>no</tt>.</td></tr>
+<tr><td valign="top">FilterForUnchanged</td><td valign="top">Zeigt an, ob der aktuelle Filter benutzt wird, wenn der aktuelle Status unverändert ist: <tt>yes</tt> oder <tt>no</tt>.</td></tr>
+<tr><td valign="top">FilterIndex</td><td valign="top">1-basierte, aufsteigende Zahl des aktuellen Filters.</td></tr>
+<tr><td valign="top">FilterInputText</td><td valign="top">Text der Variable, die für den Eingabetext in den Filter-Einstellungen des Tests gewählt wurde.</td></tr>
+<tr><td valign="top">FilterInputVariable</td><td valign="top">Name der Variable, die für den Eingabetext in den Filter-Einstellungen des Tests gewählt wurde.</td></tr>
+<tr><td valign="top">FilterKind</td><td valign="top">Name des Moduls, das vom aktuellen Filter verwendet wird.</td></tr>
+<tr><td valign="top">FilterLookForChanges</td><td valign="top">Zeigt an, ob der aktuelle Filter nach Änderungen sucht: <tt>yes</tt> oder <tt>no</tt>.</td></tr>
+<tr><td valign="top">FilterName</td><td valign="top">Name des aktuellen Filters.</td></tr>
+<tr><td valign="top">FilterOutputText</td><td valign="top">Ausgabetext des vorigen Filters (oder identisch mit dem Eingabetext, falls kein anderer Filter benutzt wurde).</td></tr>
+<tr><td valign="top">FilterPreviousText</td><td valign="top">Ausgabetext vom letzten Mal, als dieser Filter für diesen Test benutzt wurde. Er wird beim Erkennen von Änderungen benutzt.</td></tr>
+<tr><td valign="top">FilterStatusNumber</td><td valign="top">Status des vorigen Filters (oder des Dienstes, falls kein anderer Filter benutzt wurde), als Zahl. 0 = Unverändert, 1 = Geändert, 2 = Fehlschlag.</td></tr>
+<tr><td valign="top">FilterStatusType</td><td valign="top">Status des vorigen Filters (oder des Dienstes, falls kein anderer Filter benutzt wurde): Unverändert, Geändert or Fehlschlag.</td></tr>
+<tr><td valign="top">FilterTime</td><td valign="top">Zeitpunkt, an dem der aktuelle Filter gestartet wurde, im Format HH:MM:SS.</td></tr>
+<tr><td valign="top">FilterUseTestControls</td><td valign="top">Zeigt an, ob der aktuelle Filter Test-Kontrollen im Test-Editor verwendet: <tt>yes</tt> oder <tt>no</tt>.</td></tr>
+<tr><td valign="top">ServiceContentLength</td><td valign="top">Größe des Dienst-Ausgabetextes in Bytes.</td></tr>
+<tr><td valign="top">ServiceContentType</td><td valign="top">Inhaltstyp des Dienst-Ausgabetextes, z.B. "text/html" oder "text/plain".</td></tr>
+<tr><td valign="top">ServiceError</td><td valign="top">Enthält bei Fehlschlägen die Fehlermeldung des Dienstes und ist bei Erfolgen leer.</td></tr>
+<tr><td valign="top">ServiceHeaderText</td><td valign="top">Header-Textausgabe des Dienstes. Oft leer, außer wenn sinnvoll, z.B. bei HTTP-Headern.</td></tr>
+<tr><td valign="top">ServiceRequestText</td><td valign="top">Zusammenfassung der Anfrage des Dienstes, z.B. der URL, das Skript, oder ein anderer Wert.</td></tr>
+<tr><td valign="top">ServiceResponseText</td><td valign="top">Vom Dienst ausgegebener Text, z.B. HTML-Quelltext oder ein Skript-Ausgabetext.</td></tr>
+<tr><td valign="top">ServiceResultCode</td><td valign="top">Ergebnis-Code des Dienstes, z.B. "OK" oder "404".</td></tr>
+<tr><td valign="top">ServiceStatusNumber</td><td valign="top">Status des Dienstes, als Zahl. 0 = Unverändert, 1 = Geändert, 2 = Fehlschlag.</td></tr>
+<tr><td valign="top">ServiceStatusType</td><td valign="top">Status des Dienstes: "Erfolg" oder "Fehlschlag".</td></tr>
+<tr><td valign="top">ServiceTitle</td><td valign="top">Beschreibung des Dienstes, wird z.B. im Vorschau-Fenster angezeigt.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="../service/variables.html">Dienst-Variablen</a></li>
+<li><a href="./plugin/script.html">Skript-Filtermodul</a></li>
+<li><a href="./plugin/index.html">Filter-Art</a></li>
+<li><a href="./index.html">Filter-Infobereich</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

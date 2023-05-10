@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Preferences - General</title>
+<meta name="description" content="General preferences include commonly tweaked settings.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Preferences<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />General</h1>
+
+<p>The Preferences window is displayed via the <b>Simon<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Preferences...</b> menu item.  The General page includes some general-purpose options.</p>
+
+<p><b>Automatically start Simon when you log in to the computer</b>: This checkbox will control whether or not Simon is automatically launched after you log in to your Mac.  Checking it is equivalent to adding Simon to the Login Items in your System Preferences.  The default value reflects whether or not Simon is currently in your Login Items.</p>
+
+<p><b>Automatically check all tests when Simon is started</b>: When selected, this checkbox will cause Simon to begin checking all tests when the application is first launched.  Useful to ensure everything is up-to-date, particularly for people who use Simon in an ad hoc fashion, rather than leaving it running all the time.  The default checkbox state is off, i.e. so it does not check all on launch.</p>
+
+<p><b>Choose Password...</b>: To the left of this button is a label indicating whether or not a password is currently required.  Click this button to set a password, or clear an existing password.  Any existing password will be required to change the password.  A hint field is provided; it's recommended that you enter a hint that will remind you of the password (without being too obvious).  Do not forget the password; you'll be unable to access Simon without it.</p>
+
+<p><b>Automatically hide the Monitor window</b>: If checked, the <a href="../monitor/index.html"><b>Simon Monitor</b></a> is automatically hidden when switching from Simon to another application, and automatically shown when switching back to Simon.  While hidden, Simon continues monitoring, but avoids screen clutter and saves some processor time updating the tables in that window.  This defaults to off.</p>
+
+<p><b>Show the Simon icon in the Dock</b>: Normally Simon appears in the Dock.  Uncheck this option to hide it from the Dock.  Note that doing so will also make it no longer appear in the <img src="../../shared/symbol-command.gif" alt="Command-" />-Tab app switcher, and prevent Simon's menus from appearing.  An extra toolbar button will appear with useful commands from the <b>Simon</b> menu when the menu bar isn't visible.</p>
+
+<p><b>Display the most important status on the Dock icon</b>: As discussed in the <a href="../dock.html">Dock menu</a> section, the Dock icon can display a colored status triangle, indicating whether any sites are currently down or have had recent changes or failures.  This preference allows you to enable or disable this display.  This defaults to on.</p>
+
+<p><b>Display status in the menu bar, with a menu of tests</b>: If checked, a special status menu is included on the right-hand side of the menu bar, showing the same most important status image as for the above preference.  This menu includes commands to show Simon windows, perform operations on all tests (e.g. check all of them), and a list of all tests along with their statuses, listed in the same order as in the <a href="../monitor/index.html"><b>Monitor</b></a> window.  See also the following preference.  This defaults to on.</p>
+
+<p><b>Selecting a test in the status menu will</b>: This pop-up menu allows you to specify what should occur if you choose a test in the status menu enabled by the above preference.  The choices are <b>Do Nothing</b>, <b>Select Test</b>, <a href="../test/index.html"><b>Edit Test</b></a>, <a href="../menu/file/monitor.html"><b>Check Now</b></a>, <a href="../preview/source.html"><b>Show Source</b></a>, <a href="../preview/web.html"><b>Preview</b></a>, <a href="../menu/file/monitor.html"><b>Visit Site</b></a>, <a href="../menu/file/monitor.html"><b>Toggle Pause</b></a>, <a href="../menu/edit.html"><b>Toggle Flag</b></a>, or <a href="../status.html"><b>Display a Submenu</b></a>; see the corresponding sections for descriptions of each operation.  This defaults to <b>Display a Submenu</b>.</p>
+
+<p><b>Include unviewed indicator on Dock icon and status menu</b>: If checked, when there are tests flagged as unviewed in the <a href="../monitor/tests.html">tests</a> table (whether or not that column is visible), a yellow indicator is displayed on the <a href="../dock.html">Dock icon</a> and/or <a href="../status.html">status icon</a>, with the number of items displayed within.  If you aren't interested in the unviewed indicator, you can turn this off.  Defaults to on.</p>
+
+<p><b>Use simple status icons, that just indicate success or failure</b>: If this radio button is selected, the status icons in the <a href="../monitor/index.html"><b>Monitor</b></a> window, the <a href="../dock.html">Dock icon</a>, and the <a href="../status.html">status menu</a> use a bright red downward triangle icon (<img src="../../shared/status-bad-now.jpg" valign="middle">) when a test is failing, a bright green upward triangle (<img src="../../shared/status-changed-now.jpg">) when a change has just occurred, or a slightly dimmer green upward triangle for any other success.</p>
+
+<p><b>Use time-sensitive status icons, that also indicate recoveries</b>: If this button is instead selected, the status icons use bright red downward triangle (<img src="../../shared/status-bad-now.jpg" valign="middle">) and bright green upward triangle (<img src="../../shared/status-changed-now.jpg">) icons as for simple status icons, but after a change occurs the green slowly fades in brightness over time, eventually reaching grey if no further changes occur for months.  Also, after a test recovers from a failure, it uses an orange upward triangle (<img src="../../shared/status-bad-hour.jpg">) to indicate a recent failure, which again fades to grey over time.  This is the default.</p>
+
+<p><b>Double-clicking on a test will</b>: This pop-up menu allows you to specify what should occur if you double-click on a line in the <a href="../monitor/tests.html">tests table</a>.  The choices are <b>Do Nothing</b>, <a href="../test/index.html"><b>Edit Test</b></a>, <a href="../menu/file/monitor.html"><b>Check Now</b></a>, <a href="../preview/source.html"><b>Show Source</b></a>, <a href="../preview/web.html"><b>Preview</b></a>, or <a href="../menu/file/monitor.html"><b>Visit Site</b></a>; see the corresponding sections for descriptions of each operation.  This defaults to <b>Edit Test</b>.</p>
+
+<p><b>Check for a Wi-Fi hotspot login page when starting or waking Simon</b>: If this is checked, Simon tries to fetch a known value when it is first launched or after the Mac wakes from sleep, and goes into a "hotspot" mode if it receives something unexpected &mdash; probably a hotspot login page.  This will avoid having false failures when you have an internet connection but need to log in to the hotspot.  This feature is disabled by default.</p>
+
+<p><b>Restore Defaults</b>: Click this button to change the preferences on this page back to the factory-set values.  The default values usually represent the recommended configuration, though of course preferences are there to be changed if desired.  Preferences on other pages are not affected.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./logging.html">Logging</a></li>
+<li><a href="./script.html">Script</a></li>
+<li><a href="./updates.html">Updates</a></li>
+<li><a href="./advanced.html">Advanced</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

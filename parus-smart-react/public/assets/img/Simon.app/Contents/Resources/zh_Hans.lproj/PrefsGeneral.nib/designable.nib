@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PrefsGeneral">
+            <connections>
+                <outlet property="autoCheckAllOnStartupCheck" destination="151" id="154"/>
+                <outlet property="autoHideMonitorWindowCheck" destination="197" id="200"/>
+                <outlet property="autoStartOnLoginCheck" destination="215" id="225"/>
+                <outlet property="confirmRestoreDefaultsCheck" destination="234" id="239"/>
+                <outlet property="containerView" destination="204" id="205"/>
+                <outlet property="displayDockCheck" destination="dIW-k7-M80" id="pCZ-hX-HCz"/>
+                <outlet property="displayFlaggedCheck" destination="228" id="233"/>
+                <outlet property="displayStatusInDockCheck" destination="94" id="132"/>
+                <outlet property="displayStatusMenuCheck" destination="165" id="186"/>
+                <outlet property="factorySettingsButton" destination="156" id="159"/>
+                <outlet property="initialKeyView" destination="215" id="227"/>
+                <outlet property="internetHotspotCheck" destination="296" id="300"/>
+                <outlet property="passwordButton" destination="0dm-Ic-4yf" id="X8j-7Z-yyw"/>
+                <outlet property="passwordLabel" destination="qsg-sV-gXi" id="1XO-CD-xdQ"/>
+                <outlet property="testDoubleClickActionPopup" destination="96" id="134"/>
+                <outlet property="testStatusMenuActionPopup" destination="176" id="187"/>
+                <outlet property="useSimpleStatusIconsRadios" destination="257" id="263"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="204" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="594" height="477"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button toolTip="如果你不想看见这些更改可以取消他" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="228">
+                    <rect key="frame" x="38" y="189" width="379" height="20"/>
+                    <buttonCell key="cell" type="check" title="在 Dock 图标显示未查看状态" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="293">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="232"/>
+                        <outlet property="nextKeyView" destination="96" id="231"/>
+                    </connections>
+                </button>
+                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" translatesAutoresizingMaskIntoConstraints="NO" id="257">
+                    <rect key="frame" x="20" y="133" width="395" height="38"/>
+                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    <size key="cellSize" width="395" height="18"/>
+                    <size key="intercellSpacing" width="4" height="2"/>
+                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="295">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <cells>
+                        <column>
+                            <buttonCell type="radio" title="使用简单的状态图标,提示成功或失败" imagePosition="left" alignment="left" toolTip="红色代表失败,高亮绿色表示新变化,绿色表示成功" tag="1" inset="2" id="258">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <buttonCell type="radio" title="使用时间状态图标，表示返回率" imagePosition="left" alignment="left" state="on" toolTip="红色为失败，橙色恢复，绿色变化，随着时间的推移会改变颜色" inset="2" id="259">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </column>
+                    </cells>
+                    <connections>
+                        <action selector="hit:" target="-2" id="264"/>
+                    </connections>
+                </matrix>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="107">
+                    <rect key="frame" x="17" y="95" width="327" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="在监视器窗口双击将测试:" id="284">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="避免你的设置丢失" translatesAutoresizingMaskIntoConstraints="NO" id="234">
+                    <rect key="frame" x="18" y="21" width="297" height="18"/>
+                    <buttonCell key="cell" type="check" title="显示确认恢复默认值，" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="294">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="confirmRestoreDefaultsHit:" target="-2" id="238"/>
+                        <outlet property="nextKeyView" destination="156" id="237"/>
+                    </connections>
+                </button>
+                <button toolTip="相当于增加了应用程序在系统偏好设置的登录项目" verticalHuggingPriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="215">
+                    <rect key="frame" x="18" y="441" width="383" height="18"/>
+                    <buttonCell key="cell" type="check" title="启动系统时自动启动 Simon" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="291">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="autoStartOnLoginCheckHit:" target="-2" id="223"/>
+                        <outlet property="nextKeyView" destination="151" id="219"/>
+                    </connections>
+                </button>
+                <button toolTip="每个测试的当前状态" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="151">
+                    <rect key="frame" x="18" y="419" width="339" height="18"/>
+                    <buttonCell key="cell" type="check" title="当启动 Simon 时自动检查所有测试" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="285">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="209"/>
+                    </connections>
+                </button>
+                <button toolTip="如果勾选此项 Simon 停用时监视器窗口将隐藏" translatesAutoresizingMaskIntoConstraints="NO" id="197">
+                    <rect key="frame" x="18" y="347" width="262" height="18"/>
+                    <buttonCell key="cell" type="check" title="自动隐藏监视器窗口" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="290">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="210"/>
+                        <outlet property="nextKeyView" destination="94" id="203"/>
+                    </connections>
+                </button>
+                <button toolTip="出现在菜单栏的右侧" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="165">
+                    <rect key="frame" x="18" y="238" width="341" height="18"/>
+                    <buttonCell key="cell" type="check" title="在菜单栏显示测试状态" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="287">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="212"/>
+                        <outlet property="nextKeyView" destination="176" id="181"/>
+                    </connections>
+                </button>
+                <button toolTip="在这个窗口阅读 Simon 帮助" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="106">
+                    <rect key="frame" x="552" y="16" width="25" height="25"/>
+                    <buttonCell key="cell" type="help" bezelStyle="helpButton" imagePosition="below" alignment="center" borderStyle="border" inset="1" id="283">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="label"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="help:" target="-2" id="207"/>
+                        <outlet property="nextKeyView" destination="215" id="222"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="172">
+                    <rect key="frame" x="37" y="215" width="245" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="选择菜单状态测试:" id="288">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="更改这些参数推荐值" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="156">
+                    <rect key="frame" x="439" y="14" width="114" height="28"/>
+                    <buttonCell key="cell" type="push" title="恢复默认值" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="286">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="restoreFactorySettings:" target="-2" id="208"/>
+                        <outlet property="nextKeyView" destination="106" id="163"/>
+                    </connections>
+                </button>
+                <popUpButton toolTip="双击出现活跃测试" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="96">
+                    <rect key="frame" x="348" y="89" width="106" height="26"/>
+                    <popUpButtonCell key="cell" type="push" title="显示简介" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="5" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="98" id="282">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="109">
+                            <items>
+                                <menuItem title="不执行任何操作" id="100"/>
+                                <menuItem isSeparatorItem="YES" id="105">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="显示简介" state="on" tag="5" id="98"/>
+                                <menuItem isSeparatorItem="YES" id="104">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="现在检查" tag="4" id="87"/>
+                                <menuItem title="预览" tag="1" id="89"/>
+                                <menuItem title="访问网站" tag="3" id="99"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="214"/>
+                        <outlet property="nextKeyView" destination="234" id="236"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton toolTip="选择操作发生在状态菜单测试" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="176">
+                    <rect key="frame" x="286" y="209" width="154" height="26"/>
+                    <popUpButtonCell key="cell" type="push" title="显示子菜单" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="10" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="193" id="289">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="174">
+                            <items>
+                                <menuItem title="不执行任何操作" id="177"/>
+                                <menuItem isSeparatorItem="YES" id="168">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="选择测试" tag="6" id="179"/>
+                                <menuItem title="编辑测试" tag="5" id="173"/>
+                                <menuItem isSeparatorItem="YES" id="175">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="现在检查" tag="4" id="167"/>
+                                <menuItem title="预览" tag="1" id="171"/>
+                                <menuItem title="访问网站" tag="3" id="170"/>
+                                <menuItem isSeparatorItem="YES" id="194">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="切换暂停" tag="8" id="196"/>
+                                <menuItem title="切换旗标" tag="9" id="195"/>
+                                <menuItem isSeparatorItem="YES" id="192">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="显示子菜单" state="on" tag="10" id="193"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="213"/>
+                        <outlet property="nextKeyView" destination="228" id="230"/>
+                    </connections>
+                </popUpButton>
+                <button toolTip="在公共互联网使用 Simon " translatesAutoresizingMaskIntoConstraints="NO" id="296">
+                    <rect key="frame" x="18" y="57" width="443" height="18"/>
+                    <buttonCell key="cell" type="check" title="当 Simon 启动时检查 Wi-Fi" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="297">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="299"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qsg-sV-gXi">
+                    <rect key="frame" x="18" y="383" width="141" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="&lt;DO NOT LOCALIZE&gt;" id="eXM-6h-aOi">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0dm-Ic-4yf">
+                    <rect key="frame" x="414" y="373" width="166" height="32"/>
+                    <buttonCell key="cell" type="push" title="选择密码…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rvY-VW-Dbb">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="changePassword:" target="-2" id="Xmr-fM-2Av"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="dIW-k7-M80">
+                    <rect key="frame" x="18" y="313" width="227" height="18"/>
+                    <buttonCell key="cell" type="check" title="Simon 图标在 Dock 显示" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kFf-Rg-1sG">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleDockIcon:" target="-2" id="L2R-GK-ETj"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-4r-6Zl">
+                    <rect key="frame" x="38" y="296" width="264" height="11"/>
+                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="在 Dock 隐藏 Simon 图标" id="ehj-Q7-gIf">
+                        <font key="font" metaFont="miniSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="当前故障，最近的变化，或最近的失败" translatesAutoresizingMaskIntoConstraints="NO" id="94">
+                    <rect key="frame" x="38" y="272" width="339" height="18"/>
+                    <buttonCell key="cell" type="check" title="显示在 Dock 图标中最重要位置" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="281">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="hit:" target="-2" id="211"/>
+                        <outlet property="nextKeyView" destination="165" id="180"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="234" firstAttribute="top" secondItem="296" secondAttribute="bottom" constant="22" id="21C-aY-Jre"/>
+                <constraint firstItem="176" firstAttribute="leading" secondItem="172" secondAttribute="trailing" constant="8" id="5dl-yr-YxQ"/>
+                <constraint firstItem="234" firstAttribute="leading" secondItem="296" secondAttribute="leading" id="6Vg-cP-SsR"/>
+                <constraint firstItem="197" firstAttribute="top" secondItem="qsg-sV-gXi" secondAttribute="bottom" constant="20" id="8jh-dk-boy"/>
+                <constraint firstAttribute="trailing" secondItem="106" secondAttribute="trailing" constant="19" id="BFE-7I-dkU"/>
+                <constraint firstItem="96" firstAttribute="leading" secondItem="107" secondAttribute="trailing" constant="8" id="CF7-OC-olw"/>
+                <constraint firstItem="172" firstAttribute="leading" secondItem="228" secondAttribute="leading" constant="-1" id="Cnm-Le-BJD"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="151" secondAttribute="trailing" constant="20" symbolic="YES" id="E6e-qC-dtK"/>
+                <constraint firstItem="dIW-k7-M80" firstAttribute="leading" secondItem="197" secondAttribute="leading" id="FLV-km-YNg"/>
+                <constraint firstAttribute="trailing" secondItem="0dm-Ic-4yf" secondAttribute="trailing" constant="20" id="FQT-UK-Yh2"/>
+                <constraint firstItem="228" firstAttribute="top" secondItem="172" secondAttribute="bottom" constant="8" id="Hni-Dd-MFp"/>
+                <constraint firstItem="172" firstAttribute="top" secondItem="165" secondAttribute="bottom" constant="8" symbolic="YES" id="IBM-BN-SIj"/>
+                <constraint firstItem="107" firstAttribute="top" secondItem="257" secondAttribute="bottom" constant="21" id="IG2-RH-pkh"/>
+                <constraint firstItem="151" firstAttribute="leading" secondItem="215" secondAttribute="leading" id="JaA-uG-0bi"/>
+                <constraint firstItem="5QV-4r-6Zl" firstAttribute="leading" secondItem="dIW-k7-M80" secondAttribute="leading" constant="20" id="Jfq-Df-KNr"/>
+                <constraint firstItem="296" firstAttribute="top" secondItem="107" secondAttribute="bottom" constant="22" id="JiF-vg-bwR"/>
+                <constraint firstItem="151" firstAttribute="top" secondItem="215" secondAttribute="bottom" constant="8" id="KTu-cg-UjZ"/>
+                <constraint firstItem="215" firstAttribute="leading" secondItem="204" secondAttribute="leading" constant="20" id="Nkf-0O-c2c"/>
+                <constraint firstItem="234" firstAttribute="baseline" secondItem="156" secondAttribute="baseline" id="NlZ-sj-zkg"/>
+                <constraint firstItem="257" firstAttribute="leading" secondItem="165" secondAttribute="leading" id="QOk-8L-xhy"/>
+                <constraint firstItem="165" firstAttribute="top" secondItem="94" secondAttribute="bottom" constant="20" id="RnX-K5-MUT"/>
+                <constraint firstItem="dIW-k7-M80" firstAttribute="leading" secondItem="165" secondAttribute="leading" id="TtH-gj-w9U"/>
+                <constraint firstItem="257" firstAttribute="leading" secondItem="107" secondAttribute="leading" constant="1" id="TuN-av-naO"/>
+                <constraint firstAttribute="bottom" secondItem="106" secondAttribute="bottom" constant="19" id="Yyt-aA-4Zq"/>
+                <constraint firstItem="106" firstAttribute="centerY" secondItem="156" secondAttribute="centerY" constant="-0.5" id="bWf-fU-7TH"/>
+                <constraint firstItem="5QV-4r-6Zl" firstAttribute="top" secondItem="dIW-k7-M80" secondAttribute="bottom" constant="8" id="bao-LR-342"/>
+                <constraint firstItem="dIW-k7-M80" firstAttribute="top" secondItem="197" secondAttribute="bottom" constant="20" id="d60-4r-oNT"/>
+                <constraint firstItem="172" firstAttribute="leading" secondItem="165" secondAttribute="leading" constant="19" id="eEt-1o-c9l"/>
+                <constraint firstItem="172" firstAttribute="baseline" secondItem="176" secondAttribute="baseline" id="ec4-F5-WJE"/>
+                <constraint firstItem="107" firstAttribute="baseline" secondItem="96" secondAttribute="baseline" id="fsl-gw-Wfc"/>
+                <constraint firstItem="94" firstAttribute="top" secondItem="5QV-4r-6Zl" secondAttribute="bottom" constant="8" id="hR5-pe-Qag"/>
+                <constraint firstItem="197" firstAttribute="leading" secondItem="qsg-sV-gXi" secondAttribute="leading" id="kDp-se-xtc"/>
+                <constraint firstItem="215" firstAttribute="top" secondItem="204" secondAttribute="top" constant="20" id="kbL-7v-yyn"/>
+                <constraint firstItem="5QV-4r-6Zl" firstAttribute="leading" secondItem="94" secondAttribute="leading" id="m6g-IJ-sa9"/>
+                <constraint firstItem="0dm-Ic-4yf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qsg-sV-gXi" secondAttribute="trailing" constant="8" symbolic="YES" id="nvT-es-hdE"/>
+                <constraint firstItem="qsg-sV-gXi" firstAttribute="top" secondItem="151" secondAttribute="bottom" constant="21" id="pPi-Bo-JpV"/>
+                <constraint firstItem="107" firstAttribute="leading" secondItem="296" secondAttribute="leading" constant="-1" id="paY-oo-owM"/>
+                <constraint firstItem="106" firstAttribute="leading" secondItem="156" secondAttribute="trailing" constant="6" id="u7l-sN-fFw"/>
+                <constraint firstItem="156" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="234" secondAttribute="trailing" constant="8" symbolic="YES" id="uoh-IK-sKC"/>
+                <constraint firstItem="0dm-Ic-4yf" firstAttribute="baseline" secondItem="qsg-sV-gXi" secondAttribute="baseline" id="uy5-98-Yop"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="215" secondAttribute="trailing" constant="20" symbolic="YES" id="wpQ-E2-ita"/>
+                <constraint firstItem="257" firstAttribute="top" secondItem="228" secondAttribute="bottom" constant="20" id="zbo-Sq-Knb"/>
+                <constraint firstItem="151" firstAttribute="leading" secondItem="qsg-sV-gXi" secondAttribute="leading" id="zig-DU-ObD"/>
+            </constraints>
+            <point key="canvasLocation" x="442" y="426.5"/>
+        </customView>
+    </objects>
+</document>

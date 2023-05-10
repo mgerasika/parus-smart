@@ -1,0 +1,30 @@
+/* Advanced preference page title */
+"Advanced" = "Advanced";
+
+/* Prefs Restore Defaults Cancel button title */
+"Cancel" = "Cancel";
+
+/* Preferences window */
+"Could not load the %@ preferences." = "Could not load the %@ preferences.";
+
+/* General preference page title */
+"General" = "General";
+
+/* Preferences window */
+"Preferences Error" = "Preferences Error";
+
+/* Prefs Restore Defaults Confirm button title */
+"Restore" = "Restore";
+
+/* Prefs Restore Defaults confirmation title */
+"Restore the %@ preferences to their original values?" = "Restore the %@ preferences to their original values?";
+
+/* Prefs Restore Defaults confirmation explanation */
+"This will restore all settings on this page to the state they were in when first installed.\n\nOther pages are not affected, but selecting Don't ask again will disable this confirmation on all pages." = "This will restore all settings on this page to the state they were in when first installed.\n\nOther pages are not affected, but selecting Don't ask again will disable this confirmation on all pages.";
+
+/* Preferences prepare error */
+"Unable to prepare the %@ preferences page." = "Unable to prepare the %@ preferences page.";
+
+/* Updates preference page title */
+"Updates" = "Updates";
+

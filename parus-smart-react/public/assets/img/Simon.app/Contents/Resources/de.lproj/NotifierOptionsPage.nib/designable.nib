@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NotifierOptionsPageController">
+            <connections>
+                <outlet property="changeCheck" destination="18" id="57"/>
+                <outlet property="changeCountField" destination="21" id="58"/>
+                <outlet property="failureCheck" destination="25" id="59"/>
+                <outlet property="failureCountField" destination="24" id="60"/>
+                <outlet property="failureOnceCheck" destination="28" id="61"/>
+                <outlet property="recoveryCheck" destination="32" id="65"/>
+                <outlet property="recoveryCountField" destination="29" id="66"/>
+                <outlet property="recoveryFailureCheck" destination="104" id="108"/>
+                <outlet property="view" destination="374" id="377"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="374" userLabel="Notifier Editor View">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26">
+                    <rect key="frame" x="126" y="111" width="37" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="- nach" id="182">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="Nicht melden, wenn die Seite wieder erreichbar ist, falls keine Fehlschlag-Mitteilung der gleichen Art kommt." translatesAutoresizingMaskIntoConstraints="NO" id="104">
+                    <rect key="frame" x="128" y="17" width="167" height="18"/>
+                    <buttonCell key="cell" type="check" title="Nur melden, wenn ein Fehlschlag gemeldet wurde" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="190">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                </button>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                    <rect key="frame" x="212" y="84" width="102" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="aufeinander folgende Fehlschlägen" id="179">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="Zeigt an, dass dies ein Fehlschlag-Melder ist" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                    <rect key="frame" x="18" y="83" width="75" height="18"/>
+                    <buttonCell key="cell" type="check" title="     Fehlschlag" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="181">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="24" id="79"/>
+                    </connections>
+                </button>
+                <textField toolTip="Nur melden, wenn der Test diese Anzahl Änderungen ergeben hat" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="21">
+                    <rect key="frame" x="167" y="109" width="39" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="3dD-cU-pWN"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="1234" drawsBackground="YES" id="177">
+                        <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="88">
+                            <attributedString key="attributedStringForZero">
+                                <fragment content="0"/>
+                            </attributedString>
+                            <decimal key="minimum" value="1"/>
+                            <decimal key="maximum" value="9999"/>
+                        </numberFormatter>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="25" id="78"/>
+                    </connections>
+                </textField>
+                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                    <rect key="frame" x="36" y="83" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="StatusBadNow" id="178"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                    <rect key="frame" x="212" y="110" width="116" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="aufeinander folgende Änderungen" id="176">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                    <rect key="frame" x="36" y="111" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="StatusChangedNow" id="175"/>
+                </imageView>
+                <button toolTip="Zeigt an, dass dies ein Rettung-Melder ist" translatesAutoresizingMaskIntoConstraints="NO" id="32">
+                    <rect key="frame" x="18" y="38" width="89" height="18"/>
+                    <buttonCell key="cell" type="check" title="     Rettung" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="188">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="29" id="81"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="30">
+                    <rect key="frame" x="126" y="39" width="37" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="- nach" id="186">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button toolTip="Zeigt an, dass dies ein Änderung-Melder ist" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                    <rect key="frame" x="18" y="108" width="80" height="18"/>
+                    <buttonCell key="cell" type="check" title="     Änderung" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="174">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="21" id="77"/>
+                    </connections>
+                </button>
+                <textField toolTip="Nur melden, wenn der Test diese Anzahl Fehler in einer Reihe gehabt hat" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="24">
+                    <rect key="frame" x="167" y="82" width="39" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="mag-Zp-Zqx"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="1234" drawsBackground="YES" id="180">
+                        <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="89">
+                            <attributedString key="attributedStringForZero">
+                                <fragment content="0"/>
+                            </attributedString>
+                            <decimal key="minimum" value="1"/>
+                            <decimal key="maximum" value="9999"/>
+                        </numberFormatter>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="28" id="97"/>
+                    </connections>
+                </textField>
+                <button toolTip="Nicht erneut melden, bis die Site wieder erreichbar ist." translatesAutoresizingMaskIntoConstraints="NO" id="28">
+                    <rect key="frame" x="128" y="62" width="191" height="18"/>
+                    <buttonCell key="cell" type="check" title="Jeden Fehler nur einmal melden" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="184">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="32" id="98"/>
+                    </connections>
+                </button>
+                <textField toolTip="Nur melden, wenn der Test versagt hat und so oft gerettet wurde" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="29">
+                    <rect key="frame" x="167" y="38" width="39" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="Y4B-WJ-4Yg"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="1234" drawsBackground="YES" id="185">
+                        <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="0" negativeFormat="-0" localizesFormat="NO" hasThousandSeparators="NO" thousandSeparator="," id="90">
+                            <attributedString key="attributedStringForZero">
+                                <fragment content="0"/>
+                            </attributedString>
+                            <decimal key="minimum" value="1"/>
+                            <decimal key="maximum" value="9999"/>
+                        </numberFormatter>
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="104" id="135"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="27">
+                    <rect key="frame" x="126" y="84" width="37" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="- nach" id="183">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="31">
+                    <rect key="frame" x="36" y="39" width="16" height="16"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="StatusBadHour" id="187"/>
+                </imageView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="205">
+                    <rect key="frame" x="18" y="141" width="272" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Benutzen Sie diesen Melder, wenn der endgültige Status des Tests wie folgt ist:" id="206">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33">
+                    <rect key="frame" x="212" y="40" width="59" height="14"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Rettungen" id="189">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="23" firstAttribute="leading" secondItem="24" secondAttribute="trailing" constant="8" id="3Tj-dD-LCX"/>
+                <constraint firstItem="24" firstAttribute="baseline" secondItem="23" secondAttribute="baseline" id="3VB-sZ-hYh"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="205" secondAttribute="bottom" constant="18" id="4Io-hq-vz0"/>
+                <constraint firstItem="20" firstAttribute="baseline" secondItem="21" secondAttribute="baseline" constant="1" id="4Jn-Wf-X7h"/>
+                <constraint firstItem="26" firstAttribute="leading" secondItem="30" secondAttribute="leading" id="4wg-0R-U8z"/>
+                <constraint firstItem="26" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="18" secondAttribute="trailing" constant="32" id="56D-AK-bt3"/>
+                <constraint firstItem="26" firstAttribute="baseline" secondItem="21" secondAttribute="baseline" id="5gL-p5-c68"/>
+                <constraint firstItem="20" firstAttribute="leading" secondItem="21" secondAttribute="trailing" constant="8" id="8WH-4v-i8V"/>
+                <constraint firstItem="32" firstAttribute="top" secondItem="25" secondAttribute="bottom" constant="33" id="CcW-Md-FyN"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="19" secondAttribute="trailing" constant="-31" id="Gwx-Fx-V25"/>
+                <constraint firstItem="28" firstAttribute="top" secondItem="24" secondAttribute="bottom" constant="5" id="Huo-Tv-glV"/>
+                <constraint firstItem="32" firstAttribute="leading" secondItem="31" secondAttribute="trailing" constant="-31" id="IJz-vG-PIM"/>
+                <constraint firstItem="26" firstAttribute="leading" secondItem="27" secondAttribute="leading" id="JZR-mj-Ekv"/>
+                <constraint firstItem="22" firstAttribute="bottom" secondItem="25" secondAttribute="bottom" constant="3" id="NkC-D6-vXP"/>
+                <constraint firstItem="205" firstAttribute="leading" secondItem="374" secondAttribute="leading" constant="20" id="PjL-ZF-55G"/>
+                <constraint firstItem="25" firstAttribute="leading" secondItem="22" secondAttribute="trailing" constant="-31" id="PoZ-Ua-hub"/>
+                <constraint firstItem="24" firstAttribute="baseline" secondItem="27" secondAttribute="baseline" id="PxN-6g-scZ"/>
+                <constraint firstItem="205" firstAttribute="top" secondItem="374" secondAttribute="top" constant="23" id="QIN-LY-Zac"/>
+                <constraint firstItem="30" firstAttribute="baseline" secondItem="32" secondAttribute="baseline" constant="1" id="Szs-wO-LNi"/>
+                <constraint firstItem="104" firstAttribute="top" secondItem="29" secondAttribute="bottom" constant="6" id="T9h-MN-bxP"/>
+                <constraint firstItem="31" firstAttribute="bottom" secondItem="32" secondAttribute="bottom" constant="2" id="V93-go-rsQ"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="VrP-aO-SPQ"/>
+                <constraint firstItem="27" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="25" secondAttribute="trailing" constant="37" id="XAz-yJ-H0R"/>
+                <constraint firstItem="26" firstAttribute="leading" secondItem="18" secondAttribute="trailing" priority="750" constant="32" id="YE0-NJ-XOq"/>
+                <constraint firstItem="21" firstAttribute="leading" secondItem="26" secondAttribute="trailing" constant="6" id="aYE-00-2a6"/>
+                <constraint firstItem="30" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="32" secondAttribute="trailing" constant="23" id="bWs-e9-0Cl"/>
+                <constraint firstItem="18" firstAttribute="baseline" secondItem="26" secondAttribute="baseline" constant="1" id="cZn-7h-Xl9"/>
+                <constraint firstItem="33" firstAttribute="baseline" secondItem="29" secondAttribute="baseline" id="d4U-lZ-V5N"/>
+                <constraint firstItem="18" firstAttribute="bottom" secondItem="19" secondAttribute="bottom" id="gxg-DX-Hp5"/>
+                <constraint firstItem="24" firstAttribute="leading" secondItem="28" secondAttribute="leading" constant="36" id="h0d-60-pSO"/>
+                <constraint firstItem="24" firstAttribute="leading" secondItem="27" secondAttribute="trailing" constant="6" id="h2T-RI-XXe"/>
+                <constraint firstItem="30" firstAttribute="baseline" secondItem="29" secondAttribute="baseline" constant="1" id="hhr-I2-mlF"/>
+                <constraint firstItem="32" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="jIT-I5-mNd"/>
+                <constraint firstItem="27" firstAttribute="baseline" secondItem="25" secondAttribute="baseline" constant="1" id="jea-M9-TON"/>
+                <constraint firstItem="33" firstAttribute="leading" secondItem="29" secondAttribute="trailing" constant="8" id="jz1-3g-3EG"/>
+                <constraint firstItem="29" firstAttribute="leading" secondItem="30" secondAttribute="trailing" constant="6" id="llo-kh-Yoz"/>
+                <constraint firstItem="104" firstAttribute="leading" secondItem="29" secondAttribute="leading" constant="-36" id="nMY-jh-lYB"/>
+                <constraint firstItem="25" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="13" id="qQh-z1-4at"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="205" secondAttribute="leading" constant="1" id="yai-3b-KyN"/>
+            </constraints>
+            <point key="canvasLocation" x="316" y="723"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="StatusBadHour" width="16" height="16"/>
+        <image name="StatusBadNow" width="16" height="16"/>
+        <image name="StatusChangedNow" width="16" height="16"/>
+    </resources>
+</document>

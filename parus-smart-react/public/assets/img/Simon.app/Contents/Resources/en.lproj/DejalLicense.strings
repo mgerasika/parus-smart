@@ -1,0 +1,333 @@
+/* License Assistant window title */
+"%@ Assistant" = "%@ Assistant";
+
+/* Expired info */
+"%@ is Expired: used for %d days" = "%1$@ is Expired: used for %2$d days";
+
+/* Welcome freeware */
+"%@ is Freeware; donate to support future versions" = "%@ is Freeware; donate to support future versions";
+
+/* Licensed info */
+"%@ is Licensed; thank you!" = "%@ is Licensed; thank you!";
+
+/* Unlicensed progress */
+"%@ is not licensed: %d days left" = "%1$@ is not licensed: %2$d days left";
+
+/* Last day progress */
+"%@ is not licensed: just one day left" = "%@ is not licensed: just one day left";
+
+/* Unlicensed info singular */
+"%@ is Not Licensed: last trial day" = "%@ is Not Licensed: last trial day";
+
+/* Old licensed info */
+"%@ Needs an Upgrade License" = "%@ Needs an Upgrade License";
+
+/* Only upgrade license info */
+"%@ Needs Your Original License" = "%@ Needs Your Original License";
+
+/* License trial expired heading */
+"%@ Trial Expired" = "%@ Trial Expired";
+
+/* Expired progress */
+"%@ trial expired: used on %d days" = "%1$@ trial expired: used on %2$d days";
+
+/* Old licensed beta info */
+"%@ Will Need an Upgrade License After Beta" = "%@ Will Need an Upgrade License After Beta";
+
+/* Buy license option description */
+"%@: $%@" = "%1$@: $%2$@";
+
+/* Plural license reminder button in window title */
+"%d days left - buy now!" = "%d days left - buy now!";
+
+/* Tooltip for license trial level indicator */
+"%d use-day trial period" = "%d use-day trial period";
+
+/* Beta welcome explanation */
+"A %@ release contains new features that haven't been fully tested, and may not be finished.\n\nIf you find any bugs or have any suggestions for improvements or other feedback, please email %@; see the Help menu.  We appreciate your assistance in improving this product!" = "A %1$@ release contains new features that haven't been fully tested, and may not be finished.\n\nIf you find any bugs or have any suggestions for improvements or other feedback, please email %2$@; see the Help menu.  We appreciate your assistance in improving this product!";
+
+/* Add License button title
+   License Editor Add button title */
+"Add" = "Add";
+
+/* Alpha notice explanation */
+"An alpha (sneak peek) release contains features that haven't been completed or fully tested.\n\nIf you find any bugs or have any suggestions for improvements or other comments, please send feedback to %@; see the Help menu or use the Forums button below.  We appreciate your assistance in improving this product!" = "An alpha (sneak peek) release contains features that haven't been completed or fully tested.\n\nIf you find any bugs or have any suggestions for improvements or other comments, please send feedback to %@; see the Help menu or use the Forums button below.  We appreciate your assistance in improving this product!";
+
+/* Essental component not loaded explanation */
+"An essential component couldn't be loaded." = "An essential component couldn't be loaded.";
+
+/* App Store license kind
+   Licensed for App Store */
+"App Store" = "App Store";
+
+/* License Editor delete message text */
+"Are you sure you want to delete this license?" = "Are you sure you want to delete this license?";
+
+/* Expiry explanation */
+"As of today, you've used it on %d days!  Wow, you must really like it.  But you haven't got around to buying a license yet... an oversight, I'm sure.  So I'll just disable some of %@'s features until you correct that." = "As of today, you've used it on %1$d days!  Wow, you must really like it.  But you haven't got around to buying a license yet... an oversight, I'm sure.  So I'll just disable some of %2$@'s features until you correct that.";
+
+/* Buy license option radio title */
+"Buy %@" = "Buy %@";
+
+/* License Options Buy Now button title */
+"Buy Now" = "Buy Now";
+
+/* License Editor Cancel button title */
+"Cancel" = "Cancel";
+
+/* Check for Update button title */
+"Check for Update" = "Check for Update";
+
+/* License Editor Delete button title */
+"Delete" = "Delete";
+
+/* License Editor continue (with a serial) message text */
+"Do you want to add the entered license?" = "Do you want to add the entered license?";
+
+/* License Editor continue (with no serial) message text */
+"Do you want to find your license?" = "Do you want to find your license?";
+
+/* License Editor Don't Add button title */
+"Don't Add" = "Don't Add";
+
+/* License Editor Don't Find button title */
+"Don't Find" = "Don't Find";
+
+/* Email button title */
+"Email %@" = "Email %@";
+
+/* Unable to edit name email subject */
+"email address changed" = "email address changed";
+
+/* Enter license explanation */
+"Enter at least your Licensed Name and Email.  If you can't find the email you received from %@, you can query the server for your license(s).\n\nIf you know your serial number, enter that too (and it won't need to be looked up).\n\nTip: If you copy the contents of the email before opening the Licenses window, the license will be added automatically." = "Enter at least your Licensed Name and Email.  If you can't find the email you received from %@, you can query the server for your license(s).\n\nIf you know your serial number, enter that too (and it won't need to be looked up).\n\nTip: If you copy the contents of the email before opening the Licenses window, the license will be added automatically.";
+
+/* Trial license option description */
+"Evaluate the app before buying" = "Evaluate the app before buying";
+
+/* Evaluating info */
+"Evaluating %@: %d days left" = "Evaluating %1$@: %2$d days left";
+
+/* License Thanks Feedback button title */
+"Feedback" = "Feedback";
+
+/* Find License button title
+   License Editor Find button title */
+"Find" = "Find";
+
+/* Finding License button title */
+"Finding..." = "Finding...";
+
+/* License Thanks Forum button title */
+"Forum" = "Forum";
+
+/* Forums button title */
+"Forums" = "Forums";
+
+/* TrialPay option radio title */
+"Get it free via TrialPay" = "Get it free via TrialPay";
+
+/* Editor license option radio title */
+"I already have a license" = "I already have a license";
+
+/* License unable to edit name email body */
+"I have changed my email address.  Please update your records accordingly:\n\n\nProduct: \t\t%@\nVersion: \t\t%@ (%@)\nName: \t\t%@\nOld email: \t\t%@\nNew email: \t%@\nDate: \t\t%@\nCheck: \t\t%@\n\n" = "I have changed my email address.  Please update your records accordingly:\n\n\nProduct: \t\t%1$@\nVersion: \t\t%2$@ (%3$@)\nName: \t\t%4$@\nOld email: \t\t%5$@\nNew email: \t%6$@\nDate: \t\t%7$@\nCheck: \t\t%8$@\n\n";
+
+/* Later button title */
+"Later" = "Later";
+
+/* TrialPay GetItFree option description */
+"Learn more about TrialPay's Get It Free" = "Learn more about TrialPay's Get It Free";
+
+/* License duplicate heading */
+"License has been added." = "License has been added.";
+
+/* Unable to find license email subject */
+"license query" = "license query";
+
+/* License email prefix from email */
+"Licensed Email: " = "Licensed Email: ";
+
+/* License name prefix from email */
+"Licensed Name: " = "Licensed Name: ";
+
+/* Licenses button title */
+"Licenses..." = "Licenses...";
+
+/* Freeware license option radio title */
+"Make %@" = "Make %@";
+
+/* More Info button title */
+"More Info..." = "More Info...";
+
+/* Freeware option description */
+"No obligation to donate" = "No obligation to donate";
+
+/* OK button title */
+"OK" = "OK";
+
+/* License on file */
+"on file" = "on file";
+
+/* Singular license reminder button in window title */
+"One day left - buy now!" = "One day left - buy now!";
+
+/* Find License failure message */
+"Please check that the entered name and email address are correct, and try again.\n\nIf you're sure you entered the correct values, click Email %@ to ask for personal help." = "Please check that the entered name and email address are correct, and try again.\n\nIf you're sure you entered the correct values, click Email %@ to ask for personal help.";
+
+/* Freeware license reminder button in window title */
+"Please donate!" = "Please donate!";
+
+/* Enter license heading */
+"Please enter the license details." = "Please enter the license details.";
+
+/* Dead title */
+"Please Purchase Dejal %@" = "Please Purchase Dejal %@";
+
+/* Dead title */
+"Please Purchase Dejal %@... or Get It Free" = "Please Purchase Dejal %@... or Get It Free";
+
+/* Quit button title */
+"Quit" = "Quit";
+
+/* License review expired heading */
+"Review license has expired." = "Review license has expired.";
+
+/* Save Changes button title */
+"Save" = "Save";
+
+/* Editor license option radio title */
+"Show my licenses" = "Show my licenses";
+
+/* Kagi error informative text */
+"Sorry for the inconvenience." = "Sorry for the inconvenience.";
+
+/* Beta expired explanation */
+"Sorry, this %@ release is time-limited for quality-control reasons.  You need to upgrade to a newer version.\n\nWould you like to check for one now?" = "Sorry, this %@ release is time-limited for quality-control reasons.  You need to upgrade to a newer version.\n\nWould you like to check for one now?";
+
+/* License reminder when licensed */
+"Thank you for licensing %@!" = "Thank you for licensing %@!";
+
+/* Warning title */
+"Thank You for Trying Dejal %@" = "Thank You for Trying Dejal %@";
+
+/* Expiry title */
+"Thanks Again for Trying Dejal %@" = "Thanks Again for Trying Dejal %@";
+
+/* License Editor continue continue (with a serial) informative text */
+"The entered license details haven't been saved yet." = "The entered license details haven't been saved yet.";
+
+/* License not found email body */
+"The following license details were not accepted, and a license couldn't be found:\n\n\nProduct: \t\t%@\nVersion: \t\t%@ (%@)\nName: \t\t%@\nEmail: \t\t%@\nSerial: \t\t%@\nCheck: \t\t%@\nDate: \t\t%@\nError: \t\t%@\n\n" = "The following license details were not accepted, and a license couldn't be found:\n\n\nProduct: \t\t%1$@\nVersion: \t\t%2$@ (%3$@)\nName: \t\t%4$@\nEmail: \t\t%5$@\nSerial: \t\t%6$@\nCheck: \t\t%7$@\nDate: \t\t%8$@\nError: \t\t%9$@\n\n";
+
+/* Kagi error message text */
+"The integrated Kagi processing feature can't be used at present.  Please Buy Online instead." = "The integrated Kagi processing feature can't be used at present.  Please Buy Online instead.";
+
+/* Beta expired heading */
+"This %@ release has expired" = "This %@ release has expired";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing %@ development.  Your help in making this a great product is much appreciated!" = "This alpha release is provided only to licensed users, as a sneak peek of the ongoing %@ development.  Your help in making this a great product is much appreciated!";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing development.  Please post suggestions, bug reports, and other feedback only to the %@ Testers forum.  Your help in making this a great product is much appreciated!" = "This alpha release is provided only to licensed users, as a sneak peek of the ongoing development.  Please post suggestions, bug reports, and other feedback only to the %@ Testers forum.  Your help in making this a great product is much appreciated!";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing development.\n\nPlease click Licenses... to enter your %@ %@ license now or to purchase one, or Quit." = "This alpha release is provided only to licensed users, as a sneak peek of the ongoing development.\n\nPlease click Licenses... to enter your %1$@ %2$@ license now or to purchase one, or Quit.";
+
+/* Beta welcome heading */
+"This is a %@ release of %@" = "This is a %1$@ release of %2$@";
+
+/* Alpha notice heading */
+"This is a sneak peek release of %@" = "This is a sneak peek release of %@";
+
+/* Alpha warning heading */
+"This is an alpha release of %@" = "This is an alpha release of %@";
+
+/* License duplicate explanation */
+"This license has already been added." = "This license has already been added.";
+
+/* License review expired explanation */
+"This Review license is only valid for %d use days, which have already passed.  Contact Dejal if you need an extension." = "This Review license is only valid for %d use days, which have already passed.  Contact Dejal if you need an extension.";
+
+/* Tooltip for license trial level indicator */
+"Today is day %d of the %d use-day trial period" = "Today is day %1$d of the %2$d use-day trial period";
+
+/* Expired license reminder button in window title */
+"Trial expired - buy now!" = "Trial expired - buy now!";
+
+/* Unable to edit name heading */
+"Unable to edit the name or email." = "Unable to edit the name or email.";
+
+/* License not found error message */
+"Unable to find the license." = "Unable to find the license.";
+
+/* License can't query error message */
+"Unable to look up the license." = "Unable to look up the license.";
+
+/* License purchase date unknown */
+"unknown" = "unknown";
+
+/* Trial license option radio title */
+"Use for free" = "Use for free";
+
+/* Tooltip for expired license trial level indicator */
+"Used on %d days; the %d use-day trial period is over" = "Used on %1$d days; the %2$d use-day trial period is over";
+
+/* Other days explanation */
+"We hope you are enjoying using %@.  If you've bought a license, simply choose the first option below to enter your serial number.  Otherwise, you can click Buy Now to get one, or continue to evaluate it." = "We hope you are enjoying using %@.  If you've bought a license, simply choose the first option below to enter your serial number.  Otherwise, you can click Buy Now to get one, or continue to evaluate it.";
+
+/* Freeware explanation */
+"We hope you are enjoying using %@.  You are welcome to use %@ at no cost, but if you wish you can make a donation to help support future versions.  If you've already made a donation, simply choose the first option below to enter your serial number." = "We hope you are enjoying using %1$@.  You are welcome to use %2$@ at no cost, but if you wish you can make a donation to help support future versions.  If you've already made a donation, simply choose the first option below to enter your serial number.";
+
+/* Welcome explanation */
+"We hope you enjoy using %@.  If you have a license already, simply choose the first option below to enter your serial number.  Otherwise, you can click Buy Now to get one, or try it for free first." = "We hope you enjoy using %@.  If you have a license already, simply choose the first option below to enter your serial number.  Otherwise, you can click Buy Now to get one, or try it for free first.";
+
+/* License Options Website button title */
+"Website" = "Website";
+
+/* Alpha warning heading */
+"Welcome %@ Alpha Tester!" = "Welcome %@ Alpha Tester!";
+
+/* Welcome title */
+"Welcome to Dejal %@!" = "Welcome to Dejal %@!";
+
+/* Welcome info */
+"Welcome!  %@ is not yet licensed" = "Welcome!  %@ is not yet licensed";
+
+/* License Editor delete informative text */
+"You can add it again if necessary by entering your name and the licensed email address and clicking Find." = "You can add it again if necessary by entering your name and the licensed email address and clicking Find.";
+
+/* Editor license option description */
+"You can find or enter it on the next page" = "You can find or enter it on the next page";
+
+/* Unable to edit name explanation */
+"You can make minor changes to the Licensed Name field, like changing capitalization, adding punctuation, etc, but can not make significant changes, and can not change the Licensed Email.\n\nIf your email address has changed, click Email %@ to notify %@." = "You can make minor changes to the Licensed Name field, like changing capitalization, adding punctuation, etc, but can not make significant changes, and can not change the Licensed Email.\n\nIf your email address has changed, click Email %1$@ to notify %2$@.";
+
+/* Editor license option description */
+"You can see or edit them on the next page" = "You can see or edit them on the next page";
+
+/* Old major release explanation */
+"You have a license for a previous version of %@, but it has had a major upgrade, which requires purchase of an Upgrade license." = "You have a license for a previous version of %@, but it has had a major upgrade, which requires purchase of an Upgrade license.";
+
+/* Old major release explanation */
+"You have a license for a previous version of %@, but this is a beta release of a major upgrade, which will require purchase of an Upgrade license after the beta." = "You have a license for a previous version of %@, but this is a beta release of a major upgrade, which will require purchase of an Upgrade license after the beta.";
+
+/* Only upgrade license explanation */
+"You have an Upgrade license for %@, but need to enter or find your original license too.  Continue to the next page, enter your name and original licensed email, then click Find to search for it." = "You have an Upgrade license for %@, but need to enter or find your original license too.  Continue to the next page, enter your name and original licensed email, then click Find to search for it.";
+
+/* License Editor continue (when a license is required) informative text */
+"You haven't entered or found a matching license yet.  A license is required to continue." = "You haven't entered or found a matching license yet.  A license is required to continue.";
+
+/* License Editor continue (with no serial) informative text */
+"You've entered partial license details, but haven't found a matching license yet." = "You've entered partial license details, but haven't found a matching license yet.";
+
+/* Warning explanation */
+"You've used it on %d days now, so we are glad that you find it so useful!  Please take a moment to buy a %@ license before the trial period runs out, and avoid the inconvenience when some features are disabled." = "You've used it on %1$d days now, so we are glad that you find it so useful!  Please take a moment to buy a %2$@ license before the trial period runs out, and avoid the inconvenience when some features are disabled.";
+
+/* Dead explanation */
+"You've used this for %d days now, twice as long as the evaluation period, but haven't licensed it yet.  Please buy a license and enter it to continue using %@.  Thank you." = "You've used this for %1$d days now, twice as long as the evaluation period, but haven't licensed it yet.  Please buy a license and enter it to continue using %2$@.  Thank you.";
+
+/* Dead explanation */
+"You've used this for %d days now.  If you don't want to buy a license, you could get it free via TrialPay: try or buy a third-party product, and get %@ as a bonus!  Choose one of these options to continue using %@." = "You've used this for %1$d days now.  If you don't want to buy a license, you could get it free via TrialPay: try or buy a third-party product, and get %2$@ as a bonus!  Choose one of these options to continue using %3$@.";
+

@@ -1,0 +1,18 @@
+{
+    "extends": "@strapi/typescript-utils/tsconfigs/server",
+    "compilerOptions": {
+        "strict": true,
+        "sourceMap": true,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "jsx": "react-jsx",
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": ["src/*"]
+        }
+    },
+    "include": ["./", "./**/*.ts", "./**/*.js", "src/**/*.json"],
+    "exclude": ["node_modules/", "build/", "dist/", ".cache/", ".tmp/", "src/admin/", "**/*.test.*", "src/plugins/**"]
+}

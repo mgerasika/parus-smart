@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data",
+  "info": {
+    "singularName": "datum",
+    "pluralName": "data",
+    "displayName": "Datum"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "counterConfigID": {
+      "type": "uid"
+    },
+    "userID": {
+      "type": "uid"
+    },
+    "date": {
+      "type": "date"
+    },
+    "value": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Test Info - Filter - Number</title>
+<meta name="description" content="The Number filter analyzes a numeric value.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Test Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Filter<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Number</h1>
+
+<p>The <b>Number</b> filter is displayed when you choose <b>Number</b> in the <b>Filter</b> pop-up menu in the <a href="../index.html"><b>Test Info</b></a> pane.</p>
+
+<p>The default <b>Number Changed</b>, <b>Number More than 95%</b>, <b>Number Out of Range</b>, and other filters are based on the <a href="../../filter/plugin/number.html">Number filter plug-in</a>.</p>
+
+<p>This filter expects the input text to be a valid number, so is typically used after a <a href="./find.html"><b>Find</b></a> or <a href="./block.html"><b>Block</b></a> filter to narrow down the text.  It converts the text to a number.  The filter editor has extra options to ignoring certain characters and use a customizable decimal separator.</p>
+
+<p>It then compares that number against either a fixed number, or the number from the previous check, plus or minus some delta.  It can compare using "is", "is not", "is greater than", "is less than", "is in range" or "is not in range".</p>
+
+<p>Some filters may display controls to specify the condition to evaluate, others may not display anything, if they are pre-configured to use specific values.</p>
+
+<p>The filter results in either a change or failure, as specified in the filter editor.  So you can use this to detect if a disk is getting full, a price has changed by a specified threshold, a file count has changed, or many other uses.</p>
+
+<p>This filter outputs the input text.  If the checkbox to detect changes in the <a href="../../filter/options.html"><b>Options</b> page of the <b>Filter Info</b> pane</a> is on, it results in a <b>Changed</b> status if the numeric condition is true, or <b>Unchanged</b> if false.  If that checkbox is off, it results in a <b>Failure</b> status if the condition is true, or <b>Unchanged</b> if false.  A custom error message can be entered.</p>
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../../filter/plugin/number.html">Filter Info pane for Number filter</a></li>
+<li><a href="./index.html">Filter page</a></li>
+<li><a href="../index.html">Test Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

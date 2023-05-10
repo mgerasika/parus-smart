@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Service - Kind - Port - Capture Session</title>
+<meta name="description" content="Capture Session panel for the Port plug-in.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Service Info<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Service/Notifier Kind<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Port plug-in<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Capture Session</h1>
+
+<p>The <b>Capture Session</b> panel for the <a href="./index.html"><b>Port</b> service</a> and <a href="../../../notifier/plugin/port.html"><b>Port</b> notifier</a> plug-ins.  This is displayed via the <b>Capture Session</b> button in that plug-in's service/notifier page.</p>
+
+<p>This panel assists you in constructing the session script, by connecting to a server on a given port and helping you engage in a conversation with it.  It contains a transcript area at the top, showing all of the text received from and sent to the server, and fields to connect to a server, receive text from it, and send commands to it:</p>
+
+<p><b>Domain or IP</b>: Enter a domain name or IP address to connect to on the given port, then click <b>Connect</b>.  Any valid domain that supports this port will do; this address is just for capturing the session script, not for later checking.</p>
+
+<p><b>Connect</b>: Click this button after entering a domain or IP address.  Simon will attempt to connect to the server.  If successful, the button will change to <b>Disconnect</b>, allowing ending the conversation and closing the capture panel.  The panel is also closed if the server initiates the disconnect.</p>
+
+<p><b>Received</b>: When Simon receives some text from the server, it is displayed both in the transcript area and in this field.  You can then select a relevant portion of the text in this field; something that the server would be expected to output in every successful situation.  When you send the next command, this text will be stored in the <b>If receive</b> field in a new session script.</p>
+
+<p><b>Send</b>: Enter the next command here to continue the script, and click the adjacent button to send it to the server.  When done, you should send a command to finish the operation, e.g. "quit" or similar, and Simon will close the panel when the server disconnects.  If nothing is appropriate, just click <b>Disconnect</b> or close the panel.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./index.html">Port service plug-in</a></li>
+<li><a href="../../../notifier/plugin/port.html">Port notifier plug-in</a></li>
+<li><a href="../index.html">Service Kind</a></li>
+<li><a href="../../../notifier/plugin/index.html">Notifier Kind</a></li>
+<li><a href="../../index.html">Service Info pane</a></li>
+<li><a href="../../../notifier/index.html">Notifier Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

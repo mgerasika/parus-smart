@@ -1,0 +1,116 @@
+﻿/* Quit confirmation title */
+"Are you sure you want to quit Simon?" = "Simon beenden?";
+
+/* License stage */
+"Basic" = "Basis";
+
+/* License kind */
+"Basic License" = "Basis-Lizenz";
+
+/* License kind */
+"Basic to Standard" = "Basis zu Standard";
+
+/* License stage */
+"Bronze" = "Bronze";
+
+/* License kind */
+"Bronze License" = "Bronze-Lizenz";
+
+/* License kind */
+"Bronze to Silver" = "Bronze nach Silber";
+
+/* License description */
+"Enabling unlimited tests" = "Ermöglicht unbegrenzte Tests";
+
+/* License description */
+"Enabling up to 100 tests" = "Ermöglichst bis zu 100 Tests";
+
+/* License description */
+"Enabling up to 15 tests" = "Ermöglicht bis zu 15 Tests";
+
+/* License description */
+"Enabling up to 40 tests" = "Ermöglicht bis zu 40 Tests";
+
+/* License stage */
+"Enterprise" = "Unternehmen";
+
+/* License kind */
+"Enterprise License" = "Unternehmens-Lizenz";
+
+/* License stage */
+"Gold" = "Gold";
+
+/* License kind */
+"Gold License" = "Gold-Lizenz";
+
+/* License kind */
+"Gold to Platinum" = "Gold nach Platin";
+
+/* Quit confirmation explanation */
+"If you quit Simon, the tests will not be checked until you start it again." = "Wenn Sie Simon beenden, wird erst bei Neustart geprüft.";
+
+/* License stage */
+"Platinum" = "Platin";
+
+/* License kind */
+"Platinum License" = "Platin-Lizenz";
+
+/* License kind */
+"Review License" = "Lizenz ansehen";
+
+/* License stage */
+"Silver" = "Silber";
+
+/* License kind */
+"Silver License" = "Silber-Lizenz";
+
+/* License kind */
+"Silver to Gold" = "Silber nach Gold";
+
+/* License kind */
+"Simon 2 Upgrade" = "Simon 2 Upgrade";
+
+/* License kind */
+"Simon 3 Bronze Upgrade" = "Simon-3-Bronze-Upgrade";
+
+/* License kind */
+"Simon 3 Gold Upgrade" = "Simon-3-Gold-Upgrade";
+
+/* License kind */
+"Simon 3 Platinum Upgrade" = "Simon-3-Platin-Upgrade";
+
+/* License kind */
+"Simon 3 Silver Upgrade" = "Simon-3-Silber-Upgrade";
+
+/* License kind */
+"Simon 3 Upgrade" = "Simon-3-Upgrade";
+
+/* License stage */
+"Standard" = "Standard";
+
+/* License kind */
+"Standard License" = "Standardversionen";
+
+/* License kind */
+"Standard to Enterprise" = "Standard zu Unternehmen";
+
+/* License description */
+"Upgrade to unlimited tests" = "Upgrade auf unbegrenzte Testanzahl";
+
+/* License description */
+"Upgrade to up to 100 tests" = "Upgrade auf bis zu 100 Tests";
+
+/* License description */
+"Upgrade to up to 40 tests" = "Upgrade auf bis zu 40 Tests";
+
+/* License description */
+"Upgrade with unlimited tests" = "Upgrade für unbegrenzte Tests";
+
+/* License description */
+"Upgrade with up to 100 tests" = "Upgrade für bis zu 100 Tests";
+
+/* License description */
+"Upgrade with up to 15 tests" = "Upgrade für bis zu 15 Tests";
+
+/* License description */
+"Upgrade with up to 40 tests" = "Upgrade für bis zu 40 Tests";

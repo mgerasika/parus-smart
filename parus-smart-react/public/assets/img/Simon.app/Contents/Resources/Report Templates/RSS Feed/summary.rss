@@ -1,0 +1,18 @@
+{Template type="summary" version="1" description="Summary as a RSS feed."}<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>{title}</title>
+    <description>Summary of Dejal Simon tests.</description>
+    <copyright>Copyright 2008 Dejal Systems, LLC</copyright>
+    <managingEditor>info@dejal.com</managingEditor>
+    <pubDate>{ReportDate}T{ReportTime}</pubDate>
+    <generator>Dejal Simon version {version}</generator>
+[test]    <item>
+      <title>{Name}</title>
+      <pubDate>{LastEvent type="absolute"}</pubDate>
+      <link>{OutputLocation}{ShortName}.{DetailsExtension}</link>
+      <description>Status: {Status}; Up Time: {UpTime}; Last Difference: "{LastDifference encode="html" length="75"}"; Last Error: "{LastError encode="html"}"</description>
+    </item>
+[/test]
+  </channel>
+</rss>

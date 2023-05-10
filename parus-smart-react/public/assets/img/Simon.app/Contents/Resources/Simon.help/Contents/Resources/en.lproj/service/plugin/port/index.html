@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Service - Kind - Port</title>
+<meta name="description" content="The Port plug-in communicates with a server on a specific port.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Service Info<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Service Kind<img src="../../../../shared/menu-arrow.jpg" alt=" &gt; " />Port plug-in</h1>
+
+<p>The <b>Port</b> plug-in is displayed when you choose <b>Port</b> in the <b>Service Kind</b> pop-up menu in the <a href="../../index.html"><b>Service Info</b></a> pane.</p>
+
+<p>This plug-in is used by the default <a href="../../../test/service/port.html"><b>Incoming Mail</b>, <b>Outgoing Mail</b> &amp; <b>SSH</b></a> services.  It will connect to a server and engage in a brief scripted conversation to check that it is operating normally.</p>
+
+<p><b>Port</b>: Enter the port number to check.  If you don't know the port number, you can find it online, e.g. <a href="http://www.iana.org/assignments/port-numbers">IANA's official list <img src="../../../../shared/ext-link.png" alt="[web link]" /></a>.  Some popular ones include 22 for SSH, 25 for SMTP, 110 for POP, 143 for IMAP, 194 for IRC, etc.</p>
+
+<p><a href="./capture.html"><b>Capture Session</b></a>: Click this button after entering the port number, to display a panel that allows connecting to a server on that port and assist you in constructing the session script.</p>
+
+<p><b>Insert variable</b>: Variables are markers in the text that are replaced by another value when the service is used.  Select a field (or place an insertion point in a field) in the session script area, then use this menu to insert a variable in that field.  Refer to the <a href="../../variables.html">Variables</a> page for descriptions of the available variables.  In addition, for historical reasons you can also use <b>Username</b> and <b>Password</b>, but should instead use <b>TestUsername</b> and <b>TestPassword</b>, respectively.</p>
+
+<p><b>If receive</b>: Enter text to look for after connecting.  This text must be output by the server after connection; if not, the check is considered a failure.  If this text is received, Simon will send the text from the adjacent <b>then send</b> field.  That field should contain a command for the server, to be sent if the script has gone okay so far.  After sending it, Simon will continue to the next step in the script (the next line).</p>
+
+<p><b>Or receive</b>: Enter text that would indicate an error occurred.  This may be blank if desired.  If the error text is found, Simon will send the text from the adjacent <b>then send</b> field.  This is also a command for the server, and should typically be a command to exit the session.  After sending this, Simon will report a failure, and stop the script.</p>
+
+<p><img src="../../../../shared/button-round-minus.png" alt="-" valign="top"> Click this button to remove the associated line.</p>
+
+<p><img src="../../../../shared/button-round-plus.png" alt="+" valign="top"> Click this button to add a new line, allowing multiple steps in the session script.</p>
+
+
+
+<div class="topics">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./capture.html">Capture Session panel</a></li>
+</ul>
+</div>
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../../variables.html">Service Variables</a></li>
+<li><a href="../../../test/service/port.html">Port-based services</a></li>
+<li><a href="../index.html">Service Kind</a></li>
+<li><a href="../../index.html">Service Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

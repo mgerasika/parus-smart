@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Melder-Infobereich - Optionen</title>
+<meta name="description" content="Hier können Sie weitere Eigenschaften des Melders festlegen.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Melder-Infobereich<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Optionen</h1>
+
+<p>Dies ist der Abschnitt "Melder-Optionen" im <a href="./index.html"><b>Melder-Infobereich</b></a>. In diesem Abschnitt können Sie festlegen, für welche Kategorie dieser Melder genutzt werden soll: für Änderungen, für Fehlschläge, für Wiederherstellungen oder irgendwelche Kombinationen davon, wie nachfolgend beschrieben:</p>
+
+<dl>
+<dd><img src="../../shared/status-changed-now.jpg" valign="top"> Änderung:</dd>
+<dt>Wählen Sie diese Option, wenn dieser Melder für Änderungen geeignet ist. Dadurch erscheint er im Änderung-Pop-up-Menü des <a href="../test/notifiers.html"><b>Melder</b></a>-Abschnitts im Test-Infobereich, so dass er als Änderung-Melder für beliebige Tests verwendet werden kann.</dt>
+
+<dd>- nach [ ] einander folgenden Änderungen:</dd>
+<dt>Geben Sie hier ein, wie oft Änderungen gemeldet werden sollen. Wenn der eingegebene Wert 1 ist, wird dieser Melder jedes Mal benutzt, wenn eine Änderung stattgefunden hat. Wenn Sie 2 eingeben, wird der Melder nur jedes zweite Mal benutzt, und so weiter. Wenn Sie einen Test sehr häufig prüfen lassen und die entsprechende Website zu häufigen Änderungen neigt, könnte es sein, dass Sie nur gelegentlich eine Meldung dazu erhalten wollen.</dt>
+
+<dd><img src="../../shared/status-bad-now.jpg" valign="top"> Fehlschlag:</dd>
+<dt>Entsprechend der oben beschriebenen Änderung-Checkbox legt diese Checkbox fest, dass dieser Melder für Fehlschläge genutzt werden kann, z.B. wenn eine Website nicht mehr erreichbar ist.</dt>
+
+<dd>- nach [ ] einander folgenden Fehlschlägen:</dd>
+<dt>Geben Sie hier ein, wie oft Fehlschläge gemeldet werden sollen. Entsprechend dem oben beschriebenen Feld für Änderungen kontrolliert dieses Feld, wie oft ein Fehlschlag gemeldet werden soll. Je höher der hier eingegebene Wert ist, desto größer ist die Chance für die Website, den Fehlschlag zu beheben, bevor der Fehlschlag gemeldet wird – nützlich z.B. für einen E-Mail-Melder.</dt>
+
+<dd>Jeden Fehler nur einmal melden:</dd>
+<dt>Wenn diese Option abgehakt ist, wird der Fehler nur einmal gemeldet. Er wird nicht wieder gemeldet, bis die Website wieder verfügbar ist.</dt>
+
+<dd><img src="../../shared/status-bad-hour.jpg" valign="top"> Rettung:</dd>
+<dt>Entsprechend der oben beschriebenen Änderung-Checkbox legt diese Checkbox fest, dass dieser Melder für Rettungen genutzt werden kann, z.B. wenn eine Website nach einem Fehlschlag wieder erreichbar ist.</dt>
+
+<dd>- nach [ ] Rettungen:</dd>
+<dt>Geben Sie hier ein, wie oft Rettungen gemeldet werden sollen. Normalerweise werden Sie den Wert wohl bei 1 lassen, so dass jede Rettung gemeldet wird. Aber Sie können den Wert auch erhöhen, wenn Sie nur ab und zu erfahren wollen, wann eine Website wieder verfügbar ist.</dt>
+
+<dd>Nur melden, wenn ein Fehlschlag gemeldet wurde:</dd>
+<dt>Wenn diese Option abgehakt ist, wird die Rettung nicht gemeldet, wenn nicht vorher eine Fehlschlag-Meldung des gleichen Typs gemacht wurde. Dadurch können kurze Fehlzeiten von den Fehlschlag- und Rettung-Meldern ignoriert werden, falls gewünscht.</dt>
+</dl>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="./index.html">Melder-Infobereich</a></li>
+<li><a href="../test/notifiers.html">Test-Infobereich Melder</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

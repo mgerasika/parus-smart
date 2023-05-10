@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Notifier - Kind - MySQL</title>
+<meta name="description" content="The MySQL plug-in performs a database query.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Notifier Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Notifier Kind<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />MySQL plug-in</h1>
+
+<p>The <b>MySQL</b> plug-in is displayed when you choose <b>MySQL</b> in the <b>Notifier Kind</b> pop-up menu in the <a href="../index.html"><b>Notifier Info</b></a> pane.</p>
+
+<p>This plug-in will connect to a specified MySQL database and perform a query, e.g. to add an entry to a database to log a failure.</p>
+
+<p><b>Server</b>: Enter a server domain name.</p>
+
+<p><b>Port</b>: Enter a port to connect on.</p>
+
+<p><b>Socket</b>: Enter the socket to use, for example "MySQL.sock".</p>
+
+<p><b>Database</b>: Enter a database name.  On a shared web-based server, the database name may be prefixed with your web host account name.</p>
+
+<p><b>Insert Variable</b>: Variables are markers in the text that are replaced by another value when the notifier is used.  Use this menu to choose from the available variables.  When one is chosen, it is inserted at the insertion point, or replaces the selected text.  Refer to the <a href="../variables.html">Variables</a> page for descriptions of the available variables.</p>
+
+<p><b>Query</b>: Enter a query to perform, for example "INSERT INTO table (col1) VALUES ("Message")".  You can use the <b>Insert Variable</b> drop-down menu to insert <a href="../variables.html">test-specific values</a>.</p>
+
+<p><b>Use the Test's Security settings</b>: Select this to use the <b>Username</b> and <b>Password</b> specified in the <a href="../../test/service.html">Service</a> page of the <a href="../../test/index.html"><b>Test Info</b></a> pane, if appropriate.</p>
+
+<p><b>Use these security settings</b>: If the database this notifier is accessing needs different authentication (as is quite likely), choose this option, and enter the <b>Username</b> and <b>Password</b> in the adjacent fields.</p>
+
+<p><i>This plug-in was written by <a href="http://www.dejal.com/legal/developers/daniel/">Daniel Ellis <img src="../../../shared/ext-link.png" alt="[web link]" /></a>.</i></p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./index.html">Notifier Kind</a></li>
+<li><a href="../index.html">Notifier Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

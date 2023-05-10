@@ -1,0 +1,29 @@
+/* Advanced preference page title */
+"Advanced" = "Expert";
+
+/* Prefs Restore Defaults Cancel button title */
+"Cancel" = "Annuler";
+
+/* Preferences window */
+"Could not load the %@ preferences." = "Impossible de charger les préférences de %@.";
+
+/* General preference page title */
+"General" = "Générales";
+
+/* Preferences window */
+"Preferences Error" = "Erreur dans les préférences";
+
+/* Prefs Restore Defaults Confirm button title */
+"Restore" = "Restaurer";
+
+/* Prefs Restore Defaults confirmation title */
+"Restore the %@ preferences to their original values?" = "Restaurer les valeurs des préférences de %@ à leur valeur d'origine ?";
+
+/* Prefs Restore Defaults confirmation explanation */
+"This will restore all settings on this page to the state they were in when first installed.\n\nOther pages are not affected, but selecting Don't ask again will disable this confirmation on all pages." = "Cela va permettre de restaurer les réglages initiaux de cette page tel qu'ils étaient lors du premier lancement.\n\nLes autres pages ne sont pas affectées, mais la sélection de Ne pas demander à nouveau désactivera la demande de confirmation sur toutes les autres pages.";
+
+/* Preferences prepare error */
+"Unable to prepare the %@ preferences page." = "Impossible de préparer la page des préférences de %@.";
+
+/* Updates preference page title */
+"Updates" = "Mises à jour";

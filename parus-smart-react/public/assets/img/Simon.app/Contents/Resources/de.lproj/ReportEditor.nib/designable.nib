@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ReportEditorController">
+            <connections>
+                <outlet property="editButton" destination="hik-DG-kGj" id="JLW-LY-ck4"/>
+                <outlet property="kindButton" destination="rV3-Jd-Pva" id="kQe-9x-3KV"/>
+                <outlet property="nameButton" destination="MFa-3q-fxU" id="Otq-W9-mmN"/>
+                <outlet property="optionsButton" destination="XfX-sT-4OZ" id="ukX-wl-lkJ"/>
+                <outlet property="pageBox" destination="ZA7-9D-pgq" id="cwY-gZ-MmV"/>
+                <outlet property="pageButtonsView" destination="NsP-g9-hiL" id="vQr-LG-I8W"/>
+                <outlet property="scheduleButton" destination="0hC-MY-EGz" id="ctK-q0-wLV"/>
+                <outlet property="view" destination="277" id="280"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="277" userLabel="Report Editor View">
+            <rect key="frame" x="1" y="0.0" width="562" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button toolTip="Klicken Sie hier, um die Test-Details zu sichern." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hik-DG-kGj">
+                    <rect key="frame" x="470" y="155" width="80" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="kZV-uf-O3t"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Bearbeiten" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="3fd-di-EIY">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleEdit:" target="-2" id="f5j-lM-98l"/>
+                    </connections>
+                </button>
+                <box verticalHuggingPriority="750" title="Kasten" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-gK-szk">
+                    <rect key="frame" x="0.0" y="148" width="562" height="5"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="NsP-g9-hiL">
+                    <rect key="frame" x="107" y="150" width="347" height="44"/>
+                    <subviews>
+                        <button identifier="editor.report.page.options" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XfX-sT-4OZ">
+                            <rect key="frame" x="78" y="12" width="62" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="Optionen" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IpR-Kv-P1X">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoOptions:" target="-2" id="Miz-Vf-PcS"/>
+                            </connections>
+                        </button>
+                        <button identifier="editor.report.page.kind" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rV3-Jd-Pva">
+                            <rect key="frame" x="148" y="12" width="87" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="Bericht-Art" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LBx-Bk-k3A">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoKind:" target="-2" id="fOm-aH-s7s"/>
+                            </connections>
+                        </button>
+                        <button identifier="editor.report.page.schedule" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0hC-MY-EGz">
+                            <rect key="frame" x="243" y="12" width="84" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="Auto-Pause" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tjG-bY-Ms0">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoSchedule:" target="-2" id="j6F-5o-BAK"/>
+                            </connections>
+                        </button>
+                        <button identifier="editor.report.page.name" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MFa-3q-fxU">
+                            <rect key="frame" x="20" y="12" width="50" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="Name" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4t9-yy-n06">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoName:" target="-2" id="1FA-oe-af5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XfX-sT-4OZ" firstAttribute="baseline" secondItem="rV3-Jd-Pva" secondAttribute="baseline" id="Iha-ih-eDs"/>
+                        <constraint firstItem="MFa-3q-fxU" firstAttribute="baseline" secondItem="XfX-sT-4OZ" secondAttribute="baseline" id="JYI-WT-6Ew"/>
+                        <constraint firstItem="0hC-MY-EGz" firstAttribute="leading" secondItem="rV3-Jd-Pva" secondAttribute="trailing" constant="8" id="KtM-Sh-cb4"/>
+                        <constraint firstItem="rV3-Jd-Pva" firstAttribute="leading" secondItem="XfX-sT-4OZ" secondAttribute="trailing" constant="8" id="VLV-Px-8XX"/>
+                        <constraint firstAttribute="trailing" secondItem="0hC-MY-EGz" secondAttribute="trailing" constant="20" id="YJW-7b-qXD"/>
+                        <constraint firstItem="MFa-3q-fxU" firstAttribute="leading" secondItem="NsP-g9-hiL" secondAttribute="leading" constant="20" id="Yfd-Tg-bOo"/>
+                        <constraint firstItem="0hC-MY-EGz" firstAttribute="baseline" secondItem="rV3-Jd-Pva" secondAttribute="baseline" id="crb-Xl-PCB"/>
+                        <constraint firstItem="XfX-sT-4OZ" firstAttribute="leading" secondItem="MFa-3q-fxU" secondAttribute="trailing" constant="8" id="ir0-4Y-gam"/>
+                    </constraints>
+                </customView>
+                <box autoresizesSubviews="NO" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="ZA7-9D-pgq">
+                    <rect key="frame" x="-3" y="-4" width="568" height="156"/>
+                    <view key="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="156"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hik-DG-kGj" secondAttribute="trailing" constant="18" id="Ejv-PL-AZS"/>
+                <constraint firstItem="ZA7-9D-pgq" firstAttribute="leading" secondItem="277" secondAttribute="leading" id="N4j-Yy-Xjx"/>
+                <constraint firstItem="ZA7-9D-pgq" firstAttribute="top" secondItem="NsP-g9-hiL" secondAttribute="bottom" id="Oa9-hF-RdW"/>
+                <constraint firstAttribute="centerX" secondItem="NsP-g9-hiL" secondAttribute="centerX" constant="0.5" id="Pea-Et-BHP"/>
+                <constraint firstItem="hik-DG-kGj" firstAttribute="top" secondItem="277" secondAttribute="top" constant="11" id="Xmf-Gq-ymY"/>
+                <constraint firstItem="0hC-MY-EGz" firstAttribute="baseline" secondItem="hik-DG-kGj" secondAttribute="baseline" id="Ynx-eY-4RR"/>
+                <constraint firstAttribute="bottom" secondItem="ZA7-9D-pgq" secondAttribute="bottom" id="itk-OS-Xyr"/>
+                <constraint firstItem="vxF-gK-szk" firstAttribute="top" secondItem="277" secondAttribute="top" constant="43" id="n0w-db-29z"/>
+                <constraint firstItem="NsP-g9-hiL" firstAttribute="top" secondItem="277" secondAttribute="top" id="php-mV-apo"/>
+                <constraint firstAttribute="trailing" secondItem="vxF-gK-szk" secondAttribute="trailing" id="qCv-wE-kSR"/>
+                <constraint firstItem="ZA7-9D-pgq" firstAttribute="top" secondItem="277" secondAttribute="top" constant="44" id="rdu-gM-GDd"/>
+                <constraint firstItem="vxF-gK-szk" firstAttribute="leading" secondItem="277" secondAttribute="leading" id="vfq-fh-UKC"/>
+                <constraint firstAttribute="trailing" secondItem="ZA7-9D-pgq" secondAttribute="trailing" id="y51-S6-Suf"/>
+            </constraints>
+            <point key="canvasLocation" x="517" y="1004"/>
+        </customView>
+    </objects>
+</document>

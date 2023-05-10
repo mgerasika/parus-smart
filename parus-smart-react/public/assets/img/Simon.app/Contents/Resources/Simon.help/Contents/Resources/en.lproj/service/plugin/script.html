@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Service - Kind - Script</title>
+<meta name="description" content="The Script plug-in enables custom services via AppleScript or shell script.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Service Info<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Service Kind<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Script plug-in</h1>
+
+<p>The <b>Script</b> plug-in is displayed when you choose <b>Script</b> in the <b>Service Kind</b> pop-up menu in the <a href="../index.html"><b>Service Info</b></a> pane.</p>
+
+<p>This plug-in is used by the default <a href="../../test/service/script.html"><b>FTP Directory Listing</b></a>, <b>Samba SMB</b>, <b>Screenshots</b>, and other services.  It will run an AppleScript, shell script, or Perl, PHP, Python, etc script.</p>
+
+<p><b>Description</b>: The text area just below the <b>Service Kind</b> pop-up menu is where you can enter a brief description of the service.  This text is displayed in the <a href="../../test/index.html"><b>Test Info</b></a> pane.</p>
+
+<p><b>Custom Variables</b>: This table allows adding new variables to the <b>Insert variable</b> drop-down menu.  These variables also appear as fields in the <a href="../../test/index.html"><b>Test Info</b></a> pane.  Click the <img src="../../../shared/button-square-plus.png" alt="+" valign="top"> button to add a line to the table, or the <img src="../../../shared/button-square-minus.png" alt="-" valign="top"> button to remove the selected line.  You'd typically use this to ask for the server to connect to, or other custom information needed by the script.</p>
+
+<p><b>Custom Error Descriptions</b>: This table serves two purposes.  Firstly, you can edit the <b>Result</b> column value for the <b>Success</b> line to indicate which result number means the script executed successfully - it is normally zero, but you can change it to something else if appropriate.  Secondly, you can give more meaningful descriptions to the error result values; these will appear in the <a href="../../monitor/failures.html"><b>Failures</b></a> table.  Click the <img src="../../../shared/button-square-plus.png" alt="+" valign="top"> button to add a line to the table, or the <img src="../../../shared/button-square-minus.png" alt="-" valign="top"> button to remove the selected line.</p>
+
+<p><b>Insert variable</b>: Variables are markers in the text that are replaced by another value when the service is used.  Use this menu to choose from the available variables.  When one is chosen, it is inserted at the insertion point, or replaces the selected text.  Refer to the <a href="../variables.html">Variables</a> page for descriptions of the available variables.</p>
+
+<p><b>Script type</b>: Choose the type of script in this combo box.  You can type the name, or click the menu on the right-hand side to display the available options.  It displays the name of the tool, and its path.  You can also specify a tool not listed by typing its path, but if you might want to use it again, you can add it to the default list via the <a href="../../prefs/script.html"><b>Script Preferences</b></a>.</p>
+
+<p><b>Script editor</b>: Write your script here.  You can insert <a href="../variables.html">variables</a> like those shown between braces.  See the <b>Insert variable</b> item above, or expert users can type them directly.  You can change the font, size, and colors of this text area in the <a href="../../prefs/script.html"><b>Script Preferences</b></a>.</p>
+
+<p><img src="../../../shared/script-run.png" alt="Run" valign="top"> Click this button to try out the script.  Simon will display a <a href="../../preview/other.html"><b>Preview</b></a> window, displaying the source at the top and the output at the bottom, along with the result.  Note that default values will be used for the variables; add a test for this service to use real variable values.</p>
+
+<p><img src="../../../shared/script-build.png" alt="Build" valign="top"> This button is only available when the <b>Script type</b> is <b>AppleScript</b>.  It builds the script, and displays any AppleScript errors.  If valid, the script is colored as conventional for AppleScripts.</p>
+
+<p><b>Get More</b>: Click this button to visit the <a href="http://www.dejal.com/goto/?prod=simon&amp;page=extras"><b>Simon Extras</b> <img src="../../../shared/ext-link.png" alt="[web link]" /></a> page in your web browser.  It is the repository for new and user-submitted scripts and more.</p>
+
+<p><b>Open Script...</b>: Click to load a new script off disk, replacing any already in the window.  It could be a standard .scpt, .sh, etc file, or one saved from Simon.</p>
+
+<p><b>Save Script As...</b>: Click to save the current script, along with the instructions, custom variables, etc to a normal script file.  Use this to <a href="http://www.dejal.com/goto/?prod=simon&amp;page=extras">share your scripts <img src="../../../shared/ext-link.png" alt="[web link]" /></a> with other Simon users!</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../variables.html">Service Variables</a></li>
+<li><a href="../../test/service/script.html">Script-based services</a></li>
+<li><a href="../../monitor/failures.html">Monitor Failures log</a></li>
+<li><a href="./index.html">Service Kind</a></li>
+<li><a href="../index.html">Service Info pane</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

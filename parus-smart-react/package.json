@@ -1,0 +1,87 @@
+{
+    "name": "typescript-nextjs-starter",
+    "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
+    "version": "1.0.0",
+    "private": true,
+    "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
+    "license": "MIT",
+    "keywords": [
+        "nextjs",
+        "starter",
+        "typescript"
+    ],
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "type-check": "tsc",
+        "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+        "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+        "postinstall": "husky install",
+        "commit": "cz",
+        "pub": "git add . && git commit -am 'Changes to my-project noted' && git push heroku HEAD:main",
+        "validate": "yarn lint && yarn tsc",
+        "lint-fix": "tsc --noEmit && eslint \"src/**/*.{js,ts,tsx}\" --quiet --fix",
+        "tsc": "tsc -p tsconfig.json",
+        "prettier-fix": "npm run prettier -- --write",
+        "prettier": "prettier --config ./.prettierrc.js --check \"src/**/*{.ts,.tsx,*.js,*.json.*.babelrc}\" "
+    },
+    "lint-staged": {
+        "**/*.{ts,tsx,js,json}": [
+            "npm run lint-fix",
+            "npm run prettier-fix",
+            "git add"
+        ]
+    },
+    "dependencies": {
+        "@types/react-helmet": "6.1.5",
+        "axios": "0.27.2",
+        "bootstrap": "5.1.3",
+        "dayjs": "1.10.7",
+        "next": "12.0.7",
+        "path": "0.12.7",
+        "qs": "6.10.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-helmet": "6.1.0",
+        "react-hook-form": "7.36.1",
+        "react-markdown": "7.1.1",
+        "react-query": "3.34.7",
+        "sass": "1.45.2"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "15.0.0",
+        "@commitlint/config-conventional": "15.0.0",
+        "@types/node": "16.11.17",
+        "@types/qs": "6.9.7",
+        "@types/react": "17.0.38",
+        "@types/react-dom": "17.0.11",
+        "@typescript-eslint/eslint-plugin": "^4.28.4",
+        "@typescript-eslint/experimental-utils": "^4.28.4",
+        "@typescript-eslint/parser": "^4.28.4",
+        "commitizen": "4.2.4",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "7.32.0",
+        "eslint-config-next": "12.0.7",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-import-resolver-typescript": "2.5.0",
+        "eslint-plugin-cypress": "^2.11.3",
+        "eslint-plugin-hooks-sort": "^0.1.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-no-only-tests": "^2.6.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.23.2",
+        "eslint-plugin-react-hooks": "4.6.0",
+        "eslint-plugin-unicorn": "^35.0.0",
+        "husky": "8.0.1",
+        "lint-staged": "12.1.4",
+        "prettier": "2.3.2",
+        "prettier-plugin-organize-imports": "^1.1.1",
+        "typescript": "4.3.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    }
+}

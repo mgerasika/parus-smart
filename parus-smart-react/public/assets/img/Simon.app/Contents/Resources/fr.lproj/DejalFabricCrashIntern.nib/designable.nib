@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DejalFabricCrashIntern">
+            <connections>
+                <outlet property="containerView" destination="c22-O7-iKe" id="wGm-gn-Iuo"/>
+                <outlet property="emailField" destination="WTR-04-yQf" id="Go2-FZ-oAE"/>
+                <outlet property="nameField" destination="MmW-QA-zXW" id="zg9-RI-wjo"/>
+                <outlet property="problemField" destination="CRl-i9-Av0" id="09D-Ba-d0S"/>
+                <outlet property="promptLabel" destination="SaO-Tm-X9Q" id="vHd-Cg-Oij"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SaO-Tm-X9Q">
+                    <rect key="frame" x="18" y="104" width="464" height="51"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="5G2-9f-CCz">
+                        <font key="font" metaFont="system"/>
+                        <string key="title">%@ a quitté de manière inopinée la dernière fois qu'il a été utilisé.  Désolé pour l'inconvénient occasionné !  Nous apprécierions une description détaillée de ce que vous ou l'application faisiez lorsque ce problème est survenu.</string>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="CRl-i9-Av0" userLabel="Problem Field">
+                    <rect key="frame" x="20" y="62" width="460" height="22"/>
+                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Veuillez nous fournir, si possible, une description du problème et les étapes permettant de le reproduire…" drawsBackground="YES" id="dWf-8w-oaK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="gQy-3Q-7Ft"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MmW-QA-zXW" userLabel="Name Field">
+                    <rect key="frame" x="20" y="20" width="226" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Votre Nom" drawsBackground="YES" id="suF-pO-JHe">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WTR-04-yQf" userLabel="Email Field">
+                    <rect key="frame" x="254" y="20" width="226" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="votre@email.com" drawsBackground="YES" id="WVf-EZ-XcM">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="CRl-i9-Av0" firstAttribute="top" secondItem="SaO-Tm-X9Q" secondAttribute="bottom" constant="20" id="11Y-LN-Ha6"/>
+                <constraint firstAttribute="trailing" secondItem="SaO-Tm-X9Q" secondAttribute="trailing" constant="20" id="3vY-LM-z6U"/>
+                <constraint firstItem="WTR-04-yQf" firstAttribute="width" secondItem="MmW-QA-zXW" secondAttribute="width" id="8vd-8k-7RH"/>
+                <constraint firstAttribute="bottom" secondItem="MmW-QA-zXW" secondAttribute="bottom" constant="20" symbolic="YES" id="Gxc-mn-aFr"/>
+                <constraint firstItem="SaO-Tm-X9Q" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" symbolic="YES" id="GyL-rc-LKS"/>
+                <constraint firstAttribute="trailing" secondItem="CRl-i9-Av0" secondAttribute="trailing" constant="20" symbolic="YES" id="YzH-C9-tn7"/>
+                <constraint firstItem="MmW-QA-zXW" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="bS4-YY-yqK"/>
+                <constraint firstAttribute="bottom" secondItem="WTR-04-yQf" secondAttribute="bottom" constant="20" symbolic="YES" id="j4z-zN-tij"/>
+                <constraint firstItem="WTR-04-yQf" firstAttribute="leading" secondItem="MmW-QA-zXW" secondAttribute="trailing" constant="8" symbolic="YES" id="ndZ-lF-CnQ"/>
+                <constraint firstItem="SaO-Tm-X9Q" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="qzz-3q-sM1"/>
+                <constraint firstItem="MmW-QA-zXW" firstAttribute="top" secondItem="CRl-i9-Av0" secondAttribute="bottom" constant="20" id="tgn-GD-h4E"/>
+                <constraint firstItem="CRl-i9-Av0" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="vbJ-k3-J21"/>
+                <constraint firstAttribute="trailing" secondItem="WTR-04-yQf" secondAttribute="trailing" constant="20" symbolic="YES" id="yKq-po-dQg"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flats",
+  "info": {
+    "singularName": "flat",
+    "pluralName": "flats",
+    "displayName": "Flat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "square": {
+      "type": "float"
+    },
+    "personalNumber": {
+      "type": "biginteger"
+    },
+    "houseName": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "life",
+        "not_life"
+      ]
+    },
+    "counter_configs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::counter-config.counter-config",
+      "mappedBy": "flat"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "flat"
+    }
+  }
+}

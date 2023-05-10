@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Report Info - Templates</title>
+<meta name="description" content="Report templates are used to format the reports.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Report Templates</h1>
+
+<p>The <b>Report Templates</b> folder contains HTML (and other format) files to allow customizing the appearance and content of Simon reports.  This folder is located within the Simon data folder, at "~/Library/Application Support/Dejal/Simon/".  You can get to it quickly via the <b>Reveal in Finder</b> button in the <a href="../options.html"><b>Options</b></a> page of the <a href="../index.html"><b>Report Info</b></a> pane.</p>
+
+<p>You don't need to edit the templates (or even look at them) to use Simon.  Simon comes with a number of useful templates, which will be automatically installed in the Report Templates folder when Simon 2.1 or later is first launched.  The Simon website also hosts updated and user-contributed templates: check out the <a href="http://www.dejal.com/simon/extras/"><b>Simon Extras</b> <img src="../../../shared/ext-link.png" alt="[web link]" /></a> page.  However, if you wish, you can tweak the provided templates to suit your requirements, or even create new ones.  If you create or modify a template and think others may find it useful, please contribute it: check out the <a href="http://www.dejal.com/simon/extras/"><b>Simon Extras</b> <img src="../../../shared/ext-link.png" alt="[web link]" /></a> web page for instructions.</p>
+
+<p>The Report Templates folder contains sub-folders for each template.  Within each of those folders are some or all of the following items:</p>
+
+<ul>
+<li>A file named <b>index</b> or <b>summary</b>, with any extension.  This file contains the HTML for the Summary page, listing all tests included in the report.</li>
+<li>A file or folder named <b>detail</b>.  If a file, it may have any extension; if a folder, it must have a file named <b>index</b> within it, again with any extension.  In either case, this file has the HTML for the Detail pages.  The <b>detail</b> file or folder is copied for each Detail page, using a short form of each test name.</li>
+<li>An <b>images</b> folder.  This is optional; if present, it and its contents are output as-is.  A perfect place for graphics files.</li>
+<li>A <b>resources</b> folder.  This is also optional, and is also output as-is if present.  A handy place for other files, e.g. cascading style sheet (CSS) files, extra PHP scripts, form pages, etc.</li>
+<li>Any other files will be ignored, so feel free to include read-me files etc in the template folders.</li>
+</ul>
+
+<p>Most templates use HTML formatting, but this isn't a requirement.  Any text-based format can be used.  For example, the built-in templates demonstrate using XML for a RSS feed, and tab-delimited text.</p>
+
+<p>In addition, the template files employ special Simon-specific tags, which are replaced with the tests, checks, changes, failures, and activity of Simon, plus other values.  These tags use much the same conventions as regular HTML, but with distinctive delimiters.  There are two main kinds of tags - block and variable:</p>
+
+<p><b>Block tags</b>:</p>
+
+<ul>
+<li>Denoted with square brackets, e.g. <b>[test]</b>.</li>
+<li>Have matching closing tags, e.g. <b>[/test]</b>, just like HTML.</li>
+<li>Act as a scope for enclosed variables.</li>
+<li>Encompass HTML that should be repeated for each line, e.g. for each test on a Summary page or each Check on a Detail page.</li>
+<li>Can have parameters; currently the only one supported is <b>count</b>, to limit the number of lines used.</li>
+</ul>
+
+<p><b>Variable tags</b>:</p>
+
+<ul>
+<li>Denoted with curly braces, without a separate closing tag, e.g. <b>{name}</b>.</li>
+<li>Have a variable name, and optionally include parameters, e.g. <b>{date type="absolute"}</b>.</li>
+<li>Parameter values must be enclosed in double quotes.</li>
+<li>There must not be any spaces between the parameter name, the equals sign, the quotes, and the value.</li>
+<li>Multiple parameters can be used, or omitted to use the default values.</li>
+</ul>
+
+<p>Block and variable tags and their parameters are not case sensitive, so feel free to use MixedCase to make them more readable if you wish.</p>
+
+<p>The <b>Summary</b> page has two block scopes - the document itself, and the test block.  Click for more information on variables for each kind of block:</p>
+
+<ul>
+<li><a href="./document.html"><b>Document</b></a>: The HTML document supports several variables that can be used anywhere in the document.</li>
+<li><a href="./test.html"><b>Test</b></a>: Encloses the template for a single test; this is repeated for each test included in the Summary.</li>
+</ul>
+
+<p>The <b>Detail</b> pages support several kinds of blocks:</p>
+
+<ul>
+<li><a href="./document.html"><b>Document</b></a>: As for the Summary page, the Detail pages also supports document-level variables.</li>
+<li><a href="./test.html"><b>Test</b></a>: In this case, this block encloses information on the single test of the Detail page.</li>
+<li><a href="./check.html"><b>Check</b></a>: Encloses the template for a single check; this is repeated for each check.</li>
+<li><a href="./change.html"><b>Change</b></a>: Encloses the template for a single change; this is repeated for each change.</li>
+<li><a href="./failure.html"><b>Failure</b></a>: Encloses the template for a single failure; this is repeated for each failure.</li>
+<li><a href="./activity.html"><b>Activity</b></a>: Encloses the template for a single activity; this is repeated for each activity.</li>
+</ul>
+
+<p>See the <a href="./params.html">parameters</a> page for information on the available parameters.</p>
+
+<p>See the above pages for more information, and the provided templates for examples.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../options.html">Report Options</a></li>
+<li><a href="../index.html">Report Info pane</a></li>
+<li><a href="../../reports/index.html">Reports list</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

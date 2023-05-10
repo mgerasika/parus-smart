@@ -1,0 +1,31 @@
+{
+    "kind": "collectionType",
+    "collectionName": "viber_subscribers",
+    "info": {
+        "singularName": "viber-subscriber",
+        "pluralName": "viber-subscribers",
+        "displayName": "ViberSubscriber",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "viber_id": {
+            "type": "string"
+        },
+        "full_name": {
+            "type": "string"
+        },
+        "avatar": {
+            "type": "string"
+        },
+        "phone_number": {
+            "type": "string"
+        },
+        "personal_number": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {protocolButtonHit = id; unmountButtonHit = id; }; 
+            CLASS = MountService; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                serviceProtocolButton = NSPopUpButton; 
+                serviceServerNameField = NSTextField; 
+                serviceUnmountButton = NSButton; 
+                serviceView = NSView; 
+                serviceVolumeNameField = NSTextField; 
+                testProtocolButton = NSPopUpButton; 
+                testServerNameField = NSTextField; 
+                testUnmountButton = NSButton; 
+                testView = NSView; 
+                testVolumeNameField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ServiceEditorController">
+            <connections>
+                <outlet property="editButton" destination="Cwb-m4-Y2J" id="hbz-7G-fEI"/>
+                <outlet property="kindButton" destination="OE2-Ao-Vsr" id="Nd5-EH-omb"/>
+                <outlet property="nameButton" destination="2LQ-c7-kx1" id="YzQ-qP-qD7"/>
+                <outlet property="pageBox" destination="Zwr-IT-oij" id="LOV-3W-CFf"/>
+                <outlet property="pageButtonsView" destination="TEV-mX-K9X" id="7Ok-9g-kG6"/>
+                <outlet property="scheduleButton" destination="9KU-v7-8bu" id="VlT-OT-PWF"/>
+                <outlet property="view" destination="210" id="213"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="210" userLabel="Service Editor View">
+            <rect key="frame" x="1" y="0.0" width="497" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button toolTip="点击保存测试细节" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cwb-m4-Y2J">
+                    <rect key="frame" x="405" y="155" width="80" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="CLy-FZ-Qgy"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="编辑" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="PB7-ah-oCR">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleEdit:" target="-2" id="Muc-H7-wXi"/>
+                    </connections>
+                </button>
+                <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="4b9-36-xmU">
+                    <rect key="frame" x="0.0" y="148" width="497" height="5"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <box autoresizesSubviews="NO" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Zwr-IT-oij">
+                    <rect key="frame" x="-3" y="-4" width="503" height="156"/>
+                    <view key="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="503" height="156"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="TEV-mX-K9X" userLabel="Buttons">
+                    <rect key="frame" x="108" y="150" width="281" height="44"/>
+                    <subviews>
+                        <button identifier="editor.service.page.name" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2LQ-c7-kx1">
+                            <rect key="frame" x="20" y="12" width="50" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="名称" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1tD-FT-T6S">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoName:" target="-2" id="901-jN-fB0"/>
+                            </connections>
+                        </button>
+                        <button identifier="editor.service.page.kind" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OE2-Ao-Vsr">
+                            <rect key="frame" x="78" y="12" width="91" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="服务" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u1f-YB-TqY">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoKind:" target="-2" id="fuD-q3-XxH"/>
+                            </connections>
+                        </button>
+                        <button identifier="editor.service.page.schedule" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9KU-v7-8bu">
+                            <rect key="frame" x="177" y="12" width="84" height="19"/>
+                            <buttonCell key="cell" type="recessed" title="自动暂停" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4V4-EO-jKe">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="systemBold" size="12"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="gotoSchedule:" target="-2" id="6ln-yx-dwr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9KU-v7-8bu" secondAttribute="trailing" constant="20" id="Nj7-jj-ixC"/>
+                        <constraint firstItem="OE2-Ao-Vsr" firstAttribute="leading" secondItem="2LQ-c7-kx1" secondAttribute="trailing" constant="8" id="WmM-J0-Llf"/>
+                        <constraint firstItem="2LQ-c7-kx1" firstAttribute="leading" secondItem="TEV-mX-K9X" secondAttribute="leading" constant="20" id="XRc-Ev-CVp"/>
+                        <constraint firstItem="2LQ-c7-kx1" firstAttribute="baseline" secondItem="OE2-Ao-Vsr" secondAttribute="baseline" id="Y7l-4F-mNh"/>
+                        <constraint firstItem="9KU-v7-8bu" firstAttribute="baseline" secondItem="OE2-Ao-Vsr" secondAttribute="baseline" id="n7l-TN-DB7"/>
+                        <constraint firstItem="9KU-v7-8bu" firstAttribute="leading" secondItem="OE2-Ao-Vsr" secondAttribute="trailing" constant="8" id="np7-Ku-Ch5"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="TEV-mX-K9X" firstAttribute="top" secondItem="210" secondAttribute="top" id="19r-52-RXS"/>
+                <constraint firstItem="4b9-36-xmU" firstAttribute="leading" secondItem="210" secondAttribute="leading" id="7Sl-x2-kCw"/>
+                <constraint firstAttribute="centerX" secondItem="TEV-mX-K9X" secondAttribute="centerX" id="8dp-h2-RK9"/>
+                <constraint firstItem="9KU-v7-8bu" firstAttribute="baseline" secondItem="Cwb-m4-Y2J" secondAttribute="baseline" id="Cs3-G8-49h"/>
+                <constraint firstAttribute="bottom" secondItem="Zwr-IT-oij" secondAttribute="bottom" id="Hcy-0U-9We"/>
+                <constraint firstAttribute="trailing" secondItem="Zwr-IT-oij" secondAttribute="trailing" id="Oef-Ir-K7K"/>
+                <constraint firstAttribute="trailing" secondItem="Cwb-m4-Y2J" secondAttribute="trailing" constant="18" id="YKy-DZ-BX5"/>
+                <constraint firstItem="Zwr-IT-oij" firstAttribute="top" secondItem="210" secondAttribute="top" constant="44" id="frc-aN-jZe"/>
+                <constraint firstItem="4b9-36-xmU" firstAttribute="top" secondItem="210" secondAttribute="top" constant="43" id="jzE-Dx-fNf"/>
+                <constraint firstItem="Zwr-IT-oij" firstAttribute="leading" secondItem="210" secondAttribute="leading" id="owh-Gm-KiR"/>
+                <constraint firstItem="Cwb-m4-Y2J" firstAttribute="top" secondItem="210" secondAttribute="top" constant="11" id="sZJ-uU-X4n"/>
+                <constraint firstItem="Zwr-IT-oij" firstAttribute="top" secondItem="TEV-mX-K9X" secondAttribute="bottom" id="xZ8-Pi-wQa"/>
+                <constraint firstAttribute="trailing" secondItem="4b9-36-xmU" secondAttribute="trailing" id="ysc-HE-s66"/>
+            </constraints>
+            <point key="canvasLocation" x="504.5" y="966"/>
+        </customView>
+    </objects>
+</document>

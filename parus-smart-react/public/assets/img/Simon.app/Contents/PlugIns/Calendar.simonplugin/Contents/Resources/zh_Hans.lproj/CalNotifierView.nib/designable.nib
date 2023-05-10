@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="Calendar">
+            <connections>
+                <outlet property="appendNotesCheckbox" destination="322" id="343"/>
+                <outlet property="calendarListPopup" destination="118" id="128"/>
+                <outlet property="notesTextView" destination="148" id="150"/>
+                <outlet property="notifierView" destination="5" id="112"/>
+                <outlet property="notifyViaMatrix" destination="198" id="204"/>
+                <outlet property="titleField" destination="143" id="149"/>
+                <outlet property="variableListPopup" destination="171" id="188"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="5" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="256"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button toolTip="正在进行的事件通知允许添加笔记,而不是取代" translatesAutoresizingMaskIntoConstraints="NO" id="322">
+                    <rect key="frame" x="18" y="18" width="96" height="18"/>
+                    <buttonCell key="cell" type="check" title="附加备注" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="491">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="appendNotesCheckboxHit:" target="-2" id="344"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="202">
+                    <rect key="frame" x="17" y="220" width="64" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="通知:" id="486">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <matrix toolTip="日历项通知类型" verticalHuggingPriority="750" allowsEmptySelection="NO" translatesAutoresizingMaskIntoConstraints="NO" id="198">
+                    <rect key="frame" x="88" y="198" width="103" height="38"/>
+                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    <size key="cellSize" width="103" height="18"/>
+                    <size key="intercellSpacing" width="4" height="2"/>
+                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" controlSize="small" inset="2" id="493">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <cells>
+                        <column>
+                            <buttonCell type="radio" title="日历事件" imagePosition="left" alignment="left" controlSize="small" state="on" toolTip="通知与iCal事件" inset="2" id="200">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                            <buttonCell type="radio" title="提醒事项" imagePosition="left" alignment="left" controlSize="small" tag="1" inset="2" id="201">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                        </column>
+                    </cells>
+                    <connections>
+                        <action selector="notifyViaMatrixHit:" target="-2" id="205"/>
+                    </connections>
+                </matrix>
+                <popUpButton toolTip="插入测试或通知信息变量到文本" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="171">
+                    <rect key="frame" x="85" y="144" width="110" height="22"/>
+                    <popUpButtonCell key="cell" type="push" title="插入变量" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="174" id="485">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="173">
+                            <items>
+                                <menuItem title="插入变量" hidden="YES" id="174"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="variableListHit:" target="-2" id="187"/>
+                        <outlet property="nextKeyView" destination="143" id="429"/>
+                    </connections>
+                </popUpButton>
+                <scrollView toolTip="该事件或任务注意事项" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="145">
+                    <rect key="frame" x="20" y="42" width="304" height="58"/>
+                    <clipView key="contentView" id="xfz-KF-NiZ">
+                        <rect key="frame" x="1" y="1" width="302" height="56"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="148">
+                                <rect key="frame" x="0.0" y="0.0" width="302" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="302" height="56"/>
+                                <size key="maxSize" width="532" height="10000000"/>
+                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="302" height="56"/>
+                                <size key="maxSize" width="532" height="10000000"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-2" id="162"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="494">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="495">
+                        <rect key="frame" x="262" y="1" width="15" height="128"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <textField toolTip="将创建事件或任务通知标题" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="143">
+                    <rect key="frame" x="88" y="121" width="236" height="19"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="通知标题" drawsBackground="YES" id="484">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="151"/>
+                        <outlet property="nextKeyView" destination="148" id="430"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="141">
+                    <rect key="frame" x="17" y="102" width="39" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="备注：" id="483">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="139">
+                    <rect key="frame" x="53" y="123" width="30" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="标题：" id="482">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton toolTip="可用日历" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="118">
+                    <rect key="frame" x="85" y="169" width="110" height="22"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" id="481">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <menu key="menu" title="OtherViews" id="120"/>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="calendarListHit:" target="-2" id="129"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="113">
+                    <rect key="frame" x="28" y="173" width="55" height="14"/>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="日历：" id="480">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="118" firstAttribute="leading" secondItem="198" secondAttribute="leading" id="1Y1-Ma-ts6"/>
+                <constraint firstItem="202" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="19" id="3vw-QI-HbO"/>
+                <constraint firstItem="322" firstAttribute="top" secondItem="145" secondAttribute="bottom" constant="9" id="4Py-ko-wm5"/>
+                <constraint firstItem="118" firstAttribute="leading" secondItem="113" secondAttribute="trailing" constant="7" id="9MB-qt-SGW"/>
+                <constraint firstItem="118" firstAttribute="top" secondItem="198" secondAttribute="bottom" constant="8" id="ETx-NN-H28"/>
+                <constraint firstItem="113" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" id="HWm-Ap-IBL"/>
+                <constraint firstItem="145" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" id="Ke9-v7-1x9"/>
+                <constraint firstAttribute="trailing" secondItem="143" secondAttribute="trailing" constant="20" id="LfL-KF-y68"/>
+                <constraint firstItem="143" firstAttribute="top" secondItem="171" secondAttribute="bottom" constant="7" id="MfR-Md-td0"/>
+                <constraint firstItem="171" firstAttribute="leading" secondItem="118" secondAttribute="leading" id="OUN-BA-Rac"/>
+                <constraint firstItem="145" firstAttribute="leading" secondItem="141" secondAttribute="leading" constant="1" id="QPR-yD-ltd"/>
+                <constraint firstItem="113" firstAttribute="baseline" secondItem="118" secondAttribute="baseline" id="RJL-JQ-n2I"/>
+                <constraint firstItem="171" firstAttribute="width" secondItem="118" secondAttribute="width" id="XpQ-z9-HQQ"/>
+                <constraint firstItem="145" firstAttribute="top" secondItem="141" secondAttribute="bottom" constant="2" id="a74-gX-iEY"/>
+                <constraint firstAttribute="trailing" secondItem="145" secondAttribute="trailing" constant="20" id="cRH-pY-Cit"/>
+                <constraint firstItem="145" firstAttribute="top" secondItem="143" secondAttribute="bottom" constant="21" id="dcY-lK-12K"/>
+                <constraint firstItem="143" firstAttribute="baseline" secondItem="139" secondAttribute="baseline" id="eDZ-rd-hNP"/>
+                <constraint firstItem="143" firstAttribute="leading" secondItem="171" secondAttribute="leading" id="fzI-Q9-bLK"/>
+                <constraint firstItem="198" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" id="gcC-Hp-QgJ"/>
+                <constraint firstItem="143" firstAttribute="leading" secondItem="139" secondAttribute="trailing" constant="7" id="oPj-pc-hPH"/>
+                <constraint firstItem="171" firstAttribute="top" secondItem="118" secondAttribute="bottom" constant="7" id="obq-l4-dvQ"/>
+                <constraint firstAttribute="bottom" secondItem="145" secondAttribute="bottom" constant="42" id="qdM-K7-x9Y"/>
+                <constraint firstItem="322" firstAttribute="leading" secondItem="145" secondAttribute="leading" constant="1" id="tp3-yx-zdy"/>
+                <constraint firstItem="198" firstAttribute="leading" secondItem="202" secondAttribute="trailing" constant="9" id="uhI-QQ-LTK"/>
+                <constraint firstItem="202" firstAttribute="top" secondItem="198" secondAttribute="top" constant="2" id="xOf-Qh-Bbi"/>
+            </constraints>
+            <point key="canvasLocation" x="427" y="700"/>
+        </customView>
+    </objects>
+</document>

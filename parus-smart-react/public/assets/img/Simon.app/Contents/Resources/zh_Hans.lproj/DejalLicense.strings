@@ -1,0 +1,337 @@
+/* License Assistant window title */
+"%@ Assistant" = "%@ 助理";
+
+/* Expired info */
+"%@ is Expired: used for %d days" = "%1$@ 过期:于 %2$d 天";
+
+/* Welcome freeware */
+"%@ is Freeware; donate to support future versions" = "%@ 是免费软件; 您可以捐赠，以支持后期版本";
+
+/* Licensed info */
+"%@ is Licensed; thank you!" = "%@ 已授权,谢谢!";
+
+/* Unlicensed progress */
+"%@ is not licensed: %d days left" = "%1$@ 非授权版: %2$d 天";
+
+/* Last day progress */
+"%@ is not licensed: just one day left" = "%@ 非授权版，试用期仅剩一天";
+
+/* Unlicensed info singular */
+"%@ is Not Licensed: last trial day" = "%@ 非授权版，试用已到期";
+
+/* Old licensed info */
+"%@ Needs an Upgrade License" = "%@ 需要一个升级许可";
+
+/* Only upgrade license info */
+"%@ Needs Your Original License" = "%@ 需要你的原始许可";
+
+/* License trial expired heading */
+"%@ Trial Expired" = "%@ 试用过期";
+
+/* Expired progress */
+"%@ trial expired: used on %d days" = "%1$@ 试用到期:使用剩余 %2$d 天";
+
+/* Old licensed beta info */
+"%@ Will Need an Upgrade License After Beta" = "%@ 测试后需要升级许可证";
+
+/* Buy license option description */
+"%@: $%@" = "%1$@: $%2$@";
+
+/* Plural license reminder button in window title */
+"%d days left - buy now!" = "%d 天后试用到期，现在购买";
+
+/* Tooltip for license trial level indicator */
+"%d use-day trial period" = "%d 试用期剩余时间";
+
+/* Beta welcome explanation */
+"A %@ release contains new features that haven't been fully tested, and may not be finished.\n\nIf you find any bugs or have any suggestions for improvements or other feedback, please email %@; see the Help menu.  We appreciate your assistance in improving this product!" = "一个 %1$@ 发布包含的新功能,还没有完全测试,可能会不稳定\n\n如果你发现任何错误或其他有任何改进的建议或反馈,请电子邮件
+ %2$@; 我们感谢您让我们完善这个产品!";
+
+/* Add License button title
+   License Editor Add button title */
+
+"Add" = "添加";
+
+/* Alpha notice explanation */
+"An alpha (sneak peek) release contains features that haven't been completed or fully tested.\n\nIf you find any bugs or have any suggestions for improvements or other comments, please send feedback to %@; see the Help menu or use the Forums button below.  We appreciate your assistance in improving this product!" = "alpha 为测试版功能功能，目前不稳定\n\n如果你发现任何错误或其他有任何改进的建议或反馈,请电子邮件 %@; 我们非常感谢您帮我们完善这个产品!";
+
+/* Essental component not loaded explanation */
+"An essential component couldn't be loaded." = "一个重要组件不能被加载";
+
+/* App Store license kind
+   Licensed for App Store */
+
+"App Store" = "App Store";
+
+/* License Editor delete message text */
+"Are you sure you want to delete this license?" = "你确定你要删除这个许可吗?";
+
+/* Expiry explanation */
+"As of today, you've used it on %d days!  Wow, you must really like it.  But you haven't got around to buying a license yet... an oversight, I'm sure.  So I'll just disable some of %@'s features until you correct that." = "截至今天，你已经使用 %1$d 天!哇,你一定很喜欢它。但是你还没有购买许可……我相信你一定会买正版，抵制盗版 %2$@'s 非常感谢！";
+
+/* Buy license option radio title */
+"Buy %@" = "购买 %@";
+
+/* License Options Buy Now button title */
+"Buy Now" = "现在购买";
+
+/* License Editor Cancel button title */
+"Cancel" = "取消";
+
+/* Check for Update button title */
+"Check for Update" = "检查更新";
+
+/* License Editor Delete button title */
+"Delete" = "删除";
+
+/* License Editor continue (with a serial) message text */
+"Do you want to add the entered license?" = "您想添加许可证吗？";
+
+/* License Editor continue (with no serial) message text */
+"Do you want to find your license?" = "你找不到你的许可了吗？";
+
+/* License Editor Don't Add button title */
+"Don't Add" = "不添加";
+
+/* License Editor Don't Find button title */
+"Don't Find" = "未找到";
+
+/* Email button title */
+"Email %@" = "邮件 %@";
+
+/* Unable to edit name email subject */
+"email address changed" = "邮件地址更改";
+
+/* Enter license explanation */
+"Enter at least your Licensed Name and Email.  If you can't find the email you received from %@, you can query the server for your license(s).\n\nIf you know your serial number, enter that too (and it won't need to be looked up).\n\nTip: If you copy the contents of the email before opening the Licenses window, the license will be added automatically." = "如果你找不到你收到的电子邮件 ，您至少要输入许可的姓名和电子邮件 %@, 你可以查询服务器许可证\n\n如果你知道你的序列号，输入即可\n\n提示:如果你复制的内容邮件打开许可窗口前,许可证将自动被添加";
+
+/* Trial license option description */
+"Evaluate the app before buying" = "在购买前试用程序";
+
+/* Evaluating info */
+"Evaluating %@: %d days left" = "试用 %1$@: %2$d 天";
+
+/* License Thanks Feedback button title */
+"Feedback" = "反馈";
+
+/* Find License button title
+   License Editor Find button title */
+
+"Find" = "查找";
+
+/* Finding License button title */
+"Finding..." = "查找...";
+
+/* License Thanks Forum button title */
+"Forum" = "论坛";
+
+/* Forums button title */
+"Forums" = "论坛";
+
+/* TrialPay option radio title */
+"Get it free via TrialPay" = "通过 TrialPay 免费得到它";
+
+/* Editor license option radio title */
+"I already have a license" = "我已经有一个许可";
+
+/* License unable to edit name email body */
+"I have changed my email address.  Please update your records accordingly:\n\n\nProduct: \t\t%@\nVersion: \t\t%@ (%@)\nName: \t\t%@\nOld email: \t\t%@\nNew email: \t%@\nDate: \t\t%@\nCheck: \t\t%@\n\n" = "我已经更改了我的电子邮件地址。请更新你的记录:\n\n\n产品: \t\t%1$@\n版本: \t\t%2$@ (%3$@)\n名称: \t\t%4$@\n旧邮件: \t\t%5$@\n新邮件: \t%6$@\n日期: \t\t%7$@\n检查: \t\t%8$@\n\n";
+
+/* Later button title */
+"Later" = "稍后";
+
+/* TrialPay GetItFree option description */
+"Learn more about TrialPay's Get It Free" = "了解更多关于TrialPay";
+
+/* License duplicate heading */
+"License has been added." = "许可已被添加";
+
+/* Unable to find license email subject */
+"license query" = "许可查询";
+
+/* License email prefix from email */
+"Licensed Email: " = "电子邮件: ";
+
+/* License name prefix from email */
+"Licensed Name: " = "许可名称: ";
+
+/* Licenses button title */
+"Licenses..." = "许可...";
+
+/* Freeware license option radio title */
+"Make %@" = "使 %@";
+
+/* More Info button title */
+"More Info..." = "更多信息…";
+
+/* Freeware option description */
+"No obligation to donate" = "无义务捐赠";
+
+/* OK button title */
+"OK" = "确定";
+
+/* License on file */
+"on file" = "在文件";
+
+/* Singular license reminder button in window title */
+"One day left - buy now!" = "试用到期现在购买!";
+
+/* Find License failure message */
+"Please check that the entered name and email address are correct, and try again.\n\nIf you're sure you entered the correct values, click Email %@ to ask for personal help." = "请检查输入的姓名和电子邮件地址是否正确的,并再次尝试\n\n如果你确定你输入了正确的值，单击电子邮件 %@ 或者联系我们提供支持";
+
+/* Freeware license reminder button in window title */
+"Please donate!" = "请捐款！";
+
+/* Enter license heading */
+"Please enter the license details." = "请输入许可详细信息";
+
+/* Dead title */
+"Please Purchase Dejal %@" = "请购买 Dejal %@";
+
+/* Dead title */
+"Please Purchase Dejal %@... or Get It Free" = "请购买 Dejal %@... 或者使用免费功能版";
+
+/* Quit button title */
+"Quit" = "退出";
+
+/* License review expired heading */
+"Review license has expired." = "许可已经过期";
+
+/* Save Changes button title */
+"Save" = "存储";
+
+/* Editor license option radio title */
+"Show my licenses" = "显示我的许可";
+
+/* Kagi error informative text */
+"Sorry for the inconvenience." = "为给您带来的不便抱歉";
+
+/* Beta expired explanation */
+"Sorry, this %@ release is time-limited for quality-control reasons.  You need to upgrade to a newer version.\n\nWould you like to check for one now?" = "对不起，这 %@ 版本是有时间限制的，你需要升级到新版本.\n\n现在升级吗？";
+
+/* License reminder when licensed */
+"Thank you for licensing %@!" = "感谢您购买 %@!";
+
+/* Warning title */
+"Thank You for Trying Dejal %@" = "感谢您试用 Dejal %@";
+
+/* Expiry title */
+"Thanks Again for Trying Dejal %@" = "感谢使用 Dejal %@";
+
+/* License Editor continue continue (with a serial) informative text */
+"The entered license details haven't been saved yet." = "输入许可未保存";
+
+/* License not found email body */
+"The following license details were not accepted, and a license couldn't be found:\n\n\nProduct: \t\t%@\nVersion: \t\t%@ (%@)\nName: \t\t%@\nEmail: \t\t%@\nSerial: \t\t%@\nCheck: \t\t%@\nDate: \t\t%@\nError: \t\t%@\n\n" = "您输入的序列号是无效的，请勿使用盗版: \t\t%1$@\n版本: \t\t%2$@ (%3$@)\n名称: \t\t%4$@\n邮件: \t\t%5$@\n序号l: \t\t%6$@\n检查: \t\t%7$@\n日期: \t\t%8$@\n错误: \t\t%9$@\n\n";
+
+/* Kagi error message text */
+"The integrated Kagi processing feature can't be used at present.  Please Buy Online instead." = "当前序列号不可用，请购买正版支持我们";
+
+/* Beta expired heading */
+"This %@ release has expired" = "这 %@ 版本已经过期";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing %@ development.  Your help in making this a great product is much appreciated!" = "这个alpha版本只提供给注册用户 %@ 请支持我们继续完善产品";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing development.  Please post suggestions, bug reports, and other feedback only to the %@ Testers forum.  Your help in making this a great product is much appreciated!" = "这个alpha版本只提供给注册用户,您有任何建议,请反馈给我们 %@ 你在帮助我们晚上一个伟大的产品，感谢!";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing development.\n\nPlease click Licenses... to enter your %@ %@ license now or to purchase one, or Quit." = "这个alpha版本只提供给注册用户\n\n请输入你的许可序列号 %1$@ %2$@ 现在购买一个或者直接退出";
+
+/* Beta welcome heading */
+"This is a %@ release of %@" = "这是一个 %1$@ 发布 %2$@";
+
+/* Alpha notice heading */
+"This is a sneak peek release of %@" = "这个是发布的最新测试版 %@";
+
+/* Alpha warning heading */
+"This is an alpha release of %@" = "这是一个alpha版本 %@";
+
+/* License duplicate explanation */
+"This license has already been added." = "本授权已被添加";
+
+/* License review expired explanation */
+"This Review license is only valid for %d use days, which have already passed.  Contact Dejal if you need an extension." = "许可仅适用于 %d 天，已经过期，请联系我们升级";
+
+/* Tooltip for license trial level indicator */
+"Today is day %d of the %d use-day trial period" = "你已经使用 %1$d 天 %2$d 剩余时间";
+
+/* Expired license reminder button in window title */
+"Trial expired - buy now!" = "试用过期现在购买!";
+
+/* Unable to edit name heading */
+"Unable to edit the name or email." = "无法编辑名称或电子邮件";
+
+/* License not found error message */
+"Unable to find the license." = "找不到许可";
+
+/* License can't query error message */
+"Unable to look up the license." = "无法查找许可";
+
+/* License purchase date unknown */
+"unknown" = "未知";
+
+/* Trial license option radio title */
+"Use for free" = "免费使用";
+
+/* Tooltip for expired license trial level indicator */
+"Used on %d days; the %d use-day trial period is over" = "用于 %1$d 天; 该 %2$d 使用天后试用期结束";
+
+/* Other days explanation */
+"We hope you are enjoying using %@.  If you've bought a license, simply choose the first option below to enter your serial number.  Otherwise, you can click Buy Now to get one, or continue to evaluate it." = "我们希望你喜欢使用 %@.  如果你购买了许可,只需在下面输入您的序列号，反之,你可以点击现在购买,或继续试用";
+
+/* Freeware explanation */
+"We hope you are enjoying using %@.  You are welcome to use %@ at no cost, but if you wish you can make a donation to help support future versions.  If you've already made a donation, simply choose the first option below to enter your serial number." = "我们希望你喜欢使用 %1$@. 欢迎您使用 %2$@ 免费,但如果你愿意，你可以捐款来帮助支持后期版本。如果你已经捐赠,请在下面输入您的序列号";
+
+/* Welcome explanation */
+"We hope you enjoy using %@.  If you have a license already, simply choose the first option below to enter your serial number.  Otherwise, you can click Buy Now to get one, or try it for free first." = "我们希望你喜欢 %@.  如果你有序列号，请在下面输入，反之,你可以点击现在购买,或继续免费试用
+";
+
+/* License Options Website button title */
+"Website" = "网站";
+
+/* Alpha warning heading */
+"Welcome %@ Alpha Tester!" = "欢迎使用 %@ Alpha 测试版!";
+
+/* Welcome title */
+"Welcome to Dejal %@!" = "欢迎访问 Dejal %@!";
+
+/* Welcome info */
+"Welcome!  %@ is not yet licensed" = "欢迎使用!  %@ 还没有授权";
+
+/* License Editor delete informative text */
+"You can add it again if necessary by entering your name and the licensed email address and clicking Find." = "您可以通过输入你的名字和电子邮件地址并点击查找获取你已经购买的序号";
+
+/* Editor license option description */
+"You can find or enter it on the next page" = "你可以进入它主页找到下载";
+
+/* Unable to edit name explanation */
+"You can make minor changes to the Licensed Name field, like changing capitalization, adding punctuation, etc, but can not make significant changes, and can not change the Licensed Email.\n\nIf your email address has changed, click Email %@ to notify %@." = "输入的时候检查先你的名称和邮件字符是否有大小写\n\n如果您的电子邮件地址已经更改，单击电子邮件 %1$@ 通知 %2$@.";
+
+/* Editor license option description */
+"You can see or edit them on the next page" = "你可以看到或编辑下页";
+
+/* Old major release explanation */
+"You have a license for a previous version of %@, but it has had a major upgrade, which requires purchase of an Upgrade license." = "您有以前版本的许可 %@, 但它有一个重大的升级，这需要购买升级许可";
+
+/* Old major release explanation */
+"You have a license for a previous version of %@, but this is a beta release of a major upgrade, which will require purchase of an Upgrade license after the beta." = "你早期版本的许可 %@, 但是这是一个测试版的重大升级，这将需要购买升级";
+
+/* Only upgrade license explanation */
+"You have an Upgrade license for %@, but need to enter or find your original license too.  Continue to the next page, enter your name and original licensed email, then click Find to search for it." = "如果你有一个升级许可证 %@, 但需要输入或找到自己原来的许可证了，输入您的姓名和原电子邮件，然后单击查找搜索它";
+
+/* License Editor continue (when a license is required) informative text */
+"You haven't entered or found a matching license yet.  A license is required to continue." = "您还没有输入或者找到匹配的旧许可， 需要早期许可继续";
+
+/* License Editor continue (with no serial) informative text */
+"You've entered partial license details, but haven't found a matching license yet." = "你输入的信息不够详细，没有找到匹配的许可";
+
+/* Warning explanation */
+"You've used it on %d days now, so we are glad that you find it so useful!  Please take a moment to buy a %@ license before the trial period runs out, and avoid the inconvenience when some features are disabled." = "你使用它 %1$d 天，所以我们很高兴，你发现它非常有用！ 请花一点时间来购买 %2$@ 部分功能在试用到期前将被禁用,避免给您带来的不便";
+
+/* Dead explanation */
+"You've used this for %d days now, twice as long as the evaluation period, but haven't licensed it yet.  Please buy a license and enter it to continue using %@.  Thank you." = "你用这个 %1$d 天了但还没有授权。请购买一个许可，才可以继续使用 %2$@.  非常感谢！";
+
+/* Dead explanation */
+"You've used this for %d days now.  If you don't want to buy a license, you could get it free via TrialPay: try or buy a third-party product, and get %@ as a bonus!  Choose one of these options to continue using %@." = "你用这个 %1$d 天了，如果你不想购买许可证你可以免费得到它，通过TrialPay:尝试或购买第三方产品,并获得 %2$@ 作为奖励!我们将赠送 %3$@.";

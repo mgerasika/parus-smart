@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Dienst - Art - Ping</title>
+<meta name="description" content="Das Ping-Dienst-Modul sendet Pakete an einen Server und prüft, wie schnell dieser antwortet.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Dienst (Neu/Bearbeiten)<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Dienst-Art<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Ping-Dienst-Modul</h1>
+
+<p>Das Ping-Dienst-Modul wird gezeigt, wenn Sie im Dienst-Art-Pop-up-Menü im <a href="../index.html"><b>Dienst-Infobereich</b></a> den Menüpunkt "Ping" wählen.</p>
+
+<p>Dieses Modul wird vom Standard-Dienst <a href="../../test/service/ping.html"><b>Ping</b></a> benutzt. Es sendet mehrfache Anfragen an einen entfernten Server, um zu prüfen, ob dieser verfügbar ist und antwortet.</p>
+
+<dl>
+<dd>Domäne oder IP-Adresse:</dd>
+<dt>Geben Sie hier einen Domänen-Namen oder eine IP-Adresse ein, die Sie anpingen möchten, z.B. "www.apple.com".</dt>
+
+<dd>Senden:</dd>
+<dt>Geben Sie die Anzahl Pakete ein, die gesendet werden sollen. Wenn mehrere Pakete gesendet werden, wird die Prüfung wesentlich zuverlässiger, da man so leichter Netzwerk-Fehler entdecken kann. Jedes Paket wird mit einer Sekunde Abstand zum vorigen gesendet, so dass Sie auch gleich sehen können, wie lang der gesamte Test dauern wird. Der Standard sind 10 Pakete.</dt>
+<dd>Größe:</dd>
+<dt>Geben Sie die Standardanzahl Bytes ein, die pro Datenpaket gesendet werden soll. Der Standardwert von 56 Bytes passt für die meisten Zwecke, aber manchmal kann es sinnvoll sein, den Wert zu erhöhen, um zu testen, wie gut der Server auf größere Pakete antwortet, z. B. für einen Massendaten-Test in Glasfaser-Netzwerken.</dt>
+<dd><img src="../../../shared/status-bad-now.jpg" valign="top"> Fehlschlag melden, wenn: Durchschnitt mehr als:</dd>
+<dt>Ein Fehlschlag wird gemeldet, wenn die durchschnittliche Rundlaufzeit aller Pakete mehr als die angegebene Zeit beträgt, die in Millisekunden angegeben wird.</dt>
+
+<dd><img src="../../../shared/status-bad-now.jpg" valign="top"> Fehlschlag melden, wenn: Verlorene Pakete:</dd>
+<dt>Ein Fehlschlag wird gemeldet, wenn der vorgegebene Prozentsatz an Paketen im Netz verloren gegangen ist, was bedeutet, dass sie zwar gesendet, nicht aber zurückerhalten wurden.</dt>
+</dl>
+
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="../../test/service/ping.html">Ping-Dienst</a></li>
+<li><a href="./index.html">Dienst-Art</a></li>
+<li><a href="../index.html">Dienst-Infobereich</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

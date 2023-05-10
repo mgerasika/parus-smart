@@ -1,0 +1,335 @@
+/* License Assistant window title */
+"%@ Assistant" = "%@-Assistent";
+
+/* Expired info */
+"%@ is Expired: used for %d days" = "%1$@ ist verfallen: schon %2$d Tage benutzt";
+
+/* Welcome freeware */
+"%@ is Freeware; donate to support future versions" = "%@ ist Freeware; Ihre Spende unterstützt die Weiterentwicklung";
+
+/* Licensed info */
+"%@ is Licensed; thank you!" = "%@ ist lizensiert; vielen Dank!";
+
+/* Unlicensed progress */
+"%@ is not licensed: %d days left" = "%1$@ ist nicht lizensiert: %2$d Tage übrig";
+
+/* Last day progress */
+"%@ is not licensed: just one day left" = "%@ ist nicht lizensiert: nur noch ein Tag übrig";
+
+/* Unlicensed info singular */
+"%@ is Not Licensed: last trial day" = "%@ ist nicht lizensiert: letzter Probiertag";
+
+/* Old licensed info */
+"%@ Needs an Upgrade License" = "%@ benötigt eine Upgrade-Lizenz";
+
+/* Only upgrade license info */
+"%@ Needs Your Original License" = "%@ braucht Ihre Originallizenz";
+
+/* License trial expired heading */
+"%@ Trial Expired" = "%@-Probezeit abgelaufen";
+
+/* Expired progress */
+"%@ trial expired: used on %d days" = "%1$@-Testversion ist verfallen: schon %2$d Tage benutzt";
+
+/* Old licensed beta info */
+"%@ Will Need an Upgrade License After Beta" = "Nach der Betaphase braucht %@ eine Upgrade-Lizenz.";
+
+/* Buy license option description */
+"%@: $%@" = "%1$@: $%2$@";
+
+/* Plural license reminder button in window title */
+"%d days left - buy now!" = "%d Tage übrig";
+
+/* Tooltip for license trial level indicator */
+"%d use-day trial period" = "%d Benutzungstage Testdauer";
+
+/* Beta welcome explanation */
+"A %@ release contains new features that haven't been fully tested, and may not be finished.\n\nIf you find any bugs or have any suggestions for improvements or other feedback, please email %@; see the Help menu.  We appreciate your assistance in improving this product!" = "Eine %1$@-Version enthält neue Funktionen, die noch nicht vollständig getestet wurden, und kann noch unvollständig sein.\n\nWenn Sie irgendwelche Fehler finden oder Vorschläge oder sonstige Kommentare haben, schreiben Sie bitte %2$@ eine E-Mail; siehe Hilfe-Menü. Wir schätzen Ihre Unterstützung zur Verbesserung dieses Produkts wirklich sehr!";
+
+/* Add License button title
+   License Editor Add button title */
+
+"Add" = "Hinzufügen";
+
+/* Alpha notice explanation */
+"An alpha (sneak peek) release contains features that haven't been completed or fully tested.\n\nIf you find any bugs or have any suggestions for improvements or other comments, please send feedback to %@; see the Help menu or use the Forums button below.  We appreciate your assistance in improving this product!" = "Eine Alpha-Version (Vorabversion) enthält unvollständige und ungetestete Funktionen.\n\nWenn Sie irgendwelche Fehler finden oder Vorschläge oder sonstige Kommentare haben, schreiben Sie bitte %@ eine E-Mail; siehe Hilfe-Menü. Wir schätzen Ihre Unterstützung zur Verbesserung dieses Produkts wirklich sehr!";
+
+/* Essental component not loaded explanation */
+"An essential component couldn't be loaded." = "Eine wichtige Komponente konnte nicht geladen werden.";
+
+/* App Store license kind
+   Licensed for App Store */
+
+"App Store" = "Mac App Store";
+
+/* License Editor delete message text */
+"Are you sure you want to delete this license?" = "Sind Sie sicher, dass Sie diese Lizenzdaten löschen wollen?";
+
+/* Expiry explanation */
+"As of today, you've used it on %d days!  Wow, you must really like it.  But you haven't got around to buying a license yet... an oversight, I'm sure.  So I'll just disable some of %@'s features until you correct that." = "Heute haben Sie das Programm jetzt schon %1$d Tage benutzt! Wow, Sie mögen es wirklich. Aber Sie haben noch keine Lizenz gekauft … sicher nur ein Versehen. Einige Funktionen von %2$@ werden jetzt abgeschaltet, bis Sie eine Lizenz haben.";
+
+/* Buy license option radio title */
+"Buy %@" = "%@ kaufen";
+
+/* License Options Buy Now button title */
+"Buy Now" = "Jetzt kaufen";
+
+/* License Editor Cancel button title */
+"Cancel" = "Abbrechen";
+
+/* Check for Update button title */
+"Check for Update" = "Nach Updates suchen";
+
+/* License Editor Delete button title */
+"Delete" = "Löschen";
+
+/* License Editor continue (with a serial) message text */
+"Do you want to add the entered license?" = "Möchten Sie die eingegebenen Lizenzdaten hinzufügen?";
+
+/* License Editor continue (with no serial) message text */
+"Do you want to find your license?" = "Möchten Sie Ihre Lizenzdaten suchen?";
+
+/* License Editor Don't Add button title */
+"Don't Add" = "Nicht anwenden";
+
+/* License Editor Don't Find button title */
+"Don't Find" = "Nicht suchen";
+
+/* Email button title */
+"Email %@" = "E-Mail-%@";
+
+/* Unable to edit name email subject */
+"email address changed" = "E-Mail-Adresse geändert";
+
+/* Enter license explanation */
+"Enter at least your Licensed Name and Email.  If you can't find the email you received from %@, you can query the server for your license(s).\n\nIf you know your serial number, enter that too (and it won't need to be looked up).\n\nTip: If you copy the contents of the email before opening the Licenses window, the license will be added automatically." = "Geben Sie mindestens Ihren lizensierten Namen und die E-Mail-Adresse ein. Wenn Sie die E-Mail, die Sie von %@ erhalten haben, nicht mehr finden können, können Sie auch auf unserem Server nach Ihren Lizenzen suchen.\n\nWenn Sie Ihre Seriennummer wissen, geben Sie sie bitte ebenfalls ein (dann brauchen Sie nach ihr nicht mehr zu suchen).\n\nTipp: Wenn Sie die Lizenzdaten aus der E-Mail kopieren, bevor Sie das Registrierungs-Fenster öffnen, werden die Lizenzdaten automatisch übernommen.";
+
+/* Trial license option description */
+"Evaluate the app before buying" = "Programm erst testen, dann kaufen";
+
+/* Evaluating info */
+"Evaluating %@: %d days left" = "%1$@ testen: %2$d Tage übrig";
+
+/* License Thanks Feedback button title */
+"Feedback" = "Rückkopplung";
+
+/* Find License button title
+   License Editor Find button title */
+
+"Find" = "Suchen";
+
+/* Finding License button title */
+"Finding..." = "Suche …";
+
+/* License Thanks Forum button title */
+"Forum" = "Forum";
+
+/* Forums button title */
+"Forums" = "Dejal-Foren";
+
+/* TrialPay option radio title */
+"Get it free via TrialPay" = "Gratis via TrialPay erhalten";
+
+/* Editor license option radio title */
+"I already have a license" = "Ich habe schon eine Lizenz";
+
+/* License unable to edit name email body */
+"I have changed my email address.  Please update your records accordingly:\n\n\nProduct: \t\t%@\nVersion: \t\t%@ (%@)\nName: \t\t%@\nOld email: \t\t%@\nNew email: \t%@\nDate: \t\t%@\nCheck: \t\t%@\n\n" = "Ich habe eine neue E-Mail-Adresse. Bitte ändern Sie Ihre Datenbank entsprechend:\n\n\nProdukt: \t\t%1$@\nVersion: \t\t%2$@ (%3$@)\nName: \t\t%4$@\nAlte E-Mail: \t\t%5$@\nNeue E-Mail: \t%6$@\nDatum: \t\t%7$@\nPrüfung: \t\t%8$@\n\n";
+
+/* Later button title */
+"Later" = "Später";
+
+/* TrialPay GetItFree option description */
+"Learn more about TrialPay's Get It Free" = "Mehr erfahren über TrialPays „Get It Free“";
+
+/* License duplicate heading */
+"License has been added." = "Die Lizenz wurde hinzugefügt.";
+
+/* Unable to find license email subject */
+"license query" = "Lizenz-Anfrage";
+
+/* License email prefix from email */
+"Licensed Email: " = "Lizensierte E-Mail:";
+
+/* License name prefix from email */
+"Licensed Name: " = "Lizensierter Name:";
+
+/* Licenses button title */
+"Licenses..." = "Lizenzen …";
+
+/* Freeware license option radio title */
+"Make %@" = "%@ machen";
+
+/* More Info button title */
+"More Info..." = "Weitere Informationen …";
+
+/* Freeware option description */
+"No obligation to donate" = "Keine Verpflichtung zm Spenden";
+
+/* OK button title */
+"OK" = "OK";
+
+/* License on file */
+"on file" = "in Datei";
+
+/* Singular license reminder button in window title */
+"One day left - buy now!" = "Ein Tag übrig - kaufen Sie jetzt!";
+
+/* Find License failure message */
+"Please check that the entered name and email address are correct, and try again.\n\nIf you're sure you entered the correct values, click Email %@ to ask for personal help." = "Bitte prüfen Sie, ob die eingebenen Daten für Name und E-Mail-Adresse richtig sind, und versuchen Sie es dann nochmal.\n\nWenn Sie sicher sind, die richtigen Daten eingegeben zu haben, klicken Sie auf „E-Mail an %@“, um nach persönlicher Hilfe zu fragen.";
+
+/* Freeware license reminder button in window title */
+"Please donate!" = "Bitte spenden Sie!";
+
+/* Enter license heading */
+"Please enter the license details." = "Bitte geben Sie die Lizenz-Daten ein.";
+
+/* Dead title */
+"Please Purchase Dejal %@" = "Bitte kaufen Sie Dejal %@";
+
+/* Dead title */
+"Please Purchase Dejal %@... or Get It Free" = "Bitte kaufen Sie Dejal %@ … - oder holen Sie es sich gratis";
+
+/* Quit button title */
+"Quit" = "Beenden";
+
+/* License review expired heading */
+"Review license has expired." = "Die Rezensions-Lizenz ist verfallen.";
+
+/* Save Changes button title */
+"Save" = "Sichern";
+
+/* Editor license option radio title */
+"Show my licenses" = "Meine Lizenzen zeigen";
+
+/* Kagi error informative text */
+"Sorry for the inconvenience." = "Bitte entschuldigen Sie die Unannehmlichkeiten.";
+
+/* Beta expired explanation */
+"Sorry, this %@ release is time-limited for quality-control reasons.  You need to upgrade to a newer version.\n\nWould you like to check for one now?" = "Tut uns leid, diese %@-Version ist zu Qualitätskontrollzwecken zeitlich begrenzt. Sie benötigen ein Upgrade auf eine neuere Version.\n\nMöchten Sie jetzt nach einer neueren Version suchen?";
+
+/* License reminder when licensed */
+"Thank you for licensing %@!" = "Vielen Dank, dass Sie %@ freigeschaltet haben!";
+
+/* Warning title */
+"Thank You for Trying Dejal %@" = "Vielen Dank, dass Sie Dejal %@ ausprobiert haben.";
+
+/* Expiry title */
+"Thanks Again for Trying Dejal %@" = "Vielen Dank, dass Sie Dejal %@ ausprobiert haben.";
+
+/* License Editor continue continue (with a serial) informative text */
+"The entered license details haven't been saved yet." = "Die eingegebenen Lizenzdaten wurden noch nicht gesichert.";
+
+/* License not found email body */
+"The following license details were not accepted, and a license couldn't be found:\n\n\nProduct: \t\t%@\nVersion: \t\t%@ (%@)\nName: \t\t%@\nEmail: \t\t%@\nSerial: \t\t%@\nCheck: \t\t%@\nDate: \t\t%@\nError: \t\t%@\n\n" = "Die folgenden Lizenzdaten wurden nicht akzeptiert und die Lizenz wurde daher nicht gefunden:\n\n\nProdukt: \t\t%1$@\nVersion: \t\t%2$@ (%3$@)\nName: \t\t%4$@\nE-Mail: \t\t%5$@\nSeriennummer: \t\t%6$@\nPrüfung: \t\t%7$@\nDatum: \t\t%8$@\nFehler: \t\t%9$@\n\n";
+
+/* Kagi error message text */
+"The integrated Kagi processing feature can't be used at present.  Please Buy Online instead." = "Die eingebaute Kagi-Bestellfunktion kann momentan nicht benutzt werden. Bitte kaufen Sie stattdessen online.";
+
+/* Beta expired heading */
+"This %@ release has expired" = "Diese %@-Version ist verfallen.";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing %@ development.  Your help in making this a great product is much appreciated!" = "Diese Alpha-Version wird nur an lizensierte Benutzer weitergegeben, um einen ersten Eindruck der weiteren %@-Entwicklung zu vermitteln. Mit Ihrer sehr geschätzten Hilfe können wir so ein großartiges Produkt erstellen.";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing development.  Please post suggestions, bug reports, and other feedback only to the %@ Testers forum.  Your help in making this a great product is much appreciated!" = "Diese Alpha-Version wird nur lizensierten Anwender/inne/n zur Verfügung gestellt, als Vorabversion der voranschreitenden Entwicklung. Bitte veröffentlichen Sie Vorschläge, Fehler-Berichte oder andere Rückmeldungen nur im %@-Tester-Forum. Wir schätzen Ihre Unterstützung zur Verbesserung dieses Produkts wirklich sehr!";
+
+/* Alpha warning explanation */
+"This alpha release is provided only to licensed users, as a sneak peek of the ongoing development.\n\nPlease click Licenses... to enter your %@ %@ license now or to purchase one, or Quit." = "Diese Alpha-Version wird nur lizensierten Anwenderinnen und Anwendern zur Verfügung gestellt, als Vorabversion der weiteren Entwicklung.\n\nBitte klicken Sie auf „Lizenzen …“, um Ihre Lizenzdaten für %1$@ %2$@ nun einzugeben oder eine neue Lizenz zu kaufen - oder beenden Sie das Programm.";
+
+/* Beta welcome heading */
+"This is a %@ release of %@" = "Dies ist eine %1$@-Verson von %2$@";
+
+/* Alpha notice heading */
+"This is a sneak peek release of %@" = "Dies ist eine Vorab-Version von %@";
+
+/* Alpha warning heading */
+"This is an alpha release of %@" = "Dies ist eine Alpha-Version von %@";
+
+/* License duplicate explanation */
+"This license has already been added." = "Diese Lizenzdaten wurden schon hinzugefügt.";
+
+/* License review expired explanation */
+"This Review license is only valid for %d use days, which have already passed.  Contact Dejal if you need an extension." = "Diese Revisions-Lizenz ist nur %d Benutzungstage gültig, die schon vergangen sind. Bitte kontaktieren Sie Dejal, wenn Sie eine Verlängerung benötigen.";
+
+/* Tooltip for license trial level indicator */
+"Today is day %d of the %d use-day trial period" = "Heute ist der %1$d. Tag der Testphase von insgesamt %2$d Nutzungstagen.";
+
+/* Expired license reminder button in window title */
+"Trial expired - buy now!" = "Testphase abgelaufen - bitte jetzt kaufen!";
+
+/* Unable to edit name heading */
+"Unable to edit the name or email." = "Name oder E-Mail-Adresse konnten nicht bearbeitet werden.";
+
+/* License not found error message */
+"Unable to find the license." = "Die Lizenz konnte nicht gefunden werden.";
+
+/* License can't query error message */
+"Unable to look up the license." = "Der Lizenzserver wurde nicht erreicht.";
+
+/* License purchase date unknown */
+"unknown" = "unbekannt";
+
+/* Trial license option radio title */
+"Use for free" = "Gratis-Nutzung";
+
+/* Tooltip for expired license trial level indicator */
+"Used on %d days; the %d use-day trial period is over" = "Schon %1$d Tage benutzt; die Testphase von %2$d Nutzungstagen ist vorbei.";
+
+/* Other days explanation */
+"We hope you are enjoying using %@.  If you've bought a license, simply choose the first option below to enter your serial number.  Otherwise, you can click Buy Now to get one, or continue to evaluate it." = "Wir hoffen, dass Ihnen %@ gefällt. Wenn Sie schon eine Lizenz haben, wählen Sie einfach unten die erste Option und geben Ihre Seriennummer ein. Ansonsten können Sie auf [Jetzt kaufen] klicken, um eine Lizenz zu kaufen oder das Programm zunächst gratis ausprobieren.";
+
+/* Freeware explanation */
+"We hope you are enjoying using %@.  You are welcome to use %@ at no cost, but if you wish you can make a donation to help support future versions.  If you've already made a donation, simply choose the first option below to enter your serial number." = "Wir hoffen, Ihnen gefällt %1$@. Sie dürfen herzlich gern %2$@ ohne weitere Kosten benutzen, aber wenn Sie möchten, können Sie etwas spenden, um die Weiterentwicklung zu unterstützen. Wenn Sie schon mal gespendet haben, wählen Sie einfach unten die erste Option, um Ihre Seriennummer einzugeben.";
+
+/* Welcome explanation */
+"We hope you enjoy using %@.  If you have a license already, simply choose the first option below to enter your serial number.  Otherwise, you can click Buy Now to get one, or try it for free first." = "Wir hoffen, dass Ihnen %@ gefällt. Wenn Sie schon eine Lizenz haben, wählen Sie einfach unten die erste Option und geben Ihre Seriennummer ein. Ansonsten können Sie auf [Jetzt kaufen] klicken, um eine Lizenz zu kaufen oder das Programm zunächst gratis ausprobieren.";
+
+/* License Options Website button title */
+"Website" = "Website";
+
+/* Alpha warning heading */
+"Welcome %@ Alpha Tester!" = "Willkommen als %@-Alpha-Tester!";
+
+/* Welcome title */
+"Welcome to Dejal %@!" = "Willkommen bei Dejal %@!";
+
+/* Welcome info */
+"Welcome!  %@ is not yet licensed" = "Willkommen! %@ ist noch nicht lizensiert.";
+
+/* License Editor delete informative text */
+"You can add it again if necessary by entering your name and the licensed email address and clicking Find." = "Falls nötig, können Sie es wieder hinzufügen, indem Sie Ihren Namen und die lizensierte E-Mail-Adresse eingeben und auf „Suchen“ klicken.";
+
+/* Editor license option description */
+"You can find or enter it on the next page" = "Auf der nächsten Seite finden oder eingeben.";
+
+/* Unable to edit name explanation */
+"You can make minor changes to the Licensed Name field, like changing capitalization, adding punctuation, etc, but can not make significant changes, and can not change the Licensed Email.\n\nIf your email address has changed, click Email %@ to notify %@." = "Sie können kleinere Änderungen im Feld „Lizensierter Name“ machen (z.B. Groß-/Kleinschreibung ändern, Satzzeichen hinzufügen usw.), aber Sie können die Daten nicht komplett ändern und vor allem dürfen Sie nicht die E-Mail-Adresse ändern.\n\nWenn Sie eine neue E-Mail-Adresse haben, klicken Sie auf „E-Mail %1$@“, um %2$@ zu informieren.";
+
+/* Editor license option description */
+"You can see or edit them on the next page" = "Sie können sie auf der nächsten Seite sehen oder bearbeiten.";
+
+/* Old major release explanation */
+"You have a license for a previous version of %@, but it has had a major upgrade, which requires purchase of an Upgrade license." = "Sie haben eine Lizenz für eine frühere Version von %@, aber es gab ein größeres Upgrade, das den Kauf einer Upgrade-Lizenz erfordert.";
+
+/* Old major release explanation */
+"You have a license for a previous version of %@, but this is a beta release of a major upgrade, which will require purchase of an Upgrade license after the beta." = "Sie besitzen eine Lizenz für eine frühere Version von %@, aber dies ist eine Betaversion eines Versions-Upgrades, das nach der Betaphase den Kauf einer Upgrade-Lizenz vorsieht.";
+
+/* Only upgrade license explanation */
+"You have an Upgrade license for %@, but need to enter or find your original license too.  Continue to the next page, enter your name and original licensed email, then click Find to search for it." = "Sie haben eine Upgrade-Lizenz für %@, aber Ihre Originallizenz wird noch benötigt. Auf der nächsten Seite können Sie Ihren Namen und Ihre E-Mail-Adresse Ihrer Originallizenz eingeben und dann auf [Suchen] klicken, um die Lizenz zu suchen.";
+
+/* License Editor continue (when a license is required) informative text */
+"You haven't entered or found a matching license yet.  A license is required to continue." = "Sie haben bisher weder passende Lizenzdaten eingegeben noch gefunden. Um fortzufahren, wird eine Lizenz benötigt.";
+
+/* License Editor continue (with no serial) informative text */
+"You've entered partial license details, but haven't found a matching license yet." = "Sie haben einen Teil der Lizenzdaten eingegeben, aber noch keine passende Lizenz gefunden.";
+
+/* Warning explanation */
+"You've used it on %d days now, so we are glad that you find it so useful!  Please take a moment to buy a %@ license before the trial period runs out, and avoid the inconvenience when some features are disabled." = "Sie haben das Programm jetzt schon %1$d Tage benutzt, daher freuen wir uns, dass Sie es so nützlich finden! Bitte nehmen Sie sich einen Moment Zeit, um eine Lizenz für %2$@ zu kaufen, bevor die Testphase vorbei ist, damit Sie nicht Gefahr laufen, dass einige Funktionen abgeschaltet werden.";
+
+/* Dead explanation */
+"You've used this for %d days now, twice as long as the evaluation period, but haven't licensed it yet.  Please buy a license and enter it to continue using %@.  Thank you." = "Sie haben das Programm jetzt schon %1$d Tage benutzt, doppelt so lang wie in der Testphase vorgesehen, aber Sie haben es noch immer nicht lizensiert. Bitte kaufen Sie jetzt eine Lizenz und aktivieren Sie sie, bevor Sie %2$@ weiter benutzen. Vielen Dank.";
+
+/* Dead explanation */
+"You've used this for %d days now.  If you don't want to buy a license, you could get it free via TrialPay: try or buy a third-party product, and get %@ as a bonus!  Choose one of these options to continue using %@." = "Sie haben das Programm jetzt schon %1$d Tage benutzt. Wenn Sie keine Lizenz kaufen möchten, können Sie evtl. auch eine freie Lizenz bei TrialPay bekommen: Kaufen Sie dort ein anderes Programm und Sie erhalten %2$@ als Bonus dazu! Wählen Sie eine dieser Optionen, um %3$@ weiter benutzen zu können.";

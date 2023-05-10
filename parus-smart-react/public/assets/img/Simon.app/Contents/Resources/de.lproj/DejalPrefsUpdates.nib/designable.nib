@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DejalPrefsUpdates">
+            <connections>
+                <outlet property="containerView" destination="149" id="150"/>
+                <outlet property="levelPopup" destination="rMv-VN-oVz" id="3d1-KC-hvc"/>
+                <outlet property="releaseNotesButton" destination="yUS-Bb-F5J" id="dKA-nY-BFg"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="149" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="595" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button toolTip="Lässt das Programm automatisch gemäß der eingestellten Häufigkeit nach neueren Versionen suchen." translatesAutoresizingMaskIntoConstraints="NO" id="fre-iV-1Xl">
+                    <rect key="frame" x="18" y="117" width="221" height="18"/>
+                    <buttonCell key="cell" type="check" title="Automatisch nach Updates suchen" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="sqZ-MI-NiC">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="mbr-pv-J9b" name="value" keyPath="automaticallyChecksForUpdates" id="AQE-NV-3A9"/>
+                        <outlet property="nextKeyView" destination="RAq-cE-afr" id="dnz-Z9-XLV"/>
+                    </connections>
+                </button>
+                <popUpButton toolTip="Legen Sie fest, wie oft automatisch nach Updates gesucht werden soll." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RAq-cE-afr">
+                    <rect key="frame" x="243" y="112" width="84" height="26"/>
+                    <popUpButtonCell key="cell" type="push" title="Wöchentlich" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="604800" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="a3i-wy-D6f" id="TTv-g1-SEV">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="ibI-EM-YX1">
+                            <items>
+                                <menuItem title="Täglich" tag="86400" id="LuP-pe-6AU"/>
+                                <menuItem title="Wöchentlich" state="on" tag="604800" id="a3i-wy-D6f"/>
+                                <menuItem title="Monatlich" tag="2629800" id="TKu-gs-vOv"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="mbr-pv-J9b" name="enabled" keyPath="automaticallyChecksForUpdates" id="SyZ-pT-ly3"/>
+                        <binding destination="mbr-pv-J9b" name="selectedTag" keyPath="updateCheckInterval" id="oVd-qE-nr0"/>
+                        <outlet property="nextKeyView" destination="rMv-VN-oVz" id="UMX-Ca-PwH"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton toolTip="Wählen Sie, ob Sie auch an Beta-Versionen oder nur an Haupt-Versionen interessiert sind." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rMv-VN-oVz">
+                    <rect key="frame" x="243" y="87" width="187" height="26"/>
+                    <popUpButtonCell key="cell" type="push" title="Beta- und Haupt-Versionen" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="borderAndBezel" tag="1" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="ese-Rb-Duf" id="LS9-bV-CXL">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="ed0-yw-ybw">
+                            <items>
+                                <menuItem title="Nur Haupt-Versionen" id="zw8-KP-bXg"/>
+                                <menuItem title="Beta- und Haupt-Versionen" state="on" tag="1" id="ese-Rb-Duf"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="chooseLevel:" target="-2" id="gyp-qJ-oEl"/>
+                        <outlet property="nextKeyView" destination="Z6f-5C-b9z" id="l4B-5g-Nkw"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eU5-Wt-Zi3">
+                    <rect key="frame" x="129" y="93" width="110" height="17"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Gewünschte Versionen:" id="u6w-bL-HXv">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="hZI-Xv-rcN">
+                    <rect key="frame" x="243" y="59" width="291" height="18"/>
+                    <buttonCell key="cell" type="check" title="Aktualisierungen automatisch herunterladen und installieren" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="oP6-PE-RWm">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="mbr-pv-J9b" name="enabled" keyPath="automaticallyChecksForUpdates" id="PF4-9M-LgM"/>
+                        <binding destination="mbr-pv-J9b" name="value" keyPath="automaticallyDownloadsUpdates" id="hXO-pn-4Af"/>
+                    </connections>
+                </button>
+                <button toolTip="Klicken Sie hier, um auf dem Server nach einer neueren Version zu suchen." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z6f-5C-b9z">
+                    <rect key="frame" x="239" y="13" width="112" height="32"/>
+                    <buttonCell key="cell" type="push" title="Jetzt prüfen" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="aCa-Xr-udj">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkNow:" target="-2" id="lTu-bl-DM2"/>
+                    </connections>
+                </button>
+                <button toolTip="Lesen Sie über dieses Fenster in der Hilfe." horizontalHuggingPriority="750" verticalHuggingPriority="750" id="86">
+                    <rect key="frame" x="552" y="-3" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="help" bezelStyle="helpButton" imagePosition="below" alignment="center" borderStyle="border" inset="1" id="158">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="help:" target="-2" id="147"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yUS-Bb-F5J">
+                    <rect key="frame" x="14" y="13" width="168" height="32"/>
+                    <buttonCell key="cell" type="push" title="Änderungen zeigen" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6qm-Q8-z3e">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showReleaseNotes:" target="-2" id="qEv-XD-GPF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="86" secondAttribute="bottom" constant="20" id="24T-pc-Gec"/>
+                <constraint firstItem="RAq-cE-afr" firstAttribute="leading" secondItem="fre-iV-1Xl" secondAttribute="trailing" constant="8" id="2xo-R4-4Pe"/>
+                <constraint firstItem="yUS-Bb-F5J" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="20" id="8jz-ER-FWW"/>
+                <constraint firstItem="rMv-VN-oVz" firstAttribute="leading" secondItem="eU5-Wt-Zi3" secondAttribute="trailing" constant="8" id="EZz-ib-5tP"/>
+                <constraint firstItem="rMv-VN-oVz" firstAttribute="top" secondItem="RAq-cE-afr" secondAttribute="bottom" constant="4" id="Evt-IR-D3N"/>
+                <constraint firstItem="Z6f-5C-b9z" firstAttribute="top" secondItem="hZI-Xv-rcN" secondAttribute="bottom" constant="20" id="O0o-ff-erf"/>
+                <constraint firstItem="fre-iV-1Xl" firstAttribute="leading" secondItem="149" secondAttribute="leading" constant="20" id="VjB-eQ-9Tg"/>
+                <constraint firstItem="fre-iV-1Xl" firstAttribute="top" secondItem="149" secondAttribute="top" constant="23" id="eIf-Yz-GFD"/>
+                <constraint firstAttribute="trailing" secondItem="86" secondAttribute="trailing" constant="20" id="fGu-1d-ze9"/>
+                <constraint firstItem="rMv-VN-oVz" firstAttribute="leading" secondItem="hZI-Xv-rcN" secondAttribute="leading" id="gHT-Cl-3e1"/>
+                <constraint firstItem="fre-iV-1Xl" firstAttribute="baseline" secondItem="RAq-cE-afr" secondAttribute="baseline" id="jEq-Sf-Utu"/>
+                <constraint firstItem="rMv-VN-oVz" firstAttribute="leading" secondItem="RAq-cE-afr" secondAttribute="leading" id="kJ5-Mh-AMj"/>
+                <constraint firstItem="eU5-Wt-Zi3" firstAttribute="baseline" secondItem="rMv-VN-oVz" secondAttribute="baseline" id="lVo-AN-vbj"/>
+                <constraint firstItem="hZI-Xv-rcN" firstAttribute="top" secondItem="rMv-VN-oVz" secondAttribute="bottom" constant="15" id="oJn-c2-IJi"/>
+                <constraint firstItem="hZI-Xv-rcN" firstAttribute="leading" secondItem="Z6f-5C-b9z" secondAttribute="leading" id="ogA-cg-HTa"/>
+                <constraint firstAttribute="bottom" secondItem="yUS-Bb-F5J" secondAttribute="bottom" constant="20" id="xvc-4b-cKs"/>
+            </constraints>
+            <point key="canvasLocation" x="587" y="621"/>
+        </customView>
+        <view id="74">
+            <rect key="frame" x="0.0" y="0.0" width="551" height="1"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
+        <customObject id="mbr-pv-J9b" customClass="SUUpdater"/>
+    </objects>
+</document>

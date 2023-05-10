@@ -1,0 +1,1164 @@
+/* Back */
+"Back" = "Back";
+
+/* Dock Check Tests */
+"Check All Now" = "现在检查所有";
+
+/* Check Now */
+"Check Now" = "Check Now";
+
+/* Copy to Test */
+"Copy to Test" = "复制到测试";
+
+/* Delete Filter... */
+"Delete Filter..." = "删除过滤器...";
+
+/* Delete Notifier... */
+"Delete Notifier..." = "删除通知...";
+
+/* Delete Report... */
+"Delete Report..." = "删除报告...";
+
+/* Delete Service... */
+"Delete Service..." = "删除服务器...";
+
+/* Delete Test... */
+"Delete Test..." = "删除测试...";
+
+/* Duplicate Filter */
+"Duplicate Filter" = "复制过滤器";
+
+/* Duplicate Notifier */
+"Duplicate Notifier" = "复制通知";
+
+/* Duplicate Report */
+"Duplicate Report" = "复制报告";
+
+/* Duplicate Service */
+"Duplicate Service" = "复制服务器";
+
+/* Duplicate Test */
+"Duplicate Test" = "复制测试";
+
+/* Edit Filter */
+"Edit Filter" = "编辑过滤器";
+
+/* Edit Notifier */
+"Edit Notifier" = "编辑通知";
+
+/* Edit Report */
+"Edit Report" = "编辑报告";
+
+/* Edit Service */
+"Edit Service" = "编辑服务器";
+
+/* Edit Test */
+"Edit Test" = "编辑测试";
+
+/* Filters */
+"Filters" = "Filters";
+
+/* Forward */
+"Forward" = "Forward";
+
+/* Hide Chart */
+"Hide Chart" = "隐藏图表";
+
+/* Hide Logs */
+"Hide Logs" = "隐藏日志";
+
+/* Mark as Flagged */
+"Mark as Unviewed" = "标记为未查看";
+
+/* Mark as Unflagged */
+"Mark as Viewed" = "Mark as Viewed";
+
+/* New Filter */
+"New Filter" = "新建过滤器";
+
+/* New Notifier */
+"New Notifier" = "新通知";
+
+/* New Report */
+"New Report" = "新报告";
+
+/* New Service */
+"New Service" = "新建服务器";
+
+/* New Test */
+"New Test" = "New Test";
+
+/* Notifiers */
+"Notifiers" = "Notifiers";
+
+/* Notify Now */
+"Notify Now" = "现在通知";
+
+/* Dock Pause Tests */
+"Pause All Tests" = "暂停所有测试";
+
+/* Pause Filter... */
+"Pause Filter..." = "暂停过滤...";
+
+/* Pause Notifier... */
+"Pause Notifier..." = "暂停通知...";
+
+/* Pause Report... */
+"Pause Report..." = "暂停报告...";
+
+/* Pause Service... */
+"Pause Service..." = "暂停服务器...";
+
+/* Pause Test... */
+"Pause Test..." = "暂停测试...";
+
+/* Preview */
+"Preview" = "Preview";
+
+/* Preview Report */
+"Preview Report" = "预览报告";
+
+/* Reload Cached */
+"Reload Cached" = "刷新缓存";
+
+/* Report Now */
+"Report Now" = "Report Now";
+
+/* Reports */
+"Reports" = "Reports";
+
+/* Reset Reports Cache... */
+"Reset Reports Cache..." = "重置缓存报告...";
+
+/* Reset Stats... */
+"Reset Stats..." = "重置统计数据...";
+
+/* Dock Resume Tests */
+"Resume All Tests" = "恢复所有测试";
+
+/* Resume Filter */
+"Resume Filter" = "筛选历史";
+
+/* Resume Notifier */
+"Resume Notifier" = "历史通知";
+
+/* Resume Report */
+"Resume Report" = "历史报告";
+
+/* Resume Service */
+"Resume Service" = "恢复服务";
+
+/* Resume Test */
+"Resume Test" = "恢复测试";
+
+/* Services */
+"Services" = "Services";
+
+/* Show Chart */
+"Show Chart" = "显示图表";
+
+/* Show Logs */
+"Show Logs" = "显示日志";
+
+/* Stop Check */
+"Stop Check" = "停止检查";
+
+/* Stop Notify */
+"Stop Notify" = "停止通知";
+
+/* Stop Report */
+"Stop Report" = "Stop Report";
+
+/* Untitled */
+"Untitled" = "未命名";
+
+/* View Report */
+"View Report" = "查看报告";
+
+/* Visit Site */
+"Visit Site" = "Visit Site";
+
+/* short label for Mark Flagged
+   short label for Mark Unflagged */
+
+"  Viewed  " = "  查看  ";
+
+/* can't delete suffix when multiple tests for Delete Service */
+" and %d more." = " 添加 %d 更多";
+
+/* Share date & time */
+" on %@ at %@" = " on %1$@ 在 %2$@";
+
+/* Preview Test item */
+"#%lu: %@ Error" = "#%1$lu: %2$@ 错误";
+
+/* Preview Test item */
+"#%lu: %@ Output" = "#%1$lu: %2$@ 输出";
+
+/* Test Editor summary page up time */
+"%.2f%%" = "%.2f%%";
+
+/* Last Date: value & suffix */
+"%@ %@" = "%1$@ %2$@";
+
+/* Tests List last check & duration */
+"%@ (%@)" = "%1$@ (%2$@)";
+
+/* Editor summary page name
+   Editor summary page name placeholder */
+
+"%@ and %d more" = "%1$@ 以及 %2$d 更多";
+
+/* Copy of name */
+"%@ copy" = "%@ 复制";
+
+/* Preview Test item */
+"%@ Headers" = "%@ 标头";
+
+/* Report HTML title for error page */
+"%@ Report Error" = "%@ 报告错误";
+
+/* Preview Test item */
+"%@ Response" = "%@ 反应";
+
+/* Test failure & recovery */
+"%@ to %@" = "%1$@ 到 %2$@";
+
+/* Share string */
+"%@%@ %@%@" = "%1$@%2$@ %3$@%4$@";
+
+/* Editor summary page name
+   Editor summary page name placeholder */
+
+"%@, %@" = "%1$@, %2$@";
+
+/* Test Editor summary page service */
+"%@: %@" = "%1$@: %2$@";
+
+/* Filter Editor summary page options
+   Test Editor summary page options */
+
+"%@; %@" = "%1$@; %2$@";
+
+/* Setup Assistant too many URLs informative text */
+"%d URLs have been selected for import, but a maximum of %d can be imported at one time.\n\nPlease deselect some and try again.  You can import the remainder later if desired." = "%1$d 网址已被选定为输入，但最多 %2$d 可以在同时被导入.\n\n请取消一些,再试一次，如果需要您可以以后导入剩余的";
+
+/* Next Check Date: internet hotspot login required */
+"(hotspot) %@" = "(热点) %@";
+
+/* Next Check Date: internet offline */
+"(offline) %@" = "(当前离线) %@";
+
+/* Last Changed Date: disabled */
+"--" = "--";
+
+/* confirmation info for Reset Stats 1 group */
+"A group is selected, so this applies to all tests within this group." = "群组被选择，因此，这适用于所有的测试在该组中";
+
+/* General prefs password */
+"A password is not required to access Simon" = "不需要密码访问 Simon";
+
+/* General prefs password */
+"A password is not required to access the app" = "不需要密码来访问应用程序";
+
+/* General prefs password */
+"A password is required to access Simon" = "需要密码访问 Simon";
+
+/* General prefs password */
+"A password is required to access the app" = "需要密码来访问应用程序";
+
+/* User-visible name of the view */
+"Activity" = "活跃";
+
+/* tooltip for Add Test */
+"Add a new site to test" = "添加一个新的网站测试";
+
+/* Reports List date ago
+   Tests List check ago
+   Tests List recovery ago */
+
+
+"ago" = "刷新";
+
+/* tooltip for Resume Testing */
+"Allow checks on the tests" = "允许检查测试";
+
+/* Test missing error; shouldn't ever occur */
+"An unknown error occurred" = "发生未知错误";
+
+/* Descriptive status for variables */
+"an unknown status" = "一个未知的状态";
+
+/* confirmation for Delete 1 Filter */
+"Are you sure you want to delete the selected filter?" = "您确定要删除所选文件夹吗？";
+
+/* confirmation for Delete 1 item */
+"Are you sure you want to delete the selected item?" = "您确定要删除所选项目吗？";
+
+/* confirmation for Delete 1 Notifier */
+"Are you sure you want to delete the selected notifier?" = "你确定你要删除选定的通知吗?";
+
+/* confirmation for Delete 1 Report */
+"Are you sure you want to delete the selected report?" = "你确定你要删除选定的报告吗?";
+
+/* confirmation for Delete 1 Service */
+"Are you sure you want to delete the selected service?" = "你确定你要删除选定的服务吗?";
+
+/* confirmation for Delete 1 Test */
+"Are you sure you want to delete the selected test?" = "你确定你要删除选定的测试?";
+
+/* confirmation message for Reset Stats > 1 */
+"Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for all of the selected tests?" = "要重置所有选定测试的检查，修改，失败和活跃的统计数据和日志吗？";
+
+/* confirmation message for Reset Stats 0 */
+"Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for ALL tests?" = "你确定要重置统计数据和日志检查,更改,失败和所有测试活跃吗?";
+
+/* confirmation message for Reset Stats 1 group */
+"Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for the selected group?" = "你确定要重置的统计数据和日志检查,更改,选择组的失败和活跃吗?";
+
+/* confirmation message for Reset Stats 1 test */
+"Are you sure you want to reset the statistics and logs of checks, changes, failures and activity for the selected test?" = "你确定要重置的统计数据和日志检查,更改,所选测试失败和活动?";
+
+/* confirmation for Delete > 1 Filter */
+"Are you sure you wish to delete all of the selected filters?" = "你确定要删除所有选定的过滤器吗?";
+
+/* confirmation for Delete > 1 item */
+"Are you sure you wish to delete all of the selected items?" = "您确定要删除选中的项目吗?";
+
+/* confirmation for Delete > 1 Notifier */
+"Are you sure you wish to delete all of the selected notifiers?" = "你确定要删除所有选中的通知吗?";
+
+/* confirmation for Delete > 1 Report */
+"Are you sure you wish to delete all of the selected reports?" = "你确定要删除所有选中的报告?";
+
+/* confirmation for Delete > 1 Service */
+"Are you sure you wish to delete all of the selected services?" = "你确定要删除所有选中的服务?";
+
+/* confirmation for Delete > 1 Test */
+"Are you sure you wish to delete all of the selected tests?" = "你确定要删除所有选中的测试?";
+
+/* Status: autopaused */
+"auto-paused" = "自动-暂停";
+
+/* Report status: auto-paused */
+"Auto-Paused" = "自动-暂停";
+
+/* Next Check Date: automatically paused column time */
+"auto-paused %@" = "自动-暂停 %@";
+
+/* Status: available for use */
+"available" = "可用";
+
+/* long label for Back
+   short label for Back */
+
+"Back" = "返回";
+
+/* Descriptive status for variables */
+"been paused" = "被暂停";
+
+/* Preview info */
+"Cached: %@; content type: %@; result code: %@" = "缓存: %1$@; 内容类型: %2$@; 结果代码: %3$@";
+
+/* Test Editor summary page options */
+"can check when offline" = "离线时可以检查";
+
+/* Cancel button title */
+"Cancel" = "取消";
+
+/* Notifier Editor summary page options */
+"Change" = "变化";
+
+/* Descriptive status for variables */
+"changed" = "已更改";
+
+/* Filter Editor summary page options
+   Report status: changed recently */
+
+"Changed" = "更改";
+
+/* User-visible name of the view */
+"Changes" = "更改";
+
+/* long label for Check Now
+   short label for Check Now */
+
+"Check Now" = "现在检查";
+
+/* tooltip for Check Now */
+"Check the site now" = "现在检查网站";
+
+/* User-visible name of the view */
+"Checks" = "检查";
+
+/* Test Editor summary page check counts */
+"checks: %d, successes: %d, failures: %d, recoveries: %d" = "检查: %1$d, 成功: %2$d, 失败: %3$d, 恢复: %4$d";
+
+/* Setup Assistant next action when not importing */
+"Choose a browser or file, or click Finish to close the assistant." = "选择一个浏览器或文件,或单击完成关闭助理";
+
+/* confirmation for Pause > 1 */
+"Choose the amount of time to pause these %@:" = "选择时间来暂停这些 %@:";
+
+/* Setup Assistant next action when importing */
+"Click Continue to choose which URLs to import as Tests." = "点击继续选择要导入的网站作为测试";
+
+/* short day singular */
+"day" = "天";
+
+/* short day plural */
+"days" = "天";
+
+/* StatusMenu tooltip */
+"Dejal Simon" = "Dejal 在线商店";
+
+/* Delete button title */
+"Delete" = "删除";
+
+/* Delete Service sheet info */
+"Delete or change that test if you want to delete this service." = "删除或者更改这个测试服务";
+
+/* Delete Services sheet info */
+"Delete or change those tests if you want to delete this service." = "删除或者更改这个测试服务";
+
+/* Report detail page */
+"Detail" = "细节";
+
+/* Status: disabled */
+"disabled" = "已停用";
+
+/* Auto Pause next date with expired trial license
+   Notifiers disabled due to expired trial license */
+
+"disabled due to trial expiry" = "由于试用期满禁用";
+
+/* message for Reset Reports Cache */
+"Do you wish to reset the reports cache for all reports?" = "你想要重置报告缓存所有报告吗?";
+
+/* Info Done button title */
+"Done" = "完成";
+
+/* Next Check Date: due prefix */
+"due in %@" = "将在 %@";
+
+/* Info Edit button title */
+"Edit" = "编辑";
+
+/* Next Check Date: currently editing the test
+   Status: currently editing
+   Status: currently editing the filter
+   Status: currently editing the notifier
+   Status: currently editing the report
+   Status: currently editing the service */
+
+
+
+
+
+"editing" = "编辑";
+
+/* Change text end not found error message */
+"End change text was not found in the file" = "最终更改文本不存在";
+
+/* Filter input popup variable suffix */
+"Error" = "错误";
+
+/* Filter input popup variable */
+"Error Message" = "错误信息";
+
+/* Preview load error */
+"Error: %@" = "错误：%@";
+
+/* Reports List frequency */
+"every %@" = "每一个 %@";
+
+/* Test Editor summary page reports */
+"excluded from" = "排除";
+
+/* Test Editor summary page reports */
+"excluded from all" = "排除所有";
+
+/* Descriptive status for share sheet
+   Descriptive status for variables */
+
+"failed" = "失败";
+
+/* Report status: bad now */
+"Failed" = "出现故障";
+
+/* Filter Editor summary page options
+   Notifier Editor summary page options */
+
+"Failure" = "失败";
+
+/* User-visible name of the view */
+"Failures" = "失败";
+
+/* Singular label */
+"filter" = "过滤器";
+
+/* Filter input popup heading prefix
+   Filter input popup variable prefix */
+
+"Filter #%d " = "过滤器 #%d ";
+
+/* Filter error message wrapper */
+"Filter #%d (%@): %@" = "过滤器 #%1$d (%2$@): %3$@";
+
+/* Filter input popup variable */
+"Filter Error" = "过滤错误";
+
+/* Report status: filtering */
+"Filtering Now" = "现在过滤";
+
+/* Preview Test group
+   User-visible name of the view */
+
+"Filters" = "过滤器";
+
+/* Plural label */
+"filters" = "过滤器";
+
+/* short label for Forums */
+"Forums" = "论坛";
+
+/* long label for Forward
+   short label for Forward */
+
+"Forward" = "下一页";
+
+/* Descriptive status for share sheet
+   Descriptive status for variables */
+
+"found hotspot login" = "发现登录热点";
+
+/* tooltip for Back */
+"Go back" = "后退";
+
+/* tooltip for Forward */
+"Go forward" = "前进";
+
+/* Descriptive status for variables */
+"gone offline" = "离线了";
+
+/* Preview placeholder for group selection */
+"Group Selection" = "选择群组";
+
+/* Descriptive status for share sheet */
+"has an unknown status" = "有一个未知的状态";
+
+/* Filter input popup variable */
+"Header Text" = "标题文本";
+
+/* short label for Help */
+"Help" = "帮助";
+
+/* Password info */
+"Hint: %@" = "提示: %@";
+
+/* short hour singular */
+"hr" = "小时";
+
+/* short hour plural */
+"hrs" = "小时";
+
+/* Setup Assistant open sheet button title */
+"Import" = "导入";
+
+/* Test Editor summary page options */
+"included for check all" = "包含所有检查";
+
+/* Test Editor summary page reports */
+"included on" = "包含";
+
+/* Test Editor summary page reports */
+"included on all" = "包括所有";
+
+/* Report Editor summary page options */
+"includes detail" = "包括细节";
+
+/* Report Editor summary page options */
+"includes summary" = "包括汇总";
+
+/* Next Check Date: paused indefinitely */
+"indefinitely" = "无限";
+
+/* User-visible name of the view */
+"Info" = "信息";
+
+/* Install button title */
+"Install" = "安装";
+
+/* No comment provided by engineer. */
+"It will be copied to the Plugins folder within the Simon data folder, but it won't be available until the next time Simon is launched." = "它将复制数据到 Simon 的插件文件夹内的,但它在 Simon 下次启动才可用";
+
+/* Descriptive status for share sheet */
+"just changed" = "只改变";
+
+/* Descriptive status for share sheet */
+"just recovered" = "只恢复";
+
+/* Descriptive status for share sheet */
+"last changed" = "最后更改";
+
+/* Reports List dates */
+"Last report: %@; next report: %@" = "最后报告: %1$@; 下次报告: %2$@";
+
+/* Later button title */
+"Later" = "稍后";
+
+/* Licenses... button title */
+"Licenses..." = "许可...";
+
+/* Preview Report info */
+"Loading" = "正在载入";
+
+/* Preview status while loading the transcript */
+"Loading..." = "正在载入…";
+
+/* Logging preference page title */
+"Logging" = "正在载入";
+
+/* long label for Mark Flagged */
+"Mark as Viewed" = "标记为已读";
+
+/* short minute singular */
+"min" = "分钟";
+
+/* Test Editor summary page time between failures */
+"min: %@, max: %@, average: %@" = "分钟: %1$@, 最大: %2$@, 平均: %3$@";
+
+/* Test Editor summary page check duration */
+"min: %@, max: %@, average: %@, last: %@" = "分钟: %1$@, 最大: %2$@, 平均: %3$@, 最后: %4$@";
+
+/* short minute plural */
+"mins" = "分钟";
+
+/* User-visible name of the view */
+"Mode" = "模式";
+
+/* short month singular */
+"mth" = "月";
+
+/* short month plural */
+"mths" = "月";
+
+/* Preview placeholder for multiple selection */
+"Multiple Selection" = "多重选择";
+
+/* confirmation info for Reset Stats > 1 */
+"Multiple tests are selected, so this applies to these tests; select one to only reset that, or select none to reset all." = "多个测试被选择，所以这也适用于这些测试; 选择一个重置，或选择重置所有";
+
+/* Editor summary page multiple values
+   Item multiple values placeholder */
+
+"multiple values" = "多个值";
+
+/* Last Changed Date: not available
+   Optional interval with no value
+   Tests List not applicable */
+
+
+"n/a" = "n/a";
+
+/* Auto Pause next date when no Auto Pause set
+   Date that has never occurred
+   Last Date: never
+   Tests List never failed */
+
+
+
+"never" = "永不";
+
+/* short label for Add Test */
+"New" = "新建";
+
+/* Report status: changed now */
+"New Change" = "新变化";
+
+/* long label for Add Test */
+"New Test" = "新建测试";
+
+/* Auto Pause next date prompt */
+"Next auto pause due: " = "接下来自动暂停，由于自动设置为: ";
+
+/* Report unviewed flag: no */
+"No" = "不";
+
+/* Filter Editor summary page options */
+"no change detection | detects changes" = "检测没有变化";
+
+/* Tests List no error */
+"no error" = "无错误";
+
+/* Filter Editor no filter plugins found */
+"No filter plug-ins found" = "未找到过滤器插件";
+
+/* Preview placeholder for no test location */
+"No Location (reload when ready)" = "没有位置（准备就绪）";
+
+/* Notifier Editor no notifier plugins found */
+"No notifier plug-ins found" = "没有发现通知插件";
+
+/* Preview placeholder for not supported selection */
+"No Preview Available" = "无可用预览";
+
+/* Report Editor no report plugins found */
+"No report plug-ins found" = "没有发现报告插件";
+
+/* Preview placeholder for no selection */
+"No Selection" = "无选择";
+
+/* Service Editor no service plugins found */
+"No service plug-ins found" = "没有找到服务插件";
+
+/* Test Editor no services found */
+"No services found" = "没有找到服务";
+
+/* Share menu with no services available */
+"No Sharing Options" = "没有共享选项";
+
+/* Report Editor no report templates found */
+"No templates found" = "没有找到模板";
+
+/* Filter Editor summary page options */
+"no test configuration | allows test configuration" = "没有测试配置|允许测试配置";
+
+/* confirmation info for Reset Stats 0 */
+"No tests are selected, so this applies to all tests; select some to only reset those." = "没有选择测试,所以这适用于所有的测试,或者只重置选择的这些";
+
+/* No last error
+   No last result
+   Password info
+   Tests List no diff */
+
+
+
+"None" = "无";
+
+/* Filter Editor summary page options
+   Last Downtime: never failed
+   No value when combining item property strings
+   Notifier Editor summary page options
+   Preview unknown result
+   Report Editor summary page options
+   Test Editor summary page with no names */
+
+
+
+
+
+
+"none" = "不排序";
+
+/* Test Editor: No filters for the chosen kind
+   Test Editor: No notifiers for the chosen kind
+   Test Editor: No reports available */
+
+
+"None Available" = "都不可用";
+
+/* Test Editor summary page service */
+"none yet" = "还没有";
+
+/* Descriptive status for variables */
+"not changed" = "没有更改";
+
+/* Test Editor summary page options */
+"not checked when offline" = "未选中时，离线";
+
+/* Next Check Date: not due */
+"not due" = "未闲置";
+
+/* Recovered Date: not yet recovered */
+"not yet" = "没有";
+
+/* Report failures: not yet recovered */
+"Not Yet" = "没有";
+
+/* Singular label */
+"notifier" = "通知人";
+
+/* Plural label */
+"notifiers" = "通知";
+
+/* User-visible name of the view */
+"Notifiers" = "通知";
+
+/* Next Check Date: checking now */
+"now%@: %@ elapsed" = "现在%1$@: %2$@ 运行";
+
+/* Report status: offline */
+"Offline" = "离线";
+
+/* OK button title */
+"OK" = "确定";
+
+/* Password info */
+"Old password hint: %@" = "旧密码提示: %@";
+
+/* Test Editor summary page frequency */
+"on success: %@; on failure: %@" = "成功: %1$@; 失败: %2$@";
+
+/* confirmation info for Reset Stats 1 test */
+"One test is selected, so this applies to only this test; select none or multiple to reset those too." = "选择一个测试,所以这只适用于这个测试;选择有一个或多个重置";
+
+/* tooltip for Visit Site */
+"Open the site in your browser" = "在浏览器中打开该网站";
+
+/* Filter input popup variable
+   Filter input popup variable suffix */
+
+"Output Text" = "输出文本";
+
+/* short label for Pause Testing */
+"Pause" = "暂停";
+
+/* Pause sheet title */
+"Pause %@" = "暂停 %@";
+
+/* Pause sheet title via Status menu */
+"Pause Test" = "暂停测试";
+
+/* long label for Pause Testing */
+"Pause Testing" = "暂停测试";
+
+/* Status: paused */
+"paused" = "暂停";
+
+/* Report status: paused */
+"Paused" = "暂停";
+
+/* Next Check Date: paused column time */
+"paused %@" = "暂停 %@";
+
+/* Preview placeholder for paused selection */
+"Paused Selection" = "暂停选择";
+
+/* Setup Assistant open sheet message */
+"Please choose a file containing URLs:" = "请选择一个文件包含网址:";
+
+/* confirmation for Pause 1 */
+"Please indicate the amount of time to pause the selected %@:" = "请注明时间暂停选值 %@:";
+
+/* confirmation for Pause 1 via Status menu */
+"Please indicate the amount of time to pause the selected Test:" = "请注明选定暂停时间测试值：:";
+
+/* Preview mode
+   User-visible name of the view */
+
+"Preview" = "预览";
+
+/* Filter input popup heading */
+"Previous Filter Variables:" = "过滤值:";
+
+/* Next Check Date: ready to start check */
+"queued %@" = "队列 %@";
+
+/* Next Check Date: in queue awaiting start */
+"queued manually" = "自动队列";
+
+/* Quit button title */
+"Quit" = "退出";
+
+/* Descriptive status for share sheet
+   Descriptive status for variables */
+
+"recently recovered" = "最近恢复";
+
+/* Descriptive status for variables */
+"recovered" = "恢复";
+
+/* Report status: bad recently */
+"Recovered" = "恢复";
+
+/* Notifier Editor summary page options */
+"Recovery" = "恢复";
+
+/* Singular label */
+"report" = "报告";
+
+/* short label for Report Now */
+"Report Now" = "现在报告";
+
+/* User-visible name of the view */
+"Reports" = "报告";
+
+/* Plural label */
+"reports" = "报告";
+
+/* Filter input popup variable */
+"Request Text" = "请求文本";
+
+/* Reset button title */
+"Reset" = "重设";
+
+/* Last Date: reset column time */
+"reset %@" = "重置 %@";
+
+/* Filter input popup variable */
+"Response Text" = "回复文本";
+
+/* Filter input popup variable */
+"Result Code" = "结果代码";
+
+/* short label for Resume Testing */
+"Resume" = "继续";
+
+/* long label for Resume Testing */
+"Resume Testing" = "恢复测试";
+
+/* Save menu command */
+"Save %@ Log…" = "保存 %@ 日志…";
+
+/* Script preference page title */
+"Script" = "文字";
+
+/* Search Log placeholder text */
+"Search %@" = "搜索 %@";
+
+/* short second singular */
+"sec" = "秒";
+
+/* short second plural */
+"secs" = "秒";
+
+/* Singular label */
+"service" = "服务";
+
+/* Preview Test group */
+"Service" = "服务";
+
+/* Filter input popup heading */
+"Service Variables:" = "服务变量:";
+
+/* Plural label */
+"services" = "服务";
+
+/* User-visible name of the view */
+"Services" = "服务器";
+
+/* Default filename for Save panel */
+"Simon %@.txt" = "Simon %@.txt";
+
+/* No comment provided by engineer. */
+"Simon plug-ins must be installed before use.  Do you wish to install the %@ plug-in now?" = "Simon 插件在使用前必须安装。你想要安装吗 %@ 插件呢";
+
+/* No comment provided by engineer. */
+"Simon plug-ins must be installed before use.  Do you wish to install them now?" = "Simon 插件在使用前必须安装。你现在想安装它们吗?";
+
+/* Setup Assistant heading */
+"Simon Setup Assistant" = "Simon 设置助理";
+
+/* Test Editor summary page options */
+"skipped for check all" = "跳过所有检查";
+
+/* Report Editor summary page options */
+"skips paused tests" = "跳过暂停测试";
+
+/* Too old data version explanation */
+"Sorry, Simon can no longer read the very old data format that you have.  Please either delete the data files (located in your Preferences folder), or use an older version of Simon to upgrade.  Please contact Dejal for assistance." = "对不起，Simon 不能读取旧数据格式，要么删除旧数据文件（位于首选项文件夹），或使用Simon 旧版本进行升级。 也可以联系Dejal寻求帮助";
+
+/* Filters trial expired message */
+"Sorry, the Filters have been disabled, as your evaluation trial has expired.  Your tests will not be filtered until you purchase Simon.  Please Buy Now." = "对不起,过滤器已被禁用,因为你的试用已经过期。您的测试将不会被过滤,直到你购买 Simon 请现在购买";
+
+/* Notifiers trial expired message */
+"Sorry, the Notifiers have been disabled, as your evaluation trial has expired.  You will not receive any further notifications until you purchase Simon.  Please Buy Now." = "对不起,通知被禁用,因为你的试用已经过期。你将不会收到任何通知,直到你购买 Simon 请现在购买";
+
+/* Preview message */
+"Sorry, the Preview function is not supported by the %@ service." = "对不起,不支持预览功能 %@ 服务";
+
+/* Visit Site message */
+"Sorry, the Visit Site function is not supported by the %@ service." = "对不起,访问网站功能不支持 %@ 服务";
+
+/* Too new data version explanation */
+"Sorry, you had previously used a newer version of Simon, and this older version can not read the data format.  Please upgrade to the latest release.  Contact Dejal if you would like assistance." = "对不起，您的 Simon 版本太新，不能读取旧版本数据格式，请升级到最新版本。 如果需要帮助，请联系我们。";
+
+/* List sort by button prefix */
+"Sort by %@" = "排序方式 %@";
+
+/* Source mode */
+"Source" = "来源";
+
+/* Change text start not found error message */
+"Start change text was not found in the file" = "开始改变文本文件中不存在";
+
+/* Descriptive status for share sheet
+   Descriptive status for variables */
+
+"started checking" = "开始检查";
+
+/* short label for Stop Report */
+"Stop Report" = "停止报告";
+
+/* Preview status when finished successfully */
+"Success" = "成功";
+
+/* Preview status when filter detects a change */
+"Success; input text changed from previous check" = "成功;输入文本从之前检查";
+
+/* Preview status when filter detects no change */
+"Success; input text unchanged from previous check" = "成功; 输入文本从前检查更改";
+
+/* Preview status when filter wants to auto-detects the change */
+"Success; Simon will automatically detect the change state" = "成功; Simon 将自动检测状态变化";
+
+/* Report summary page */
+"Summary" = "摘要";
+
+/* tooltip for Pause Testing */
+"Suspend checks on the tests" = "暂停检查测试";
+
+/* Singular label */
+"test" = "测试";
+
+/* Report status: testing */
+"Testing Now" = "现在测试";
+
+/* User-visible name of the view */
+"Tests" = "测试";
+
+/* Plural label */
+"tests" = "测试";
+
+/* can't delete error for Delete Service */
+"The %@ service can not be deleted, as it is used by the %@ test%@" = "该 %1$@ 服务不能被删除，因为它正在使用 %2$@ 测试%3$@";
+
+/* Password info */
+"The old password is incorrect; please try again." = "旧密码不正确,请再试一次";
+
+/* Password info */
+"The old password is incorrect; sorry, no hint available." = "对不起，旧密码不正确,无提示";
+
+/* Password info */
+"The old password is incorrect; too many attempts." = "旧密码不正确; 你尝试的次数太多";
+
+/* Password info */
+"The password is incorrect; please try again." = "密码不正确,请再试一次";
+
+/* Password info */
+"The password is incorrect; sorry, no hint available." = "对不起,密码不正确,没有可用提示";
+
+/* Password info */
+"The password is incorrect; too many attempts." = "密码是不正确的,你已经尝试次数太多";
+
+/* Password info */
+"The password will not be shown." = "该密码将不显示";
+
+/* Password info */
+"The passwords do not match." = "密码不匹配";
+
+/* Too many tests title */
+"There are too many tests." = "测试任务过多";
+
+/* Setup Assistant too many URLs message text. */
+"There are too many URLs selected for import." = "选择太多了导入网址";
+
+/* No comment provided by engineer. */
+"They will be copied to the Plugins folder within the Simon data folder, but they won't be available until the next time Simon is launched." = "他们将复制到 Simon 插件文件夹内的数据文件夹,但他们在下次西蒙才可以启动";
+
+/* Visit Site info */
+"This function is available for services like Web that can be displayed in a web browser." = "这个函数是用于Web服务,可以显示在一个Web浏览器";
+
+/* Preview info */
+"This function is available for services like Web that have source text or a transcript." = "这个函数用于Web服务的源文本或文本";
+
+/* Delete sheet info */
+"This operation can not be undone." = "此操作不能撤销";
+
+/* Report HTML Simon version for error page */
+"This page generated by <a href=\"http://www.dejal.com/simon/\">Dejal Simon</a> version %@." = "这个页面生成的 <a href=\"http://www.dejal.com/simon/\">Dejal Simon</a> 版本 %@.";
+
+/* Test timeout error */
+"Timeout: check failed to complete in time limit" = "超时:检查未能在期限完成";
+
+/* tooltip for Mark Flagged */
+"Toggle the Viewed column icon" = "切换浏览栏图标";
+
+/* Transcript mode */
+"Transcript" = "副本";
+
+/* Change text content error message */
+"Unable to check content" = "无法检查内容";
+
+/* Report HTML message for error page */
+"Unable to find the template file for this report page.  It should be in the \"%@\" folder on your Simon computer, and should be named \"index\" with any extension." = "无法找到此报告页面的模板文件。它应该在 \"%@\" 您的电脑 Simon 文件夹，应该命名为“index”或其他扩展
+";
+
+/* Too new or old data version heading */
+"Unable to use data from Simon %@" = "无法使用数据，从 Simon %@";
+
+/* Filter Editor summary page options */
+"Unchanged" = "不变";
+
+/* Preview unknown type */
+"unknown" = "未知";
+
+/* Report status: unknown */
+"Unknown" = "未知";
+
+/* Preview unknown date */
+"unsuccessful" = "不成功";
+
+/* short label for Mark Flagged */
+"Unviewed" = "未查看";
+
+/* info for Reset Reports Cache */
+"Useful if report files have been deleted manually.  Some reports may take longer to output next time." = "如果报告文件已被手动删除，一些报告可能需要较长时间才能输出下到一次";
+
+/* Filter input popup heading suffix */
+"Variables:" = "变量：";
+
+/* long label for Help */
+"View Help Book" = "查看帮助";
+
+/* tooltip for Help */
+"View the Help Book" = "查看帮助";
+
+/* long label for Forums */
+"Visit Forums" = "访问论坛";
+
+/* long label for Visit Site
+   short label for Visit Site */
+
+"Visit Site" = "访问网站";
+
+/* tooltip for Forums */
+"Visit the Dejal Forums" = "访问 Dejal 论坛";
+
+/* Next Check Date: test is currently waiting for something
+   Status: currently waiting for something
+   Status: filter is currently waiting for something
+   Status: notifier is currently waiting for something
+   Status: report is currently waiting for something
+   Status: service is currently waiting for something */
+
+
+
+
+
+"waiting" = "正在等待";
+
+/* Descriptive status for share sheet */
+"was paused" = "暂停";
+
+/* Descriptive status for share sheet */
+"went offline" = "保持离线";
+
+/* short week singular */
+"wk" = "周";
+
+/* short week plural */
+"wks" = "周";
+
+/* Status: currently outputting the report */
+"working: %d%%" = "工作: %d%%";
+
+/* Report unviewed flag: yes */
+"Yes" = "是";
+
+/* Too many tests explanation */
+"You have %d active tests, but %@ is a streamlined edition for people who only need up to %d tests.\n\nPlease delete or pause %d %@ to bring the total number of active tests within this limit." = "你有 %1$d 活跃测试 %2$@ 是一个精简版只需要 %3$d 测试.\n\n请删除或暂停%4$d %5$@ 该值被限制";
+
+/* Too many tests explanation */
+"You have %d active tests, but your current license only allows a maximum of %d.\n\nPlease click Licenses... to purchase a license allowing more tests, or click Later then delete or pause %d %@ to bring the total number of active tests within this limit." = "你有 %1$d 活跃测试,但当前许可只允许最多 %2$d.\n\n请点击许可......购买许可，允许更多的测试，或单击删除或暂停 %3$d %4$@ 该值被限制";

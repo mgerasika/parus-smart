@@ -1,0 +1,29 @@
+/* Advanced preference page title */
+"Advanced" = "高级";
+
+/* Prefs Restore Defaults Cancel button title */
+"Cancel" = "取消";
+
+/* Preferences window */
+"Could not load the %@ preferences." = "无法加载 %@ 首选项";
+
+/* General preference page title */
+"General" = "通用";
+
+/* Preferences window */
+"Preferences Error" = "偏好设置错误";
+
+/* Prefs Restore Defaults Confirm button title */
+"Restore" = "还原";
+
+/* Prefs Restore Defaults confirmation title */
+"Restore the %@ preferences to their original values?" = "恢复 %@ 到默认";
+
+/* Prefs Restore Defaults confirmation explanation */
+"This will restore all settings on this page to the state they were in when first installed.\n\nOther pages are not affected, but selecting Don't ask again will disable this confirmation on all pages." = "这将恢复所有设置到首次安装时的状态.\n\n其他页面不受影响";
+
+/* Preferences prepare error */
+"Unable to prepare the %@ preferences page." = "无法加载 %@ 参数选择页面";
+
+/* Updates preference page title */
+"Updates" = "更新";

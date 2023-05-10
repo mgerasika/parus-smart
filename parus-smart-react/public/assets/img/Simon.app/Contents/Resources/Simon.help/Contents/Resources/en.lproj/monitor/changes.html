@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Monitor - Changes</title>
+<meta name="description" content="The Changes log in the Monitor window lists recent changes of tests.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Monitor<img src="../../shared/menu-arrow.jpg" alt=" &gt; " />Changes</h1>
+
+<p>The <b>Changes</b> log at the bottom of the <a href="../monitor/index.html"><b>Monitor</b></a> window contains a table listing any changes for the tests.  As with the <a href="../monitor/checks.html">checks table</a>, if no tests are selected, the changes from all tests are listed; if some or one are selected, only the changes from those selected tests are listed.  The columns can be sorted, and the order toggled, as desired.  This table is mainly interesting to see how often a site changes, or when a previous change occurred.</p>
+
+<p>Also included is a search field.  This is useful to refine the information shown in the table even further.  You can select one or more tests in the <a href="../monitor/tests.html">tests</a> table, then enter some text in the search field to view just the table lines that contain that text.</p>
+
+<p>Changes are detected via the filters feature.  Any number of filters can look at the output of the service, and can optionally look for changes from the previous time they checked &mdash; Simon keeps track of the previous text for each filter.  See the <a href="../test/filters/index.html"><b>Filters</b></a> page for more information.</p>
+
+<p>Here are the details of the columns:</p>
+
+<p><b>Change Date</b>: This column displays the date and time that the change occurred, or more precisely when Simon checked the site and detected the change, using the criteria specified in the <a href="../test/index.html">Test Info</a> pane.</p>
+
+<p><b>Test Name</b>: This column displays the name of the test that this relates to; useful when displaying changes for multiple tests.</p>
+
+<p><b>Difference</b>: This column displays the output text from the filters.  It intelligently shows only the part of the text that is different than before, if the changed text is quite long.  If it is very short, it shows the entire changed text.</p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="../monitor/index.html">Monitor window</a></li>
+<li><a href="../test/index.html">Test Info pane</a></li>
+<li><a href="../test/filters/index.html">Test Info Filters</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

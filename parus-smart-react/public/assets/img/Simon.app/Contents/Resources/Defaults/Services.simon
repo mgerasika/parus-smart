@@ -1,0 +1,2328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:41:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:41:00Z</date>
+				<key>Identifier</key>
+				<string>B8EAB8F6-9A50-4CEC-9DF9-2FF4E98D5B66</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service checks for the presence of a specified application, and optionally whether it is currently running.</string>
+		<key>Identifier</key>
+		<string>Application</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Application</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Application</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ApplicationPath</key>
+			<string>/Applications/</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:44:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:44:00Z</date>
+				<key>Identifier</key>
+				<string>C296BCE8-1410-475B-A2E3-F1BCFC70CCEB</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service attempts to resolve a domain name, i.e. that this computer knows where that domain is.</string>
+		<key>Identifier</key>
+		<string>DNS</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>DNS</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>DNS</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>DNSDomain</key>
+			<string></string>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.4b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:46:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:46:00Z</date>
+				<key>Identifier</key>
+				<string>D459CFA1-11A5-49DA-BBA1-DED2CC491B5B</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service will attempt to mount a local, AFP, or SMB volume, to ensure it is available, and optionally dismount it when done.</string>
+		<key>Identifier</key>
+		<string>Mount Volume</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Mount Volume</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>MountService</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>MountUnmount</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:46:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:46:00Z</date>
+				<key>Identifier</key>
+				<string>EEBFEEEF-D465-4C9A-8E6E-C0F75624B62C</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service will use the standard "ping" feature to send network packets to a remote server and track the response time and reliability.</string>
+		<key>Identifier</key>
+		<string>Ping</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Ping</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Ping</string>
+		<key>PluginSettings</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:48:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:48:00Z</date>
+				<key>Identifier</key>
+				<string>39CE4174-5E40-43E3-A5A5-C6F14134F7B6</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that an IMAP mail server is operational.</string>
+		<key>Identifier</key>
+		<string>IMAP</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Incoming Mail (IMAP)</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Port</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>PortNumber</key>
+			<integer>143</integer>
+			<key>PortSteps</key>
+			<array>
+				<dict>
+					<key>BadReceive</key>
+					<string>a001 NO LOGIN failed</string>
+					<key>BadSend</key>
+					<string>a001 logout</string>
+					<key>GoodReceive</key>
+					<string>* OK</string>
+					<key>GoodSend</key>
+					<string>a001 login {Username} {Password}</string>
+				</dict>
+				<dict>
+					<key>BadReceive</key>
+					<string></string>
+					<key>BadSend</key>
+					<string>a001 logout</string>
+					<key>GoodReceive</key>
+					<string>a001 OK</string>
+					<key>GoodSend</key>
+					<string>a001 select inbox</string>
+				</dict>
+				<dict>
+					<key>BadReceive</key>
+					<string></string>
+					<key>BadSend</key>
+					<string>a001 logout</string>
+					<key>GoodReceive</key>
+					<string>a001 OK</string>
+					<key>GoodSend</key>
+					<string>a001 logout</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:54:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:54:00Z</date>
+				<key>Identifier</key>
+				<string>29DAFFC5-8403-41D8-9B81-643B1E6AE551</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that a POP mail server is operational.</string>
+		<key>Identifier</key>
+		<string>POP</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Incoming Mail (POP)</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Port</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>PortNumber</key>
+			<integer>110</integer>
+			<key>PortSteps</key>
+			<array>
+				<dict>
+					<key>BadReceive</key>
+					<string>-ERR</string>
+					<key>BadSend</key>
+					<string>quit</string>
+					<key>GoodReceive</key>
+					<string>+OK</string>
+					<key>GoodSend</key>
+					<string>user {Username}</string>
+				</dict>
+				<dict>
+					<key>BadReceive</key>
+					<string>-ERR</string>
+					<key>BadSend</key>
+					<string>quit</string>
+					<key>GoodReceive</key>
+					<string>+OK</string>
+					<key>GoodSend</key>
+					<string>pass {Password}</string>
+				</dict>
+				<dict>
+					<key>BadReceive</key>
+					<string>-ERR</string>
+					<key>BadSend</key>
+					<string>quit</string>
+					<key>GoodReceive</key>
+					<string>+OK</string>
+					<key>GoodSend</key>
+					<string>quit</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:54:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:54:00Z</date>
+				<key>Identifier</key>
+				<string>F5B1CA00-C2FE-44AC-8E63-818D212943B4</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that a SMTP mail server is operational.</string>
+		<key>Identifier</key>
+		<string>SMTP</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Outgoing Mail (SMTP)</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Port</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>PortNumber</key>
+			<integer>25</integer>
+			<key>PortSteps</key>
+			<array>
+				<dict>
+					<key>BadReceive</key>
+					<string></string>
+					<key>BadSend</key>
+					<string></string>
+					<key>GoodReceive</key>
+					<string>220 </string>
+					<key>GoodSend</key>
+					<string>helo {TestURL}</string>
+				</dict>
+				<dict>
+					<key>BadReceive</key>
+					<string></string>
+					<key>BadSend</key>
+					<string></string>
+					<key>GoodReceive</key>
+					<string>250 </string>
+					<key>GoodSend</key>
+					<string>quit</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:54:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:54:00Z</date>
+				<key>Identifier</key>
+				<string>F80ADD52-631E-4660-8A26-9BDD05797EDF</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Attempts to connect to a secure shell session.</string>
+		<key>Identifier</key>
+		<string>SSH</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>SSH</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Port</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>PortNumber</key>
+			<integer>22</integer>
+			<key>PortSteps</key>
+			<array>
+				<dict>
+					<key>BadReceive</key>
+					<string></string>
+					<key>BadSend</key>
+					<string></string>
+					<key>GoodReceive</key>
+					<string>SSH-</string>
+					<key>GoodSend</key>
+					<string>SSH-2.0-Simon</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:55:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:55:00Z</date>
+				<key>Identifier</key>
+				<string>51AD20B7-1248-461C-989F-3ECEA52C10DB</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Script to check drive capacity threshold, S.M.A.R.T. status, and RAID health.</string>
+		<key>Identifier</key>
+		<string>Script - Drive Status</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Drive Status</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Script to check drive capacity threshold, S.M.A.R.T. status, and RAID health by Scott Haneda scott@hostizard.com 
+
+Any single failure is a failure to be looked into.  This test is not to alert you which of RAID, Capacity, and S.M.A.R.T. failed, but rather, to alert you to look at your drives and see what is wrong. 
+
+Set Debug to 1 if you are having troubles Set Max Capacity to a percentage value that your drive should not exceed (ie: 90).</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+				<key>1</key>
+				<string>RAID, CAPACITY or SMART failure</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>#Debug this file?
+debug={Debug} # Set to 0 to turn off all debugging
+if [[ $debug = 1 ]]; then echo "(INFO) DEBUGGING is ON"; fi 
+
+# Where do you want this output saved?
+# Needs to be somewhere that http can serve it on this machine
+# Does not end in trailing slash
+save_path=/tmp
+
+# Filename you want to save the results to
+save_filename=drive_status.txt
+
+# Threshold for when a drive is too full, in integer, as percent
+drive_capacity_thresh={Max Capacity}
+
+# -- DO NOT EDIT BELOW THIS LINE -- #
+
+# Just in case, make the path, so we can avoid error checking it
+mkdir -p $save_path
+
+# Set the path to the entire filename
+save_path=$save_path/$save_filename
+
+if [[ $debug = 1 ]]; then echo "(INFO) save_path: $save_path"; fi;
+
+
+# --
+# Start check capacity
+# --
+
+# Clear out the $save_path file, add a date into the file
+echo '' &gt; $save_path
+echo "File last updated on: `date`" &gt;&gt; $save_path
+
+# Check the `df` or capacity status on all drives
+df | grep '/dev/' | while read df_line; 
+do
+	# Get the volume identifier
+	volume_id=`echo $df_line | awk '{print $1;}'`
+	
+	# Must ignore disk images, they already exist on the main mount, so why bother checking
+	# grep EXIT STATUS 0 means found, 1 means no match
+	is_dmg=`diskutil info $volume_id | grep 'Disk Image'`
+	if [[ $? -eq 0 ]]; then
+		if [[ $debug = 1 ]]; then echo "(Capacity) Found a .dmg, aborting capacity check"; fi;
+		continue
+	fi
+		
+	# Get the current used space of the volume
+	volume_used=`echo $df_line | awk '{print $5;}' | sed 's/%//g'`
+
+	if [[ $volume_used -ge $drive_capacity_thresh ]]
+	then
+		if [[ $debug = 1 ]]; then echo "(Capacity) $volume_id is more than $drive_capacity_thresh% full"; fi;
+		echo "Capacity ($volume_id $volume_used%): FAILURE" &gt;&gt; $save_path
+	else
+		if [[ $debug = 1 ]]; then echo "(Capacity) $volume_id is less than $drive_capacity_thresh% full"; fi;
+		echo "Capacity ($volume_id $volume_used%): SUCCESS" &gt;&gt; $save_path
+	fi
+done
+
+# --
+# End check capacity
+# --
+
+# --
+# Start S.M.A.R.T. checking
+# --
+
+# Fetches just the volume id so we can check S.M.A.R.T. on that volume
+my_disks=`diskutil list | grep 'partition_scheme' | awk '{print $5;}'`
+
+for i in $my_disks
+do
+	if [[ $debug = 1 ]]; then echo "(S.M.A.R.T.) Starting to check on $i"; fi;
+	smart_result=`diskutil info $i`
+	
+	# Must ignore disk images, they always fail S.M.A.R.T and are not worth testing
+	is_dmg=`echo "$smart_result" | grep 'Disk Image'`
+	if [[ $? -eq 1 ]]; then
+		if [[ $debug = 1 ]]; then echo "(S.M.A.R.T.) Found a .dmg, aborting smart check"; fi;
+		continue
+	fi
+
+	# Parse out the S.M.A.R.T. status
+	# grep EXIT STATUS 0 means found, 1 means no match
+	smart_result=`echo "$smart_result" | grep -E 'SMART Status\:[[:space:]]+[Verified | Not Supported]'`
+	if [[ $? -eq 1 ]]
+	then
+		if [[ $debug = 1 ]]; then echo "(S.M.A.R.T.) SMART is failing"; fi;
+		echo "S.M.A.R.T. status on ($i): FAILURE" &gt;&gt; $save_path
+	else
+		if [[ $debug = 1 ]]; then echo "(S.M.A.R.T.) SMART passed test on $i"; fi;
+		echo "S.M.A.R.T. status on ($i): SUCCESS" &gt;&gt; $save_path
+	fi
+done
+
+# --
+# End check S.M.A.R.T.
+# --
+
+
+# --
+# Start RAID checking
+# --
+
+# Feteches the entire status of all RAID drives
+# Maybe later, iterate them, but I do not have more than one raid to test
+raid_result=`diskutil checkRaid`
+
+# As far as I can tell, the data from diskutil will always have
+# 'No RAID sets found' if it is not supported
+
+echo "$raid_result" | grep --silent 'No RAID sets found'
+if [[ $? -eq 0 ]]
+then
+	# Do nothing, we are not interested in this test, there is no RAID
+	if [[ $debug = 1 ]]; then echo "(RAID) No RAID sets found"; fi;
+else
+	# Found a RAID set to test, start poking at it
+	if [[ $debug = 1 ]]; then echo "(RAID) RAID SETS found"; fi;
+
+	# grep EXIT STATUS 0 means found, 1 means no match
+	echo "$raid_result" | grep -i --silent degraded
+
+	# Check the result of the last grep command $? is bash last command
+	if [[ $? -eq 0 ]]
+	then
+		if [[ $debug = 1 ]]; then echo "(RAID) RAID is Degraded"; fi;
+		echo "RAID status: FAILURE" &gt;&gt; $save_path
+	else
+		if [[ $debug = 1 ]]; then echo "(RAID) RAID is Online"; fi;
+		echo "RAID status: SUCCESS" &gt;&gt; $save_path
+	fi
+fi
+
+# --
+# End RAID checking
+# --
+
+# Show me the results
+if [[ $debug = 1 ]]; then cat $save_path; fi;
+
+# grep EXIT STATUS 0 means found, 1 means no match
+cat $save_path | grep --silent 'FAILURE'
+if [[ $? -eq 0 ]]
+then
+		if [[ $debug = 1 ]]; then echo "Something is going wrong with your drives"; fi;
+		exit 1
+else
+		if [[ $debug = 1 ]]; then echo "All remote drives passed testing SMART, RAID, and CAPACITY"; fi;
+		exit 0
+fi
+
+# Change log
+# 09:48 PM Wednesday 10/13/2008
+# Initial script written by merging three scripts
+
+# 07:31 PM Wednesday 10/15/2008
+# Went with "grep -E 'SMART Status\:[[:space:]]+Verified" for the S.M.A.R.T. check
+# This should remove any chance for a false positive
+# Added in debug variable, and changed the way paths worked for '$save_path'
+
+# 03:43 PM Monday 01/19/2009
+# Converted script to work locally, just for Dejal Simon users
+# Changed S.M.A.R.T. section grep search string to 'partition_scheme' from
+#	apple_partition_scheme since the latter was too strict a string
+# Excluded .dmg files from capacity check
+# Added in cleaner debug lines, to know where the chcek is at in the run
+
+
+</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>Debug</key>
+				<string>1</string>
+				<key>Max Capacity</key>
+				<string>90</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>3.7a2</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2014-07-10T18:35:00Z</date>
+				<key>DayToDate</key>
+				<date>2014-07-10T18:35:00Z</date>
+				<key>Identifier</key>
+				<string>ACC6B00C-D44D-4B92-A089-47800D2A35D0</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Fetch a list of messages in an email mailbox via IMAP.  Outputs the list of messages.</string>
+		<key>Identifier</key>
+		<string>Email Receive</string>
+		<key>IntroRelease</key>
+		<string>3036b</string>
+		<key>LastSaveDate</key>
+		<date>2014-07-10T18:38:58Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Email Receive</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-01T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-01T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>E-mail</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>EmailServiceMode</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>3.7a2</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2014-07-10T18:34:00Z</date>
+				<key>DayToDate</key>
+				<date>2014-07-10T18:34:00Z</date>
+				<key>Identifier</key>
+				<string>2C16FF3B-4BAC-4EC0-B10F-16CD77B5E842</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Send email via SMTP, e.g. as a periodic "checking in", or to test that a SMTP server is working correctly.</string>
+		<key>Identifier</key>
+		<string>Email Send</string>
+		<key>IntroRelease</key>
+		<string>3036b</string>
+		<key>LastSaveDate</key>
+		<date>2014-07-10T18:38:58Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Email Send</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-01T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-01T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>E-mail</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>EmailServiceMode</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>3.7a2</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2014-07-10T18:36:00Z</date>
+				<key>DayToDate</key>
+				<date>2014-07-10T18:36:00Z</date>
+				<key>Identifier</key>
+				<string>F6F7C482-1E2B-4329-8411-06552FAFE3C1</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Send a special message, and confirm that it is received.  A message with a unique identifier is sent via a SMTP server, and the list of messages in an IMAP mailbox are fetched until that message is received (it is then automatically removed).</string>
+		<key>Identifier</key>
+		<string>Email Cycle</string>
+		<key>IntroRelease</key>
+		<string>3036b</string>
+		<key>LastSaveDate</key>
+		<date>2014-07-10T18:38:58Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Email Cycle</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-01T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-01T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>E-mail</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>EmailServiceMode</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5.1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2009-03-25T22:58:00Z</date>
+				<key>DayToDate</key>
+				<date>2009-03-25T22:58:00Z</date>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks for a change in permissions, owners, size or date of a file or directory contents.</string>
+		<key>Identifier</key>
+		<string>Script - File Attributes</string>
+		<key>IntroRelease</key>
+		<string>3002b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-24T20:44:46Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>File Attributes</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks for a change in permissions, owners, size or date of a file or directory contents.  Specify the full path of a file or directory.  Wildcards can be used to check multiple files at once.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>ls -la {File Path}
+</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>File Path</key>
+				<string>/path/to/file</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2c1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:55:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:55:00Z</date>
+				<key>Identifier</key>
+				<string>B0F8E65E-B6C9-48D4-B4B0-F41188226E13</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks if a file exists and is writable.</string>
+		<key>Identifier</key>
+		<string>Script - File is Writable</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>File is Writable</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks if a file exists and is writable.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>test -w {File Path}
+</string>
+			<key>ScriptType</key>
+			<string>C Shell: /bin/csh</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>File Path</key>
+				<string>/path/to/file</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5.5</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:55:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:55:00Z</date>
+				<key>Identifier</key>
+				<string>E71E4A49-F36F-4C15-AF58-F3A67099CE79</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that Simon can connect to a FileMaker Server.</string>
+		<key>Identifier</key>
+		<string>Script - FileMaker Server</string>
+		<key>IntroRelease</key>
+		<string>2100</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>FileMaker Server</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks that it can connect to a FileMaker Server.  Enter the server's IP address or domain name.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+				<key>1</key>
+				<string>Server isn't running</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>nc -zw 3 {IP or Domain} 5003
+
+</string>
+			<key>ScriptType</key>
+			<string>TENEX C Shell: /bin/tcsh</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>IP or Domain</key>
+				<string>127.0.0.1</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2b5</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:56:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:56:00Z</date>
+				<key>Identifier</key>
+				<string>F2E0D00C-94B7-4CF2-9E3B-81295C8DDE2C</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Connects to a FTP server and obtains a directory listing of a specified directory.</string>
+		<key>Identifier</key>
+		<string>Script - FTP Directory Listing</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>UpgradeRelease</key>
+		<string>3009b</string>
+		<key>OriginalSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>LastSaveDate</key>
+		<date>2011-07-14T20:20:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>FTP Directory Listing</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Connects to a FTP server and obtains a directory listing of a specified directory.  Enter the domain and directory path to use.  Also enter a username and password if needed.  You can use the Filter feature to detect additions and other changes.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>ftp -n {Domain} &lt;&lt; EOF
+user {Username} {Password}
+cd {Directory Path}
+ls
+EOF
+</string>
+			<key>ScriptType</key>
+			<string>C Shell: /bin/csh</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>Directory Path</key>
+				<string>public_html</string>
+				<key>Domain</key>
+				<string>example.com</string>
+				<key>Password</key>
+				<string></string>
+				<key>Username</key>
+				<string></string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.3.5a2</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:56:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:56:00Z</date>
+				<key>Identifier</key>
+				<string>5CBE9783-C86B-4F1F-BD88-FE391D324FA8</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that a POP3/SSL server is responding.</string>
+		<key>Identifier</key>
+		<string>Script - POP via SSL</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Incoming Mail (POP) via SSL</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks that a POP3/SSL server is responding.  Allow at least 90 seconds for check to fail or succeed.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>openssl s_client -connect {Server name}:{Server port} &lt; /dev/null | grep '^+OK '
+</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>Server name</key>
+				<string></string>
+				<key>Server port</key>
+				<string>995</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.6a6</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:56:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:56:00Z</date>
+				<key>Identifier</key>
+				<string>E3F4C518-1AE1-4AD5-8EEF-46D6274BFB72</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Lists applications/processes that are using internet access.</string>
+		<key>Identifier</key>
+		<string>Script - Internet Access</string>
+		<key>IntroRelease</key>
+		<string>2100</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Internet Access</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Lists applications/processes that are using internet access.</string>
+			<key>ScriptSource</key>
+			<string>lsof -Pni +c0 | tail +2 | cut -f1 -d" " | sort | uniq
+</string>
+			<key>ScriptType</key>
+			<string>C Shell: /bin/csh</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2b4</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:56:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:56:00Z</date>
+				<key>Identifier</key>
+				<string>DEB85D32-9B79-423C-A2B8-BFB3A0D9B2AA</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service will result in a failure if a specified application is not running.</string>
+		<key>Identifier</key>
+		<string>Script - Is App Running</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Is App Running</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Enter the name of an application.  This service will result in a failure if that application is not running.</string>
+			<key>ScriptLastType</key>
+			<string>AppleScript: /usr/bin/osascript</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+				<key>1</key>
+				<string>The application isn't running</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>on run
+	tell application "System Events"
+		if process "{Application}" exists then
+			return 0
+		else
+			return 1
+		end if
+	end tell
+end run
+</string>
+			<key>ScriptType</key>
+			<string>AppleScript: /usr/bin/osascript</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>Application</key>
+				<string>iTunes</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>3.6b2</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2006-11-28T20:49:00Z</date>
+				<key>DayToDate</key>
+				<date>2006-11-28T20:49:00Z</date>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service will connect to a specified MySQL database and perform a query, to ensure it is fully operational.</string>
+		<key>Identifier</key>
+		<string>MySQL</string>
+		<key>IntroRelease</key>
+		<string>3031b</string>
+		<key>LastSaveDate</key>
+		<date>2013-12-03T01:05:18Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>MySQL</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>MySQL</string>
+		<key>PluginSettings</key>
+		<dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2b4</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:57:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:57:00Z</date>
+				<key>Identifier</key>
+				<string>5BD8CFDF-433C-4319-997C-F407FB143DEF</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Gets the help for MySQL, indicating that it is installed and runs correctly.</string>
+		<key>Identifier</key>
+		<string>Script - MySQL Works</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>MySQL Works</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Gets the help for MySQL, indicating that it is installed and runs correctly.</string>
+			<key>ScriptSource</key>
+			<string>/usr/local/mysql/bin/mysql --help</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.3.5a2</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:57:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:57:00Z</date>
+				<key>Identifier</key>
+				<string>E45B0534-1A85-49B3-8CA5-C15240025D67</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that an NTP server is responding.  Does NOT test if the response makes any sense.</string>
+		<key>Identifier</key>
+		<string>Script - NTP</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Network Time (NTP)</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks that an NTP server is responding.  Does NOT test if the response makes any sense.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>echo -n '[   !!!!0000NONE111111112222222233333333Success!' | \
+  nc -w 1 -u {Server Name} 123 | \
+  grep 'Success!'
+</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>Server Name</key>
+				<string>time.apple.com</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.3.5a2</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:57:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:57:00Z</date>
+				<key>Identifier</key>
+				<string>3C56F158-CCE5-4163-BAAA-E537F21728FC</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that an SMTP/SSL server is responding.</string>
+		<key>Identifier</key>
+		<string>Script - SMTP via SSL</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Outgoing Mail (SMTP) via SSL</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks that an SMTP/SSL server is responding.  Allow at least 90 seconds for check to fail/complete.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>openssl s_client -connect {Server name}:{Server port} &lt; /dev/null | grep '^220 '
+</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>Server name</key>
+				<string></string>
+				<key>Server port</key>
+				<string>465</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.4b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:57:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:57:00Z</date>
+				<key>Identifier</key>
+				<string>65876AA5-3F3B-4891-B238-0F21E5CBF5D3</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Like the Port services, but simply checks if a specified port is open, without actually communicating on it.</string>
+		<key>Identifier</key>
+		<string>Script - Port Available</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Port Available</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Like the Port services, but simply checks if a specified port is open, without actually communicating on it. </string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+				<key>1</key>
+				<string>Port isn't open</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>nc -zw 3 {IP} {Port}
+
+</string>
+			<key>ScriptType</key>
+			<string>TENEX C Shell: /bin/tcsh</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>IP</key>
+				<string>127.0.0.1</string>
+				<key>Port</key>
+				<string>80</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>Identifier</key>
+				<string>3732F46D-6FA0-4DDA-A32C-DC24C944CF30</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>A simple service that always changes.
+
+It simply outputs the current date and time, so every time you check it, a change can be detected.  Add a notifier to be informed that Simon is still working as expected.  If you don't receive a notification, you should check on Simon.</string>
+		<key>Identifier</key>
+		<string>Script - Pulse</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Pulse</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>A simple service that always changes.
+
+It simply outputs the current date and time, so every time you check it, a change can be detected.  Add a notifier to be informed that Simon is still working as expected.  If you don't receive a notification, you should check on Simon.</string>
+			<key>ScriptSource</key>
+			<string>date
+</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2b4</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>Identifier</key>
+				<string>29E4D9A8-FB61-4E51-A875-D02EFDDE8AEF</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Outputs the recent machine restarts and logins, useful to be notified when the machine restarts (if it automatically launches Simon).</string>
+		<key>Identifier</key>
+		<string>Script - Recent Restarts</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Recent Restarts</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Outputs the recent machine restarts and logins, useful to be notified when the machine restarts (if it automatically launches Simon).</string>
+			<key>ScriptSource</key>
+			<string>last</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.5b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>Identifier</key>
+				<string>E063CA71-23B5-44FB-9FC3-A92499D92737</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks the S.M.A.R.T. status of all mounted disk volumes.  Ignores volumes that don't support reporting S.M.A.R.T. status.  Results in a failure if a problem is detected.</string>
+		<key>Identifier</key>
+		<string>Script - S.M.A.R.T. Status</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>S.M.A.R.T. Status</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks the S.M.A.R.T. status of all mounted disk volumes.  Ignores volumes that don't support reporting S.M.A.R.T. status.  Results in a failure if a problem is detected.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+				<key>1</key>
+				<string>The S.M.A.R.T. status indicates a disk hardware problem.</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>-- Get the list of volumes:
+do shell script "diskutil list | grep /dev/"
+
+set volumeList to paragraphs of result
+set n to count of items of volumeList
+set results to 0
+
+repeat with i from 1 to n
+	set thisVolume to item i of volumeList
+	try
+		-- Get the SMART status of this volume:
+		do shell script "diskutil info " &amp; thisVolume &amp; " | grep SMART"
+		set status to result
+		
+		-- If the status is something other than "Not Supported" or "Verified", it's a failure:
+		if (status does not end with "Not Supported") and (word 3 of status is not "Verified") then
+			set results to 1
+		end if
+	end try
+end repeat
+
+return results
+</string>
+			<key>ScriptType</key>
+			<string>AppleScript: /usr/bin/osascript</string>
+			<key>ScriptVariables</key>
+			<dict/>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2c1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>Identifier</key>
+				<string>2B8657C7-69C7-4688-BFFC-AC6CDCA8A441</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that a Samba SMB client is online and responding.</string>
+		<key>Identifier</key>
+		<string>Script - Samba SMB</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>UpgradeRelease</key>
+		<string>3009b</string>
+		<key>OriginalSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>LastSaveDate</key>
+		<date>2011-07-14T20:20:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Samba SMB</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks that a Samba SMB client is online and responding.  Enter the service path.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>smbclient -U {Username} {ServerService} {Password} &lt;&lt;EOF
+quit
+EOF
+</string>
+			<key>ScriptType</key>
+			<string>C Shell: /bin/csh</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>ServerService</key>
+				<string>//server/service</string>
+				<key>Password</key>
+				<string></string>
+				<key>Username</key>
+				<string></string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2b4</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:58:00Z</date>
+				<key>Identifier</key>
+				<string>78FD1FD9-3F61-4FA1-A939-52F154E2A425</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Takes a screenshot whenever the test is checked.</string>
+		<key>Identifier</key>
+		<string>Script - Screenshot</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Screenshot</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Takes a screenshot whenever the test is checked.  Enter the path of a folder to save them to (the folder must already exist).</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>cd {Destination}
+screencapture -xC "Screen-{CheckDateShort}-{CheckTimeShort}.png"
+</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>Destination</key>
+				<string>~/Desktop</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.3.2</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>Identifier</key>
+				<string>63629571-8DB7-47B0-9FE1-8EC08FA69D84</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks on SNMP status, resulting in a failure if it isn't up.</string>
+		<key>Identifier</key>
+		<string>Script - SNMP Status</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>SNMP Status</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks on SNMP status, resulting in a failure if it isn't up.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+				<key>1</key>
+				<string>A SNMP device is down</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>snmpstatus -c public -v 1 {IP} | grep Up:</string>
+			<key>ScriptType</key>
+			<string>TENEX C Shell: /bin/tcsh</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>IP</key>
+				<string></string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2c1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>Identifier</key>
+				<string>FD985579-0976-4FFF-AAC9-3E611E2A1F85</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Results in a failure if the entered error message occurs in today's system.log.</string>
+		<key>Identifier</key>
+		<string>Script - System Log Error</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>System Log Error</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Results in a failure if the entered error message occurs in today's system.log.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Watched error occurred</string>
+				<key>1</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>grep "{Error Message}" /var/log/system.log
+</string>
+			<key>ScriptType</key>
+			<string>C Shell: /bin/csh</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>Error Message</key>
+				<string>crash</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.3.5</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>Identifier</key>
+				<string>D9EBE86B-745C-4C9A-A9D5-E44114FE41AD</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Simple TCP port scanner, check for changes only.  Used to ensure the correct TCP ports are open and closed on your server. </string>
+		<key>Identifier</key>
+		<string>Script - TCP Port Scanner</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>TCP Port Scanner</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Simple TCP port scanner, check for changes only.  Used to ensure the correct TCP ports are open and closed on your server. 
+
+Allow at least five minutes to scan all 65535 ports. </string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>nc -z {Server} {First port}-{Last port}
+
+</string>
+			<key>ScriptType</key>
+			<string>Bourne-Again Shell: /bin/bash</string>
+			<key>ScriptVariables</key>
+			<dict>
+				<key>First port</key>
+				<string>1</string>
+				<key>Last port</key>
+				<string>65535</string>
+				<key>Server</key>
+				<string>localhost</string>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2c1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>Identifier</key>
+				<string>F5C9AFBF-6370-4CE3-8E48-7F9C79B2B510</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>Checks that the local web server (i.e. Personal Web Sharing) is running.</string>
+		<key>Identifier</key>
+		<string>Script - Web Server Running</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Web Server Running</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Script</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>ScriptInstructions</key>
+			<string>Checks that the local web server (i.e. Personal Web Sharing) is running.</string>
+			<key>ScriptResults</key>
+			<dict>
+				<key>0</key>
+				<string>Success</string>
+				<key>1</key>
+				<string>The web server is not running</string>
+			</dict>
+			<key>ScriptSource</key>
+			<string>ps ax | grep -v grep | grep httpd
+</string>
+			<key>ScriptType</key>
+			<string>C Shell: /bin/csh</string>
+			<key>ScriptVariables</key>
+			<dict/>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.2b5</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T18:59:00Z</date>
+				<key>Identifier</key>
+				<string>95CE58AE-23DF-432C-BEB1-C407FCC2BBAD</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service attempts to resolve a domain name using a specified DNS server.</string>
+		<key>Identifier</key>
+		<string>Arbitrary DNS</string>
+		<key>IntroRelease</key>
+		<string>2045b</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Specific DNS</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>ArbitraryDNSService</string>
+		<key>PluginSettings</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T19:02:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T19:02:00Z</date>
+				<key>Identifier</key>
+				<string>2D8F1F59-8BEA-4F07-9D50-04F2AA36B60D</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service will check a file on a FTP site.  Note that it only works with files, not directories; if you want to check a directory listing for changes, use the "FTP Directory Listing" service instead.</string>
+		<key>Identifier</key>
+		<string>FTP</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>FTP</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Basic</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>BasicProtocol</key>
+			<string>ftp://</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>AppVersion</key>
+		<string>2.0b1</string>
+		<key>AutoPauseSettings</key>
+		<array>
+			<dict>
+				<key>DayFromDate</key>
+				<date>2010-10-25T19:03:00Z</date>
+				<key>DayToDate</key>
+				<date>2010-10-25T19:03:00Z</date>
+				<key>Identifier</key>
+				<string>CAEBB42E-9DE4-4D6F-8867-31A4928F64E1</string>
+				<key>Mode</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>Comments</key>
+		<string>This service will check a page on a website.  You can check the root level of a site, or a directory or page within it.  If monitoring your own site, you may wish to monitor a special page or file, to avoid skewing your site stats.</string>
+		<key>Identifier</key>
+		<string>Web (HTTP)</string>
+		<key>IntroRelease</key>
+		<string>2001</string>
+		<key>LastSaveDate</key>
+		<date>2010-10-25T19:03:42Z</date>
+		<key>MajorVersion</key>
+		<integer>1</integer>
+		<key>MinorVersion</key>
+		<integer>1</integer>
+		<key>Mode</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Web (HTTP)</string>
+		<key>NextAutoPauseDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>NextAutoResumeDate</key>
+		<date>4001-01-02T00:00:00Z</date>
+		<key>PauseUntilDate</key>
+		<date>0000-12-30T00:00:00Z</date>
+		<key>PluginIdentifier</key>
+		<string>Basic</string>
+		<key>PluginSettings</key>
+		<dict>
+			<key>BasicProtocol</key>
+			<string>http://</string>
+		</dict>
+	</dict>
+    <dict>
+        <key>AppVersion</key>
+        <string>4.0b7</string>
+        <key>AutoPauseSettings</key>
+        <array/>
+        <key>Comments</key>
+        <string>Checks a RSS feed.</string>
+        <key>GroupIdentifier</key>
+        <string></string>
+        <key>Identifier</key>
+        <string>RSS</string>
+        <key>IntroRelease</key>
+        <string>4008b</string>
+        <key>IsGroup</key>
+        <false/>
+        <key>LastSaveDate</key>
+        <date>2014-12-16T01:16:33Z</date>
+        <key>MajorVersion</key>
+        <integer>1</integer>
+        <key>MinorVersion</key>
+        <integer>2</integer>
+        <key>Mode</key>
+        <integer>0</integer>
+        <key>Name</key>
+        <string>RSS</string>
+        <key>NextAutoPauseDate</key>
+        <date>4001-01-01T00:00:00Z</date>
+        <key>NextAutoResumeDate</key>
+        <date>4001-01-01T00:00:00Z</date>
+        <key>PauseUntilDate</key>
+        <date>0000-12-30T00:00:00Z</date>
+        <key>PluginIdentifier</key>
+        <string>Basic</string>
+        <key>PluginSettings</key>
+        <dict>
+            <key>BasicLeaveURL</key>
+            <true/>
+            <key>BasicProtocol</key>
+            <string>feed://</string>
+        </dict>
+    </dict>
+</array>
+</plist>

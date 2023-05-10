@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Test-Infobereich - Filter</title>
+<meta name="description" content="Hier können Sie neue Filter hinzufügen oder vorhandene bearbeiten, um Änderungen zu entdecken, den Ausgabetext zu filtern oder den Status zu ändern.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta name="translator" content="Ulf Dunkel, DSD.net" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific_de.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Besuchen Sie die Dejal-Website" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Start</a></span> <span id="website"><a href="http://www.dsd.net/simon">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Test-Infobereich<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Filters</h1>
+
+<p>Dies ist der "Filter"-Abschnitt im <a href="../index.html"><b>Test-Infobereich</b></a>. Hier haben Sie u.a. die Möglichkeit, die Textausgabe des <a href="../service/index.html">Dienstes</a> zu analysieren.</p>
+
+<p>Ein Filter ist eine bestimmte Einstellung für ein Filtermodul. Ein Filtermodul macht die eigentliche Arbeit, den Text zu analysieren. Es kann mehrere Filter geben, die auf dem selben Filtermodul basieren, z.B. sind die Filter "Schlüsselwort finden", "Reguläre Ausdrücke finden", "HTML-Body" und "Hyperlinks auflisten" allesamt Variationen des <a href="../../filter/plugin/find.html"><b>Finden</b></a>-Filtermoduls, wobei jedes nach anderem Text und anderen Eigenschaften sucht.</p>
+
+<p>Sie können untersuchen, ob der Text sich seit der letzten Prüfung geändert hat, und alle möglichen Operationen auf den Ausgabetext und -Status anwenden, z.B. aus dem Text nur einen interessanten Abschnitt herausfiltern oder dynamische Inhalte entfernen (wie z.B. Bannerwerbung). Wenn ein bestimmter Text nicht gefunden oder ungewünschter Text gefunden wurde, können Sie das z.B. als Fehlschlag auswerten lassen. Sie können auch die Filter-Operation mit einem Fehlschlag abbrechen oder den Status auf Wunsch noch anders ändern, und vieles mehr.</p>
+
+<dl>
+<dd>Neuer Filter:</dd>
+<dt>Klicken Sie auf diesen Button, um das <a href="../../filter/index.html"><b>Filter-Infobereich</b></a> zu öffnen, wo Sie einen neuen Filter hinzufügen können.</dt>
+</dl>
+
+<p>Wählen Sie im Pop-up-Menü auf der linken Seite jeder Zeile "Irgendwas", um diesen Filter mit irgendeinem aktuellen Test-Status zu nutzen, oder "Erfolg", wenn der Status kein Fehlschlag ist. Wählen Sie "Unverändert", "Geändert" oder "Fehlschlag", wenn Sie den entsprechenden Status auswerten wollen. Wenn der Status des Dienstes oder vorigen Filters zum gewählten Status passt, wird der Filter genutzt, ansonsten übersprungen. Wählen Sie "kein", um diese Filter-Zeile temporär zu deaktivieren (seine Filter werden gemerkt), oder klicken Sie den <img src="../../../shared/button-round-minus.png" alt="-" valign="top" />-Button, um die Zeile zu entfernen.</p>
+
+<p>Das nächste Pop-up-Menü listet alle verfügbaren Filter für den gewählten Status auf. Sie können den Button [Neuer Filter] anklicken, um einen neuen Filter hinzuzufügen, falls gewünscht.</p>
+
+<ul><li><i>Tipp:</i> Wenn Sie den Mauszeiger über dieses Pop-up-Menü oder seine Menüeinträge halten, werden Hinweise zu dem entsprechenden Filter eingeblendet, falls vorhanden (die Standardfilter haben allesamt erklärende Hinweise).</li></ul>
+
+<dl>
+<dd>Eingabe:</dd>
+<dt>Dieses Pop-up-Menü legt fest, welcher Text als Eingabetext an diesen Filter weitergegeben werden soll. Der Filter wird normalerweise seine Wirkung auf diesen Text entfalten, doch einige Filter ignorieren diese Einstellung auch und nutzen anderen Text, indem sie <a href="../../filter/variables.html">Filter-Variablen</a>. nutzen. Das Menü listet die verschiedenen Ausgaben des Dienstes auf, sowie (falls es vor diesem Filter andere Filter in der Liste gibt) die Ausgaben der anderen Filter.</dt>
+</dl>
+
+<p><img src="../../../shared/button-round-minus.png" alt="-" valign="top" /> Klicken Sie diesen Button an, um die entsprechende Zeile zu entfernen.</p>
+
+<p><img src="../../../shared/button-round-plus.png" alt="+" valign="top" /> Klicken Sie diesen Button an, um eine neue Zeile hinzuzufügen, so dass Sie mehrere Filter festlegen können.</p>
+
+<p>Sie können eigene Filter über das <a href="../../filters/index.html"><b>Filter-Infobereich</b></a> hinzufügen oder bearbeiten..</p>
+
+<p>Die Standardfilter gehören zu den nachfolgend beschriebenen Kategorieren (die auf den Modulen basieren, die sie mitbringen). Klicken Sie sie an, um mehr zu erfahren:</p>
+
+<p>Standardmäßig nutzt Simon den <q>Ändern</q>-Filter, durch den Änderungen in der Eingabe in einer Änderung resultieren. Sie können in durch einen <q>Block</q>-Filter oder anders austauschen, um den zu prüfenden Textbereich zu beschränken, oder Sie können ihn deaktivieren, wenn Sie keine Änderungen prüfen wollen.</p>
+
+<div class="topics">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="./block.html">Block</a></li>
+<li><a href="./find.html">Suchen</a> <a href="../../editions.html"><img src="../../../shared/direct.png" title="Only available in direct editions" alt="[direct only]" /></a></li>
+<li><a href="./format.html">Format</a></li>
+<li><a href="./number.html">Zahl</a> <a href="../../editions.html"><img src="../../../shared/direct.png" title="Only available in direct editions" alt="[direct only]" /></a></li>
+<li><a href="./override.html">Überschreiben</a> <a href="../../editions.html"><img src="../../../shared/direct.png" title="Only available in direct editions" alt="[direct only]" /></a></li>
+<li><a href="./script.html">Skript-Einstellungen</a> <a href="../../editions.html"><img src="../../../shared/direct.png" title="Only available in direct editions" alt="[direct only]" /></a></li>
+</ul>
+</div>
+
+<div class="related">
+<h2>Verwandte Themen</h2>
+<ul>
+<li><a href="../../filter/variables.html">Filter-Variablen</a></li>
+<li><a href="../../filter/index.html">Filter-Infobereich</a> <a href="../../editions.html"><img src="../../../shared/direct.png" title="Only available in direct editions" alt="[direct only]" /></a></li>
+<li><a href="../index.html">Test-Infobereich</a></li>
+<li><a href="../service/index.html">Dienst</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

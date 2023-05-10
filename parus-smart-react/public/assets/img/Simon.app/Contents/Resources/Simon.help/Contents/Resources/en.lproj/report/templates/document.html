@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Report Info - Templates - Document</title>
+<meta name="description" content="Variables for the report template document block.">
+<meta name="author" content="David Sinclair, Dejal Systems, LLC" />
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../../../shared/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../../specific/specific.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div id="header">
+<a href="http://www.dejal.com/"><img src="../../../specific/dejal-logo-name.png" alt="Dejal" width="183" height="60" title="Go to the Dejal home page" /></a>
+</div>
+
+<div id="navbar">
+<span id="home"><a href="../../index.html">Home</a></span> <span id="website"><a href="http://www.dejal.com/simon/">Website</a></span> <span id="index"><a href="../../all.html">Index</a></span>
+</div>
+
+
+<div id="content">
+
+
+<! ------------------------------------------------------------>
+
+
+<h1>Report Templates<img src="../../../shared/menu-arrow.jpg" alt=" &gt; " />Document</h1>
+
+<p>This page has information about the <b>Document</b> scope, and variables valid within this scope.  See the <a href="./index.html"><b>Report Templates</b></a> page for more information about Simon's report templates.</p>
+
+<p>The <b>Document</b> scope isn't an explicit block like the others.  It includes variables that can be used at any time - both outside of and within any blocks.  They could be called global variables.</p>
+
+<p>Variables are tags in the file that are replaced by another value when the report is used.  Variables are enclosed in curly braces, and have a variable name optionally followed by any number of parameters, e.g. <b>{title format="wordcase"}</b>.  See the <a href="./params.html">parameters</a> page for information on the available parameters.</p>
+
+<p>The variables that are available globally include:</p>
+
+<p><center>
+<table border="1" cellpadding="3" cellspacing="1">
+<tr><td nowrap><b>Variable:</b></td><td nowrap><b>Outputs:</b></td></tr>
+<tr><td valign="top">BasePath</td><td valign="top">Relative path in the output; is "./" for the Summary page and "../" for the Detail pages (if they are in sub-directories).</td></tr>
+<tr><td valign="top">CR</td><td valign="top">A carriage return character (see also <b>Return</b>).</td></tr>
+<tr><td valign="top">CRLF</td><td valign="top">Carriage return and linefeed characters (see also <b>ReturnLinefeed</b>).</td></tr>
+<tr><td valign="top">DetailsExtension</td><td valign="top">Filename extension used for the Detail page files (e.g. "html").</td></tr>
+<tr><td valign="top">DetailsInDirectories</td><td valign="top">"Yes" if Detail pages are in sub-directories, or "No" if they are in the same directory as the Summary page.</td></tr>
+<tr><td valign="top">HasDetails</td><td valign="top">"Yes" if Detail pages are being generated, otherwise "No".</td></tr>
+<tr><td valign="top">HasSummary</td><td valign="top">"Yes" if a Summary is being generated, otherwise "No".</td></tr>
+<tr><td valign="top">ImagesPath</td><td valign="top">Relative path in the output to the <b>images</b> directory (if any).</td></tr>
+<tr><td valign="top">IsDetail</td><td valign="top">"Yes" if the current page is a Detail page, or "No" if it is the Summary.</td></tr>
+<tr><td valign="top">LF</td><td valign="top">A linefeed character (see also <b>Linefeed</b>).</td></tr>
+<tr><td valign="top">Linefeed</td><td valign="top">A linefeed character (see also <b>LF</b>).</td></tr>
+<tr><td valign="top">LineNumber</td><td valign="top">The 1-based number of the current line for repeating blocks.</td></tr>
+<tr><td valign="top">LineOddEven</td><td valign="top">"Odd" or "Even" based on the line number (useful for alternating row colors via CSS).</td></tr>
+<tr><td valign="top">OutputLocation</td><td valign="top">The URL where the report is saved or uploaded.</td></tr>
+<tr><td valign="top">OutputName</td><td valign="top">The directory where the report is being output.</td></tr>
+<tr><td valign="top">PageKind</td><td valign="top">"Summary" on the Summary page, "Detail" on Detail pages.</td></tr>
+<tr><td valign="top">Refresh</td><td valign="top">Interval in seconds between reports; useful for the meta refresh to automatically reload the web page.</td></tr>
+<tr><td valign="top">ReportDate</td><td valign="top">Date that the report was generated.</td></tr>
+<tr><td valign="top">ReportTime</td><td valign="top">Time that the report was generated.</td></tr>
+<tr><td valign="top">ResourcesPath</td><td valign="top">Relative path in the output to the <b>resources</b> directory (if any).</td></tr>
+<tr><td valign="top">Return</td><td valign="top">A carriage return character (see also <b>CR</b>).</td></tr>
+<tr><td valign="top">ReturnLinefeed</td><td valign="top">Carriage return and linefeed characters (see also <b>CRLF</b>).</td></tr>
+<tr><td valign="top">SummaryPath</td><td valign="top">Same as <b>BasePath</b>, except includes the index filename if the report uses a file:// protocol.</td></tr>
+<tr><td valign="top">Tab</td><td valign="top">A tab character.</td></tr>
+<tr><td valign="top">Template</td><td valign="top">This variable doesn't output anything; it is used for informational purposes only.</td></tr>
+<tr><td valign="top">TemplateName</td><td valign="top">Name of the template being used.</td></tr>
+<tr><td valign="top">TemplatePath</td><td valign="top">File path of the template folder (within Simon's data folder).</td></tr>
+<tr><td valign="top">Title</td><td valign="top">On the Summary page, the name of the report; on Detail pages, the name of the test.</td></tr>
+<tr><td valign="top">Version</td><td valign="top">Version of Simon that generated the report.</td></tr>
+</table>
+</center></p>
+
+
+<div class="related">
+<h2>Related Topics</h2>
+<ul>
+<li><a href="./index.html">Report Templates</a></li>
+<li><a href="../options.html">Options</a></li>
+<li><a href="../index.html">Report Info pane</a></li>
+<li><a href="../../reports/index.html">Reports list</a></li>
+</ul>
+</div>
+
+
+<! ------------------------------------------------------------>
+
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

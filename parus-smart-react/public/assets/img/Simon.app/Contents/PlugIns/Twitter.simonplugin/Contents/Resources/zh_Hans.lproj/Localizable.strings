@@ -1,0 +1,71 @@
+/* Twitter unknown error notification error string */
+"An unknown error has occurred (code %d)." = "一个未知的错误发生 (代码 %d).";
+
+/* Twitter notifier view error button credentials check failed tooltip */
+"Credentials failed to validate.  Click for details." = "证书验证失败，点击查看详情";
+
+/* Twitter notifier credentials validation error sheet title */
+"Credentials Validation Failed" = "证书验证失败";
+
+/* Twitter notifier view error button followers fetch failed tooltip */
+"Failed to fetch followers.  Click for details." = "未能获取的粉丝，点击详情";
+
+/* Twitter notifier followers fetch error sheet title */
+"Followers Could Not Be Fetched" = "无法获取粉丝";
+
+/* Twitter get messages smart change header string */
+"Get Twitter direct messages for" = "获取 Twitter 直接消息";
+
+/* Twitter get followers smart change header string */
+"Get Twitter followers of" = "获取 Twitter 粉丝";
+
+/* Twitter get friends smart change header string */
+"Get Twitter friends of" = "获取 Twitter 好友";
+
+/* Twitter get public timeline smart change header string */
+"Get Twitter public timeline." = "获取 Twitter 公共时间表";
+
+/* Twitter get replies smart change header string */
+"Get Twitter replies to" = "获取 Twitter 回复";
+
+/* Twitter get user updates smart change header string */
+"Get Twitter updates for" = "获取 Twitter 更新";
+
+/* Loading followers message */
+"Loading..." = "正在载入…";
+
+/* No internet connection error string */
+"No internet connection." = "无互联网连接";
+
+/* OK button title */
+"OK" = "确定";
+
+/* Twitter Service Preview window title before loading */
+"Preview" = "预览";
+
+/* Twitter Service Preview window title for Edit Service */
+"Preview of %@" = "预览 %@";
+
+/* Twitter Service Preview window title while loading */
+"Preview of %@ (%@)" = "预览%1$@ (%2$@)";
+
+/* Twitter authorization failed notification error string */
+"The transaction resulted in a \"Authorization Failed\" error.  Please check the notifier credentials." = "本次交易产生了“授权失败”的错误。 请检查通知凭据";
+
+/* Twitter bad request notification error string */
+"The transaction resulted in a \"Bad request\" error.  Most likely the 70 requests per hour rate limit has been exceeded." = "该交易导致“损坏请求”错误。 有可能的每小时限速70的请求已超过";
+
+/* Twitter forbidden notification error string */
+"The transaction resulted in a \"Forbidden\" error.  Please check the notifier settings." = "本次交易产生了“禁止”的错误。 请检查通知设置";
+
+/* Twitter not found notification error string */
+"The transaction resulted in a \"Page Not Found\" error.  Please check the notifier settings." = "该交易导致“找不到网页”的错误。 请检查通知设置";
+
+/* Twitter internal error notification error string */
+"The transaction resulted in an \"Internal Server Error.\" error.  This is an error with the Twitter service's servers." = "本次交易产生了一个“内部服务器错误”。 错误。 这是Twitter服务的服务器错误";
+
+/* Twitter maintenance notification error string */
+"Twitter servers apear to be down for maintenance." = "Twitter 服务器apear停机维护";
+
+/* Twitter overloaded notification error string */
+"Twitter servers are currently overloaded with traffic." = "Twitter的服务器目前正超载";

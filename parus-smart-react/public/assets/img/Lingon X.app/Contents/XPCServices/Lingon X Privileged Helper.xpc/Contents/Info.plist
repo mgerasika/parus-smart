@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>21A559</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>XPCPrivileged</string>
+	<key>CFBundleExecutable</key>
+	<string>Lingon X Privileged Helper</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon128</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.peterborgapps.LingonX8.XPCPrivileged</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Lingon X Privileged Helper</string>
+	<key>CFBundlePackageType</key>
+	<string>XPC!</string>
+	<key>CFBundleShortVersionString</key>
+	<string>8.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>318</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>13A1030d</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>12.0</string>
+	<key>DTSDKBuild</key>
+	<string>21A344</string>
+	<key>DTSDKName</key>
+	<string>macosx12.0</string>
+	<key>DTXcode</key>
+	<string>1310</string>
+	<key>DTXcodeBuild</key>
+	<string>13A1030d</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.14.4</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2005-2021 Peter Borg Apps AB. All rights reserved.</string>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>com.peterborgapps.LingonX8Helper</key>
+		<string>anchor apple generic and identifier "com.peterborgapps.LingonX8Helper" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = HT76L9L9RG and info [CFBundleShortVersionString] &gt;= "8.0")</string>
+	</dict>
+	<key>XPCService</key>
+	<dict>
+		<key>JoinExistingSession</key>
+		<true/>
+		<key>ServiceType</key>
+		<string>Application</string>
+	</dict>
+</dict>
+</plist>
